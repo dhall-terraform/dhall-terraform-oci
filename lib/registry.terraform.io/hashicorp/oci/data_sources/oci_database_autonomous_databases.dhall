@@ -8,6 +8,11 @@
               , autonomous_database_backup_id : Text
               , autonomous_database_id : Text
               , available_upgrade_versions : List Text
+              , backup_config :
+                  List
+                    { manual_backup_bucket_name : Text
+                    , manual_backup_type : Text
+                    }
               , clone_type : Text
               , compartment_id : Text
               , connection_strings :
@@ -112,6 +117,11 @@
             , autonomous_database_backup_id : Text
             , autonomous_database_id : Text
             , available_upgrade_versions : List Text
+            , backup_config :
+                List
+                  { manual_backup_bucket_name : Text
+                  , manual_backup_type : Text
+                  }
             , clone_type : Text
             , compartment_id : Text
             , connection_strings :

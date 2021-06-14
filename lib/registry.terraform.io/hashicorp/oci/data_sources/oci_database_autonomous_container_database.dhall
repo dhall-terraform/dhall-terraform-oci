@@ -55,8 +55,24 @@
     , next_maintenance_run_id : Optional Text
     , patch_id : Optional Text
     , patch_model : Optional Text
+    , peer_autonomous_container_database_backup_config :
+        Optional
+          ( List
+              { backup_destination_details :
+                  List
+                    { id : Text
+                    , internet_proxy : Text
+                    , type : Text
+                    , vpc_password : Text
+                    , vpc_user : Text
+                    }
+              , recovery_window_in_days : Natural
+              }
+          )
+    , peer_autonomous_container_database_compartment_id : Optional Text
     , peer_autonomous_container_database_display_name : Optional Text
     , peer_autonomous_exadata_infrastructure_id : Optional Text
+    , peer_autonomous_vm_cluster_id : Optional Text
     , protection_mode : Optional Text
     , role : Optional Text
     , rotate_key_trigger : Optional Bool
@@ -122,8 +138,24 @@
   , next_maintenance_run_id = None Text
   , patch_id = None Text
   , patch_model = None Text
+  , peer_autonomous_container_database_backup_config =
+      None
+        ( List
+            { backup_destination_details :
+                List
+                  { id : Text
+                  , internet_proxy : Text
+                  , type : Text
+                  , vpc_password : Text
+                  , vpc_user : Text
+                  }
+            , recovery_window_in_days : Natural
+            }
+        )
+  , peer_autonomous_container_database_compartment_id = None Text
   , peer_autonomous_container_database_display_name = None Text
   , peer_autonomous_exadata_infrastructure_id = None Text
+  , peer_autonomous_vm_cluster_id = None Text
   , protection_mode = None Text
   , role = None Text
   , rotate_key_trigger = None Bool

@@ -15,6 +15,8 @@
     , state : Optional Text
     , time_created : Optional Text
     , time_last_role_changed : Optional Text
+    , time_last_synced : Optional Text
+    , transport_lag : Optional Text
     }
 , default =
   { apply_lag = None Text
@@ -30,5 +32,7 @@
   , state = None Text
   , time_created = None Text
   , time_last_role_changed = None Text
+  , time_last_synced = None Text
+  , transport_lag = None Text
   }
 }

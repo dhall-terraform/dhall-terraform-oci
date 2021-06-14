@@ -41,7 +41,9 @@
                   List { availability_domain : Text, subnet_id : Text }
               }
           )
-    , node_shape_config : Optional (List { ocpus : Optional Natural })
+    , node_shape_config :
+        Optional
+          (List { memory_in_gbs : Optional Natural, ocpus : Optional Natural })
     , node_source_details :
         Optional
           ( List
@@ -94,7 +96,8 @@
                 List { availability_domain : Text, subnet_id : Text }
             }
         )
-  , node_shape_config = None (List { ocpus : Optional Natural })
+  , node_shape_config =
+      None (List { memory_in_gbs : Optional Natural, ocpus : Optional Natural })
   , node_source_details =
       None
         ( List

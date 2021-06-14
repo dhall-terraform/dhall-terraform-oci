@@ -4,6 +4,9 @@
     , autonomous_database_backup_id : Optional Text
     , autonomous_database_id : Optional Text
     , available_upgrade_versions : Optional (List Text)
+    , backup_config :
+        Optional
+          (List { manual_backup_bucket_name : Text, manual_backup_type : Text })
     , clone_type : Optional Text
     , compartment_id : Text
     , connection_strings :
@@ -100,6 +103,9 @@
   , autonomous_database_backup_id = None Text
   , autonomous_database_id = None Text
   , available_upgrade_versions = None (List Text)
+  , backup_config =
+      None
+        (List { manual_backup_bucket_name : Text, manual_backup_type : Text })
   , clone_type = None Text
   , connection_strings =
       None

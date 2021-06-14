@@ -15,6 +15,8 @@
               , state : Text
               , time_created : Text
               , time_last_role_changed : Text
+              , time_last_synced : Text
+              , transport_lag : Text
               }
           )
     , autonomous_database_id : Text
@@ -40,6 +42,8 @@
             , state : Text
             , time_created : Text
             , time_last_role_changed : Text
+            , time_last_synced : Text
+            , transport_lag : Text
             }
         )
   , id = None Text

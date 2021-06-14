@@ -458,6 +458,8 @@
     ./oci_load_balancer_ssl_cipher_suite.dhall
 , oci_load_balancer_ssl_cipher_suites =
     ./oci_load_balancer_ssl_cipher_suites.dhall
+, oci_log_analytics_namespace = ./oci_log_analytics_namespace.dhall
+, oci_log_analytics_namespaces = ./oci_log_analytics_namespaces.dhall
 , oci_logging_log = ./oci_logging_log.dhall
 , oci_logging_log_group = ./oci_logging_log_group.dhall
 , oci_logging_log_groups = ./oci_logging_log_groups.dhall

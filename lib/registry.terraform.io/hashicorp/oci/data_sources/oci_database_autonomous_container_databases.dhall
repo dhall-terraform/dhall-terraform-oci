@@ -51,8 +51,22 @@
               , next_maintenance_run_id : Text
               , patch_id : Text
               , patch_model : Text
+              , peer_autonomous_container_database_backup_config :
+                  List
+                    { backup_destination_details :
+                        List
+                          { id : Text
+                          , internet_proxy : Text
+                          , type : Text
+                          , vpc_password : Text
+                          , vpc_user : Text
+                          }
+                    , recovery_window_in_days : Natural
+                    }
+              , peer_autonomous_container_database_compartment_id : Text
               , peer_autonomous_container_database_display_name : Text
               , peer_autonomous_exadata_infrastructure_id : Text
+              , peer_autonomous_vm_cluster_id : Text
               , protection_mode : Text
               , role : Text
               , rotate_key_trigger : Bool
@@ -129,8 +143,22 @@
             , next_maintenance_run_id : Text
             , patch_id : Text
             , patch_model : Text
+            , peer_autonomous_container_database_backup_config :
+                List
+                  { backup_destination_details :
+                      List
+                        { id : Text
+                        , internet_proxy : Text
+                        , type : Text
+                        , vpc_password : Text
+                        , vpc_user : Text
+                        }
+                  , recovery_window_in_days : Natural
+                  }
+            , peer_autonomous_container_database_compartment_id : Text
             , peer_autonomous_container_database_display_name : Text
             , peer_autonomous_exadata_infrastructure_id : Text
+            , peer_autonomous_vm_cluster_id : Text
             , protection_mode : Text
             , role : Text
             , rotate_key_trigger : Bool

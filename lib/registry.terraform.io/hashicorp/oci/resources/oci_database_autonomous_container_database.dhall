@@ -29,8 +29,10 @@
     , next_maintenance_run_id : Optional Text
     , patch_id : Optional Text
     , patch_model : Text
+    , peer_autonomous_container_database_compartment_id : Optional Text
     , peer_autonomous_container_database_display_name : Optional Text
     , peer_autonomous_exadata_infrastructure_id : Optional Text
+    , peer_autonomous_vm_cluster_id : Optional Text
     , protection_mode : Optional Text
     , role : Optional Text
     , rotate_key_trigger : Optional Bool
@@ -64,6 +66,22 @@
               , weeks_of_month : Optional (List Natural)
               , days_of_week : Optional (List { name : Text })
               , months : Optional (List { name : Text })
+              }
+          )
+    , peer_autonomous_container_database_backup_config :
+        Optional
+          ( List
+              { recovery_window_in_days : Optional Natural
+              , backup_destination_details :
+                  Optional
+                    ( List
+                        { id : Optional Text
+                        , internet_proxy : Optional Text
+                        , type : Text
+                        , vpc_password : Optional Text
+                        , vpc_user : Optional Text
+                        }
+                    )
               }
           )
     , timeouts :
@@ -102,8 +120,10 @@
         )
   , next_maintenance_run_id = None Text
   , patch_id = None Text
+  , peer_autonomous_container_database_compartment_id = None Text
   , peer_autonomous_container_database_display_name = None Text
   , peer_autonomous_exadata_infrastructure_id = None Text
+  , peer_autonomous_vm_cluster_id = None Text
   , protection_mode = None Text
   , role = None Text
   , rotate_key_trigger = None Bool
@@ -137,6 +157,22 @@
             , weeks_of_month : Optional (List Natural)
             , days_of_week : Optional (List { name : Text })
             , months : Optional (List { name : Text })
+            }
+        )
+  , peer_autonomous_container_database_backup_config =
+      None
+        ( List
+            { recovery_window_in_days : Optional Natural
+            , backup_destination_details :
+                Optional
+                  ( List
+                      { id : Optional Text
+                      , internet_proxy : Optional Text
+                      , type : Text
+                      , vpc_password : Optional Text
+                      , vpc_user : Optional Text
+                      }
+                  )
             }
         )
   , timeouts =

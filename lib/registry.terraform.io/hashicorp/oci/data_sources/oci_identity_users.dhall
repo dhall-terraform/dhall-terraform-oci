@@ -19,12 +19,15 @@
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , description : Text
               , email : Text
+              , email_verified : Bool
               , external_identifier : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , identity_provider_id : Text
               , inactive_state : Text
+              , last_successful_login_time : Text
               , name : Text
+              , previous_successful_login_time : Text
               , state : Text
               , time_created : Text
               }
@@ -53,12 +56,15 @@
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , description : Text
             , email : Text
+            , email_verified : Bool
             , external_identifier : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , identity_provider_id : Text
             , inactive_state : Text
+            , last_successful_login_time : Text
             , name : Text
+            , previous_successful_login_time : Text
             , state : Text
             , time_created : Text
             }

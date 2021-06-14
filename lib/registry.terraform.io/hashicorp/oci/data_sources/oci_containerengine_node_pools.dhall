@@ -23,7 +23,8 @@
               , node_metadata : List { mapKey : Text, mapValue : Text }
               , node_pool_id : Text
               , node_shape : Text
-              , node_shape_config : List { ocpus : Natural }
+              , node_shape_config :
+                  List { memory_in_gbs : Natural, ocpus : Natural }
               , node_source :
                   List
                     { image_id : Text, source_name : Text, source_type : Text }
@@ -82,7 +83,8 @@
             , node_metadata : List { mapKey : Text, mapValue : Text }
             , node_pool_id : Text
             , node_shape : Text
-            , node_shape_config : List { ocpus : Natural }
+            , node_shape_config :
+                List { memory_in_gbs : Natural, ocpus : Natural }
             , node_source :
                 List { image_id : Text, source_name : Text, source_type : Text }
             , node_source_details :

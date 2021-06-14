@@ -204,6 +204,7 @@
 , oci_load_balancer_rule_set = ./oci_load_balancer_rule_set.dhall
 , oci_load_balancer_ssl_cipher_suite =
     ./oci_load_balancer_ssl_cipher_suite.dhall
+, oci_log_analytics_namespace = ./oci_log_analytics_namespace.dhall
 , oci_logging_log = ./oci_logging_log.dhall
 , oci_logging_log_group = ./oci_logging_log_group.dhall
 , oci_logging_log_saved_search = ./oci_logging_log_saved_search.dhall
