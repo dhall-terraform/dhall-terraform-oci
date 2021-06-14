@@ -50,8 +50,12 @@
               , is_free_tier : Bool
               , is_preview : Bool
               , is_refreshable_clone : Bool
+              , key_history_entry :
+                  List { id : Text, time_activated : Text, vault_id : Text }
               , key_store_id : Text
               , key_store_wallet_name : Text
+              , kms_key_id : Text
+              , kms_key_lifecycle_details : Text
               , license_model : Text
               , lifecycle_details : Text
               , nsg_ids : List Text
@@ -85,6 +89,7 @@
               , time_of_next_refresh : Text
               , time_reclamation_of_free_autonomous_database : Text
               , used_data_storage_size_in_tbs : Natural
+              , vault_id : Text
               , whitelisted_ips : List Text
               }
           )
@@ -148,8 +153,12 @@
             , is_free_tier : Bool
             , is_preview : Bool
             , is_refreshable_clone : Bool
+            , key_history_entry :
+                List { id : Text, time_activated : Text, vault_id : Text }
             , key_store_id : Text
             , key_store_wallet_name : Text
+            , kms_key_id : Text
+            , kms_key_lifecycle_details : Text
             , license_model : Text
             , lifecycle_details : Text
             , nsg_ids : List Text
@@ -183,6 +192,7 @@
             , time_of_next_refresh : Text
             , time_reclamation_of_free_autonomous_database : Text
             , used_data_storage_size_in_tbs : Natural
+            , vault_id : Text
             , whitelisted_ips : List Text
             }
         )

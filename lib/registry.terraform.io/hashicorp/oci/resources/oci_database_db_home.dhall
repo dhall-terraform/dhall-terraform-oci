@@ -8,6 +8,7 @@
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , is_desupported_version : Optional Bool
     , kms_key_id : Optional Text
     , kms_key_version_id : Optional Text
     , last_patch_history_entry_id : Optional Text
@@ -76,6 +77,7 @@
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , is_desupported_version = None Bool
   , kms_key_id = None Text
   , kms_key_version_id = None Text
   , last_patch_history_entry_id = None Text

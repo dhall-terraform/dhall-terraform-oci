@@ -1,5 +1,5 @@
 { Type =
-    { compartment_id : Text
+    { compartment_id : Optional Text
     , display_name : Optional Text
     , id : Optional Text
     , network_security_groups :
@@ -17,12 +17,14 @@
           )
     , state : Optional Text
     , vcn_id : Optional Text
+    , vlan_id : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { display_name = None Text
+  { compartment_id = None Text
+  , display_name = None Text
   , id = None Text
   , network_security_groups =
       None
@@ -39,6 +41,7 @@
         )
   , state = None Text
   , vcn_id = None Text
+  , vlan_id = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

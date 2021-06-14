@@ -53,8 +53,12 @@
     , is_preview : Optional Bool
     , is_preview_version_with_service_terms_accepted : Optional Bool
     , is_refreshable_clone : Optional Bool
+    , key_history_entry :
+        Optional (List { id : Text, time_activated : Text, vault_id : Text })
     , key_store_id : Optional Text
     , key_store_wallet_name : Optional Text
+    , kms_key_id : Optional Text
+    , kms_key_lifecycle_details : Optional Text
     , license_model : Optional Text
     , lifecycle_details : Optional Text
     , nsg_ids : Optional (List Text)
@@ -96,6 +100,7 @@
     , time_reclamation_of_free_autonomous_database : Optional Text
     , timestamp : Optional Text
     , used_data_storage_size_in_tbs : Optional Natural
+    , vault_id : Optional Text
     , whitelisted_ips : Optional (List Text)
     }
 , default =
@@ -151,8 +156,12 @@
   , is_preview = None Bool
   , is_preview_version_with_service_terms_accepted = None Bool
   , is_refreshable_clone = None Bool
+  , key_history_entry =
+      None (List { id : Text, time_activated : Text, vault_id : Text })
   , key_store_id = None Text
   , key_store_wallet_name = None Text
+  , kms_key_id = None Text
+  , kms_key_lifecycle_details = None Text
   , license_model = None Text
   , lifecycle_details = None Text
   , nsg_ids = None (List Text)
@@ -194,6 +203,7 @@
   , time_reclamation_of_free_autonomous_database = None Text
   , timestamp = None Text
   , used_data_storage_size_in_tbs = None Natural
+  , vault_id = None Text
   , whitelisted_ips = None (List Text)
   }
 }

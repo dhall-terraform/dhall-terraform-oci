@@ -11,11 +11,13 @@
               , is_restorable : Bool
               , key_store_id : Text
               , key_store_wallet_name : Text
+              , kms_key_id : Text
               , lifecycle_details : Text
               , state : Text
               , time_ended : Text
               , time_started : Text
               , type : Text
+              , vault_id : Text
               }
           )
     , autonomous_database_id : Optional Text
@@ -40,11 +42,13 @@
             , is_restorable : Bool
             , key_store_id : Text
             , key_store_wallet_name : Text
+            , kms_key_id : Text
             , lifecycle_details : Text
             , state : Text
             , time_ended : Text
             , time_started : Text
             , type : Text
+            , vault_id : Text
             }
         )
   , autonomous_database_id = None Text

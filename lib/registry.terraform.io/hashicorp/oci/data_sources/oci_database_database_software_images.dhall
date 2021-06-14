@@ -18,6 +18,7 @@
               , lifecycle_details : Text
               , ls_inventory : Text
               , patch_set : Text
+              , source_db_home_id : Text
               , state : Text
               , time_created : Text
               }
@@ -51,6 +52,7 @@
             , lifecycle_details : Text
             , ls_inventory : Text
             , patch_set : Text
+            , source_db_home_id : Text
             , state : Text
             , time_created : Text
             }

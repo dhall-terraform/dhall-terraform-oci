@@ -15,6 +15,7 @@
     , lifecycle_details : Optional Text
     , ls_inventory : Optional Text
     , patch_set : Optional Text
+    , source_db_home_id : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     }
@@ -34,6 +35,7 @@
   , lifecycle_details = None Text
   , ls_inventory = None Text
   , patch_set = None Text
+  , source_db_home_id = None Text
   , state = None Text
   , time_created = None Text
   }

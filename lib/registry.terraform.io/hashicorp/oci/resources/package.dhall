@@ -157,10 +157,14 @@
     ./oci_database_external_non_container_database.dhall
 , oci_database_external_non_container_database_management =
     ./oci_database_external_non_container_database_management.dhall
+, oci_database_external_non_container_database_operations_insights_management =
+    ./oci_database_external_non_container_database_operations_insights_management.dhall
 , oci_database_external_pluggable_database =
     ./oci_database_external_pluggable_database.dhall
 , oci_database_external_pluggable_database_management =
     ./oci_database_external_pluggable_database_management.dhall
+, oci_database_external_pluggable_database_operations_insights_management =
+    ./oci_database_external_pluggable_database_operations_insights_management.dhall
 , oci_database_key_store = ./oci_database_key_store.dhall
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
 , oci_database_management_managed_database_group =

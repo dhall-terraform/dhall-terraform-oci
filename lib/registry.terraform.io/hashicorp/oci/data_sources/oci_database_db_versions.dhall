@@ -13,6 +13,7 @@
               }
           )
     , id : Optional Text
+    , is_database_software_image_supported : Optional Bool
     , is_upgrade_supported : Optional Bool
     , storage_management : Optional Text
     , filter :
@@ -33,6 +34,7 @@
             }
         )
   , id = None Text
+  , is_database_software_image_supported = None Bool
   , is_upgrade_supported = None Bool
   , storage_management = None Text
   , filter =
