@@ -365,6 +365,10 @@
 , oci_monitoring_alarm_statuses = ./oci_monitoring_alarm_statuses.dhall
 , oci_monitoring_metric_data = ./oci_monitoring_metric_data.dhall
 , oci_monitoring_metrics = ./oci_monitoring_metrics.dhall
+, oci_nosql_index = ./oci_nosql_index.dhall
+, oci_nosql_indexes = ./oci_nosql_indexes.dhall
+, oci_nosql_table = ./oci_nosql_table.dhall
+, oci_nosql_tables = ./oci_nosql_tables.dhall
 , oci_objectstorage_bucket = ./oci_objectstorage_bucket.dhall
 , oci_objectstorage_bucket_summaries =
     ./oci_objectstorage_bucket_summaries.dhall

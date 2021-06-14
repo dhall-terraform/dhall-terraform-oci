@@ -8,6 +8,7 @@
     , id : Optional Text
     , idcs_access_token : Optional Text
     , idcs_tenancy : Optional Text
+    , instance_usage_type : Optional Text
     , name : Optional Text
     , object_storage_namespace : Optional Text
     , oce_instance_id : Text
@@ -29,6 +30,7 @@
   , id = None Text
   , idcs_access_token = None Text
   , idcs_tenancy = None Text
+  , instance_usage_type = None Text
   , name = None Text
   , object_storage_namespace = None Text
   , service = None (List { mapKey : Text, mapValue : Text })

@@ -5,6 +5,7 @@
         Optional
           ( List
               { listing_id : Text
+              , package_type : Text
               , package_version : Text
               , resource_id : Text
               , time_created : Text
@@ -22,6 +23,7 @@
       None
         ( List
             { listing_id : Text
+            , package_type : Text
             , package_version : Text
             , resource_id : Text
             , time_created : Text

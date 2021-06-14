@@ -11,6 +11,7 @@
               }
           )
     , id : Optional Text
+    , storage_management : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -27,6 +28,7 @@
             }
         )
   , id = None Text
+  , storage_management = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

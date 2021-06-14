@@ -167,6 +167,8 @@
 , oci_marketplace_listing_package_agreement =
     ./oci_marketplace_listing_package_agreement.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
+, oci_nosql_index = ./oci_nosql_index.dhall
+, oci_nosql_table = ./oci_nosql_table.dhall
 , oci_objectstorage_bucket = ./oci_objectstorage_bucket.dhall
 , oci_objectstorage_namespace_metadata =
     ./oci_objectstorage_namespace_metadata.dhall

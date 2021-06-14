@@ -6,7 +6,15 @@
     , listing_id : Text
     , package_type : Optional Text
     , package_version : Text
-    , pricing : Optional (List { currency : Text, rate : Natural, type : Text })
+    , pricing :
+        Optional
+          ( List
+              { currency : Text
+              , pay_go_strategy : Text
+              , rate : Natural
+              , type : Text
+              }
+          )
     , regions :
         Optional
           ( List
@@ -37,7 +45,15 @@
   , description = None Text
   , id = None Text
   , package_type = None Text
-  , pricing = None (List { currency : Text, rate : Natural, type : Text })
+  , pricing =
+      None
+        ( List
+            { currency : Text
+            , pay_go_strategy : Text
+            , rate : Natural
+            , type : Text
+            }
+        )
   , regions =
       None
         ( List
