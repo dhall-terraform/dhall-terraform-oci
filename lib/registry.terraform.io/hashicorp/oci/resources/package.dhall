@@ -132,6 +132,7 @@
 , oci_identity_group = ./oci_identity_group.dhall
 , oci_identity_identity_provider = ./oci_identity_identity_provider.dhall
 , oci_identity_idp_group_mapping = ./oci_identity_idp_group_mapping.dhall
+, oci_identity_network_source = ./oci_identity_network_source.dhall
 , oci_identity_policy = ./oci_identity_policy.dhall
 , oci_identity_smtp_credential = ./oci_identity_smtp_credential.dhall
 , oci_identity_swift_password = ./oci_identity_swift_password.dhall

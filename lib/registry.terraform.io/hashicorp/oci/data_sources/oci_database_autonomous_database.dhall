@@ -40,10 +40,14 @@
     , is_preview_version_with_service_terms_accepted : Optional Bool
     , license_model : Optional Text
     , lifecycle_details : Optional Text
+    , nsg_ids : Optional (List Text)
+    , private_endpoint : Optional Text
+    , private_endpoint_label : Optional Text
     , service_console_url : Optional Text
     , source : Optional Text
     , source_id : Optional Text
     , state : Optional Text
+    , subnet_id : Optional Text
     , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , time_deletion_of_free_autonomous_database : Optional Text
@@ -95,10 +99,14 @@
   , is_preview_version_with_service_terms_accepted = None Bool
   , license_model = None Text
   , lifecycle_details = None Text
+  , nsg_ids = None (List Text)
+  , private_endpoint = None Text
+  , private_endpoint_label = None Text
   , service_console_url = None Text
   , source = None Text
   , source_id = None Text
   , state = None Text
+  , subnet_id = None Text
   , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , time_deletion_of_free_autonomous_database = None Text

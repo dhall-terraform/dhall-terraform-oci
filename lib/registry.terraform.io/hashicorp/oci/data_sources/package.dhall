@@ -295,6 +295,8 @@
     ./oci_identity_identity_provider_groups.dhall
 , oci_identity_identity_providers = ./oci_identity_identity_providers.dhall
 , oci_identity_idp_group_mappings = ./oci_identity_idp_group_mappings.dhall
+, oci_identity_network_source = ./oci_identity_network_source.dhall
+, oci_identity_network_sources = ./oci_identity_network_sources.dhall
 , oci_identity_policies = ./oci_identity_policies.dhall
 , oci_identity_regions = ./oci_identity_regions.dhall
 , oci_identity_region_subscriptions = ./oci_identity_region_subscriptions.dhall

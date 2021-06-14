@@ -12,6 +12,7 @@
                     , can_use_auth_tokens : Bool
                     , can_use_console_password : Bool
                     , can_use_customer_secret_keys : Bool
+                    , can_use_oauth2client_credentials : Bool
                     , can_use_smtp_credentials : Bool
                     }
               , compartment_id : Text
@@ -45,6 +46,7 @@
                   , can_use_auth_tokens : Bool
                   , can_use_console_password : Bool
                   , can_use_customer_secret_keys : Bool
+                  , can_use_oauth2client_credentials : Bool
                   , can_use_smtp_credentials : Bool
                   }
             , compartment_id : Text

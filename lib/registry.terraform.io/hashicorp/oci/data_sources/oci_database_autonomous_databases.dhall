@@ -41,10 +41,14 @@
               , is_preview_version_with_service_terms_accepted : Bool
               , license_model : Text
               , lifecycle_details : Text
+              , nsg_ids : List Text
+              , private_endpoint : Text
+              , private_endpoint_label : Text
               , service_console_url : Text
               , source : Text
               , source_id : Text
               , state : Text
+              , subnet_id : Text
               , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               , time_deletion_of_free_autonomous_database : Text
@@ -110,10 +114,14 @@
             , is_preview_version_with_service_terms_accepted : Bool
             , license_model : Text
             , lifecycle_details : Text
+            , nsg_ids : List Text
+            , private_endpoint : Text
+            , private_endpoint_label : Text
             , service_console_url : Text
             , source : Text
             , source_id : Text
             , state : Text
+            , subnet_id : Text
             , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             , time_deletion_of_free_autonomous_database : Text
