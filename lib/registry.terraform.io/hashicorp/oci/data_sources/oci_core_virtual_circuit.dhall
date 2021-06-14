@@ -9,7 +9,9 @@
               { bgp_md5auth_key : Text
               , cross_connect_or_cross_connect_group_id : Text
               , customer_bgp_peering_ip : Text
+              , customer_bgp_peering_ipv6 : Text
               , oracle_bgp_peering_ip : Text
+              , oracle_bgp_peering_ipv6 : Text
               , vlan : Natural
               }
           )
@@ -43,7 +45,9 @@
             { bgp_md5auth_key : Text
             , cross_connect_or_cross_connect_group_id : Text
             , customer_bgp_peering_ip : Text
+            , customer_bgp_peering_ipv6 : Text
             , oracle_bgp_peering_ip : Text
+            , oracle_bgp_peering_ipv6 : Text
             , vlan : Natural
             }
         )

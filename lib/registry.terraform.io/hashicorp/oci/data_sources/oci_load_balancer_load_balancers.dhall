@@ -14,6 +14,7 @@
               , ip_address_details :
                   List { ip_address : Text, is_public : Bool }
               , ip_addresses : List Text
+              , ip_mode : Text
               , is_private : Bool
               , network_security_group_ids : List Text
               , shape : Text
@@ -41,6 +42,7 @@
             , id : Text
             , ip_address_details : List { ip_address : Text, is_public : Bool }
             , ip_addresses : List Text
+            , ip_mode : Text
             , is_private : Bool
             , network_security_group_ids : List Text
             , shape : Text

@@ -14,7 +14,7 @@
     , id : Optional Text
     , load_balancer_id : Text
     , name : Text
-    , policy : Optional Text
+    , policy : Text
     , state : Optional Text
     , health_checker :
         List
@@ -70,7 +70,6 @@
             }
         )
   , id = None Text
-  , policy = None Text
   , state = None Text
   , lb_cookie_session_persistence_configuration =
       None
