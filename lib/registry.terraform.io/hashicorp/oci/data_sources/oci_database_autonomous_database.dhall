@@ -27,6 +27,7 @@
     , id : Optional Text
     , is_auto_scaling_enabled : Optional Bool
     , is_dedicated : Optional Bool
+    , is_free_tier : Optional Bool
     , is_preview : Optional Bool
     , is_preview_version_with_service_terms_accepted : Optional Bool
     , license_model : Optional Text
@@ -35,7 +36,10 @@
     , source : Optional Text
     , source_id : Optional Text
     , state : Optional Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
+    , time_deletion_of_free_autonomous_database : Optional Text
+    , time_reclamation_of_free_autonomous_database : Optional Text
     , used_data_storage_size_in_tbs : Optional Natural
     , whitelisted_ips : Optional (List Text)
     }
@@ -66,6 +70,7 @@
   , id = None Text
   , is_auto_scaling_enabled = None Bool
   , is_dedicated = None Bool
+  , is_free_tier = None Bool
   , is_preview = None Bool
   , is_preview_version_with_service_terms_accepted = None Bool
   , license_model = None Text
@@ -74,7 +79,10 @@
   , source = None Text
   , source_id = None Text
   , state = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
+  , time_deletion_of_free_autonomous_database = None Text
+  , time_reclamation_of_free_autonomous_database = None Text
   , used_data_storage_size_in_tbs = None Natural
   , whitelisted_ips = None (List Text)
   }

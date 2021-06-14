@@ -11,6 +11,7 @@
     , size_in_gbs : Optional Text
     , size_in_mbs : Optional Text
     , state : Optional Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , volume_backup_id : Optional Text
     , volume_group_id : Optional Text
@@ -33,6 +34,7 @@
   , size_in_gbs = None Text
   , size_in_mbs = None Text
   , state = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , volume_backup_id = None Text
   , volume_group_id = None Text

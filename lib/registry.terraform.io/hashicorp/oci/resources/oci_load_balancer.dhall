@@ -13,6 +13,7 @@
     , shape : Text
     , state : Optional Text
     , subnet_ids : List Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , timeouts :
         Optional
@@ -31,6 +32,7 @@
   , is_private = None Bool
   , network_security_group_ids = None (List Text)
   , state = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , timeouts =
       None

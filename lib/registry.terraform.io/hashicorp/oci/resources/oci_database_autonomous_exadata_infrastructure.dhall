@@ -21,6 +21,7 @@
               }
           )
     , next_maintenance_run_id : Optional Text
+    , nsg_ids : Optional (List Text)
     , shape : Text
     , state : Optional Text
     , subnet_id : Text
@@ -63,6 +64,7 @@
             }
         )
   , next_maintenance_run_id = None Text
+  , nsg_ids = None (List Text)
   , state = None Text
   , time_created = None Text
   , maintenance_window_details =

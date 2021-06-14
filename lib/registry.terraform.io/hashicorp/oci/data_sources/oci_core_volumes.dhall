@@ -21,6 +21,7 @@
               , size_in_mbs : Text
               , source_details : List { id : Text, type : Text }
               , state : Text
+              , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               , volume_backup_id : Text
               , volume_group_id : Text
@@ -52,6 +53,7 @@
             , size_in_mbs : Text
             , source_details : List { id : Text, type : Text }
             , state : Text
+            , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             , volume_backup_id : Text
             , volume_group_id : Text

@@ -11,6 +11,7 @@
     , source_type : Optional Text
     , source_volume_backup_id : Optional Text
     , state : Optional Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , time_request_received : Optional Text
     , type : Optional Text
@@ -45,6 +46,7 @@
   , source_type = None Text
   , source_volume_backup_id = None Text
   , state = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , time_request_received = None Text
   , type = None Text

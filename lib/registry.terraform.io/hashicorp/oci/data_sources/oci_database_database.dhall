@@ -13,7 +13,10 @@
     , db_backup_config :
         Optional
           ( List
-              { auto_backup_enabled : Bool, recovery_window_in_days : Natural }
+              { auto_backup_enabled : Bool
+              , auto_backup_window : Text
+              , recovery_window_in_days : Natural
+              }
           )
     , db_home_id : Optional Text
     , db_name : Optional Text
@@ -41,7 +44,12 @@
         )
   , db_backup_config =
       None
-        (List { auto_backup_enabled : Bool, recovery_window_in_days : Natural })
+        ( List
+            { auto_backup_enabled : Bool
+            , auto_backup_window : Text
+            , recovery_window_in_days : Natural
+            }
+        )
   , db_home_id = None Text
   , db_name = None Text
   , db_unique_name = None Text

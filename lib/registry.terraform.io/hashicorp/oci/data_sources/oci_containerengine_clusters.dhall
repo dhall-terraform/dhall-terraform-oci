@@ -6,6 +6,7 @@
               , compartment_id : Text
               , endpoints : List { kubernetes : Text }
               , id : Text
+              , kms_key_id : Text
               , kubernetes_version : Text
               , lifecycle_details : Text
               , metadata :
@@ -52,6 +53,7 @@
             , compartment_id : Text
             , endpoints : List { kubernetes : Text }
             , id : Text
+            , kms_key_id : Text
             , kubernetes_version : Text
             , lifecycle_details : Text
             , metadata :

@@ -14,6 +14,7 @@
               , size_in_gbs : Text
               , source_type : Text
               , state : Text
+              , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               , time_request_received : Text
               , type : Text
@@ -45,6 +46,7 @@
             , size_in_gbs : Text
             , source_type : Text
             , state : Text
+            , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             , time_request_received : Text
             , type : Text

@@ -30,6 +30,7 @@
                     , weeks_of_month : List Natural
                     }
               , next_maintenance_run_id : Text
+              , nsg_ids : List Text
               , shape : Text
               , state : Text
               , subnet_id : Text
@@ -77,6 +78,7 @@
                   , weeks_of_month : List Natural
                   }
             , next_maintenance_run_id : Text
+            , nsg_ids : List Text
             , shape : Text
             , state : Text
             , subnet_id : Text

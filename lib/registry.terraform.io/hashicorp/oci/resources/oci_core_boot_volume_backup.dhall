@@ -11,6 +11,7 @@
     , size_in_gbs : Optional Text
     , source_type : Optional Text
     , state : Optional Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , time_request_received : Optional Text
     , type : Optional Text
@@ -34,6 +35,7 @@
   , size_in_gbs = None Text
   , source_type = None Text
   , state = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , time_request_received = None Text
   , type = None Text

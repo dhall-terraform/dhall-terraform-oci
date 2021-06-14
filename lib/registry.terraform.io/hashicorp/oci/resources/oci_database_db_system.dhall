@@ -90,6 +90,7 @@
                     Optional
                       ( List
                           { auto_backup_enabled : Optional Bool
+                          , auto_backup_window : Optional Text
                           , recovery_window_in_days : Optional Natural
                           }
                       )

@@ -17,6 +17,7 @@
               , db_backup_config :
                   List
                     { auto_backup_enabled : Bool
+                    , auto_backup_window : Text
                     , recovery_window_in_days : Natural
                     }
               , db_name : Text
@@ -61,6 +62,7 @@
             , db_backup_config :
                 List
                   { auto_backup_enabled : Bool
+                  , auto_backup_window : Text
                   , recovery_window_in_days : Natural
                   }
             , db_name : Text

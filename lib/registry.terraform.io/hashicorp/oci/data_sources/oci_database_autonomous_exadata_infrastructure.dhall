@@ -32,6 +32,7 @@
               }
           )
     , next_maintenance_run_id : Optional Text
+    , nsg_ids : Optional (List Text)
     , shape : Optional Text
     , state : Optional Text
     , subnet_id : Optional Text
@@ -70,6 +71,7 @@
             }
         )
   , next_maintenance_run_id = None Text
+  , nsg_ids = None (List Text)
   , shape = None Text
   , state = None Text
   , subnet_id = None Text

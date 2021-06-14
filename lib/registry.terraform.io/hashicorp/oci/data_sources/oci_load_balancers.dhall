@@ -20,6 +20,7 @@
               , shape : Text
               , state : Text
               , subnet_ids : List Text
+              , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               }
           )
@@ -48,6 +49,7 @@
             , shape : Text
             , state : Text
             , subnet_ids : List Text
+            , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             }
         )

@@ -33,6 +33,7 @@
     , shape : Text
     , state : Optional Text
     , subnet_id : Optional Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , time_maintenance_reboot_due : Optional Text
     , agent_config : Optional (List { is_monitoring_disabled : Optional Bool })
@@ -100,6 +101,7 @@
   , region = None Text
   , state = None Text
   , subnet_id = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , time_maintenance_reboot_due = None Text
   , agent_config = None (List { is_monitoring_disabled : Optional Bool })

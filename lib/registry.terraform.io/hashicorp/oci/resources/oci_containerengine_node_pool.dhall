@@ -24,9 +24,17 @@
           )
     , quantity_per_subnet : Optional Natural
     , ssh_public_key : Optional Text
-    , subnet_ids : List Text
+    , subnet_ids : Optional (List Text)
     , initial_node_labels :
         Optional (List { key : Optional Text, value : Optional Text })
+    , node_config_details :
+        Optional
+          ( List
+              { size : Natural
+              , placement_configs :
+                  List { availability_domain : Text, subnet_id : Text }
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -55,8 +63,17 @@
         )
   , quantity_per_subnet = None Natural
   , ssh_public_key = None Text
+  , subnet_ids = None (List Text)
   , initial_node_labels =
       None (List { key : Optional Text, value : Optional Text })
+  , node_config_details =
+      None
+        ( List
+            { size : Natural
+            , placement_configs :
+                List { availability_domain : Text, subnet_id : Text }
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

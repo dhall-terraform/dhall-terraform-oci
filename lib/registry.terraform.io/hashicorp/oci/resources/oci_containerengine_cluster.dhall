@@ -3,6 +3,7 @@
     , compartment_id : Text
     , endpoints : Optional (List { kubernetes : Text })
     , id : Optional Text
+    , kms_key_id : Optional Text
     , kubernetes_version : Text
     , lifecycle_details : Optional Text
     , metadata :
@@ -53,6 +54,7 @@
   { available_kubernetes_upgrades = None (List Text)
   , endpoints = None (List { kubernetes : Text })
   , id = None Text
+  , kms_key_id = None Text
   , lifecycle_details = None Text
   , metadata =
       None

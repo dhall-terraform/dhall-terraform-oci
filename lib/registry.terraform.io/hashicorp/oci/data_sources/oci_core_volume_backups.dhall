@@ -25,6 +25,7 @@
               , source_type : Text
               , source_volume_backup_id : Text
               , state : Text
+              , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               , time_request_received : Text
               , type : Text
@@ -61,6 +62,7 @@
             , source_type : Text
             , source_volume_backup_id : Text
             , state : Text
+            , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             , time_request_received : Text
             , type : Text

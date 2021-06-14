@@ -12,6 +12,12 @@
               , initial_node_labels : List { key : Text, value : Text }
               , kubernetes_version : Text
               , name : Text
+              , node_config_details :
+                  List
+                    { placement_configs :
+                        List { availability_domain : Text, subnet_id : Text }
+                    , size : Natural
+                    }
               , node_image_id : Text
               , node_image_name : Text
               , node_metadata : List { mapKey : Text, mapValue : Text }
@@ -52,6 +58,12 @@
             , initial_node_labels : List { key : Text, value : Text }
             , kubernetes_version : Text
             , name : Text
+            , node_config_details :
+                List
+                  { placement_configs :
+                      List { availability_domain : Text, subnet_id : Text }
+                  , size : Natural
+                  }
             , node_image_id : Text
             , node_image_name : Text
             , node_metadata : List { mapKey : Text, mapValue : Text }

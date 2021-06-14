@@ -58,6 +58,7 @@
                     }
               , state : Text
               , subnet_id : Text
+              , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               , time_maintenance_reboot_due : Text
               }
@@ -126,6 +127,7 @@
                   }
             , state : Text
             , subnet_id : Text
+            , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             , time_maintenance_reboot_due : Text
             }

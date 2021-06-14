@@ -5,6 +5,14 @@
     , initial_node_labels : Optional (List { key : Text, value : Text })
     , kubernetes_version : Optional Text
     , name : Optional Text
+    , node_config_details :
+        Optional
+          ( List
+              { placement_configs :
+                  List { availability_domain : Text, subnet_id : Text }
+              , size : Natural
+              }
+          )
     , node_image_id : Optional Text
     , node_image_name : Optional Text
     , node_metadata : Optional (List { mapKey : Text, mapValue : Text })
@@ -35,6 +43,14 @@
   , initial_node_labels = None (List { key : Text, value : Text })
   , kubernetes_version = None Text
   , name = None Text
+  , node_config_details =
+      None
+        ( List
+            { placement_configs :
+                List { availability_domain : Text, subnet_id : Text }
+            , size : Natural
+            }
+        )
   , node_image_id = None Text
   , node_image_name = None Text
   , node_metadata = None (List { mapKey : Text, mapValue : Text })
