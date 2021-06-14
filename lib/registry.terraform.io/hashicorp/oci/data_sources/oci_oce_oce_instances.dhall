@@ -24,6 +24,7 @@
               , tenancy_name : Text
               , time_created : Text
               , time_updated : Text
+              , waf_primary_domain : Text
               }
           )
     , state : Optional Text
@@ -56,6 +57,7 @@
             , tenancy_name : Text
             , time_created : Text
             , time_updated : Text
+            , waf_primary_domain : Text
             }
         )
   , state = None Text

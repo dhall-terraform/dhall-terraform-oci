@@ -35,13 +35,36 @@
                     { certificate_id : Text
                     , cipher_group : Text
                     , client_address_header : Text
+                    , health_checks :
+                        List
+                          { expected_response_code_group : List Text
+                          , expected_response_text : Text
+                          , headers : List { mapKey : Text, mapValue : Text }
+                          , healthy_threshold : Natural
+                          , interval_in_seconds : Natural
+                          , is_enabled : Bool
+                          , is_response_text_check_enabled : Bool
+                          , method : Text
+                          , path : Text
+                          , timeout_in_seconds : Natural
+                          , unhealthy_threshold : Natural
+                          }
                     , is_behind_cdn : Bool
                     , is_cache_control_respected : Bool
                     , is_https_enabled : Bool
                     , is_https_forced : Bool
                     , is_origin_compression_enabled : Bool
                     , is_response_buffering_enabled : Bool
+                    , is_sni_enabled : Bool
+                    , load_balancing_method :
+                        List
+                          { domain : Text
+                          , expiration_time_in_seconds : Natural
+                          , method : Text
+                          , name : Text
+                          }
                     , tls_protocols : List Text
+                    , websocket_path_prefixes : List Text
                     }
               , state : Text
               , time_created : Text
@@ -56,10 +79,22 @@
                           , block_error_page_message : Text
                           , block_response_code : Natural
                           , bypass_challenges : List Text
-                          , criteria : List { condition : Text, value : Text }
+                          , captcha_footer : Text
+                          , captcha_header : Text
+                          , captcha_submit_label : Text
+                          , captcha_title : Text
+                          , criteria :
+                              List
+                                { condition : Text
+                                , is_case_sensitive : Bool
+                                , value : Text
+                                }
                           , name : Text
                           , redirect_response_code : Text
                           , redirect_url : Text
+                          , response_header_manipulation :
+                              List
+                                { action : Text, header : Text, value : Text }
                           }
                     , address_rate_limiting :
                         List
@@ -89,7 +124,12 @@
                           , url : Text
                           }
                     , custom_protection_rules :
-                        List { action : Text, id : Text }
+                        List
+                          { action : Text
+                          , exclusions :
+                              List { exclusions : List Text, target : Text }
+                          , id : Text
+                          }
                     , device_fingerprint_challenge :
                         List
                           { action : Text
@@ -132,6 +172,7 @@
                           , failure_threshold_expiration_in_seconds : Natural
                           , interaction_threshold : Natural
                           , is_enabled : Bool
+                          , is_nat_enabled : Bool
                           , recording_period_in_seconds : Natural
                           , set_http_header : List { name : Text, value : Text }
                           }
@@ -139,6 +180,7 @@
                         List
                           { action : Text
                           , action_expiration_in_seconds : Natural
+                          , are_redirects_challenged : Bool
                           , challenge_settings :
                               List
                                 { block_action : Text
@@ -151,8 +193,15 @@
                                 , captcha_submit_label : Text
                                 , captcha_title : Text
                                 }
+                          , criteria :
+                              List
+                                { condition : Text
+                                , is_case_sensitive : Bool
+                                , value : Text
+                                }
                           , failure_threshold : Natural
                           , is_enabled : Bool
+                          , is_nat_enabled : Bool
                           , set_http_header : List { name : Text, value : Text }
                           }
                     , origin : Text
@@ -173,7 +222,12 @@
                           , media_types : List Text
                           , recommendations_period_in_days : Natural
                           }
-                    , whitelists : List { addresses : List Text, name : Text }
+                    , whitelists :
+                        List
+                          { address_lists : List Text
+                          , addresses : List Text
+                          , name : Text
+                          }
                     }
               }
           )
@@ -217,13 +271,36 @@
                   { certificate_id : Text
                   , cipher_group : Text
                   , client_address_header : Text
+                  , health_checks :
+                      List
+                        { expected_response_code_group : List Text
+                        , expected_response_text : Text
+                        , headers : List { mapKey : Text, mapValue : Text }
+                        , healthy_threshold : Natural
+                        , interval_in_seconds : Natural
+                        , is_enabled : Bool
+                        , is_response_text_check_enabled : Bool
+                        , method : Text
+                        , path : Text
+                        , timeout_in_seconds : Natural
+                        , unhealthy_threshold : Natural
+                        }
                   , is_behind_cdn : Bool
                   , is_cache_control_respected : Bool
                   , is_https_enabled : Bool
                   , is_https_forced : Bool
                   , is_origin_compression_enabled : Bool
                   , is_response_buffering_enabled : Bool
+                  , is_sni_enabled : Bool
+                  , load_balancing_method :
+                      List
+                        { domain : Text
+                        , expiration_time_in_seconds : Natural
+                        , method : Text
+                        , name : Text
+                        }
                   , tls_protocols : List Text
+                  , websocket_path_prefixes : List Text
                   }
             , state : Text
             , time_created : Text
@@ -238,10 +315,21 @@
                         , block_error_page_message : Text
                         , block_response_code : Natural
                         , bypass_challenges : List Text
-                        , criteria : List { condition : Text, value : Text }
+                        , captcha_footer : Text
+                        , captcha_header : Text
+                        , captcha_submit_label : Text
+                        , captcha_title : Text
+                        , criteria :
+                            List
+                              { condition : Text
+                              , is_case_sensitive : Bool
+                              , value : Text
+                              }
                         , name : Text
                         , redirect_response_code : Text
                         , redirect_url : Text
+                        , response_header_manipulation :
+                            List { action : Text, header : Text, value : Text }
                         }
                   , address_rate_limiting :
                       List
@@ -270,7 +358,13 @@
                         , title : Text
                         , url : Text
                         }
-                  , custom_protection_rules : List { action : Text, id : Text }
+                  , custom_protection_rules :
+                      List
+                        { action : Text
+                        , exclusions :
+                            List { exclusions : List Text, target : Text }
+                        , id : Text
+                        }
                   , device_fingerprint_challenge :
                       List
                         { action : Text
@@ -313,6 +407,7 @@
                         , failure_threshold_expiration_in_seconds : Natural
                         , interaction_threshold : Natural
                         , is_enabled : Bool
+                        , is_nat_enabled : Bool
                         , recording_period_in_seconds : Natural
                         , set_http_header : List { name : Text, value : Text }
                         }
@@ -320,6 +415,7 @@
                       List
                         { action : Text
                         , action_expiration_in_seconds : Natural
+                        , are_redirects_challenged : Bool
                         , challenge_settings :
                             List
                               { block_action : Text
@@ -332,8 +428,15 @@
                               , captcha_submit_label : Text
                               , captcha_title : Text
                               }
+                        , criteria :
+                            List
+                              { condition : Text
+                              , is_case_sensitive : Bool
+                              , value : Text
+                              }
                         , failure_threshold : Natural
                         , is_enabled : Bool
+                        , is_nat_enabled : Bool
                         , set_http_header : List { name : Text, value : Text }
                         }
                   , origin : Text
@@ -354,7 +457,12 @@
                         , media_types : List Text
                         , recommendations_period_in_days : Natural
                         }
-                  , whitelists : List { addresses : List Text, name : Text }
+                  , whitelists :
+                      List
+                        { address_lists : List Text
+                        , addresses : List Text
+                        , name : Text
+                        }
                   }
             }
         )

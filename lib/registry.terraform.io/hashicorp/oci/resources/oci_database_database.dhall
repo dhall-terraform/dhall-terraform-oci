@@ -37,6 +37,8 @@
     , database :
         List
           { admin_password : Text
+          , backup_id : Optional Text
+          , backup_tde_password : Optional Text
           , character_set : Optional Text
           , db_name : Text
           , db_unique_name : Optional Text
@@ -52,7 +54,8 @@
                     , auto_backup_window : Optional Text
                     , recovery_window_in_days : Optional Natural
                     , backup_destination_details :
-                        Optional (List { id : Optional Text, type : Text })
+                        Optional
+                          (List { id : Optional Text, type : Optional Text })
                     }
                 )
           }

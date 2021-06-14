@@ -13,6 +13,8 @@
         Optional
           ( List
               { admin_password : Text
+              , backup_id : Text
+              , backup_tde_password : Text
               , character_set : Text
               , db_backup_config :
                   List
@@ -73,6 +75,8 @@
       None
         ( List
             { admin_password : Text
+            , backup_id : Text
+            , backup_tde_password : Text
             , character_set : Text
             , db_backup_config :
                 List

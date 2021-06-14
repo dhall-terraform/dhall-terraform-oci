@@ -19,6 +19,7 @@
     , tenancy_name : Optional Text
     , time_created : Optional Text
     , time_updated : Optional Text
+    , waf_primary_domain : Optional Text
     }
 , default =
   { admin_email = None Text
@@ -40,5 +41,6 @@
   , tenancy_name = None Text
   , time_created = None Text
   , time_updated = None Text
+  , waf_primary_domain = None Text
   }
 }

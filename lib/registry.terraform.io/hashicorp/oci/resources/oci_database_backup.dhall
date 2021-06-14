@@ -7,6 +7,7 @@
     , display_name : Text
     , id : Optional Text
     , lifecycle_details : Optional Text
+    , shape : Optional Text
     , state : Optional Text
     , time_ended : Optional Text
     , time_started : Optional Text
@@ -25,6 +26,7 @@
   , database_size_in_gbs = None Natural
   , id = None Text
   , lifecycle_details = None Text
+  , shape = None Text
   , state = None Text
   , time_ended = None Text
   , time_started = None Text

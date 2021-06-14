@@ -18,6 +18,7 @@
     , tenancy_name : Text
     , time_created : Optional Text
     , time_updated : Optional Text
+    , waf_primary_domain : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -38,6 +39,7 @@
   , state_message = None Text
   , time_created = None Text
   , time_updated = None Text
+  , waf_primary_domain = None Text
   , timeouts =
       None
         { create : Optional Text

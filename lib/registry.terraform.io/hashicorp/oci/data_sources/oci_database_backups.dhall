@@ -10,6 +10,7 @@
               , display_name : Text
               , id : Text
               , lifecycle_details : Text
+              , shape : Text
               , state : Text
               , time_ended : Text
               , time_started : Text
@@ -35,6 +36,7 @@
             , display_name : Text
             , id : Text
             , lifecycle_details : Text
+            , shape : Text
             , state : Text
             , time_ended : Text
             , time_started : Text
