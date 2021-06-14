@@ -56,6 +56,7 @@
               , ncharacter_set : Text
               , pdb_name : Text
               , source : Text
+              , source_database_point_in_time_recovery_timestamp : Text
               , state : Text
               , time_created : Text
               , vm_cluster_id : Text
@@ -126,6 +127,7 @@
             , ncharacter_set : Text
             , pdb_name : Text
             , source : Text
+            , source_database_point_in_time_recovery_timestamp : Text
             , state : Text
             , time_created : Text
             , vm_cluster_id : Text

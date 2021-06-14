@@ -38,6 +38,7 @@
                                     List { id : Text, type : Text }
                                 , recovery_window_in_days : Natural
                                 }
+                          , db_domain : Text
                           , db_name : Text
                           , db_unique_name : Text
                           , db_workload : Text
@@ -112,11 +113,14 @@
               , next_maintenance_run_id : Text
               , node_count : Natural
               , nsg_ids : List Text
+              , point_in_time_data_disk_clone_timestamp : Text
+              , private_ip : Text
               , reco_storage_size_in_gb : Natural
               , scan_dns_record_id : Text
               , scan_ip_ids : List Text
               , shape : Text
               , source : Text
+              , source_db_system_id : Text
               , sparse_diskgroup : Bool
               , ssh_public_keys : List Text
               , state : Text
@@ -173,6 +177,7 @@
                                   List { id : Text, type : Text }
                               , recovery_window_in_days : Natural
                               }
+                        , db_domain : Text
                         , db_name : Text
                         , db_unique_name : Text
                         , db_workload : Text
@@ -246,11 +251,14 @@
             , next_maintenance_run_id : Text
             , node_count : Natural
             , nsg_ids : List Text
+            , point_in_time_data_disk_clone_timestamp : Text
+            , private_ip : Text
             , reco_storage_size_in_gb : Natural
             , scan_dns_record_id : Text
             , scan_ip_ids : List Text
             , shape : Text
             , source : Text
+            , source_db_system_id : Text
             , sparse_diskgroup : Bool
             , ssh_public_keys : List Text
             , state : Text

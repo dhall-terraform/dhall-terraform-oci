@@ -180,6 +180,8 @@
 , oci_load_balancer_load_balancer = ./oci_load_balancer_load_balancer.dhall
 , oci_load_balancer_path_route_set = ./oci_load_balancer_path_route_set.dhall
 , oci_load_balancer_rule_set = ./oci_load_balancer_rule_set.dhall
+, oci_load_balancer_ssl_cipher_suite =
+    ./oci_load_balancer_ssl_cipher_suite.dhall
 , oci_marketplace_accepted_agreement =
     ./oci_marketplace_accepted_agreement.dhall
 , oci_marketplace_listing_package_agreement =

@@ -1,14 +1,10 @@
 { Type =
-    { autonomous_container_database_id : Optional Text
+    { autonomous_database_id : Text
     , autonomous_databases :
         Optional
           ( List
-              { admin_password : Text
-              , autonomous_container_database_id : Text
-              , autonomous_database_backup_id : Text
-              , autonomous_database_id : Text
+              { autonomous_container_database_id : Text
               , available_upgrade_versions : List Text
-              , clone_type : Text
               , compartment_id : Text
               , connection_strings :
                   List
@@ -42,7 +38,6 @@
               , is_dedicated : Bool
               , is_free_tier : Bool
               , is_preview : Bool
-              , is_preview_version_with_service_terms_accepted : Bool
               , is_refreshable_clone : Bool
               , license_model : Text
               , lifecycle_details : Text
@@ -54,7 +49,6 @@
               , refreshable_mode : Text
               , refreshable_status : Text
               , service_console_url : Text
-              , source : Text
               , source_id : Text
               , standby_db :
                   List
@@ -64,7 +58,6 @@
                     }
               , state : Text
               , subnet_id : Text
-              , switchover_to : Text
               , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               , time_deletion_of_free_autonomous_database : Text
@@ -76,36 +69,25 @@
               , time_of_last_switchover : Text
               , time_of_next_refresh : Text
               , time_reclamation_of_free_autonomous_database : Text
-              , timestamp : Text
               , used_data_storage_size_in_tbs : Natural
               , whitelisted_ips : List Text
               }
           )
+    , clone_type : Optional Text
     , compartment_id : Text
-    , db_version : Optional Text
-    , db_workload : Optional Text
     , display_name : Optional Text
     , id : Optional Text
-    , infrastructure_type : Optional Text
-    , is_data_guard_enabled : Optional Bool
-    , is_free_tier : Optional Bool
-    , is_refreshable_clone : Optional Bool
     , state : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { autonomous_container_database_id = None Text
-  , autonomous_databases =
+  { autonomous_databases =
       None
         ( List
-            { admin_password : Text
-            , autonomous_container_database_id : Text
-            , autonomous_database_backup_id : Text
-            , autonomous_database_id : Text
+            { autonomous_container_database_id : Text
             , available_upgrade_versions : List Text
-            , clone_type : Text
             , compartment_id : Text
             , connection_strings :
                 List
@@ -139,7 +121,6 @@
             , is_dedicated : Bool
             , is_free_tier : Bool
             , is_preview : Bool
-            , is_preview_version_with_service_terms_accepted : Bool
             , is_refreshable_clone : Bool
             , license_model : Text
             , lifecycle_details : Text
@@ -151,7 +132,6 @@
             , refreshable_mode : Text
             , refreshable_status : Text
             , service_console_url : Text
-            , source : Text
             , source_id : Text
             , standby_db :
                 List
@@ -161,7 +141,6 @@
                   }
             , state : Text
             , subnet_id : Text
-            , switchover_to : Text
             , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             , time_deletion_of_free_autonomous_database : Text
@@ -173,19 +152,13 @@
             , time_of_last_switchover : Text
             , time_of_next_refresh : Text
             , time_reclamation_of_free_autonomous_database : Text
-            , timestamp : Text
             , used_data_storage_size_in_tbs : Natural
             , whitelisted_ips : List Text
             }
         )
-  , db_version = None Text
-  , db_workload = None Text
+  , clone_type = None Text
   , display_name = None Text
   , id = None Text
-  , infrastructure_type = None Text
-  , is_data_guard_enabled = None Bool
-  , is_free_tier = None Bool
-  , is_refreshable_clone = None Bool
   , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

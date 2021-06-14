@@ -42,12 +42,16 @@
     , is_free_tier : Optional Bool
     , is_preview : Optional Bool
     , is_preview_version_with_service_terms_accepted : Optional Bool
+    , is_refreshable_clone : Optional Bool
     , license_model : Optional Text
     , lifecycle_details : Optional Text
     , nsg_ids : Optional (List Text)
+    , open_mode : Optional Text
     , private_endpoint : Optional Text
     , private_endpoint_ip : Optional Text
     , private_endpoint_label : Optional Text
+    , refreshable_mode : Optional Text
+    , refreshable_status : Optional Text
     , service_console_url : Optional Text
     , source : Optional Text
     , source_id : Optional Text
@@ -68,7 +72,10 @@
     , time_maintenance_begin : Optional Text
     , time_maintenance_end : Optional Text
     , time_of_last_failover : Optional Text
+    , time_of_last_refresh : Optional Text
+    , time_of_last_refresh_point : Optional Text
     , time_of_last_switchover : Optional Text
+    , time_of_next_refresh : Optional Text
     , time_reclamation_of_free_autonomous_database : Optional Text
     , timestamp : Optional Text
     , used_data_storage_size_in_tbs : Optional Natural
@@ -117,12 +124,16 @@
   , is_free_tier = None Bool
   , is_preview = None Bool
   , is_preview_version_with_service_terms_accepted = None Bool
+  , is_refreshable_clone = None Bool
   , license_model = None Text
   , lifecycle_details = None Text
   , nsg_ids = None (List Text)
+  , open_mode = None Text
   , private_endpoint = None Text
   , private_endpoint_ip = None Text
   , private_endpoint_label = None Text
+  , refreshable_mode = None Text
+  , refreshable_status = None Text
   , service_console_url = None Text
   , source = None Text
   , source_id = None Text
@@ -143,7 +154,10 @@
   , time_maintenance_begin = None Text
   , time_maintenance_end = None Text
   , time_of_last_failover = None Text
+  , time_of_last_refresh = None Text
+  , time_of_last_refresh_point = None Text
   , time_of_last_switchover = None Text
+  , time_of_next_refresh = None Text
   , time_reclamation_of_free_autonomous_database = None Text
   , timestamp = None Text
   , used_data_storage_size_in_tbs = None Natural

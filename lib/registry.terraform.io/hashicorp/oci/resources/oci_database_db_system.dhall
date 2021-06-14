@@ -7,7 +7,7 @@
     , cpu_core_count : Optional Natural
     , data_storage_percentage : Optional Natural
     , data_storage_size_in_gb : Optional Natural
-    , database_edition : Text
+    , database_edition : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , disk_redundancy : Optional Text
     , display_name : Optional Text
@@ -50,11 +50,14 @@
     , next_maintenance_run_id : Optional Text
     , node_count : Optional Natural
     , nsg_ids : Optional (List Text)
+    , point_in_time_data_disk_clone_timestamp : Optional Text
+    , private_ip : Optional Text
     , reco_storage_size_in_gb : Optional Natural
     , scan_dns_record_id : Optional Text
     , scan_ip_ids : Optional (List Text)
     , shape : Text
     , source : Optional Text
+    , source_db_system_id : Optional Text
     , sparse_diskgroup : Optional Bool
     , ssh_public_keys : List Text
     , state : Optional Text
@@ -91,6 +94,7 @@
                           }
                       )
                 , database_id : Optional Text
+                , db_domain : Optional Text
                 , db_name : Optional Text
                 , db_unique_name : Optional Text
                 , db_workload : Optional Text
@@ -146,6 +150,7 @@
   , cpu_core_count = None Natural
   , data_storage_percentage = None Natural
   , data_storage_size_in_gb = None Natural
+  , database_edition = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , disk_redundancy = None Text
   , display_name = None Text
@@ -184,10 +189,13 @@
   , next_maintenance_run_id = None Text
   , node_count = None Natural
   , nsg_ids = None (List Text)
+  , point_in_time_data_disk_clone_timestamp = None Text
+  , private_ip = None Text
   , reco_storage_size_in_gb = None Natural
   , scan_dns_record_id = None Text
   , scan_ip_ids = None (List Text)
   , source = None Text
+  , source_db_system_id = None Text
   , sparse_diskgroup = None Bool
   , state = None Text
   , time_created = None Text

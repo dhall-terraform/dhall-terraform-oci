@@ -23,6 +23,7 @@
               , node_metadata : List { mapKey : Text, mapValue : Text }
               , node_pool_id : Text
               , node_shape : Text
+              , node_shape_config : List { ocpus : Natural }
               , node_source :
                   List
                     { image_id : Text, source_name : Text, source_type : Text }
@@ -39,6 +40,7 @@
                         List { code : Text, message : Text, status : Text }
                     , fault_domain : Text
                     , id : Text
+                    , kubernetes_version : Text
                     , lifecycle_details : Text
                     , name : Text
                     , node_pool_id : Text
@@ -80,6 +82,7 @@
             , node_metadata : List { mapKey : Text, mapValue : Text }
             , node_pool_id : Text
             , node_shape : Text
+            , node_shape_config : List { ocpus : Natural }
             , node_source :
                 List { image_id : Text, source_name : Text, source_type : Text }
             , node_source_details :
@@ -94,6 +97,7 @@
                   , error : List { code : Text, message : Text, status : Text }
                   , fault_domain : Text
                   , id : Text
+                  , kubernetes_version : Text
                   , lifecycle_details : Text
                   , name : Text
                   , node_pool_id : Text

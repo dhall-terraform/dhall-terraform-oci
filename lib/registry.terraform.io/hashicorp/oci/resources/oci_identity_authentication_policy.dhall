@@ -1,6 +1,8 @@
 { Type =
     { compartment_id : Text
     , id : Optional Text
+    , network_policy :
+        Optional (List { network_source_ids : Optional (List Text) })
     , password_policy :
         Optional
           ( List
@@ -21,6 +23,7 @@
     }
 , default =
   { id = None Text
+  , network_policy = None (List { network_source_ids : Optional (List Text) })
   , password_policy =
       None
         ( List

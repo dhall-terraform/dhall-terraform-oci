@@ -32,6 +32,7 @@
     , ncharacter_set : Optional Text
     , pdb_name : Optional Text
     , source : Text
+    , source_database_point_in_time_recovery_timestamp : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     , vm_cluster_id : Optional Text
@@ -99,6 +100,7 @@
   , lifecycle_details = None Text
   , ncharacter_set = None Text
   , pdb_name = None Text
+  , source_database_point_in_time_recovery_timestamp = None Text
   , state = None Text
   , time_created = None Text
   , vm_cluster_id = None Text

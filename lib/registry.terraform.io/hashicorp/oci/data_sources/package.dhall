@@ -183,6 +183,8 @@
     ./oci_database_autonomous_database_instance_wallet_management.dhall
 , oci_database_autonomous_database_regional_wallet_management =
     ./oci_database_autonomous_database_regional_wallet_management.dhall
+, oci_database_autonomous_databases_clones =
+    ./oci_database_autonomous_databases_clones.dhall
 , oci_database_autonomous_databases = ./oci_database_autonomous_databases.dhall
 , oci_database_autonomous_database_wallet =
     ./oci_database_autonomous_database_wallet.dhall
@@ -398,6 +400,10 @@
 , oci_load_balancer_rule_sets = ./oci_load_balancer_rule_sets.dhall
 , oci_load_balancers = ./oci_load_balancers.dhall
 , oci_load_balancer_shapes = ./oci_load_balancer_shapes.dhall
+, oci_load_balancer_ssl_cipher_suite =
+    ./oci_load_balancer_ssl_cipher_suite.dhall
+, oci_load_balancer_ssl_cipher_suites =
+    ./oci_load_balancer_ssl_cipher_suites.dhall
 , oci_marketplace_accepted_agreement =
     ./oci_marketplace_accepted_agreement.dhall
 , oci_marketplace_accepted_agreements =

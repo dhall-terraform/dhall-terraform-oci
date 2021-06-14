@@ -18,6 +18,7 @@
               , error : List { code : Text, message : Text, status : Text }
               , fault_domain : Text
               , id : Text
+              , kubernetes_version : Text
               , lifecycle_details : Text
               , name : Text
               , node_pool_id : Text
@@ -40,6 +41,7 @@
                   List { availability_domain : Text, subnet_id : Text }
               }
           )
+    , node_shape_config : Optional (List { ocpus : Optional Natural })
     , node_source_details :
         Optional
           ( List
@@ -69,6 +71,7 @@
             , error : List { code : Text, message : Text, status : Text }
             , fault_domain : Text
             , id : Text
+            , kubernetes_version : Text
             , lifecycle_details : Text
             , name : Text
             , node_pool_id : Text
@@ -91,6 +94,7 @@
                 List { availability_domain : Text, subnet_id : Text }
             }
         )
+  , node_shape_config = None (List { ocpus : Optional Natural })
   , node_source_details =
       None
         ( List

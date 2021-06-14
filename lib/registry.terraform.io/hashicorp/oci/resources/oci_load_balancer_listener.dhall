@@ -20,6 +20,9 @@
         Optional
           ( List
               { certificate_name : Text
+              , cipher_suite_name : Optional Text
+              , protocols : Optional (List Text)
+              , server_order_preference : Optional Text
               , verify_depth : Optional Natural
               , verify_peer_certificate : Optional Bool
               }
@@ -48,6 +51,9 @@
       None
         ( List
             { certificate_name : Text
+            , cipher_suite_name : Optional Text
+            , protocols : Optional (List Text)
+            , server_order_preference : Optional Text
             , verify_depth : Optional Natural
             , verify_peer_certificate : Optional Bool
             }

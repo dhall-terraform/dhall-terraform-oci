@@ -42,6 +42,9 @@
               , ssl_configuration :
                   List
                     { certificate_name : Text
+                    , cipher_suite_name : Text
+                    , protocols : List Text
+                    , server_order_preference : Text
                     , verify_depth : Natural
                     , verify_peer_certificate : Bool
                     }
@@ -98,6 +101,9 @@
             , ssl_configuration :
                 List
                   { certificate_name : Text
+                  , cipher_suite_name : Text
+                  , protocols : List Text
+                  , server_order_preference : Text
                   , verify_depth : Natural
                   , verify_peer_certificate : Bool
                   }
