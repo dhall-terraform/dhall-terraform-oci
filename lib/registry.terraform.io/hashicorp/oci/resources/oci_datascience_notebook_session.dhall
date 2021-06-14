@@ -15,6 +15,13 @@
           { block_storage_size_in_gbs : Optional Natural
           , shape : Text
           , subnet_id : Text
+          , notebook_session_shape_config_details :
+              Optional
+                ( List
+                    { memory_in_gbs : Optional Natural
+                    , ocpus : Optional Natural
+                    }
+                )
           }
     , timeouts :
         Optional

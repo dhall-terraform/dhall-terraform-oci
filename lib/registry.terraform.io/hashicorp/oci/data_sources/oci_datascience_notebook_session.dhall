@@ -10,6 +10,8 @@
         Optional
           ( List
               { block_storage_size_in_gbs : Natural
+              , notebook_session_shape_config_details :
+                  List { memory_in_gbs : Natural, ocpus : Natural }
               , shape : Text
               , subnet_id : Text
               }
@@ -32,6 +34,8 @@
       None
         ( List
             { block_storage_size_in_gbs : Natural
+            , notebook_session_shape_config_details :
+                List { memory_in_gbs : Natural, ocpus : Natural }
             , shape : Text
             , subnet_id : Text
             }

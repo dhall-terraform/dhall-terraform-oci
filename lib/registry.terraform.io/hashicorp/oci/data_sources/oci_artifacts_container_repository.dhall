@@ -1,5 +1,6 @@
 { Type =
-    { compartment_id : Optional Text
+    { billable_size_in_gbs : Optional Text
+    , compartment_id : Optional Text
     , created_by : Optional Text
     , display_name : Optional Text
     , id : Optional Text
@@ -15,7 +16,8 @@
     , time_last_pushed : Optional Text
     }
 , default =
-  { compartment_id = None Text
+  { billable_size_in_gbs = None Text
+  , compartment_id = None Text
   , created_by = None Text
   , display_name = None Text
   , id = None Text

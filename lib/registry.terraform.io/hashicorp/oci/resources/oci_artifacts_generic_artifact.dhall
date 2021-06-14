@@ -1,19 +1,17 @@
 { Type =
-    { compartment_id : Optional Text
+    { artifact_id : Text
+    , artifact_path : Optional Text
+    , compartment_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , manage_default_resource_id : Text
+    , repository_id : Optional Text
+    , sha256 : Optional Text
+    , size_in_bytes : Optional Text
     , state : Optional Text
     , time_created : Optional Text
-    , options :
-        List
-          { custom_dns_servers : Optional (List Text)
-          , search_domain_names : Optional (List Text)
-          , server_type : Optional Text
-          , type : Text
-          }
+    , version : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -22,13 +20,18 @@
           }
     }
 , default =
-  { compartment_id = None Text
+  { artifact_path = None Text
+  , compartment_id = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , repository_id = None Text
+  , sha256 = None Text
+  , size_in_bytes = None Text
   , state = None Text
   , time_created = None Text
+  , version = None Text
   , timeouts =
       None
         { create : Optional Text

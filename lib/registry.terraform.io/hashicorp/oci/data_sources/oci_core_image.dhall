@@ -5,6 +5,7 @@
               { is_management_supported : Bool, is_monitoring_supported : Bool }
           )
     , base_image_id : Optional Text
+    , billable_size_in_gbs : Optional Text
     , compartment_id : Optional Text
     , create_image_allowed : Optional Bool
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -52,6 +53,7 @@
             { is_management_supported : Bool, is_monitoring_supported : Bool }
         )
   , base_image_id = None Text
+  , billable_size_in_gbs = None Text
   , compartment_id = None Text
   , create_image_allowed = None Bool
   , defined_tags = None (List { mapKey : Text, mapValue : Text })

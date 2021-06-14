@@ -11,6 +11,7 @@
                     , is_monitoring_supported : Bool
                     }
               , base_image_id : Text
+              , billable_size_in_gbs : Text
               , compartment_id : Text
               , create_image_allowed : Bool
               , defined_tags : List { mapKey : Text, mapValue : Text }
@@ -69,6 +70,7 @@
                   , is_monitoring_supported : Bool
                   }
             , base_image_id : Text
+            , billable_size_in_gbs : Text
             , compartment_id : Text
             , create_image_allowed : Bool
             , defined_tags : List { mapKey : Text, mapValue : Text }

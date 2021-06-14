@@ -146,6 +146,20 @@
                                         , type : Optional Text
                                         }
                                     )
+                              , body_validation :
+                                  Optional
+                                    ( List
+                                        { required : Optional Bool
+                                        , validation_mode : Optional Text
+                                        , content :
+                                            Optional
+                                              ( List
+                                                  { media_type : Text
+                                                  , validation_type : Text
+                                                  }
+                                              )
+                                        }
+                                    )
                               , cors :
                                   Optional
                                     ( List
@@ -192,6 +206,19 @@
                                               )
                                         }
                                     )
+                              , header_validations :
+                                  Optional
+                                    ( List
+                                        { validation_mode : Optional Text
+                                        , headers :
+                                            Optional
+                                              ( List
+                                                  { name : Text
+                                                  , required : Optional Bool
+                                                  }
+                                              )
+                                        }
+                                    )
                               , query_parameter_transformations :
                                   Optional
                                     ( List
@@ -222,6 +249,19 @@
                                                         , name : Text
                                                         , values : List Text
                                                         }
+                                                  }
+                                              )
+                                        }
+                                    )
+                              , query_parameter_validations :
+                                  Optional
+                                    ( List
+                                        { validation_mode : Optional Text
+                                        , parameters :
+                                            Optional
+                                              ( List
+                                                  { name : Text
+                                                  , required : Optional Bool
                                                   }
                                               )
                                         }
@@ -440,6 +480,20 @@
                                       , type : Optional Text
                                       }
                                   )
+                            , body_validation :
+                                Optional
+                                  ( List
+                                      { required : Optional Bool
+                                      , validation_mode : Optional Text
+                                      , content :
+                                          Optional
+                                            ( List
+                                                { media_type : Text
+                                                , validation_type : Text
+                                                }
+                                            )
+                                      }
+                                  )
                             , cors :
                                 Optional
                                   ( List
@@ -484,6 +538,19 @@
                                             )
                                       }
                                   )
+                            , header_validations :
+                                Optional
+                                  ( List
+                                      { validation_mode : Optional Text
+                                      , headers :
+                                          Optional
+                                            ( List
+                                                { name : Text
+                                                , required : Optional Bool
+                                                }
+                                            )
+                                      }
+                                  )
                             , query_parameter_transformations :
                                 Optional
                                   ( List
@@ -512,6 +579,19 @@
                                                       , name : Text
                                                       , values : List Text
                                                       }
+                                                }
+                                            )
+                                      }
+                                  )
+                            , query_parameter_validations :
+                                Optional
+                                  ( List
+                                      { validation_mode : Optional Text
+                                      , parameters :
+                                          Optional
+                                            ( List
+                                                { name : Text
+                                                , required : Optional Bool
                                                 }
                                             )
                                       }

@@ -26,12 +26,20 @@
     ./oci_artifacts_container_repositories.dhall
 , oci_artifacts_container_repository =
     ./oci_artifacts_container_repository.dhall
+, oci_artifacts_generic_artifact = ./oci_artifacts_generic_artifact.dhall
+, oci_artifacts_generic_artifacts = ./oci_artifacts_generic_artifacts.dhall
+, oci_artifacts_repositories = ./oci_artifacts_repositories.dhall
+, oci_artifacts_repository = ./oci_artifacts_repository.dhall
 , oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_audit_events = ./oci_audit_events.dhall
 , oci_autoscaling_auto_scaling_configuration =
     ./oci_autoscaling_auto_scaling_configuration.dhall
 , oci_autoscaling_auto_scaling_configurations =
     ./oci_autoscaling_auto_scaling_configurations.dhall
+, oci_bastion_bastion = ./oci_bastion_bastion.dhall
+, oci_bastion_bastions = ./oci_bastion_bastions.dhall
+, oci_bastion_session = ./oci_bastion_session.dhall
+, oci_bastion_sessions = ./oci_bastion_sessions.dhall
 , oci_bds_auto_scaling_configuration =
     ./oci_bds_auto_scaling_configuration.dhall
 , oci_bds_auto_scaling_configurations =
@@ -459,6 +467,10 @@
 , oci_functions_applications = ./oci_functions_applications.dhall
 , oci_functions_function = ./oci_functions_function.dhall
 , oci_functions_functions = ./oci_functions_functions.dhall
+, oci_generic_artifacts_content_artifact_by_path =
+    ./oci_generic_artifacts_content_artifact_by_path.dhall
+, oci_generic_artifacts_content_generic_artifacts_content =
+    ./oci_generic_artifacts_content_generic_artifacts_content.dhall
 , oci_golden_gate_database_registration =
     ./oci_golden_gate_database_registration.dhall
 , oci_golden_gate_database_registrations =

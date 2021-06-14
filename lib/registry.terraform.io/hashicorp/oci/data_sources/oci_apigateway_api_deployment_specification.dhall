@@ -87,6 +87,13 @@
                   List
                     { authorization :
                         List { allowed_scope : List Text, type : Text }
+                    , body_validation :
+                        List
+                          { content :
+                              List { media_type : Text, validation_type : Text }
+                          , required : Bool
+                          , validation_mode : Text
+                          }
                     , cors :
                         List
                           { allowed_headers : List Text
@@ -112,6 +119,11 @@
                                       }
                                 }
                           }
+                    , header_validations :
+                        List
+                          { headers : List { name : Text, required : Bool }
+                          , validation_mode : Text
+                          }
                     , query_parameter_transformations :
                         List
                           { filter_query_parameters :
@@ -127,6 +139,11 @@
                                       , values : List Text
                                       }
                                 }
+                          }
+                    , query_parameter_validations :
+                        List
+                          { parameters : List { name : Text, required : Bool }
+                          , validation_mode : Text
                           }
                     , response_cache_lookup :
                         List
@@ -246,6 +263,13 @@
                 List
                   { authorization :
                       List { allowed_scope : List Text, type : Text }
+                  , body_validation :
+                      List
+                        { content :
+                            List { media_type : Text, validation_type : Text }
+                        , required : Bool
+                        , validation_mode : Text
+                        }
                   , cors :
                       List
                         { allowed_headers : List Text
@@ -271,6 +295,11 @@
                                     }
                               }
                         }
+                  , header_validations :
+                      List
+                        { headers : List { name : Text, required : Bool }
+                        , validation_mode : Text
+                        }
                   , query_parameter_transformations :
                       List
                         { filter_query_parameters :
@@ -286,6 +315,11 @@
                                     , values : List Text
                                     }
                               }
+                        }
+                  , query_parameter_validations :
+                      List
+                        { parameters : List { name : Text, required : Bool }
+                        , validation_mode : Text
                         }
                   , response_cache_lookup :
                       List

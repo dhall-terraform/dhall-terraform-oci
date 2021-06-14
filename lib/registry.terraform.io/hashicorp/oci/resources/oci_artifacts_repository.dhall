@@ -1,19 +1,14 @@
 { Type =
-    { compartment_id : Optional Text
+    { compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , description : Optional Text
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , manage_default_resource_id : Text
+    , is_immutable : Bool
+    , repository_type : Text
     , state : Optional Text
     , time_created : Optional Text
-    , options :
-        List
-          { custom_dns_servers : Optional (List Text)
-          , search_domain_names : Optional (List Text)
-          , server_type : Optional Text
-          , type : Text
-          }
     , timeouts :
         Optional
           { create : Optional Text
@@ -22,8 +17,8 @@
           }
     }
 , default =
-  { compartment_id = None Text
-  , defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  , description = None Text
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text

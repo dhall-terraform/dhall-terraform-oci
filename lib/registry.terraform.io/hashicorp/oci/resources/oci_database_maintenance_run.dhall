@@ -9,7 +9,9 @@
     , maintenance_run_id : Text
     , maintenance_subtype : Optional Text
     , maintenance_type : Optional Text
+    , patch_failure_count : Optional Natural
     , patch_id : Optional Text
+    , patching_mode : Optional Text
     , peer_maintenance_run_id : Optional Text
     , state : Optional Text
     , target_resource_id : Optional Text
@@ -34,7 +36,9 @@
   , lifecycle_details = None Text
   , maintenance_subtype = None Text
   , maintenance_type = None Text
+  , patch_failure_count = None Natural
   , patch_id = None Text
+  , patching_mode = None Text
   , peer_maintenance_run_id = None Text
   , state = None Text
   , target_resource_id = None Text

@@ -15,7 +15,9 @@
               , maintenance_run_id : Text
               , maintenance_subtype : Text
               , maintenance_type : Text
+              , patch_failure_count : Natural
               , patch_id : Text
+              , patching_mode : Text
               , peer_maintenance_run_id : Text
               , state : Text
               , target_resource_id : Text
@@ -49,7 +51,9 @@
             , maintenance_run_id : Text
             , maintenance_subtype : Text
             , maintenance_type : Text
+            , patch_failure_count : Natural
             , patch_id : Text
+            , patching_mode : Text
             , peer_maintenance_run_id : Text
             , state : Text
             , target_resource_id : Text

@@ -13,15 +13,21 @@
               , display_name : Text
               , esxi_hosts_count : Natural
               , freeform_tags : List { mapKey : Text, mapValue : Text }
+              , hcx_action : Text
               , hcx_fqdn : Text
               , hcx_initial_password : Text
               , hcx_on_prem_key : Text
+              , hcx_on_prem_licenses :
+                  List
+                    { activation_key : Text, status : Text, system_name : Text }
               , hcx_private_ip_id : Text
               , hcx_vlan_id : Text
               , id : Text
               , initial_sku : Text
               , instance_display_name_prefix : Text
               , is_hcx_enabled : Bool
+              , is_hcx_enterprise_enabled : Bool
+              , is_hcx_pending_downgrade : Bool
               , nsx_edge_uplink1vlan_id : Text
               , nsx_edge_uplink2vlan_id : Text
               , nsx_edge_uplink_ip_id : Text
@@ -34,10 +40,14 @@
               , nsx_vtep_vlan_id : Text
               , provisioning_subnet_id : Text
               , provisioning_vlan_id : Text
+              , refresh_hcx_license_status : Bool
               , replication_vlan_id : Text
+              , reserving_hcx_on_premise_license_keys : List Text
               , ssh_authorized_keys : Text
               , state : Text
               , time_created : Text
+              , time_hcx_billing_cycle_end : Text
+              , time_hcx_license_status_updated : Text
               , time_updated : Text
               , vcenter_fqdn : Text
               , vcenter_initial_password : Text
@@ -69,15 +79,21 @@
             , display_name : Text
             , esxi_hosts_count : Natural
             , freeform_tags : List { mapKey : Text, mapValue : Text }
+            , hcx_action : Text
             , hcx_fqdn : Text
             , hcx_initial_password : Text
             , hcx_on_prem_key : Text
+            , hcx_on_prem_licenses :
+                List
+                  { activation_key : Text, status : Text, system_name : Text }
             , hcx_private_ip_id : Text
             , hcx_vlan_id : Text
             , id : Text
             , initial_sku : Text
             , instance_display_name_prefix : Text
             , is_hcx_enabled : Bool
+            , is_hcx_enterprise_enabled : Bool
+            , is_hcx_pending_downgrade : Bool
             , nsx_edge_uplink1vlan_id : Text
             , nsx_edge_uplink2vlan_id : Text
             , nsx_edge_uplink_ip_id : Text
@@ -90,10 +106,14 @@
             , nsx_vtep_vlan_id : Text
             , provisioning_subnet_id : Text
             , provisioning_vlan_id : Text
+            , refresh_hcx_license_status : Bool
             , replication_vlan_id : Text
+            , reserving_hcx_on_premise_license_keys : List Text
             , ssh_authorized_keys : Text
             , state : Text
             , time_created : Text
+            , time_hcx_billing_cycle_end : Text
+            , time_hcx_license_status_updated : Text
             , time_updated : Text
             , vcenter_fqdn : Text
             , vcenter_initial_password : Text

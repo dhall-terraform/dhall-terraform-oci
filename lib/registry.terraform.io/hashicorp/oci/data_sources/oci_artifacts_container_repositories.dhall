@@ -7,7 +7,8 @@
               { image_count : Natural
               , items :
                   List
-                    { compartment_id : Text
+                    { billable_size_in_gbs : Text
+                    , compartment_id : Text
                     , created_by : Text
                     , display_name : Text
                     , id : Text
@@ -44,7 +45,8 @@
             { image_count : Natural
             , items :
                 List
-                  { compartment_id : Text
+                  { billable_size_in_gbs : Text
+                  , compartment_id : Text
                   , created_by : Text
                   , display_name : Text
                   , id : Text
