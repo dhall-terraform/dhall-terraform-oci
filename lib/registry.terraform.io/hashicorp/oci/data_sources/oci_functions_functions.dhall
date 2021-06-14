@@ -19,6 +19,7 @@
               , time_created : Text
               , time_updated : Text
               , timeout_in_seconds : Natural
+              , trace_config : List { is_enabled : Bool }
               }
           )
     , id : Optional Text
@@ -47,6 +48,7 @@
             , time_created : Text
             , time_updated : Text
             , timeout_in_seconds : Natural
+            , trace_config : List { is_enabled : Bool }
             }
         )
   , id = None Text

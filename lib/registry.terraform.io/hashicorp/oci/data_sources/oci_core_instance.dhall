@@ -18,7 +18,8 @@
     , create_vnic_details :
         Optional
           ( List
-              { assign_public_ip : Text
+              { assign_private_dns_record : Bool
+              , assign_public_ip : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -121,7 +122,8 @@
   , create_vnic_details =
       None
         ( List
-            { assign_public_ip : Text
+            { assign_private_dns_record : Bool
+            , assign_public_ip : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }

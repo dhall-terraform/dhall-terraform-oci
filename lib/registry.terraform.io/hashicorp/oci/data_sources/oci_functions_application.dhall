@@ -11,6 +11,7 @@
     , syslog_url : Optional Text
     , time_created : Optional Text
     , time_updated : Optional Text
+    , trace_config : Optional (List { domain_id : Text, is_enabled : Bool })
     }
 , default =
   { compartment_id = None Text
@@ -24,5 +25,6 @@
   , syslog_url = None Text
   , time_created = None Text
   , time_updated = None Text
+  , trace_config = None (List { domain_id : Text, is_enabled : Bool })
   }
 }

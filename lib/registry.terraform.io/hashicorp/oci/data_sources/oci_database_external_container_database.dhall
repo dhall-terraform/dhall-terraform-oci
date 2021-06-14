@@ -1,6 +1,7 @@
 { Type =
     { character_set : Optional Text
     , compartment_id : Optional Text
+    , database_configuration : Optional Text
     , database_edition : Optional Text
     , database_management_config :
         Optional
@@ -28,6 +29,7 @@
 , default =
   { character_set = None Text
   , compartment_id = None Text
+  , database_configuration = None Text
   , database_edition = None Text
   , database_management_config =
       None

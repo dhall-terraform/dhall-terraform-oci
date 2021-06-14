@@ -26,7 +26,8 @@
               , compartment_id : Text
               , create_vnic_details :
                   List
-                    { assign_public_ip : Text
+                    { assign_private_dns_record : Bool
+                    , assign_public_ip : Text
                     , defined_tags : List { mapKey : Text, mapValue : Text }
                     , display_name : Text
                     , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -130,7 +131,8 @@
             , compartment_id : Text
             , create_vnic_details :
                 List
-                  { assign_public_ip : Text
+                  { assign_private_dns_record : Bool
+                  , assign_public_ip : Text
                   , defined_tags : List { mapKey : Text, mapValue : Text }
                   , display_name : Text
                   , freeform_tags : List { mapKey : Text, mapValue : Text }

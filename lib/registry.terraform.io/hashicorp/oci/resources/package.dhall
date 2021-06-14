@@ -27,6 +27,7 @@
 , oci_budget_budget = ./oci_budget_budget.dhall
 , oci_cloud_guard_cloud_guard_configuration =
     ./oci_cloud_guard_cloud_guard_configuration.dhall
+, oci_cloud_guard_data_mask_rule = ./oci_cloud_guard_data_mask_rule.dhall
 , oci_cloud_guard_detector_recipe = ./oci_cloud_guard_detector_recipe.dhall
 , oci_cloud_guard_managed_list = ./oci_cloud_guard_managed_list.dhall
 , oci_cloud_guard_responder_recipe = ./oci_cloud_guard_responder_recipe.dhall
@@ -151,6 +152,10 @@
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
 , oci_database_management_managed_database_group =
     ./oci_database_management_managed_database_group.dhall
+, oci_database_management_managed_databases_change_database_parameter =
+    ./oci_database_management_managed_databases_change_database_parameter.dhall
+, oci_database_management_managed_databases_reset_database_parameter =
+    ./oci_database_management_managed_databases_reset_database_parameter.dhall
 , oci_database_migration = ./oci_database_migration.dhall
 , oci_database_vm_cluster = ./oci_database_vm_cluster.dhall
 , oci_database_vm_cluster_network = ./oci_database_vm_cluster_network.dhall

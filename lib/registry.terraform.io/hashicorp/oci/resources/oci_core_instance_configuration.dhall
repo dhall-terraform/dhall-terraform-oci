@@ -100,7 +100,8 @@
                         , create_vnic_details :
                             Optional
                               ( List
-                                  { assign_public_ip : Optional Bool
+                                  { assign_private_dns_record : Optional Bool
+                                  , assign_public_ip : Optional Bool
                                   , defined_tags :
                                       Optional
                                         ( List
@@ -183,7 +184,8 @@
                         , create_vnic_details :
                             Optional
                               ( List
-                                  { assign_public_ip : Optional Bool
+                                  { assign_private_dns_record : Optional Bool
+                                  , assign_public_ip : Optional Bool
                                   , defined_tags :
                                       Optional
                                         ( List
@@ -306,7 +308,8 @@
                       , create_vnic_details :
                           Optional
                             ( List
-                                { assign_public_ip : Optional Bool
+                                { assign_private_dns_record : Optional Bool
+                                , assign_public_ip : Optional Bool
                                 , defined_tags :
                                     Optional
                                       (List { mapKey : Text, mapValue : Text })
@@ -385,7 +388,8 @@
                       , create_vnic_details :
                           Optional
                             ( List
-                                { assign_public_ip : Optional Bool
+                                { assign_private_dns_record : Optional Bool
+                                , assign_public_ip : Optional Bool
                                 , defined_tags :
                                     Optional
                                       (List { mapKey : Text, mapValue : Text })

@@ -6,6 +6,7 @@
           ( List
               { character_set : Text
               , compartment_id : Text
+              , database_configuration : Text
               , database_edition : Text
               , database_management_config :
                   List
@@ -41,6 +42,7 @@
         ( List
             { character_set : Text
             , compartment_id : Text
+            , database_configuration : Text
             , database_edition : Text
             , database_management_config :
                 List

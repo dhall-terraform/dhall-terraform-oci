@@ -7,6 +7,7 @@
           ( List
               { character_set : Text
               , compartment_id : Text
+              , database_configuration : Text
               , database_edition : Text
               , database_management_config :
                   List
@@ -25,6 +26,11 @@
               , id : Text
               , lifecycle_details : Text
               , ncharacter_set : Text
+              , operations_insights_config :
+                  List
+                    { operations_insights_connector_id : Text
+                    , operations_insights_status : Text
+                    }
               , source_id : Text
               , state : Text
               , time_created : Text
@@ -45,6 +51,7 @@
         ( List
             { character_set : Text
             , compartment_id : Text
+            , database_configuration : Text
             , database_edition : Text
             , database_management_config :
                 List
@@ -63,6 +70,11 @@
             , id : Text
             , lifecycle_details : Text
             , ncharacter_set : Text
+            , operations_insights_config :
+                List
+                  { operations_insights_connector_id : Text
+                  , operations_insights_status : Text
+                  }
             , source_id : Text
             , state : Text
             , time_created : Text

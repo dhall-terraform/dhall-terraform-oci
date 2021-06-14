@@ -13,6 +13,7 @@
               , syslog_url : Text
               , time_created : Text
               , time_updated : Text
+              , trace_config : List { domain_id : Text, is_enabled : Bool }
               }
           )
     , compartment_id : Text
@@ -38,6 +39,7 @@
             , syslog_url : Text
             , time_created : Text
             , time_updated : Text
+            , trace_config : List { domain_id : Text, is_enabled : Bool }
             }
         )
   , display_name = None Text

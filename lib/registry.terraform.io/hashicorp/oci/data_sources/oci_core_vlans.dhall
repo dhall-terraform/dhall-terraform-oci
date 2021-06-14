@@ -3,7 +3,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , state : Optional Text
-    , vcn_id : Text
+    , vcn_id : Optional Text
     , vlans :
         Optional
           ( List
@@ -30,6 +30,7 @@
   { display_name = None Text
   , id = None Text
   , state = None Text
+  , vcn_id = None Text
   , vlans =
       None
         ( List

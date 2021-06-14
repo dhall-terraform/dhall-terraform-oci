@@ -2,6 +2,7 @@
     { access_type : Optional Text
     , approximate_count : Optional Text
     , approximate_size : Optional Text
+    , auto_tiering : Optional Text
     , bucket_id : Optional Text
     , compartment_id : Optional Text
     , created_by : Optional Text
@@ -36,6 +37,7 @@
   { access_type = None Text
   , approximate_count = None Text
   , approximate_size = None Text
+  , auto_tiering = None Text
   , bucket_id = None Text
   , compartment_id = None Text
   , created_by = None Text

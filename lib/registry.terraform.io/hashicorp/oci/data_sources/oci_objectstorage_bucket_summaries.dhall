@@ -5,6 +5,7 @@
               { access_type : Text
               , approximate_count : Text
               , approximate_size : Text
+              , auto_tiering : Text
               , bucket_id : Text
               , compartment_id : Text
               , created_by : Text
@@ -48,6 +49,7 @@
             { access_type : Text
             , approximate_count : Text
             , approximate_size : Text
+            , auto_tiering : Text
             , bucket_id : Text
             , compartment_id : Text
             , created_by : Text

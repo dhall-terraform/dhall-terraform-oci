@@ -16,6 +16,9 @@
           , delete : Optional Text
           , update : Optional Text
           }
+    , trace_config :
+        Optional
+          (List { domain_id : Optional Text, is_enabled : Optional Bool })
     }
 , default =
   { config = None (List { mapKey : Text, mapValue : Text })
@@ -32,5 +35,7 @@
         , delete : Optional Text
         , update : Optional Text
         }
+  , trace_config =
+      None (List { domain_id : Optional Text, is_enabled : Optional Bool })
   }
 }

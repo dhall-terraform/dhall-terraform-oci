@@ -15,6 +15,7 @@
     , time_created : Optional Text
     , time_updated : Optional Text
     , timeout_in_seconds : Optional Natural
+    , trace_config : Optional (List { is_enabled : Bool })
     }
 , default =
   { application_id = None Text
@@ -32,5 +33,6 @@
   , time_created = None Text
   , time_updated = None Text
   , timeout_in_seconds = None Natural
+  , trace_config = None (List { is_enabled : Bool })
   }
 }

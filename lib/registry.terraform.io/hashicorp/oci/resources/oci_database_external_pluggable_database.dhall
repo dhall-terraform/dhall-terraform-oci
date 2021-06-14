@@ -1,6 +1,7 @@
 { Type =
     { character_set : Optional Text
     , compartment_id : Text
+    , database_configuration : Optional Text
     , database_edition : Optional Text
     , database_management_config :
         Optional
@@ -21,6 +22,13 @@
     , id : Optional Text
     , lifecycle_details : Optional Text
     , ncharacter_set : Optional Text
+    , operations_insights_config :
+        Optional
+          ( List
+              { operations_insights_connector_id : Text
+              , operations_insights_status : Text
+              }
+          )
     , source_id : Optional Text
     , state : Optional Text
     , time_created : Optional Text
@@ -34,6 +42,7 @@
     }
 , default =
   { character_set = None Text
+  , database_configuration = None Text
   , database_edition = None Text
   , database_management_config =
       None
@@ -52,6 +61,13 @@
   , id = None Text
   , lifecycle_details = None Text
   , ncharacter_set = None Text
+  , operations_insights_config =
+      None
+        ( List
+            { operations_insights_connector_id : Text
+            , operations_insights_status : Text
+            }
+        )
   , source_id = None Text
   , state = None Text
   , time_created = None Text

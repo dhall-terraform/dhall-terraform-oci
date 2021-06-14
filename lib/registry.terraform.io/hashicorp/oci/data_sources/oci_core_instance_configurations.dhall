@@ -60,7 +60,8 @@
                           , compartment_id : Text
                           , create_vnic_details :
                               List
-                                { assign_public_ip : Bool
+                                { assign_private_dns_record : Bool
+                                , assign_public_ip : Bool
                                 , defined_tags :
                                     List { mapKey : Text, mapValue : Text }
                                 , display_name : Text
@@ -126,7 +127,8 @@
                         List
                           { create_vnic_details :
                               List
-                                { assign_public_ip : Bool
+                                { assign_private_dns_record : Bool
+                                , assign_public_ip : Bool
                                 , defined_tags :
                                     List { mapKey : Text, mapValue : Text }
                                 , display_name : Text
@@ -210,7 +212,8 @@
                         , compartment_id : Text
                         , create_vnic_details :
                             List
-                              { assign_public_ip : Bool
+                              { assign_private_dns_record : Bool
+                              , assign_public_ip : Bool
                               , defined_tags :
                                   List { mapKey : Text, mapValue : Text }
                               , display_name : Text
@@ -273,7 +276,8 @@
                       List
                         { create_vnic_details :
                             List
-                              { assign_public_ip : Bool
+                              { assign_private_dns_record : Bool
+                              , assign_public_ip : Bool
                               , defined_tags :
                                   List { mapKey : Text, mapValue : Text }
                               , display_name : Text
