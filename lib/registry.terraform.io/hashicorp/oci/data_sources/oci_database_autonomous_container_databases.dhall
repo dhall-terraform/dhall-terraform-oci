@@ -46,6 +46,7 @@
                     , weeks_of_month : List Natural
                     }
               , next_maintenance_run_id : Text
+              , patch_id : Text
               , patch_model : Text
               , service_level_agreement_type : Text
               , state : Text
@@ -112,6 +113,7 @@
                   , weeks_of_month : List Natural
                   }
             , next_maintenance_run_id : Text
+            , patch_id : Text
             , patch_model : Text
             , service_level_agreement_type : Text
             , state : Text

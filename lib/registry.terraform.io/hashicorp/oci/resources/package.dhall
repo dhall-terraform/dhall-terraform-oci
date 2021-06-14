@@ -182,6 +182,12 @@
 , oci_load_balancer_rule_set = ./oci_load_balancer_rule_set.dhall
 , oci_load_balancer_ssl_cipher_suite =
     ./oci_load_balancer_ssl_cipher_suite.dhall
+, oci_logging_log = ./oci_logging_log.dhall
+, oci_logging_log_group = ./oci_logging_log_group.dhall
+, oci_management_agent_management_agent =
+    ./oci_management_agent_management_agent.dhall
+, oci_management_agent_management_agent_install_key =
+    ./oci_management_agent_management_agent_install_key.dhall
 , oci_marketplace_accepted_agreement =
     ./oci_marketplace_accepted_agreement.dhall
 , oci_marketplace_listing_package_agreement =
@@ -212,6 +218,7 @@
 , oci_osmanagement_managed_instance_management =
     ./oci_osmanagement_managed_instance_management.dhall
 , oci_osmanagement_software_source = ./oci_osmanagement_software_source.dhall
+, oci_sch_service_connector = ./oci_sch_service_connector.dhall
 , oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
 , oci_streaming_stream_pool = ./oci_streaming_stream_pool.dhall

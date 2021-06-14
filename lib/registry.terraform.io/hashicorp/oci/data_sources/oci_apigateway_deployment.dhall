@@ -108,6 +108,72 @@
                                 , is_allow_credentials_enabled : Bool
                                 , max_age_in_seconds : Natural
                                 }
+                          , header_transformations :
+                              List
+                                { filter_headers :
+                                    List
+                                      { items : List { name : Text }
+                                      , type : Text
+                                      }
+                                , rename_headers :
+                                    List
+                                      { items : List { from : Text, to : Text }
+                                      }
+                                , set_headers :
+                                    List
+                                      { items :
+                                          List
+                                            { if_exists : Text
+                                            , name : Text
+                                            , values : List Text
+                                            }
+                                      }
+                                }
+                          , query_parameter_transformations :
+                              List
+                                { filter_query_parameters :
+                                    List
+                                      { items : List { name : Text }
+                                      , type : Text
+                                      }
+                                , rename_query_parameters :
+                                    List
+                                      { items : List { from : Text, to : Text }
+                                      }
+                                , set_query_parameters :
+                                    List
+                                      { items :
+                                          List
+                                            { if_exists : Text
+                                            , name : Text
+                                            , values : List Text
+                                            }
+                                      }
+                                }
+                          }
+                    , response_policies :
+                        List
+                          { header_transformations :
+                              List
+                                { filter_headers :
+                                    List
+                                      { items : List { name : Text }
+                                      , type : Text
+                                      }
+                                , rename_headers :
+                                    List
+                                      { items : List { from : Text, to : Text }
+                                      }
+                                , set_headers :
+                                    List
+                                      { items :
+                                          List
+                                            { if_exists : Text
+                                            , name : Text
+                                            , values : List Text
+                                            }
+                                      }
+                                }
                           }
                     }
               }
@@ -223,6 +289,69 @@
                               , exposed_headers : List Text
                               , is_allow_credentials_enabled : Bool
                               , max_age_in_seconds : Natural
+                              }
+                        , header_transformations :
+                            List
+                              { filter_headers :
+                                  List
+                                    { items : List { name : Text }
+                                    , type : Text
+                                    }
+                              , rename_headers :
+                                  List
+                                    { items : List { from : Text, to : Text } }
+                              , set_headers :
+                                  List
+                                    { items :
+                                        List
+                                          { if_exists : Text
+                                          , name : Text
+                                          , values : List Text
+                                          }
+                                    }
+                              }
+                        , query_parameter_transformations :
+                            List
+                              { filter_query_parameters :
+                                  List
+                                    { items : List { name : Text }
+                                    , type : Text
+                                    }
+                              , rename_query_parameters :
+                                  List
+                                    { items : List { from : Text, to : Text } }
+                              , set_query_parameters :
+                                  List
+                                    { items :
+                                        List
+                                          { if_exists : Text
+                                          , name : Text
+                                          , values : List Text
+                                          }
+                                    }
+                              }
+                        }
+                  , response_policies :
+                      List
+                        { header_transformations :
+                            List
+                              { filter_headers :
+                                  List
+                                    { items : List { name : Text }
+                                    , type : Text
+                                    }
+                              , rename_headers :
+                                  List
+                                    { items : List { from : Text, to : Text } }
+                              , set_headers :
+                                  List
+                                    { items :
+                                        List
+                                          { if_exists : Text
+                                          , name : Text
+                                          , values : List Text
+                                          }
+                                    }
                               }
                         }
                   }

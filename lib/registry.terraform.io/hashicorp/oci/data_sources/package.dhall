@@ -174,6 +174,8 @@
     ./oci_database_autonomous_container_database.dhall
 , oci_database_autonomous_container_databases =
     ./oci_database_autonomous_container_databases.dhall
+, oci_database_autonomous_container_patches =
+    ./oci_database_autonomous_container_patches.dhall
 , oci_database_autonomous_database_backup =
     ./oci_database_autonomous_database_backup.dhall
 , oci_database_autonomous_database_backups =
@@ -200,6 +202,7 @@
     ./oci_database_autonomous_exadata_infrastructures.dhall
 , oci_database_autonomous_exadata_infrastructure_shapes =
     ./oci_database_autonomous_exadata_infrastructure_shapes.dhall
+, oci_database_autonomous_patch = ./oci_database_autonomous_patch.dhall
 , oci_database_autonomous_vm_cluster =
     ./oci_database_autonomous_vm_cluster.dhall
 , oci_database_autonomous_vm_clusters =
@@ -404,6 +407,22 @@
     ./oci_load_balancer_ssl_cipher_suite.dhall
 , oci_load_balancer_ssl_cipher_suites =
     ./oci_load_balancer_ssl_cipher_suites.dhall
+, oci_logging_log = ./oci_logging_log.dhall
+, oci_logging_log_group = ./oci_logging_log_group.dhall
+, oci_logging_log_groups = ./oci_logging_log_groups.dhall
+, oci_logging_logs = ./oci_logging_logs.dhall
+, oci_management_agent_management_agent =
+    ./oci_management_agent_management_agent.dhall
+, oci_management_agent_management_agent_images =
+    ./oci_management_agent_management_agent_images.dhall
+, oci_management_agent_management_agent_install_key =
+    ./oci_management_agent_management_agent_install_key.dhall
+, oci_management_agent_management_agent_install_keys =
+    ./oci_management_agent_management_agent_install_keys.dhall
+, oci_management_agent_management_agent_plugins =
+    ./oci_management_agent_management_agent_plugins.dhall
+, oci_management_agent_management_agents =
+    ./oci_management_agent_management_agents.dhall
 , oci_marketplace_accepted_agreement =
     ./oci_marketplace_accepted_agreement.dhall
 , oci_marketplace_accepted_agreements =
@@ -484,6 +503,8 @@
 , oci_resourcemanager_stacks = ./oci_resourcemanager_stacks.dhall
 , oci_resourcemanager_stack_tf_state =
     ./oci_resourcemanager_stack_tf_state.dhall
+, oci_sch_service_connector = ./oci_sch_service_connector.dhall
+, oci_sch_service_connectors = ./oci_sch_service_connectors.dhall
 , oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
 , oci_streaming_connect_harnesses = ./oci_streaming_connect_harnesses.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall

@@ -24,6 +24,7 @@
               }
           )
     , next_maintenance_run_id : Optional Text
+    , patch_id : Optional Text
     , patch_model : Text
     , service_level_agreement_type : Optional Text
     , state : Optional Text
@@ -87,6 +88,7 @@
             }
         )
   , next_maintenance_run_id = None Text
+  , patch_id = None Text
   , service_level_agreement_type = None Text
   , state = None Text
   , time_created = None Text

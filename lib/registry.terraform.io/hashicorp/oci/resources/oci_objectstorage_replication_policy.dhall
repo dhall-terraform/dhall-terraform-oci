@@ -1,6 +1,6 @@
 { Type =
     { bucket : Text
-    , delete_object_in_destination_bucket : Text
+    , delete_object_in_destination_bucket : Optional Text
     , destination_bucket_name : Text
     , destination_region_name : Text
     , id : Optional Text
@@ -18,7 +18,8 @@
           }
     }
 , default =
-  { id = None Text
+  { delete_object_in_destination_bucket = None Text
+  , id = None Text
   , status = None Text
   , status_message = None Text
   , time_created = None Text
