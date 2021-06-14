@@ -12,6 +12,17 @@
     , idcs_access_token : Optional Text
     , license_type : Optional Text
     , name : Optional Text
+    , network_endpoint_details :
+        Optional
+          ( List
+              { network_endpoint_type : Text
+              , subnet_id : Text
+              , vcn_id : Text
+              , whitelisted_ips : List Text
+              , whitelisted_vcns :
+                  List { id : Text, whitelisted_ips : List Text }
+              }
+          )
     , service_url : Optional Text
     , state : Optional Text
     , time_created : Optional Text
@@ -29,6 +40,16 @@
   , idcs_access_token = None Text
   , license_type = None Text
   , name = None Text
+  , network_endpoint_details =
+      None
+        ( List
+            { network_endpoint_type : Text
+            , subnet_id : Text
+            , vcn_id : Text
+            , whitelisted_ips : List Text
+            , whitelisted_vcns : List { id : Text, whitelisted_ips : List Text }
+            }
+        )
   , service_url = None Text
   , state = None Text
   , time_created = None Text

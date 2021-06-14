@@ -7,6 +7,7 @@
               , external_identifier : Text
               , id : Text
               , identity_provider_id : Text
+              , name : Text
               , time_created : Text
               , time_modified : Text
               }
@@ -25,6 +26,7 @@
             , external_identifier : Text
             , id : Text
             , identity_provider_id : Text
+            , name : Text
             , time_created : Text
             , time_modified : Text
             }

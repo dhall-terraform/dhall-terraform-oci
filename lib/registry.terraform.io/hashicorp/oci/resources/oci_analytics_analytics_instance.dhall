@@ -14,6 +14,22 @@
     , time_created : Optional Text
     , time_updated : Optional Text
     , capacity : List { capacity_type : Text, capacity_value : Natural }
+    , network_endpoint_details :
+        Optional
+          ( List
+              { network_endpoint_type : Text
+              , subnet_id : Optional Text
+              , vcn_id : Optional Text
+              , whitelisted_ips : Optional (List Text)
+              , whitelisted_vcns :
+                  Optional
+                    ( List
+                        { id : Optional Text
+                        , whitelisted_ips : Optional (List Text)
+                        }
+                    )
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -32,6 +48,22 @@
   , state = None Text
   , time_created = None Text
   , time_updated = None Text
+  , network_endpoint_details =
+      None
+        ( List
+            { network_endpoint_type : Text
+            , subnet_id : Optional Text
+            , vcn_id : Optional Text
+            , whitelisted_ips : Optional (List Text)
+            , whitelisted_vcns :
+                Optional
+                  ( List
+                      { id : Optional Text
+                      , whitelisted_ips : Optional (List Text)
+                      }
+                  )
+            }
+        )
   , timeouts =
       None
         { create : Optional Text
