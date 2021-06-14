@@ -15,6 +15,7 @@
               , idcs_access_token : Text
               , idcs_tenancy : Text
               , instance_access_type : Text
+              , instance_license_type : Text
               , instance_usage_type : Text
               , name : Text
               , object_storage_namespace : Text
@@ -50,6 +51,7 @@
             , idcs_access_token : Text
             , idcs_tenancy : Text
             , instance_access_type : Text
+            , instance_license_type : Text
             , instance_usage_type : Text
             , name : Text
             , object_storage_namespace : Text

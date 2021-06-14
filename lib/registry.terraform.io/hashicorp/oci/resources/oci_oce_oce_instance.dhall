@@ -9,6 +9,7 @@
     , idcs_access_token : Text
     , idcs_tenancy : Optional Text
     , instance_access_type : Optional Text
+    , instance_license_type : Optional Text
     , instance_usage_type : Optional Text
     , name : Text
     , object_storage_namespace : Text
@@ -36,6 +37,7 @@
   , id = None Text
   , idcs_tenancy = None Text
   , instance_access_type = None Text
+  , instance_license_type = None Text
   , instance_usage_type = None Text
   , service = None (List { mapKey : Text, mapValue : Text })
   , state = None Text
