@@ -1,0 +1,66 @@
+{ Type =
+    { bucket : Text
+    , content : Optional Text
+    , content_encoding : Optional Text
+    , content_language : Optional Text
+    , content_length : Optional Text
+    , content_md5 : Optional Text
+    , content_type : Optional Text
+    , id : Optional Text
+    , metadata : Optional (List { mapKey : Text, mapValue : Text })
+    , namespace : Text
+    , object : Text
+    , source : Optional Text
+    , state : Optional Text
+    , work_request_id : Optional Text
+    , source_uri_details :
+        Optional
+          ( List
+              { bucket : Text
+              , destination_object_if_match_etag : Optional Text
+              , destination_object_if_none_match_etag : Optional Text
+              , namespace : Text
+              , object : Text
+              , region : Text
+              , source_object_if_match_etag : Optional Text
+              }
+          )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , update : Optional Text
+          }
+    }
+, default =
+  { content = None Text
+  , content_encoding = None Text
+  , content_language = None Text
+  , content_length = None Text
+  , content_md5 = None Text
+  , content_type = None Text
+  , id = None Text
+  , metadata = None (List { mapKey : Text, mapValue : Text })
+  , source = None Text
+  , state = None Text
+  , work_request_id = None Text
+  , source_uri_details =
+      None
+        ( List
+            { bucket : Text
+            , destination_object_if_match_etag : Optional Text
+            , destination_object_if_none_match_etag : Optional Text
+            , namespace : Text
+            , object : Text
+            , region : Text
+            , source_object_if_match_etag : Optional Text
+            }
+        )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , update : Optional Text
+        }
+  }
+}

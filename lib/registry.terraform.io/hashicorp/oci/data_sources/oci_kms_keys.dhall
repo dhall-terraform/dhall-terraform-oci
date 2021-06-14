@@ -1,0 +1,48 @@
+{ Type =
+    { compartment_id : Text
+    , id : Optional Text
+    , keys :
+        Optional
+          ( List
+              { compartment_id : Text
+              , current_key_version : Text
+              , defined_tags : List { mapKey : Text, mapValue : Text }
+              , desired_state : Text
+              , display_name : Text
+              , freeform_tags : List { mapKey : Text, mapValue : Text }
+              , id : Text
+              , key_shape : List { algorithm : Text, length : Natural }
+              , management_endpoint : Text
+              , state : Text
+              , time_created : Text
+              , vault_id : Text
+              }
+          )
+    , management_endpoint : Text
+    , filter :
+        Optional
+          (List { name : Text, regex : Optional Bool, values : List Text })
+    }
+, default =
+  { id = None Text
+  , keys =
+      None
+        ( List
+            { compartment_id : Text
+            , current_key_version : Text
+            , defined_tags : List { mapKey : Text, mapValue : Text }
+            , desired_state : Text
+            , display_name : Text
+            , freeform_tags : List { mapKey : Text, mapValue : Text }
+            , id : Text
+            , key_shape : List { algorithm : Text, length : Natural }
+            , management_endpoint : Text
+            , state : Text
+            , time_created : Text
+            , vault_id : Text
+            }
+        )
+  , filter =
+      None (List { name : Text, regex : Optional Bool, values : List Text })
+  }
+}
