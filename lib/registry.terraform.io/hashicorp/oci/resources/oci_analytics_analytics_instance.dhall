@@ -9,10 +9,13 @@
     , idcs_access_token : Text
     , license_type : Text
     , name : Text
+    , private_access_channels :
+        Optional (List { mapKey : Text, mapValue : Text })
     , service_url : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     , time_updated : Optional Text
+    , vanity_url_details : Optional (List { mapKey : Text, mapValue : Text })
     , capacity : List { capacity_type : Text, capacity_value : Natural }
     , network_endpoint_details :
         Optional
@@ -43,10 +46,12 @@
   , email_notification = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , private_access_channels = None (List { mapKey : Text, mapValue : Text })
   , service_url = None Text
   , state = None Text
   , time_created = None Text
   , time_updated = None Text
+  , vanity_url_details = None (List { mapKey : Text, mapValue : Text })
   , network_endpoint_details =
       None
         ( List

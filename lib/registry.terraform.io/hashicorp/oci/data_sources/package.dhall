@@ -1,4 +1,6 @@
 { oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
+, oci_analytics_analytics_instance_private_access_channel =
+    ./oci_analytics_analytics_instance_private_access_channel.dhall
 , oci_analytics_analytics_instances = ./oci_analytics_analytics_instances.dhall
 , oci_apigateway_api_content = ./oci_apigateway_api_content.dhall
 , oci_apigateway_api_deployment_specification =

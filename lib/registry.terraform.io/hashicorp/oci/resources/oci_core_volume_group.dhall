@@ -1,5 +1,6 @@
 { Type =
     { availability_domain : Text
+    , backup_policy_id : Optional Text
     , compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
@@ -26,7 +27,8 @@
           }
     }
 , default =
-  { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { backup_policy_id = None Text
+  , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text

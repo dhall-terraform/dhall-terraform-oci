@@ -1,6 +1,7 @@
 { Type =
     { algorithm : Optional Text
     , compartment_id : Text
+    , curve_id : Optional Text
     , id : Optional Text
     , keys :
         Optional
@@ -12,7 +13,8 @@
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
-              , key_shape : List { algorithm : Text, length : Natural }
+              , key_shape :
+                  List { algorithm : Text, curve_id : Text, length : Natural }
               , management_endpoint : Text
               , protection_mode : Text
               , restore_from_file :
@@ -46,6 +48,7 @@
     }
 , default =
   { algorithm = None Text
+  , curve_id = None Text
   , id = None Text
   , keys =
       None
@@ -57,7 +60,8 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , key_shape : List { algorithm : Text, length : Natural }
+            , key_shape :
+                List { algorithm : Text, curve_id : Text, length : Natural }
             , management_endpoint : Text
             , protection_mode : Text
             , restore_from_file :

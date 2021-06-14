@@ -7,7 +7,8 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , key_id : Text
-    , key_shape : Optional (List { algorithm : Text, length : Natural })
+    , key_shape :
+        Optional (List { algorithm : Text, curve_id : Text, length : Natural })
     , management_endpoint : Text
     , protection_mode : Optional Text
     , restore_from_file :
@@ -43,7 +44,8 @@
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , key_shape = None (List { algorithm : Text, length : Natural })
+  , key_shape =
+      None (List { algorithm : Text, curve_id : Text, length : Natural })
   , protection_mode = None Text
   , restore_from_file =
       None

@@ -45,6 +45,7 @@
     , is_byol : Optional Bool
     , is_multi_ad : Optional Bool
     , lifecycle_details : Optional Text
+    , load_balancer_shape : Optional Text
     , platform_role : Optional Text
     , platform_shape_type : Optional Text
     , replicas :
@@ -110,6 +111,7 @@
   , is_byol = None Bool
   , is_multi_ad = None Bool
   , lifecycle_details = None Text
+  , load_balancer_shape = None Text
   , platform_role = None Text
   , platform_shape_type = None Text
   , replicas =

@@ -23,10 +23,13 @@
                     , whitelisted_vcns :
                         List { id : Text, whitelisted_ips : List Text }
                     }
+              , private_access_channels :
+                  List { mapKey : Text, mapValue : Text }
               , service_url : Text
               , state : Text
               , time_created : Text
               , time_updated : Text
+              , vanity_url_details : List { mapKey : Text, mapValue : Text }
               }
           )
     , capacity_type : Optional Text
@@ -63,10 +66,12 @@
                   , whitelisted_vcns :
                       List { id : Text, whitelisted_ips : List Text }
                   }
+            , private_access_channels : List { mapKey : Text, mapValue : Text }
             , service_url : Text
             , state : Text
             , time_created : Text
             , time_updated : Text
+            , vanity_url_details : List { mapKey : Text, mapValue : Text }
             }
         )
   , capacity_type = None Text

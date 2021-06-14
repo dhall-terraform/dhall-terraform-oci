@@ -67,6 +67,7 @@
               , peer_autonomous_container_database_display_name : Text
               , peer_autonomous_exadata_infrastructure_id : Text
               , peer_autonomous_vm_cluster_id : Text
+              , peer_db_unique_name : Text
               , protection_mode : Text
               , role : Text
               , rotate_key_trigger : Bool
@@ -159,6 +160,7 @@
             , peer_autonomous_container_database_display_name : Text
             , peer_autonomous_exadata_infrastructure_id : Text
             , peer_autonomous_vm_cluster_id : Text
+            , peer_db_unique_name : Text
             , protection_mode : Text
             , role : Text
             , rotate_key_trigger : Bool

@@ -8,6 +8,7 @@
         Optional
           ( List
               { availability_domain : Text
+              , backup_policy_id : Text
               , compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
@@ -41,6 +42,7 @@
       None
         ( List
             { availability_domain : Text
+            , backup_policy_id : Text
             , compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text

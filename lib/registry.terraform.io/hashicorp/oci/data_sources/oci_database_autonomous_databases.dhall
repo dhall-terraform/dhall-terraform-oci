@@ -5,6 +5,7 @@
           ( List
               { admin_password : Text
               , apex_details : List { apex_version : Text, ords_version : Text }
+              , are_primary_whitelisted_ips_used : Bool
               , autonomous_container_database_id : Text
               , autonomous_database_backup_id : Text
               , autonomous_database_id : Text
@@ -76,6 +77,7 @@
                     , lifecycle_details : Text
                     , state : Text
                     }
+              , standby_whitelisted_ips : List Text
               , state : Text
               , subnet_id : Text
               , switchover_to : Text
@@ -116,6 +118,7 @@
         ( List
             { admin_password : Text
             , apex_details : List { apex_version : Text, ords_version : Text }
+            , are_primary_whitelisted_ips_used : Bool
             , autonomous_container_database_id : Text
             , autonomous_database_backup_id : Text
             , autonomous_database_id : Text
@@ -187,6 +190,7 @@
                   , lifecycle_details : Text
                   , state : Text
                   }
+            , standby_whitelisted_ips : List Text
             , state : Text
             , subnet_id : Text
             , switchover_to : Text

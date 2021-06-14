@@ -8,10 +8,13 @@
               { compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
+              , expiration_time : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , size_in_gbs : Text
               , size_in_mbs : Text
+              , source_type : Text
+              , source_volume_group_backup_id : Text
               , state : Text
               , time_created : Text
               , time_request_received : Text
@@ -36,10 +39,13 @@
             { compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
+            , expiration_time : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , size_in_gbs : Text
             , size_in_mbs : Text
+            , source_type : Text
+            , source_volume_group_backup_id : Text
             , state : Text
             , time_created : Text
             , time_request_received : Text

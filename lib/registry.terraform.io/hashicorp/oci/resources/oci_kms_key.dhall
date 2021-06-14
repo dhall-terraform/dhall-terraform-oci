@@ -14,7 +14,8 @@
     , time_created : Optional Text
     , time_of_deletion : Optional Text
     , vault_id : Optional Text
-    , key_shape : List { algorithm : Text, length : Natural }
+    , key_shape :
+        List { algorithm : Text, curve_id : Optional Text, length : Natural }
     , restore_from_file :
         Optional
           ( List

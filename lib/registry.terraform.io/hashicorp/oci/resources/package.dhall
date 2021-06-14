@@ -1,4 +1,8 @@
 { oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
+, oci_analytics_analytics_instance_private_access_channel =
+    ./oci_analytics_analytics_instance_private_access_channel.dhall
+, oci_analytics_analytics_instance_vanity_url =
+    ./oci_analytics_analytics_instance_vanity_url.dhall
 , oci_apigateway_api = ./oci_apigateway_api.dhall
 , oci_apigateway_certificate = ./oci_apigateway_certificate.dhall
 , oci_apigateway_deployment = ./oci_apigateway_deployment.dhall
@@ -196,7 +200,9 @@
 , oci_kms_generated_key = ./oci_kms_generated_key.dhall
 , oci_kms_key = ./oci_kms_key.dhall
 , oci_kms_key_version = ./oci_kms_key_version.dhall
+, oci_kms_sign = ./oci_kms_sign.dhall
 , oci_kms_vault = ./oci_kms_vault.dhall
+, oci_kms_verify = ./oci_kms_verify.dhall
 , oci_limits_quota = ./oci_limits_quota.dhall
 , oci_load_balancer_backend = ./oci_load_balancer_backend.dhall
 , oci_load_balancer_backend_set = ./oci_load_balancer_backend_set.dhall

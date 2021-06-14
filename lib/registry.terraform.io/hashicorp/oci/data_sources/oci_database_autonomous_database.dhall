@@ -2,6 +2,7 @@
     { admin_password : Optional Text
     , apex_details :
         Optional (List { apex_version : Text, ords_version : Text })
+    , are_primary_whitelisted_ips_used : Optional Bool
     , autonomous_container_database_id : Optional Text
     , autonomous_database_backup_id : Optional Text
     , autonomous_database_id : Text
@@ -76,6 +77,7 @@
               , state : Text
               }
           )
+    , standby_whitelisted_ips : Optional (List Text)
     , state : Optional Text
     , subnet_id : Optional Text
     , switchover_to : Optional Text
@@ -97,6 +99,7 @@
 , default =
   { admin_password = None Text
   , apex_details = None (List { apex_version : Text, ords_version : Text })
+  , are_primary_whitelisted_ips_used = None Bool
   , autonomous_container_database_id = None Text
   , autonomous_database_backup_id = None Text
   , available_upgrade_versions = None (List Text)
@@ -170,6 +173,7 @@
             , state : Text
             }
         )
+  , standby_whitelisted_ips = None (List Text)
   , state = None Text
   , subnet_id = None Text
   , switchover_to = None Text

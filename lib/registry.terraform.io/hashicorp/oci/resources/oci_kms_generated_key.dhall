@@ -8,7 +8,8 @@
     , logging_context : Optional (List { mapKey : Text, mapValue : Text })
     , plaintext : Optional Text
     , plaintext_checksum : Optional Text
-    , key_shape : List { algorithm : Text, length : Natural }
+    , key_shape :
+        List { algorithm : Text, curve_id : Optional Text, length : Natural }
     , timeouts :
         Optional
           { create : Optional Text

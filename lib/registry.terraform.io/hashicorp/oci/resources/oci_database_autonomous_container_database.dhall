@@ -33,6 +33,7 @@
     , peer_autonomous_container_database_display_name : Optional Text
     , peer_autonomous_exadata_infrastructure_id : Optional Text
     , peer_autonomous_vm_cluster_id : Optional Text
+    , peer_db_unique_name : Optional Text
     , protection_mode : Optional Text
     , role : Optional Text
     , rotate_key_trigger : Optional Bool
@@ -124,6 +125,7 @@
   , peer_autonomous_container_database_display_name = None Text
   , peer_autonomous_exadata_infrastructure_id = None Text
   , peer_autonomous_vm_cluster_id = None Text
+  , peer_db_unique_name = None Text
   , protection_mode = None Text
   , role = None Text
   , rotate_key_trigger = None Bool

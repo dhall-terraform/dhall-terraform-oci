@@ -23,10 +23,13 @@
                   List { id : Text, whitelisted_ips : List Text }
               }
           )
+    , private_access_channels :
+        Optional (List { mapKey : Text, mapValue : Text })
     , service_url : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     , time_updated : Optional Text
+    , vanity_url_details : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { capacity = None (List { capacity_type : Text, capacity_value : Natural })
@@ -50,9 +53,11 @@
             , whitelisted_vcns : List { id : Text, whitelisted_ips : List Text }
             }
         )
+  , private_access_channels = None (List { mapKey : Text, mapValue : Text })
   , service_url = None Text
   , state = None Text
   , time_created = None Text
   , time_updated = None Text
+  , vanity_url_details = None (List { mapKey : Text, mapValue : Text })
   }
 }

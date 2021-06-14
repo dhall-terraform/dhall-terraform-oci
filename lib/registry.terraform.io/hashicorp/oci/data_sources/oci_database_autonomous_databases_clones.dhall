@@ -4,6 +4,7 @@
         Optional
           ( List
               { apex_details : List { apex_version : Text, ords_version : Text }
+              , are_primary_whitelisted_ips_used : Bool
               , autonomous_container_database_id : Text
               , available_upgrade_versions : List Text
               , backup_config :
@@ -67,6 +68,7 @@
                     , lifecycle_details : Text
                     , state : Text
                     }
+              , standby_whitelisted_ips : List Text
               , state : Text
               , subnet_id : Text
               , system_tags : List { mapKey : Text, mapValue : Text }
@@ -98,6 +100,7 @@
       None
         ( List
             { apex_details : List { apex_version : Text, ords_version : Text }
+            , are_primary_whitelisted_ips_used : Bool
             , autonomous_container_database_id : Text
             , available_upgrade_versions : List Text
             , backup_config :
@@ -161,6 +164,7 @@
                   , lifecycle_details : Text
                   , state : Text
                   }
+            , standby_whitelisted_ips : List Text
             , state : Text
             , subnet_id : Text
             , system_tags : List { mapKey : Text, mapValue : Text }

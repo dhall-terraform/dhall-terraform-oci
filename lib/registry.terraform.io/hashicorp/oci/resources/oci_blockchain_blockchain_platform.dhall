@@ -40,10 +40,11 @@
               }
           )
     , id : Optional Text
-    , idcs_access_token : Optional Text
+    , idcs_access_token : Text
     , is_byol : Optional Bool
     , is_multi_ad : Optional Bool
     , lifecycle_details : Optional Text
+    , load_balancer_shape : Optional Text
     , platform_role : Text
     , platform_shape_type : Optional Text
     , service_endpoint : Optional Text
@@ -108,10 +109,10 @@
             }
         )
   , id = None Text
-  , idcs_access_token = None Text
   , is_byol = None Bool
   , is_multi_ad = None Bool
   , lifecycle_details = None Text
+  , load_balancer_shape = None Text
   , platform_shape_type = None Text
   , service_endpoint = None Text
   , service_version = None Text

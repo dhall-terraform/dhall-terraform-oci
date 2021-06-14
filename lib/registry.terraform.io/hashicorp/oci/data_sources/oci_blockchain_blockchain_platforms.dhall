@@ -45,6 +45,7 @@
                     , is_byol : Bool
                     , is_multi_ad : Bool
                     , lifecycle_details : Text
+                    , load_balancer_shape : Text
                     , platform_role : Text
                     , platform_shape_type : Text
                     , replicas :
@@ -119,6 +120,7 @@
                   , is_byol : Bool
                   , is_multi_ad : Bool
                   , lifecycle_details : Text
+                  , load_balancer_shape : Text
                   , platform_role : Text
                   , platform_shape_type : Text
                   , replicas :
