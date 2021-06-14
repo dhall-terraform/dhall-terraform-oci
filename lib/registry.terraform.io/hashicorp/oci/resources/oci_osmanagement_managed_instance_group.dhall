@@ -7,6 +7,7 @@
     , id : Optional Text
     , managed_instance_count : Optional Natural
     , managed_instances : Optional (List { display_name : Text, id : Text })
+    , os_family : Optional Text
     , state : Optional Text
     , timeouts :
         Optional
@@ -22,6 +23,7 @@
   , id = None Text
   , managed_instance_count = None Natural
   , managed_instances = None (List { display_name : Text, id : Text })
+  , os_family = None Text
   , state = None Text
   , timeouts =
       None

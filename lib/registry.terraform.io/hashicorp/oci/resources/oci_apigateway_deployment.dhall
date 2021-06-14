@@ -33,11 +33,48 @@
                     { authentication :
                         Optional
                           ( List
-                              { function_id : Text
+                              { audiences : Optional (List Text)
+                              , function_id : Optional Text
                               , is_anonymous_access_allowed : Optional Bool
+                              , issuers : Optional (List Text)
+                              , max_clock_skew_in_seconds : Optional Natural
+                              , token_auth_scheme : Optional Text
                               , token_header : Optional Text
                               , token_query_param : Optional Text
                               , type : Text
+                              , public_keys :
+                                  Optional
+                                    ( List
+                                        { is_ssl_verify_disabled : Optional Bool
+                                        , max_cache_duration_in_hours :
+                                            Optional Natural
+                                        , type : Text
+                                        , uri : Optional Text
+                                        , keys :
+                                            Optional
+                                              ( List
+                                                  { alg : Optional Text
+                                                  , e : Optional Text
+                                                  , format : Text
+                                                  , key : Optional Text
+                                                  , key_ops :
+                                                      Optional (List Text)
+                                                  , kid : Optional Text
+                                                  , kty : Optional Text
+                                                  , n : Optional Text
+                                                  , use : Optional Text
+                                                  }
+                                              )
+                                        }
+                                    )
+                              , verify_claims :
+                                  Optional
+                                    ( List
+                                        { is_required : Optional Bool
+                                        , key : Optional Text
+                                        , values : Optional (List Text)
+                                        }
+                                    )
                               }
                           )
                     , cors :

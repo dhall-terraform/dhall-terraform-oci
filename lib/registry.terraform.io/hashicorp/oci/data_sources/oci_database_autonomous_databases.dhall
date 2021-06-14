@@ -44,6 +44,7 @@
               , lifecycle_details : Text
               , nsg_ids : List Text
               , private_endpoint : Text
+              , private_endpoint_ip : Text
               , private_endpoint_label : Text
               , service_console_url : Text
               , source : Text
@@ -118,6 +119,7 @@
             , lifecycle_details : Text
             , nsg_ids : List Text
             , private_endpoint : Text
+            , private_endpoint_ip : Text
             , private_endpoint_label : Text
             , service_console_url : Text
             , source : Text

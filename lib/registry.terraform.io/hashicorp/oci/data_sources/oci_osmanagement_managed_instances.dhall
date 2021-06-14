@@ -10,10 +10,12 @@
               , description : Text
               , display_name : Text
               , id : Text
+              , is_reboot_required : Bool
               , last_boot : Text
               , last_checkin : Text
               , managed_instance_groups :
                   List { display_name : Text, id : Text }
+              , os_family : Text
               , os_kernel_version : Text
               , os_name : Text
               , os_version : Text
@@ -22,6 +24,7 @@
               , updates_available : Natural
               }
           )
+    , os_family : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -37,9 +40,11 @@
             , description : Text
             , display_name : Text
             , id : Text
+            , is_reboot_required : Bool
             , last_boot : Text
             , last_checkin : Text
             , managed_instance_groups : List { display_name : Text, id : Text }
+            , os_family : Text
             , os_kernel_version : Text
             , os_name : Text
             , os_version : Text
@@ -48,6 +53,7 @@
             , updates_available : Natural
             }
         )
+  , os_family = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

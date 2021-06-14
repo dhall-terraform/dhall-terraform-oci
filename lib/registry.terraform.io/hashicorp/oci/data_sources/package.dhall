@@ -76,6 +76,7 @@
     ./oci_core_fast_connect_provider_service_key.dhall
 , oci_core_fast_connect_provider_services =
     ./oci_core_fast_connect_provider_services.dhall
+, oci_core_image = ./oci_core_image.dhall
 , oci_core_images = ./oci_core_images.dhall
 , oci_core_image_shape = ./oci_core_image_shape.dhall
 , oci_core_image_shapes = ./oci_core_image_shapes.dhall

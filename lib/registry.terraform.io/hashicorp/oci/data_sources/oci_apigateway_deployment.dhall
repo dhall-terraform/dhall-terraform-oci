@@ -22,11 +22,40 @@
                   List
                     { authentication :
                         List
-                          { function_id : Text
+                          { audiences : List Text
+                          , function_id : Text
                           , is_anonymous_access_allowed : Bool
+                          , issuers : List Text
+                          , max_clock_skew_in_seconds : Natural
+                          , public_keys :
+                              List
+                                { is_ssl_verify_disabled : Bool
+                                , keys :
+                                    List
+                                      { alg : Text
+                                      , e : Text
+                                      , format : Text
+                                      , key : Text
+                                      , key_ops : List Text
+                                      , kid : Text
+                                      , kty : Text
+                                      , n : Text
+                                      , use : Text
+                                      }
+                                , max_cache_duration_in_hours : Natural
+                                , type : Text
+                                , uri : Text
+                                }
+                          , token_auth_scheme : Text
                           , token_header : Text
                           , token_query_param : Text
                           , type : Text
+                          , verify_claims :
+                              List
+                                { is_required : Bool
+                                , key : Text
+                                , values : List Text
+                                }
                           }
                     , cors :
                         List
@@ -109,11 +138,40 @@
                 List
                   { authentication :
                       List
-                        { function_id : Text
+                        { audiences : List Text
+                        , function_id : Text
                         , is_anonymous_access_allowed : Bool
+                        , issuers : List Text
+                        , max_clock_skew_in_seconds : Natural
+                        , public_keys :
+                            List
+                              { is_ssl_verify_disabled : Bool
+                              , keys :
+                                  List
+                                    { alg : Text
+                                    , e : Text
+                                    , format : Text
+                                    , key : Text
+                                    , key_ops : List Text
+                                    , kid : Text
+                                    , kty : Text
+                                    , n : Text
+                                    , use : Text
+                                    }
+                              , max_cache_duration_in_hours : Natural
+                              , type : Text
+                              , uri : Text
+                              }
+                        , token_auth_scheme : Text
                         , token_header : Text
                         , token_query_param : Text
                         , type : Text
+                        , verify_claims :
+                            List
+                              { is_required : Bool
+                              , key : Text
+                              , values : List Text
+                              }
                         }
                   , cors :
                       List

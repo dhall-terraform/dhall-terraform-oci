@@ -43,6 +43,7 @@
     , lifecycle_details : Optional Text
     , nsg_ids : Optional (List Text)
     , private_endpoint : Optional Text
+    , private_endpoint_ip : Optional Text
     , private_endpoint_label : Optional Text
     , service_console_url : Optional Text
     , source : Optional Text
@@ -105,6 +106,7 @@
   , lifecycle_details = None Text
   , nsg_ids = None (List Text)
   , private_endpoint = None Text
+  , private_endpoint_ip = None Text
   , private_endpoint_label = None Text
   , service_console_url = None Text
   , source = None Text
