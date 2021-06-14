@@ -1,16 +1,20 @@
 { Type =
     { admin_password : Text
+    , autonomous_container_database_id : Optional Text
     , clone_type : Optional Text
     , compartment_id : Text
     , connection_strings :
         Optional
           ( List
               { all_connection_strings : List { mapKey : Text, mapValue : Text }
+              , dedicated : Text
               , high : Text
               , low : Text
               , medium : Text
               }
           )
+    , connection_urls :
+        Optional (List { apex_url : Text, sql_dev_web_url : Text })
     , cpu_core_count : Natural
     , data_storage_size_in_tbs : Natural
     , db_name : Text
@@ -21,6 +25,7 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , is_auto_scaling_enabled : Optional Bool
+    , is_dedicated : Optional Bool
     , license_model : Optional Text
     , lifecycle_details : Optional Text
     , service_console_url : Optional Text
@@ -38,16 +43,19 @@
           }
     }
 , default =
-  { clone_type = None Text
+  { autonomous_container_database_id = None Text
+  , clone_type = None Text
   , connection_strings =
       None
         ( List
             { all_connection_strings : List { mapKey : Text, mapValue : Text }
+            , dedicated : Text
             , high : Text
             , low : Text
             , medium : Text
             }
         )
+  , connection_urls = None (List { apex_url : Text, sql_dev_web_url : Text })
   , db_version = None Text
   , db_workload = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
@@ -55,6 +63,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , is_auto_scaling_enabled = None Bool
+  , is_dedicated = None Bool
   , license_model = None Text
   , lifecycle_details = None Text
   , service_console_url = None Text

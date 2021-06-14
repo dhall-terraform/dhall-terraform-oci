@@ -65,6 +65,7 @@
                           , source_details :
                               List
                                 { boot_volume_id : Text
+                                , boot_volume_size_in_gbs : Text
                                 , image_id : Text
                                 , source_type : Text
                                 }
@@ -155,6 +156,7 @@
                         , source_details :
                             List
                               { boot_volume_id : Text
+                              , boot_volume_size_in_gbs : Text
                               , image_id : Text
                               , source_type : Text
                               }

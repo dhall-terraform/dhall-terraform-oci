@@ -75,6 +75,7 @@
                         Optional
                           ( List
                               { boot_volume_id : Optional Text
+                              , boot_volume_size_in_gbs : Optional Text
                               , image_id : Optional Text
                               , source_type : Text
                               }

@@ -4,6 +4,7 @@
           ( List
               { autonomous_database_id : Text
               , compartment_id : Text
+              , database_size_in_tbs : Natural
               , display_name : Text
               , id : Text
               , is_automatic : Bool
@@ -29,6 +30,7 @@
         ( List
             { autonomous_database_id : Text
             , compartment_id : Text
+            , database_size_in_tbs : Natural
             , display_name : Text
             , id : Text
             , is_automatic : Bool

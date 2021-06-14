@@ -1,15 +1,19 @@
 { Type =
-    { autonomous_database_id : Text
-    , compartment_id : Optional Text
-    , database_size_in_tbs : Optional Natural
-    , display_name : Text
+    { compartment_id : Optional Text
+    , description : Optional Text
+    , display_name : Optional Text
     , id : Optional Text
-    , is_automatic : Optional Bool
+    , is_enabled : Optional Bool
     , lifecycle_details : Optional Text
+    , maintenance_run_id : Text
+    , maintenance_subtype : Optional Text
+    , maintenance_type : Optional Text
     , state : Optional Text
+    , target_resource_id : Optional Text
+    , target_resource_type : Optional Text
     , time_ended : Optional Text
+    , time_scheduled : Optional Text
     , time_started : Optional Text
-    , type : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,14 +23,19 @@
     }
 , default =
   { compartment_id = None Text
-  , database_size_in_tbs = None Natural
+  , description = None Text
+  , display_name = None Text
   , id = None Text
-  , is_automatic = None Bool
+  , is_enabled = None Bool
   , lifecycle_details = None Text
+  , maintenance_subtype = None Text
+  , maintenance_type = None Text
   , state = None Text
+  , target_resource_id = None Text
+  , target_resource_type = None Text
   , time_ended = None Text
+  , time_scheduled = None Text
   , time_started = None Text
-  , type = None Text
   , timeouts =
       None
         { create : Optional Text

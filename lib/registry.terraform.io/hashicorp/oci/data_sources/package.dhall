@@ -116,6 +116,10 @@
 , oci_core_volume_group_backups = ./oci_core_volume_group_backups.dhall
 , oci_core_volume_groups = ./oci_core_volume_groups.dhall
 , oci_core_volumes = ./oci_core_volumes.dhall
+, oci_database_autonomous_container_database =
+    ./oci_database_autonomous_container_database.dhall
+, oci_database_autonomous_container_databases =
+    ./oci_database_autonomous_container_databases.dhall
 , oci_database_autonomous_database_backup =
     ./oci_database_autonomous_database_backup.dhall
 , oci_database_autonomous_database_backups =
@@ -134,6 +138,12 @@
     ./oci_database_autonomous_data_warehouses.dhall
 , oci_database_autonomous_data_warehouse_wallet =
     ./oci_database_autonomous_data_warehouse_wallet.dhall
+, oci_database_autonomous_exadata_infrastructure =
+    ./oci_database_autonomous_exadata_infrastructure.dhall
+, oci_database_autonomous_exadata_infrastructures =
+    ./oci_database_autonomous_exadata_infrastructures.dhall
+, oci_database_autonomous_exadata_infrastructure_shapes =
+    ./oci_database_autonomous_exadata_infrastructure_shapes.dhall
 , oci_database_backups = ./oci_database_backups.dhall
 , oci_database_database = ./oci_database_database.dhall
 , oci_database_databases = ./oci_database_databases.dhall
@@ -155,6 +165,8 @@
 , oci_database_db_system_shapes = ./oci_database_db_system_shapes.dhall
 , oci_database_db_versions = ./oci_database_db_versions.dhall
 , oci_database_exadata_iorm_config = ./oci_database_exadata_iorm_config.dhall
+, oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
+, oci_database_maintenance_runs = ./oci_database_maintenance_runs.dhall
 , oci_dns_records = ./oci_dns_records.dhall
 , oci_dns_steering_policies = ./oci_dns_steering_policies.dhall
 , oci_dns_steering_policy_attachment =

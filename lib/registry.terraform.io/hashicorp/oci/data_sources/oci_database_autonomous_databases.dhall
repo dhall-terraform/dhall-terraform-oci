@@ -1,18 +1,23 @@
 { Type =
-    { autonomous_databases :
+    { autonomous_container_database_id : Optional Text
+    , autonomous_databases :
         Optional
           ( List
               { admin_password : Text
+              , autonomous_container_database_id : Text
               , clone_type : Text
               , compartment_id : Text
               , connection_strings :
                   List
                     { all_connection_strings :
                         List { mapKey : Text, mapValue : Text }
+                    , dedicated : Text
                     , high : Text
                     , low : Text
                     , medium : Text
                     }
+              , connection_urls :
+                  List { apex_url : Text, sql_dev_web_url : Text }
               , cpu_core_count : Natural
               , data_storage_size_in_tbs : Natural
               , db_name : Text
@@ -23,6 +28,7 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , is_auto_scaling_enabled : Bool
+              , is_dedicated : Bool
               , license_model : Text
               , lifecycle_details : Text
               , service_console_url : Text
@@ -44,20 +50,24 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { autonomous_databases =
+  { autonomous_container_database_id = None Text
+  , autonomous_databases =
       None
         ( List
             { admin_password : Text
+            , autonomous_container_database_id : Text
             , clone_type : Text
             , compartment_id : Text
             , connection_strings :
                 List
                   { all_connection_strings :
                       List { mapKey : Text, mapValue : Text }
+                  , dedicated : Text
                   , high : Text
                   , low : Text
                   , medium : Text
                   }
+            , connection_urls : List { apex_url : Text, sql_dev_web_url : Text }
             , cpu_core_count : Natural
             , data_storage_size_in_tbs : Natural
             , db_name : Text
@@ -68,6 +78,7 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , is_auto_scaling_enabled : Bool
+            , is_dedicated : Bool
             , license_model : Text
             , lifecycle_details : Text
             , service_console_url : Text
