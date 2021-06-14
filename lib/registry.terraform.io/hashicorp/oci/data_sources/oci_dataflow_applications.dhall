@@ -2,7 +2,8 @@
     { applications :
         Optional
           ( List
-              { arguments : List Text
+              { archive_uri : Text
+              , arguments : List Text
               , class_name : Text
               , compartment_id : Text
               , configuration : List { mapKey : Text, mapValue : Text }
@@ -40,7 +41,8 @@
   { applications =
       None
         ( List
-            { arguments : List Text
+            { archive_uri : Text
+            , arguments : List Text
             , class_name : Text
             , compartment_id : Text
             , configuration : List { mapKey : Text, mapValue : Text }

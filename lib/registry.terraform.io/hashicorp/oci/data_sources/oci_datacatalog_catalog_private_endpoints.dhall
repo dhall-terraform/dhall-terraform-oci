@@ -1,18 +1,17 @@
 { Type =
-    { catalogs :
+    { catalog_private_endpoints :
         Optional
           ( List
-              { attached_catalog_private_endpoints : List Text
+              { attached_catalogs : List Text
               , compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
+              , dns_zones : List Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , lifecycle_details : Text
-              , number_of_objects : Natural
-              , service_api_url : Text
-              , service_console_url : Text
               , state : Text
+              , subnet_id : Text
               , time_created : Text
               , time_updated : Text
               }
@@ -26,20 +25,19 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { catalogs =
+  { catalog_private_endpoints =
       None
         ( List
-            { attached_catalog_private_endpoints : List Text
+            { attached_catalogs : List Text
             , compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
+            , dns_zones : List Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , lifecycle_details : Text
-            , number_of_objects : Natural
-            , service_api_url : Text
-            , service_console_url : Text
             , state : Text
+            , subnet_id : Text
             , time_created : Text
             , time_updated : Text
             }

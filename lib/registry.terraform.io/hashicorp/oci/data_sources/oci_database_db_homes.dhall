@@ -44,7 +44,9 @@
               , db_home_location : Text
               , db_system_id : Text
               , db_version : Text
+              , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
+              , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , last_patch_history_entry_id : Text
               , lifecycle_details : Text
@@ -108,7 +110,9 @@
             , db_home_location : Text
             , db_system_id : Text
             , db_version : Text
+            , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
+            , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , last_patch_history_entry_id : Text
             , lifecycle_details : Text

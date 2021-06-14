@@ -34,6 +34,7 @@
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , infrastructure_type : Optional Text
     , is_auto_scaling_enabled : Optional Bool
     , is_dedicated : Optional Bool
     , is_free_tier : Optional Bool
@@ -95,6 +96,7 @@
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , infrastructure_type = None Text
   , is_auto_scaling_enabled = None Bool
   , is_dedicated = None Bool
   , is_free_tier = None Bool

@@ -1,5 +1,6 @@
 { Type =
     { application_id : Text
+    , archive_uri : Optional Text
     , arguments : Optional (List Text)
     , class_name : Optional Text
     , compartment_id : Optional Text
@@ -25,7 +26,8 @@
     , warehouse_bucket_uri : Optional Text
     }
 , default =
-  { arguments = None (List Text)
+  { archive_uri = None Text
+  , arguments = None (List Text)
   , class_name = None Text
   , compartment_id = None Text
   , configuration = None (List { mapKey : Text, mapValue : Text })

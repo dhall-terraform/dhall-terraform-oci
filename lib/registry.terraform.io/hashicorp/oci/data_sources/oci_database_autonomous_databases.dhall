@@ -35,6 +35,7 @@
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , infrastructure_type : Text
               , is_auto_scaling_enabled : Bool
               , is_dedicated : Bool
               , is_free_tier : Bool
@@ -67,6 +68,7 @@
     , db_workload : Optional Text
     , display_name : Optional Text
     , id : Optional Text
+    , infrastructure_type : Optional Text
     , is_free_tier : Optional Bool
     , state : Optional Text
     , filter :
@@ -110,6 +112,7 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , infrastructure_type : Text
             , is_auto_scaling_enabled : Bool
             , is_dedicated : Bool
             , is_free_tier : Bool
@@ -141,6 +144,7 @@
   , db_workload = None Text
   , display_name = None Text
   , id = None Text
+  , infrastructure_type = None Text
   , is_free_tier = None Bool
   , state = None Text
   , filter =

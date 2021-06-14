@@ -1,5 +1,6 @@
 { Type =
     { application_id : Optional Text
+    , archive_uri : Optional Text
     , arguments : Optional (List Text)
     , asynchronous : Optional Bool
     , class_name : Optional Text
@@ -33,6 +34,7 @@
     }
 , default =
   { application_id = None Text
+  , archive_uri = None Text
   , arguments = None (List Text)
   , asynchronous = None Bool
   , class_name = None Text

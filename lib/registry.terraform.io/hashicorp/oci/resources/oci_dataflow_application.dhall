@@ -1,5 +1,6 @@
 { Type =
-    { arguments : Optional (List Text)
+    { archive_uri : Optional Text
+    , arguments : Optional (List Text)
     , class_name : Optional Text
     , compartment_id : Text
     , configuration : Optional (List { mapKey : Text, mapValue : Text })
@@ -30,7 +31,8 @@
           }
     }
 , default =
-  { arguments = None (List Text)
+  { archive_uri = None Text
+  , arguments = None (List Text)
   , class_name = None Text
   , configuration = None (List { mapKey : Text, mapValue : Text })
   , defined_tags = None (List { mapKey : Text, mapValue : Text })

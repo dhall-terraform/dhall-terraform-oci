@@ -3,7 +3,9 @@
     , db_home_location : Optional Text
     , db_system_id : Optional Text
     , db_version : Optional Text
+    , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
+    , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , last_patch_history_entry_id : Optional Text
     , lifecycle_details : Optional Text
@@ -63,7 +65,9 @@
   , db_home_location = None Text
   , db_system_id = None Text
   , db_version = None Text
+  , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
+  , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , last_patch_history_entry_id = None Text
   , lifecycle_details = None Text

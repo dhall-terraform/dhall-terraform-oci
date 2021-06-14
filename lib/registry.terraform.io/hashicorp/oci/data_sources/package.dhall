@@ -186,6 +186,10 @@
     ./oci_database_autonomous_exadata_infrastructures.dhall
 , oci_database_autonomous_exadata_infrastructure_shapes =
     ./oci_database_autonomous_exadata_infrastructure_shapes.dhall
+, oci_database_autonomous_vm_cluster =
+    ./oci_database_autonomous_vm_cluster.dhall
+, oci_database_autonomous_vm_clusters =
+    ./oci_database_autonomous_vm_clusters.dhall
 , oci_database_backup_destination = ./oci_database_backup_destination.dhall
 , oci_database_backup_destinations = ./oci_database_backup_destinations.dhall
 , oci_database_backups = ./oci_database_backups.dhall
@@ -237,6 +241,10 @@
     ./oci_database_vm_cluster_recommended_network.dhall
 , oci_database_vm_clusters = ./oci_database_vm_clusters.dhall
 , oci_datacatalog_catalog = ./oci_datacatalog_catalog.dhall
+, oci_datacatalog_catalog_private_endpoint =
+    ./oci_datacatalog_catalog_private_endpoint.dhall
+, oci_datacatalog_catalog_private_endpoints =
+    ./oci_datacatalog_catalog_private_endpoints.dhall
 , oci_datacatalog_catalogs = ./oci_datacatalog_catalogs.dhall
 , oci_datacatalog_catalog_type = ./oci_datacatalog_catalog_type.dhall
 , oci_datacatalog_catalog_types = ./oci_datacatalog_catalog_types.dhall
@@ -250,6 +258,8 @@
 , oci_dataflow_invoke_runs = ./oci_dataflow_invoke_runs.dhall
 , oci_dataflow_run_log = ./oci_dataflow_run_log.dhall
 , oci_dataflow_run_logs = ./oci_dataflow_run_logs.dhall
+, oci_dataintegration_workspace = ./oci_dataintegration_workspace.dhall
+, oci_dataintegration_workspaces = ./oci_dataintegration_workspaces.dhall
 , oci_data_safe_data_safe_configuration =
     ./oci_data_safe_data_safe_configuration.dhall
 , oci_data_safe_data_safe_private_endpoint =
@@ -266,6 +276,7 @@
 , oci_datascience_project = ./oci_datascience_project.dhall
 , oci_datascience_projects = ./oci_datascience_projects.dhall
 , oci_dns_records = ./oci_dns_records.dhall
+, oci_dns_rrset = ./oci_dns_rrset.dhall
 , oci_dns_steering_policies = ./oci_dns_steering_policies.dhall
 , oci_dns_steering_policy_attachment =
     ./oci_dns_steering_policy_attachment.dhall
@@ -392,6 +403,14 @@
 , oci_monitoring_alarm_statuses = ./oci_monitoring_alarm_statuses.dhall
 , oci_monitoring_metric_data = ./oci_monitoring_metric_data.dhall
 , oci_monitoring_metrics = ./oci_monitoring_metrics.dhall
+, oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
+, oci_mysql_mysql_backups = ./oci_mysql_mysql_backups.dhall
+, oci_mysql_mysql_configuration = ./oci_mysql_mysql_configuration.dhall
+, oci_mysql_mysql_configurations = ./oci_mysql_mysql_configurations.dhall
+, oci_mysql_mysql_db_system = ./oci_mysql_mysql_db_system.dhall
+, oci_mysql_mysql_db_systems = ./oci_mysql_mysql_db_systems.dhall
+, oci_mysql_mysql_versions = ./oci_mysql_mysql_versions.dhall
+, oci_mysql_shapes = ./oci_mysql_shapes.dhall
 , oci_nosql_index = ./oci_nosql_index.dhall
 , oci_nosql_indexes = ./oci_nosql_indexes.dhall
 , oci_nosql_table = ./oci_nosql_table.dhall

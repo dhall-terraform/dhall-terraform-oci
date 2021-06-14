@@ -1,12 +1,15 @@
 { Type =
-    { autonomous_exadata_infrastructure_id : Text
+    { autonomous_exadata_infrastructure_id : Optional Text
+    , autonomous_vm_cluster_id : Optional Text
     , availability_domain : Optional Text
     , compartment_id : Optional Text
+    , db_unique_name : Optional Text
     , db_version : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , infrastructure_type : Optional Text
     , last_maintenance_run_id : Optional Text
     , lifecycle_details : Optional Text
     , maintenance_window :
@@ -26,7 +29,21 @@
     , state : Optional Text
     , time_created : Optional Text
     , backup_config :
-        Optional (List { recovery_window_in_days : Optional Natural })
+        Optional
+          ( List
+              { recovery_window_in_days : Optional Natural
+              , backup_destination_details :
+                  Optional
+                    ( List
+                        { id : Optional Text
+                        , internet_proxy : Optional Text
+                        , type : Text
+                        , vpc_password : Optional Text
+                        , vpc_user : Optional Text
+                        }
+                    )
+              }
+          )
     , maintenance_window_details :
         Optional
           ( List
@@ -46,12 +63,16 @@
           }
     }
 , default =
-  { availability_domain = None Text
+  { autonomous_exadata_infrastructure_id = None Text
+  , autonomous_vm_cluster_id = None Text
+  , availability_domain = None Text
   , compartment_id = None Text
+  , db_unique_name = None Text
   , db_version = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , infrastructure_type = None Text
   , last_maintenance_run_id = None Text
   , lifecycle_details = None Text
   , maintenance_window =
@@ -69,7 +90,22 @@
   , service_level_agreement_type = None Text
   , state = None Text
   , time_created = None Text
-  , backup_config = None (List { recovery_window_in_days : Optional Natural })
+  , backup_config =
+      None
+        ( List
+            { recovery_window_in_days : Optional Natural
+            , backup_destination_details :
+                Optional
+                  ( List
+                      { id : Optional Text
+                      , internet_proxy : Optional Text
+                      , type : Text
+                      , vpc_password : Optional Text
+                      , vpc_user : Optional Text
+                      }
+                  )
+            }
+        )
   , maintenance_window_details =
       None
         ( List

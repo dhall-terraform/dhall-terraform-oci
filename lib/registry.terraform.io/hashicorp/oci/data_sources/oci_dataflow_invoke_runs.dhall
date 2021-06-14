@@ -9,6 +9,7 @@
         Optional
           ( List
               { application_id : Text
+              , archive_uri : Text
               , arguments : List Text
               , asynchronous : Bool
               , class_name : Text
@@ -56,6 +57,7 @@
       None
         ( List
             { application_id : Text
+            , archive_uri : Text
             , arguments : List Text
             , asynchronous : Bool
             , class_name : Text

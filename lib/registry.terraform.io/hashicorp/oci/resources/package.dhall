@@ -80,6 +80,8 @@
     ./oci_database_autonomous_data_warehouse.dhall
 , oci_database_autonomous_exadata_infrastructure =
     ./oci_database_autonomous_exadata_infrastructure.dhall
+, oci_database_autonomous_vm_cluster =
+    ./oci_database_autonomous_vm_cluster.dhall
 , oci_database_backup_destination = ./oci_database_backup_destination.dhall
 , oci_database_backup = ./oci_database_backup.dhall
 , oci_database_database = ./oci_database_database.dhall
@@ -96,10 +98,13 @@
 , oci_database_vm_cluster = ./oci_database_vm_cluster.dhall
 , oci_database_vm_cluster_network = ./oci_database_vm_cluster_network.dhall
 , oci_datacatalog_catalog = ./oci_datacatalog_catalog.dhall
+, oci_datacatalog_catalog_private_endpoint =
+    ./oci_datacatalog_catalog_private_endpoint.dhall
 , oci_datacatalog_connection = ./oci_datacatalog_connection.dhall
 , oci_datacatalog_data_asset = ./oci_datacatalog_data_asset.dhall
 , oci_dataflow_application = ./oci_dataflow_application.dhall
 , oci_dataflow_invoke_run = ./oci_dataflow_invoke_run.dhall
+, oci_dataintegration_workspace = ./oci_dataintegration_workspace.dhall
 , oci_data_safe_data_safe_configuration =
     ./oci_data_safe_data_safe_configuration.dhall
 , oci_data_safe_data_safe_private_endpoint =
@@ -176,6 +181,8 @@
 , oci_marketplace_listing_package_agreement =
     ./oci_marketplace_listing_package_agreement.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
+, oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
+, oci_mysql_mysql_db_system = ./oci_mysql_mysql_db_system.dhall
 , oci_nosql_index = ./oci_nosql_index.dhall
 , oci_nosql_table = ./oci_nosql_table.dhall
 , oci_objectstorage_bucket = ./oci_objectstorage_bucket.dhall

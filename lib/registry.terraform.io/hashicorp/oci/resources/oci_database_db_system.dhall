@@ -67,7 +67,9 @@
         List
           { db_home_location : Optional Text
           , db_version : Optional Text
+          , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
           , display_name : Optional Text
+          , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
           , id : Optional Text
           , last_patch_history_entry_id : Optional Text
           , lifecycle_details : Optional Text

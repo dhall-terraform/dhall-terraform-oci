@@ -11,6 +11,16 @@
               , id : Text
               , lifecycle_details : Text
               , local_mount_point_path : Text
+              , mount_type_details :
+                  List
+                    { local_mount_point_path : Text
+                    , mount_type : Text
+                    , nfs_server : List Text
+                    , nfs_server_export : Text
+                    }
+              , nfs_mount_type : Text
+              , nfs_server : List Text
+              , nfs_server_export : Text
               , state : Text
               , time_created : Text
               , type : Text
@@ -37,6 +47,16 @@
             , id : Text
             , lifecycle_details : Text
             , local_mount_point_path : Text
+            , mount_type_details :
+                List
+                  { local_mount_point_path : Text
+                  , mount_type : Text
+                  , nfs_server : List Text
+                  , nfs_server_export : Text
+                  }
+            , nfs_mount_type : Text
+            , nfs_server : List Text
+            , nfs_server_export : Text
             , state : Text
             , time_created : Text
             , type : Text
