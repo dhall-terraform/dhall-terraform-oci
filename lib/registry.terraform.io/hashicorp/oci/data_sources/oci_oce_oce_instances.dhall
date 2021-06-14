@@ -14,6 +14,7 @@
               , id : Text
               , idcs_access_token : Text
               , idcs_tenancy : Text
+              , instance_access_type : Text
               , instance_usage_type : Text
               , name : Text
               , object_storage_namespace : Text
@@ -24,6 +25,7 @@
               , tenancy_name : Text
               , time_created : Text
               , time_updated : Text
+              , upgrade_schedule : Text
               , waf_primary_domain : Text
               }
           )
@@ -47,6 +49,7 @@
             , id : Text
             , idcs_access_token : Text
             , idcs_tenancy : Text
+            , instance_access_type : Text
             , instance_usage_type : Text
             , name : Text
             , object_storage_namespace : Text
@@ -57,6 +60,7 @@
             , tenancy_name : Text
             , time_created : Text
             , time_updated : Text
+            , upgrade_schedule : Text
             , waf_primary_domain : Text
             }
         )

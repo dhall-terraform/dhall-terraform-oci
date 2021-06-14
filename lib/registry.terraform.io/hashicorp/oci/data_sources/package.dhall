@@ -312,6 +312,7 @@
 , oci_identity_swift_passwords = ./oci_identity_swift_passwords.dhall
 , oci_identity_tag_default = ./oci_identity_tag_default.dhall
 , oci_identity_tag_defaults = ./oci_identity_tag_defaults.dhall
+, oci_identity_tag = ./oci_identity_tag.dhall
 , oci_identity_tag_namespaces = ./oci_identity_tag_namespaces.dhall
 , oci_identity_tags = ./oci_identity_tags.dhall
 , oci_identity_tenancy = ./oci_identity_tenancy.dhall

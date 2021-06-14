@@ -7,9 +7,13 @@
         Optional
           ( List
               { compartment_id : Text
+              , custom_encryption_key :
+                  List { key_state : Text, kms_key_id : Text }
               , defined_tags : List { mapKey : Text, mapValue : Text }
+              , endpoint_fqdn : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , is_private : Bool
               , kafka_settings :
                   List
                     { auto_create_topics_enable : Bool
@@ -19,6 +23,12 @@
                     }
               , lifecycle_state_details : Text
               , name : Text
+              , private_endpoint_settings :
+                  List
+                    { nsg_ids : List Text
+                    , private_endpoint_ip : Text
+                    , subnet_id : Text
+                    }
               , state : Text
               , time_created : Text
               }
@@ -35,9 +45,13 @@
       None
         ( List
             { compartment_id : Text
+            , custom_encryption_key :
+                List { key_state : Text, kms_key_id : Text }
             , defined_tags : List { mapKey : Text, mapValue : Text }
+            , endpoint_fqdn : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , is_private : Bool
             , kafka_settings :
                 List
                   { auto_create_topics_enable : Bool
@@ -47,6 +61,12 @@
                   }
             , lifecycle_state_details : Text
             , name : Text
+            , private_endpoint_settings :
+                List
+                  { nsg_ids : List Text
+                  , private_endpoint_ip : Text
+                  , subnet_id : Text
+                  }
             , state : Text
             , time_created : Text
             }
