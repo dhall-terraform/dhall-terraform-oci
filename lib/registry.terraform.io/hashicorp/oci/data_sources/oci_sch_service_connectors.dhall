@@ -32,6 +32,7 @@
                           , batch_rollover_time_in_ms : Natural
                           , bucket : Text
                           , compartment_id : Text
+                          , enable_formatted_messaging : Bool
                           , function_id : Text
                           , kind : Text
                           , log_group_id : Text
@@ -86,6 +87,7 @@
                         , batch_rollover_time_in_ms : Natural
                         , bucket : Text
                         , compartment_id : Text
+                        , enable_formatted_messaging : Bool
                         , function_id : Text
                         , kind : Text
                         , log_group_id : Text

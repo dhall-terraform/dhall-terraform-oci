@@ -13,6 +13,7 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , name : Text
+              , short_topic_id : Text
               , state : Text
               , time_created : Text
               , topic_id : Text
@@ -37,6 +38,7 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , name : Text
+            , short_topic_id : Text
             , state : Text
             , time_created : Text
             , topic_id : Text

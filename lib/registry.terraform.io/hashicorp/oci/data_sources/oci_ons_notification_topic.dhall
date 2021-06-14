@@ -7,6 +7,7 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , name : Optional Text
+    , short_topic_id : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     , topic_id : Text
@@ -20,6 +21,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , name = None Text
+  , short_topic_id = None Text
   , state = None Text
   , time_created = None Text
   }

@@ -56,6 +56,7 @@
     ./oci_core_instance_console_connection.dhall
 , oci_core_instance = ./oci_core_instance.dhall
 , oci_core_instance_pool = ./oci_core_instance_pool.dhall
+, oci_core_instance_pool_instance = ./oci_core_instance_pool_instance.dhall
 , oci_core_internet_gateway = ./oci_core_internet_gateway.dhall
 , oci_core_ipsec_connection_tunnel_management =
     ./oci_core_ipsec_connection_tunnel_management.dhall
@@ -187,6 +188,10 @@
 , oci_functions_application = ./oci_functions_application.dhall
 , oci_functions_function = ./oci_functions_function.dhall
 , oci_functions_invoke_function = ./oci_functions_invoke_function.dhall
+, oci_golden_gate_database_registration =
+    ./oci_golden_gate_database_registration.dhall
+, oci_golden_gate_deployment_backup = ./oci_golden_gate_deployment_backup.dhall
+, oci_golden_gate_deployment = ./oci_golden_gate_deployment.dhall
 , oci_health_checks_http_monitor = ./oci_health_checks_http_monitor.dhall
 , oci_health_checks_http_probe = ./oci_health_checks_http_probe.dhall
 , oci_health_checks_ping_monitor = ./oci_health_checks_ping_monitor.dhall
@@ -244,6 +249,8 @@
 , oci_logging_log = ./oci_logging_log.dhall
 , oci_logging_log_group = ./oci_logging_log_group.dhall
 , oci_logging_log_saved_search = ./oci_logging_log_saved_search.dhall
+, oci_logging_unified_agent_configuration =
+    ./oci_logging_unified_agent_configuration.dhall
 , oci_management_agent_management_agent =
     ./oci_management_agent_management_agent.dhall
 , oci_management_agent_management_agent_install_key =

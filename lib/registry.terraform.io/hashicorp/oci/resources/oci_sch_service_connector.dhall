@@ -26,6 +26,7 @@
           , batch_rollover_time_in_ms : Optional Natural
           , bucket : Optional Text
           , compartment_id : Optional Text
+          , enable_formatted_messaging : Optional Bool
           , function_id : Optional Text
           , kind : Text
           , log_group_id : Optional Text

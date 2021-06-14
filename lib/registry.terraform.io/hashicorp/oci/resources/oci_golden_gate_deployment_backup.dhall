@@ -1,16 +1,22 @@
 { Type =
-    { api_endpoint : Optional Text
+    { backup_type : Optional Text
+    , bucket : Text
     , compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , description : Optional Text
-    , etag : Optional Text
+    , deployment_id : Text
+    , display_name : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , name : Text
-    , short_topic_id : Optional Text
+    , is_automatic : Optional Bool
+    , lifecycle_details : Optional Text
+    , namespace : Text
+    , object : Text
+    , ogg_version : Optional Text
     , state : Optional Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
-    , topic_id : Optional Text
+    , time_of_backup : Optional Text
+    , time_updated : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,16 +25,18 @@
           }
     }
 , default =
-  { api_endpoint = None Text
+  { backup_type = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
-  , description = None Text
-  , etag = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , short_topic_id = None Text
+  , is_automatic = None Bool
+  , lifecycle_details = None Text
+  , ogg_version = None Text
   , state = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
-  , topic_id = None Text
+  , time_of_backup = None Text
+  , time_updated = None Text
   , timeouts =
       None
         { create : Optional Text

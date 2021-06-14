@@ -6,12 +6,16 @@
     , instances :
         Optional
           ( List
-              { availability_domain : Text
+              { auto_terminate_instance_on_delete : Bool
+              , availability_domain : Text
               , compartment_id : Text
+              , decrement_size_on_delete : Bool
               , display_name : Text
               , fault_domain : Text
               , id : Text
               , instance_configuration_id : Text
+              , instance_id : Text
+              , instance_pool_id : Text
               , load_balancer_backends :
                   List
                     { backend_health_status : Text
@@ -36,12 +40,16 @@
   , instances =
       None
         ( List
-            { availability_domain : Text
+            { auto_terminate_instance_on_delete : Bool
+            , availability_domain : Text
             , compartment_id : Text
+            , decrement_size_on_delete : Bool
             , display_name : Text
             , fault_domain : Text
             , id : Text
             , instance_configuration_id : Text
+            , instance_id : Text
+            , instance_pool_id : Text
             , load_balancer_backends :
                 List
                   { backend_health_status : Text

@@ -421,6 +421,15 @@
 , oci_functions_applications = ./oci_functions_applications.dhall
 , oci_functions_function = ./oci_functions_function.dhall
 , oci_functions_functions = ./oci_functions_functions.dhall
+, oci_golden_gate_database_registration =
+    ./oci_golden_gate_database_registration.dhall
+, oci_golden_gate_database_registrations =
+    ./oci_golden_gate_database_registrations.dhall
+, oci_golden_gate_deployment_backup = ./oci_golden_gate_deployment_backup.dhall
+, oci_golden_gate_deployment_backups =
+    ./oci_golden_gate_deployment_backups.dhall
+, oci_golden_gate_deployment = ./oci_golden_gate_deployment.dhall
+, oci_golden_gate_deployments = ./oci_golden_gate_deployments.dhall
 , oci_health_checks_http_monitor = ./oci_health_checks_http_monitor.dhall
 , oci_health_checks_http_monitors = ./oci_health_checks_http_monitors.dhall
 , oci_health_checks_http_probe_results =
@@ -527,6 +536,10 @@
 , oci_logging_log_saved_search = ./oci_logging_log_saved_search.dhall
 , oci_logging_log_saved_searches = ./oci_logging_log_saved_searches.dhall
 , oci_logging_logs = ./oci_logging_logs.dhall
+, oci_logging_unified_agent_configuration =
+    ./oci_logging_unified_agent_configuration.dhall
+, oci_logging_unified_agent_configurations =
+    ./oci_logging_unified_agent_configurations.dhall
 , oci_management_agent_management_agent_available_histories =
     ./oci_management_agent_management_agent_available_histories.dhall
 , oci_management_agent_management_agent =
