@@ -25,6 +25,7 @@
               , placement_configurations :
                   List
                     { availability_domain : Text
+                    , fault_domains : List Text
                     , primary_subnet_id : Text
                     , secondary_vnic_subnets :
                         List { display_name : Text, subnet_id : Text }
@@ -65,6 +66,7 @@
             , placement_configurations :
                 List
                   { availability_domain : Text
+                  , fault_domains : List Text
                   , primary_subnet_id : Text
                   , secondary_vnic_subnets :
                       List { display_name : Text, subnet_id : Text }

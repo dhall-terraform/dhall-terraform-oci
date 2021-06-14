@@ -20,6 +20,7 @@
                     , oracle_bgp_peering_ipv6 : Text
                     , vlan : Natural
                     }
+              , customer_asn : Text
               , customer_bgp_asn : Natural
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
@@ -65,6 +66,7 @@
                   , oracle_bgp_peering_ipv6 : Text
                   , vlan : Natural
                   }
+            , customer_asn : Text
             , customer_bgp_asn : Natural
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text

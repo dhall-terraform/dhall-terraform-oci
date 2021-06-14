@@ -15,6 +15,7 @@
               , vlan : Natural
               }
           )
+    , customer_asn : Optional Text
     , customer_bgp_asn : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
@@ -51,6 +52,7 @@
             , vlan : Natural
             }
         )
+  , customer_asn = None Text
   , customer_bgp_asn = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text

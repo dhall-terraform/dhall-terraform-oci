@@ -3,6 +3,7 @@
     , bgp_management : Optional Text
     , bgp_session_state : Optional Text
     , compartment_id : Text
+    , customer_asn : Optional Text
     , customer_bgp_asn : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
@@ -43,6 +44,7 @@
   { bandwidth_shape_name = None Text
   , bgp_management = None Text
   , bgp_session_state = None Text
+  , customer_asn = None Text
   , customer_bgp_asn = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
