@@ -131,7 +131,12 @@
                                   }
                               )
                         , shape_config :
-                            Optional (List { ocpus : Optional Natural })
+                            Optional
+                              ( List
+                                  { memory_in_gbs : Optional Natural
+                                  , ocpus : Optional Natural
+                                  }
+                              )
                         , source_details :
                             Optional
                               ( List
@@ -303,7 +308,12 @@
                                 }
                             )
                       , shape_config :
-                          Optional (List { ocpus : Optional Natural })
+                          Optional
+                            ( List
+                                { memory_in_gbs : Optional Natural
+                                , ocpus : Optional Natural
+                                }
+                            )
                       , source_details :
                           Optional
                             ( List

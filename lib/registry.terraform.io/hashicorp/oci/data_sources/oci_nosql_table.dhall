@@ -4,6 +4,7 @@
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , is_auto_reclaimable : Optional Bool
     , lifecycle_details : Optional Text
     , name : Optional Text
     , schema :
@@ -22,6 +23,7 @@
               }
           )
     , state : Optional Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , table_limits :
         Optional
           ( List
@@ -32,6 +34,7 @@
           )
     , table_name_or_id : Text
     , time_created : Optional Text
+    , time_of_expiration : Optional Text
     , time_updated : Optional Text
     }
 , default =
@@ -39,6 +42,7 @@
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , is_auto_reclaimable = None Bool
   , lifecycle_details = None Text
   , name = None Text
   , schema =
@@ -57,6 +61,7 @@
             }
         )
   , state = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , table_limits =
       None
         ( List
@@ -66,6 +71,7 @@
             }
         )
   , time_created = None Text
+  , time_of_expiration = None Text
   , time_updated = None Text
   }
 }

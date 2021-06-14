@@ -10,6 +10,7 @@
               , id : Text
               , state : Text
               , subnet_ids : List Text
+              , syslog_url : Text
               , time_created : Text
               , time_updated : Text
               }
@@ -34,6 +35,7 @@
             , id : Text
             , state : Text
             , subnet_ids : List Text
+            , syslog_url : Text
             , time_created : Text
             , time_updated : Text
             }

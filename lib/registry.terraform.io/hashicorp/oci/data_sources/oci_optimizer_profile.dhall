@@ -1,27 +1,28 @@
 { Type =
-    { application_id : Text
-    , compartment_id : Optional Text
-    , config : Optional (List { mapKey : Text, mapValue : Text })
+    { compartment_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , display_name : Optional Text
+    , description : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , levels_configuration :
+        Optional
+          (List { items : List { level : Text, recommendation_id : Text } })
+    , name : Optional Text
+    , profile_id : Text
     , state : Optional Text
-    , subnet_ids : Optional (List Text)
-    , syslog_url : Optional Text
     , time_created : Optional Text
     , time_updated : Optional Text
     }
 , default =
   { compartment_id = None Text
-  , config = None (List { mapKey : Text, mapValue : Text })
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
-  , display_name = None Text
+  , description = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , levels_configuration =
+      None (List { items : List { level : Text, recommendation_id : Text } })
+  , name = None Text
   , state = None Text
-  , subnet_ids = None (List Text)
-  , syslog_url = None Text
   , time_created = None Text
   , time_updated = None Text
   }

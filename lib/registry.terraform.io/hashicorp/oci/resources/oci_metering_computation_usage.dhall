@@ -28,6 +28,8 @@
               , sku_part_number : Text
               , subscription_id : Text
               , tags : List { key : Text, namespace : Text, value : Text }
+              , tenant_id : Text
+              , tenant_name : Text
               , time_usage_ended : Text
               , time_usage_started : Text
               , unit : Text
@@ -75,6 +77,8 @@
             , sku_part_number : Text
             , subscription_id : Text
             , tags : List { key : Text, namespace : Text, value : Text }
+            , tenant_id : Text
+            , tenant_name : Text
             , time_usage_ended : Text
             , time_usage_started : Text
             , unit : Text

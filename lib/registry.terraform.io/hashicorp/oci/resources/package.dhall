@@ -233,6 +233,10 @@
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
+, oci_optimizer_enrollment_status = ./oci_optimizer_enrollment_status.dhall
+, oci_optimizer_profile = ./oci_optimizer_profile.dhall
+, oci_optimizer_recommendation = ./oci_optimizer_recommendation.dhall
+, oci_optimizer_resource_action = ./oci_optimizer_resource_action.dhall
 , oci_osmanagement_managed_instance_group =
     ./oci_osmanagement_managed_instance_group.dhall
 , oci_osmanagement_managed_instance_management =

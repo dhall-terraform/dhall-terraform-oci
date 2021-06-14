@@ -94,7 +94,8 @@
                           , metadata : List { mapKey : Text, mapValue : Text }
                           , preferred_maintenance_action : Text
                           , shape : Text
-                          , shape_config : List { ocpus : Natural }
+                          , shape_config :
+                              List { memory_in_gbs : Natural, ocpus : Natural }
                           , source_details :
                               List
                                 { boot_volume_id : Text
@@ -224,7 +225,8 @@
                         , metadata : List { mapKey : Text, mapValue : Text }
                         , preferred_maintenance_action : Text
                         , shape : Text
-                        , shape_config : List { ocpus : Natural }
+                        , shape_config :
+                            List { memory_in_gbs : Natural, ocpus : Natural }
                         , source_details :
                             List
                               { boot_volume_id : Text

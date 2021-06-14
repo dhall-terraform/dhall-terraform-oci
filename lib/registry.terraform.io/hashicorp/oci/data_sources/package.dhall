@@ -536,6 +536,17 @@
 , oci_ons_notification_topics = ./oci_ons_notification_topics.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
 , oci_ons_subscriptions = ./oci_ons_subscriptions.dhall
+, oci_optimizer_categories = ./oci_optimizer_categories.dhall
+, oci_optimizer_category = ./oci_optimizer_category.dhall
+, oci_optimizer_enrollment_status = ./oci_optimizer_enrollment_status.dhall
+, oci_optimizer_enrollment_statuses = ./oci_optimizer_enrollment_statuses.dhall
+, oci_optimizer_histories = ./oci_optimizer_histories.dhall
+, oci_optimizer_profile = ./oci_optimizer_profile.dhall
+, oci_optimizer_profiles = ./oci_optimizer_profiles.dhall
+, oci_optimizer_recommendation = ./oci_optimizer_recommendation.dhall
+, oci_optimizer_recommendations = ./oci_optimizer_recommendations.dhall
+, oci_optimizer_resource_action = ./oci_optimizer_resource_action.dhall
+, oci_optimizer_resource_actions = ./oci_optimizer_resource_actions.dhall
 , oci_osmanagement_managed_instance = ./oci_osmanagement_managed_instance.dhall
 , oci_osmanagement_managed_instance_group =
     ./oci_osmanagement_managed_instance_group.dhall

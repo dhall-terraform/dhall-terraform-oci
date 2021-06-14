@@ -11,6 +11,7 @@
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , is_auto_reclaimable : Bool
               , lifecycle_details : Text
               , name : Text
               , schema :
@@ -27,6 +28,7 @@
                     , ttl : Natural
                     }
               , state : Text
+              , system_tags : List { mapKey : Text, mapValue : Text }
               , table_limits :
                   List
                     { max_read_units : Natural
@@ -34,6 +36,7 @@
                     , max_write_units : Natural
                     }
               , time_created : Text
+              , time_of_expiration : Text
               , time_updated : Text
               }
           )
@@ -53,6 +56,7 @@
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , is_auto_reclaimable : Bool
             , lifecycle_details : Text
             , name : Text
             , schema :
@@ -69,6 +73,7 @@
                   , ttl : Natural
                   }
             , state : Text
+            , system_tags : List { mapKey : Text, mapValue : Text }
             , table_limits :
                 List
                   { max_read_units : Natural
@@ -76,6 +81,7 @@
                   , max_write_units : Natural
                   }
             , time_created : Text
+            , time_of_expiration : Text
             , time_updated : Text
             }
         )
