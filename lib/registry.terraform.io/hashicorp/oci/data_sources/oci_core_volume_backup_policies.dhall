@@ -6,6 +6,7 @@
           ( List
               { compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
+              , destination_region : Text
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
@@ -37,6 +38,7 @@
         ( List
             { compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
+            , destination_region : Text
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text

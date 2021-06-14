@@ -19,6 +19,7 @@
     , replication_enabled : Optional Bool
     , storage_tier : Optional Text
     , time_created : Optional Text
+    , versioning : Optional Text
     , retention_rules :
         Optional
           ( List
@@ -56,6 +57,7 @@
   , replication_enabled = None Bool
   , storage_tier = None Text
   , time_created = None Text
+  , versioning = None Text
   , retention_rules =
       None
         ( List

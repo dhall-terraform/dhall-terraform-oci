@@ -53,6 +53,19 @@
               , public_ip : Text
               , region : Text
               , shape : Text
+              , shape_config :
+                  List
+                    { gpu_description : Text
+                    , gpus : Natural
+                    , local_disk_description : Text
+                    , local_disks : Natural
+                    , local_disks_total_size_in_gbs : Natural
+                    , max_vnic_attachments : Natural
+                    , memory_in_gbs : Natural
+                    , networking_bandwidth_in_gbps : Natural
+                    , ocpus : Natural
+                    , processor_description : Text
+                    }
               , source_details :
                   List
                     { boot_volume_size_in_gbs : Text
@@ -126,6 +139,19 @@
             , public_ip : Text
             , region : Text
             , shape : Text
+            , shape_config :
+                List
+                  { gpu_description : Text
+                  , gpus : Natural
+                  , local_disk_description : Text
+                  , local_disks : Natural
+                  , local_disks_total_size_in_gbs : Natural
+                  , max_vnic_attachments : Natural
+                  , memory_in_gbs : Natural
+                  , networking_bandwidth_in_gbps : Natural
+                  , ocpus : Natural
+                  , processor_description : Text
+                  }
             , source_details :
                 List
                   { boot_volume_size_in_gbs : Text

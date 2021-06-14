@@ -28,26 +28,38 @@
                           , display_name : Text
                           , freeform_tags :
                               List { mapKey : Text, mapValue : Text }
+                          , kms_key_id : Text
                           , size_in_gbs : Text
                           , source_details : List { id : Text, type : Text }
+                          , vpus_per_gb : Text
                           }
                     , volume_id : Text
                     }
               , instance_type : Text
               , launch_details :
                   List
-                    { availability_domain : Text
+                    { agent_config :
+                        List
+                          { is_management_disabled : Bool
+                          , is_monitoring_disabled : Bool
+                          }
+                    , availability_domain : Text
                     , compartment_id : Text
                     , create_vnic_details :
                         List
                           { assign_public_ip : Bool
+                          , defined_tags :
+                              List { mapKey : Text, mapValue : Text }
                           , display_name : Text
+                          , freeform_tags :
+                              List { mapKey : Text, mapValue : Text }
                           , hostname_label : Text
                           , nsg_ids : List Text
                           , private_ip : Text
                           , skip_source_dest_check : Bool
                           , subnet_id : Text
                           }
+                    , dedicated_vm_host_id : Text
                     , defined_tags : List { mapKey : Text, mapValue : Text }
                     , display_name : Text
                     , extended_metadata :
@@ -55,8 +67,21 @@
                     , fault_domain : Text
                     , freeform_tags : List { mapKey : Text, mapValue : Text }
                     , ipxe_script : Text
+                    , is_pv_encryption_in_transit_enabled : Bool
+                    , launch_mode : Text
+                    , launch_options :
+                        List
+                          { boot_volume_type : Text
+                          , firmware : Text
+                          , is_consistent_volume_naming_enabled : Bool
+                          , is_pv_encryption_in_transit_enabled : Bool
+                          , network_type : Text
+                          , remote_data_volume_type : Text
+                          }
                     , metadata : List { mapKey : Text, mapValue : Text }
+                    , preferred_maintenance_action : Text
                     , shape : Text
+                    , shape_config : List { ocpus : Natural }
                     , source_details :
                         List
                           { boot_volume_id : Text
@@ -70,7 +95,11 @@
                     { create_vnic_details :
                         List
                           { assign_public_ip : Bool
+                          , defined_tags :
+                              List { mapKey : Text, mapValue : Text }
                           , display_name : Text
+                          , freeform_tags :
+                              List { mapKey : Text, mapValue : Text }
                           , hostname_label : Text
                           , nsg_ids : List Text
                           , private_ip : Text
@@ -114,34 +143,58 @@
                         , display_name : Text
                         , freeform_tags :
                             List { mapKey : Text, mapValue : Text }
+                        , kms_key_id : Text
                         , size_in_gbs : Text
                         , source_details : List { id : Text, type : Text }
+                        , vpus_per_gb : Text
                         }
                   , volume_id : Text
                   }
             , instance_type : Text
             , launch_details :
                 List
-                  { availability_domain : Text
+                  { agent_config :
+                      List
+                        { is_management_disabled : Bool
+                        , is_monitoring_disabled : Bool
+                        }
+                  , availability_domain : Text
                   , compartment_id : Text
                   , create_vnic_details :
                       List
                         { assign_public_ip : Bool
+                        , defined_tags : List { mapKey : Text, mapValue : Text }
                         , display_name : Text
+                        , freeform_tags :
+                            List { mapKey : Text, mapValue : Text }
                         , hostname_label : Text
                         , nsg_ids : List Text
                         , private_ip : Text
                         , skip_source_dest_check : Bool
                         , subnet_id : Text
                         }
+                  , dedicated_vm_host_id : Text
                   , defined_tags : List { mapKey : Text, mapValue : Text }
                   , display_name : Text
                   , extended_metadata : List { mapKey : Text, mapValue : Text }
                   , fault_domain : Text
                   , freeform_tags : List { mapKey : Text, mapValue : Text }
                   , ipxe_script : Text
+                  , is_pv_encryption_in_transit_enabled : Bool
+                  , launch_mode : Text
+                  , launch_options :
+                      List
+                        { boot_volume_type : Text
+                        , firmware : Text
+                        , is_consistent_volume_naming_enabled : Bool
+                        , is_pv_encryption_in_transit_enabled : Bool
+                        , network_type : Text
+                        , remote_data_volume_type : Text
+                        }
                   , metadata : List { mapKey : Text, mapValue : Text }
+                  , preferred_maintenance_action : Text
                   , shape : Text
+                  , shape_config : List { ocpus : Natural }
                   , source_details :
                       List
                         { boot_volume_id : Text
@@ -155,7 +208,10 @@
                   { create_vnic_details :
                       List
                         { assign_public_ip : Bool
+                        , defined_tags : List { mapKey : Text, mapValue : Text }
                         , display_name : Text
+                        , freeform_tags :
+                            List { mapKey : Text, mapValue : Text }
                         , hostname_label : Text
                         , nsg_ids : List Text
                         , private_ip : Text

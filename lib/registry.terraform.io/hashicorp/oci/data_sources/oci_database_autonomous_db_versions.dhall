@@ -5,6 +5,7 @@
               { db_workload : Text
               , details : Text
               , is_dedicated : Bool
+              , is_free_tier_enabled : Bool
               , version : Text
               }
           )
@@ -22,6 +23,7 @@
             { db_workload : Text
             , details : Text
             , is_dedicated : Bool
+            , is_free_tier_enabled : Bool
             , version : Text
             }
         )

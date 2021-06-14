@@ -30,6 +30,7 @@
           )
     , storage_tier : Optional Text
     , time_created : Optional Text
+    , versioning : Optional Text
     }
 , default =
   { access_type = None Text
@@ -61,5 +62,6 @@
         )
   , storage_tier = None Text
   , time_created = None Text
+  , versioning = None Text
   }
 }

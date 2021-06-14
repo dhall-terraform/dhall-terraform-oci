@@ -31,6 +31,7 @@
                     }
               , storage_tier : Text
               , time_created : Text
+              , versioning : Text
               }
           )
     , compartment_id : Text
@@ -73,6 +74,7 @@
                   }
             , storage_tier : Text
             , time_created : Text
+            , versioning : Text
             }
         )
   , id = None Text

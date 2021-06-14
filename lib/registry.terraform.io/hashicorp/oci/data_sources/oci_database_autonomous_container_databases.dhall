@@ -16,6 +16,7 @@
                   List
                     { days_of_week : List { name : Text }
                     , hours_of_day : List Natural
+                    , lead_time_in_weeks : Natural
                     , months : List { name : Text }
                     , preference : Text
                     , weeks_of_month : List Natural
@@ -24,6 +25,7 @@
                   List
                     { days_of_week : List { name : Text }
                     , hours_of_day : List Natural
+                    , lead_time_in_weeks : Natural
                     , months : List { name : Text }
                     , preference : Text
                     , weeks_of_month : List Natural
@@ -63,6 +65,7 @@
                 List
                   { days_of_week : List { name : Text }
                   , hours_of_day : List Natural
+                  , lead_time_in_weeks : Natural
                   , months : List { name : Text }
                   , preference : Text
                   , weeks_of_month : List Natural
@@ -71,6 +74,7 @@
                 List
                   { days_of_week : List { name : Text }
                   , hours_of_day : List Natural
+                  , lead_time_in_weeks : Natural
                   , months : List { name : Text }
                   , preference : Text
                   , weeks_of_month : List Natural

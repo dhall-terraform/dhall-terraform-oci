@@ -14,6 +14,7 @@
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , namespace : Text
     , object : Text
+    , version_id : Optional Text
     }
 , default =
   { base64_encode_content = None Bool
@@ -28,5 +29,6 @@
   , content_type = None Text
   , id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
+  , version_id = None Text
   }
 }

@@ -15,6 +15,7 @@
           ( List
               { days_of_week : List { name : Text }
               , hours_of_day : List Natural
+              , lead_time_in_weeks : Natural
               , months : List { name : Text }
               , preference : Text
               , weeks_of_month : List Natural
@@ -30,6 +31,7 @@
         Optional
           ( List
               { hours_of_day : Optional (List Natural)
+              , lead_time_in_weeks : Optional Natural
               , preference : Text
               , weeks_of_month : Optional (List Natural)
               , days_of_week : Optional (List { name : Text })
@@ -58,6 +60,7 @@
         ( List
             { days_of_week : List { name : Text }
             , hours_of_day : List Natural
+            , lead_time_in_weeks : Natural
             , months : List { name : Text }
             , preference : Text
             , weeks_of_month : List Natural
@@ -71,6 +74,7 @@
       None
         ( List
             { hours_of_day : Optional (List Natural)
+            , lead_time_in_weeks : Optional Natural
             , preference : Text
             , weeks_of_month : Optional (List Natural)
             , days_of_week : Optional (List { name : Text })

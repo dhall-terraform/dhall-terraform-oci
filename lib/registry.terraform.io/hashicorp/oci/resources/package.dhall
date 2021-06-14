@@ -192,7 +192,6 @@
     ./oci_osmanagement_managed_instance_management.dhall
 , oci_osmanagement_software_source = ./oci_osmanagement_software_source.dhall
 , oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
-, oci_streaming_stream_archiver = ./oci_streaming_stream_archiver.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
 , oci_streaming_stream_pool = ./oci_streaming_stream_pool.dhall
 , oci_waas_address_list = ./oci_waas_address_list.dhall

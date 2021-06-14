@@ -59,6 +59,21 @@
               , remote_data_volume_type : Optional Text
               }
           )
+    , shape_config :
+        Optional
+          ( List
+              { gpu_description : Optional Text
+              , gpus : Optional Natural
+              , local_disk_description : Optional Text
+              , local_disks : Optional Natural
+              , local_disks_total_size_in_gbs : Optional Natural
+              , max_vnic_attachments : Optional Natural
+              , memory_in_gbs : Optional Natural
+              , networking_bandwidth_in_gbps : Optional Natural
+              , ocpus : Optional Natural
+              , processor_description : Optional Text
+              }
+          )
     , source_details :
         Optional
           ( List
@@ -129,6 +144,21 @@
             , is_pv_encryption_in_transit_enabled : Optional Bool
             , network_type : Optional Text
             , remote_data_volume_type : Optional Text
+            }
+        )
+  , shape_config =
+      None
+        ( List
+            { gpu_description : Optional Text
+            , gpus : Optional Natural
+            , local_disk_description : Optional Text
+            , local_disks : Optional Natural
+            , local_disks_total_size_in_gbs : Optional Natural
+            , max_vnic_attachments : Optional Natural
+            , memory_in_gbs : Optional Natural
+            , networking_bandwidth_in_gbps : Optional Natural
+            , ocpus : Optional Natural
+            , processor_description : Optional Text
             }
         )
   , source_details =

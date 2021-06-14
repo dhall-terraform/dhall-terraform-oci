@@ -82,10 +82,30 @@
                     , objective : Text
                     , state : Text
                     }
+              , last_maintenance_run_id : Text
               , last_patch_history_entry_id : Text
               , license_model : Text
               , lifecycle_details : Text
               , listener_port : Natural
+              , maintenance_window :
+                  List
+                    { days_of_week : List { name : Text }
+                    , hours_of_day : List Natural
+                    , lead_time_in_weeks : Natural
+                    , months : List { name : Text }
+                    , preference : Text
+                    , weeks_of_month : List Natural
+                    }
+              , maintenance_window_details :
+                  List
+                    { days_of_week : List { name : Text }
+                    , hours_of_day : List Natural
+                    , lead_time_in_weeks : Natural
+                    , months : List { name : Text }
+                    , preference : Text
+                    , weeks_of_month : List Natural
+                    }
+              , next_maintenance_run_id : Text
               , node_count : Natural
               , nsg_ids : List Text
               , reco_storage_size_in_gb : Natural
@@ -192,10 +212,30 @@
                   , objective : Text
                   , state : Text
                   }
+            , last_maintenance_run_id : Text
             , last_patch_history_entry_id : Text
             , license_model : Text
             , lifecycle_details : Text
             , listener_port : Natural
+            , maintenance_window :
+                List
+                  { days_of_week : List { name : Text }
+                  , hours_of_day : List Natural
+                  , lead_time_in_weeks : Natural
+                  , months : List { name : Text }
+                  , preference : Text
+                  , weeks_of_month : List Natural
+                  }
+            , maintenance_window_details :
+                List
+                  { days_of_week : List { name : Text }
+                  , hours_of_day : List Natural
+                  , lead_time_in_weeks : Natural
+                  , months : List { name : Text }
+                  , preference : Text
+                  , weeks_of_month : List Natural
+                  }
+            , next_maintenance_run_id : Text
             , node_count : Natural
             , nsg_ids : List Text
             , reco_storage_size_in_gb : Natural

@@ -77,6 +77,8 @@
 , oci_core_fast_connect_provider_services =
     ./oci_core_fast_connect_provider_services.dhall
 , oci_core_images = ./oci_core_images.dhall
+, oci_core_image_shape = ./oci_core_image_shape.dhall
+, oci_core_image_shapes = ./oci_core_image_shapes.dhall
 , oci_core_instance_configuration = ./oci_core_instance_configuration.dhall
 , oci_core_instance_configurations = ./oci_core_instance_configurations.dhall
 , oci_core_instance_console_connections =
@@ -392,6 +394,7 @@
 , oci_objectstorage_object_lifecycle_policy =
     ./oci_objectstorage_object_lifecycle_policy.dhall
 , oci_objectstorage_objects = ./oci_objectstorage_objects.dhall
+, oci_objectstorage_object_versions = ./oci_objectstorage_object_versions.dhall
 , oci_objectstorage_preauthrequest = ./oci_objectstorage_preauthrequest.dhall
 , oci_objectstorage_preauthrequests = ./oci_objectstorage_preauthrequests.dhall
 , oci_objectstorage_replication_policies =
@@ -423,7 +426,6 @@
     ./oci_resourcemanager_stack_tf_state.dhall
 , oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
 , oci_streaming_connect_harnesses = ./oci_streaming_connect_harnesses.dhall
-, oci_streaming_stream_archiver = ./oci_streaming_stream_archiver.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
 , oci_streaming_stream_pool = ./oci_streaming_stream_pool.dhall
 , oci_streaming_stream_pools = ./oci_streaming_stream_pools.dhall

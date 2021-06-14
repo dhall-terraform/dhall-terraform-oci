@@ -31,10 +31,23 @@
               , state : Text
               }
           )
+    , last_maintenance_run_id : Optional Text
     , last_patch_history_entry_id : Optional Text
     , license_model : Optional Text
     , lifecycle_details : Optional Text
     , listener_port : Optional Natural
+    , maintenance_window :
+        Optional
+          ( List
+              { days_of_week : List { name : Text }
+              , hours_of_day : List Natural
+              , lead_time_in_weeks : Natural
+              , months : List { name : Text }
+              , preference : Text
+              , weeks_of_month : List Natural
+              }
+          )
+    , next_maintenance_run_id : Optional Text
     , node_count : Optional Natural
     , nsg_ids : Optional (List Text)
     , reco_storage_size_in_gb : Optional Natural
@@ -104,6 +117,17 @@
                 }
           }
     , db_system_options : Optional (List { storage_management : Optional Text })
+    , maintenance_window_details :
+        Optional
+          ( List
+              { hours_of_day : Optional (List Natural)
+              , lead_time_in_weeks : Optional Natural
+              , preference : Optional Text
+              , weeks_of_month : Optional (List Natural)
+              , days_of_week : Optional (List { name : Optional Text })
+              , months : Optional (List { name : Optional Text })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -137,10 +161,23 @@
             , state : Text
             }
         )
+  , last_maintenance_run_id = None Text
   , last_patch_history_entry_id = None Text
   , license_model = None Text
   , lifecycle_details = None Text
   , listener_port = None Natural
+  , maintenance_window =
+      None
+        ( List
+            { days_of_week : List { name : Text }
+            , hours_of_day : List Natural
+            , lead_time_in_weeks : Natural
+            , months : List { name : Text }
+            , preference : Text
+            , weeks_of_month : List Natural
+            }
+        )
+  , next_maintenance_run_id = None Text
   , node_count = None Natural
   , nsg_ids = None (List Text)
   , reco_storage_size_in_gb = None Natural
@@ -154,6 +191,17 @@
   , version = None Text
   , vip_ids = None (List Text)
   , db_system_options = None (List { storage_management : Optional Text })
+  , maintenance_window_details =
+      None
+        ( List
+            { hours_of_day : Optional (List Natural)
+            , lead_time_in_weeks : Optional Natural
+            , preference : Optional Text
+            , weeks_of_month : Optional (List Natural)
+            , days_of_week : Optional (List { name : Optional Text })
+            , months : Optional (List { name : Optional Text })
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

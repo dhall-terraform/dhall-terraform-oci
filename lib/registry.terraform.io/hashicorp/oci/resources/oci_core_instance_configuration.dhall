@@ -42,7 +42,9 @@
                                         ( List
                                             { mapKey : Text, mapValue : Text }
                                         )
+                                  , kms_key_id : Optional Text
                                   , size_in_gbs : Optional Text
+                                  , vpus_per_gb : Optional Text
                                   , source_details :
                                       Optional
                                         ( List
@@ -57,6 +59,7 @@
                     ( List
                         { availability_domain : Optional Text
                         , compartment_id : Optional Text
+                        , dedicated_vm_host_id : Optional Text
                         , defined_tags :
                             Optional (List { mapKey : Text, mapValue : Text })
                         , display_name : Optional Text
@@ -66,14 +69,34 @@
                         , freeform_tags :
                             Optional (List { mapKey : Text, mapValue : Text })
                         , ipxe_script : Optional Text
+                        , is_pv_encryption_in_transit_enabled : Optional Bool
+                        , launch_mode : Optional Text
                         , metadata :
                             Optional (List { mapKey : Text, mapValue : Text })
+                        , preferred_maintenance_action : Optional Text
                         , shape : Optional Text
+                        , agent_config :
+                            Optional
+                              ( List
+                                  { is_management_disabled : Optional Bool
+                                  , is_monitoring_disabled : Optional Bool
+                                  }
+                              )
                         , create_vnic_details :
                             Optional
                               ( List
                                   { assign_public_ip : Optional Bool
+                                  , defined_tags :
+                                      Optional
+                                        ( List
+                                            { mapKey : Text, mapValue : Text }
+                                        )
                                   , display_name : Optional Text
+                                  , freeform_tags :
+                                      Optional
+                                        ( List
+                                            { mapKey : Text, mapValue : Text }
+                                        )
                                   , hostname_label : Optional Text
                                   , nsg_ids : Optional (List Text)
                                   , private_ip : Optional Text
@@ -81,6 +104,21 @@
                                   , subnet_id : Optional Text
                                   }
                               )
+                        , launch_options :
+                            Optional
+                              ( List
+                                  { boot_volume_type : Optional Text
+                                  , firmware : Optional Text
+                                  , is_consistent_volume_naming_enabled :
+                                      Optional Bool
+                                  , is_pv_encryption_in_transit_enabled :
+                                      Optional Bool
+                                  , network_type : Optional Text
+                                  , remote_data_volume_type : Optional Text
+                                  }
+                              )
+                        , shape_config :
+                            Optional (List { ocpus : Optional Natural })
                         , source_details :
                             Optional
                               ( List
@@ -101,7 +139,17 @@
                             Optional
                               ( List
                                   { assign_public_ip : Optional Bool
+                                  , defined_tags :
+                                      Optional
+                                        ( List
+                                            { mapKey : Text, mapValue : Text }
+                                        )
                                   , display_name : Optional Text
+                                  , freeform_tags :
+                                      Optional
+                                        ( List
+                                            { mapKey : Text, mapValue : Text }
+                                        )
                                   , hostname_label : Optional Text
                                   , nsg_ids : Optional (List Text)
                                   , private_ip : Optional Text
@@ -159,7 +207,9 @@
                                 , freeform_tags :
                                     Optional
                                       (List { mapKey : Text, mapValue : Text })
+                                , kms_key_id : Optional Text
                                 , size_in_gbs : Optional Text
+                                , vpus_per_gb : Optional Text
                                 , source_details :
                                     Optional
                                       (List { id : Optional Text, type : Text })
@@ -172,6 +222,7 @@
                   ( List
                       { availability_domain : Optional Text
                       , compartment_id : Optional Text
+                      , dedicated_vm_host_id : Optional Text
                       , defined_tags :
                           Optional (List { mapKey : Text, mapValue : Text })
                       , display_name : Optional Text
@@ -181,14 +232,30 @@
                       , freeform_tags :
                           Optional (List { mapKey : Text, mapValue : Text })
                       , ipxe_script : Optional Text
+                      , is_pv_encryption_in_transit_enabled : Optional Bool
+                      , launch_mode : Optional Text
                       , metadata :
                           Optional (List { mapKey : Text, mapValue : Text })
+                      , preferred_maintenance_action : Optional Text
                       , shape : Optional Text
+                      , agent_config :
+                          Optional
+                            ( List
+                                { is_management_disabled : Optional Bool
+                                , is_monitoring_disabled : Optional Bool
+                                }
+                            )
                       , create_vnic_details :
                           Optional
                             ( List
                                 { assign_public_ip : Optional Bool
+                                , defined_tags :
+                                    Optional
+                                      (List { mapKey : Text, mapValue : Text })
                                 , display_name : Optional Text
+                                , freeform_tags :
+                                    Optional
+                                      (List { mapKey : Text, mapValue : Text })
                                 , hostname_label : Optional Text
                                 , nsg_ids : Optional (List Text)
                                 , private_ip : Optional Text
@@ -196,6 +263,21 @@
                                 , subnet_id : Optional Text
                                 }
                             )
+                      , launch_options :
+                          Optional
+                            ( List
+                                { boot_volume_type : Optional Text
+                                , firmware : Optional Text
+                                , is_consistent_volume_naming_enabled :
+                                    Optional Bool
+                                , is_pv_encryption_in_transit_enabled :
+                                    Optional Bool
+                                , network_type : Optional Text
+                                , remote_data_volume_type : Optional Text
+                                }
+                            )
+                      , shape_config :
+                          Optional (List { ocpus : Optional Natural })
                       , source_details :
                           Optional
                             ( List
@@ -216,7 +298,13 @@
                           Optional
                             ( List
                                 { assign_public_ip : Optional Bool
+                                , defined_tags :
+                                    Optional
+                                      (List { mapKey : Text, mapValue : Text })
                                 , display_name : Optional Text
+                                , freeform_tags :
+                                    Optional
+                                      (List { mapKey : Text, mapValue : Text })
                                 , hostname_label : Optional Text
                                 , nsg_ids : Optional (List Text)
                                 , private_ip : Optional Text

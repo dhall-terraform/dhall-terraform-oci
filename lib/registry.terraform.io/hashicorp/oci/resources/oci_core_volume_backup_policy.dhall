@@ -1,6 +1,7 @@
 { Type =
     { compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , destination_region : Optional Text
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
@@ -29,6 +30,7 @@
     }
 , default =
   { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  , destination_region = None Text
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text

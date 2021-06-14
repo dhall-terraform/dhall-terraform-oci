@@ -8,12 +8,14 @@
     , content_length : Optional Text
     , content_md5 : Optional Text
     , content_type : Optional Text
+    , delete_all_object_versions : Optional Bool
     , id : Optional Text
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , namespace : Text
     , object : Text
     , source : Optional Text
     , state : Optional Text
+    , version_id : Optional Text
     , work_request_id : Optional Text
     , source_uri_details :
         Optional
@@ -25,6 +27,7 @@
               , object : Text
               , region : Text
               , source_object_if_match_etag : Optional Text
+              , source_version_id : Optional Text
               }
           )
     , timeouts :
@@ -43,10 +46,12 @@
   , content_length = None Text
   , content_md5 = None Text
   , content_type = None Text
+  , delete_all_object_versions = None Bool
   , id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
   , source = None Text
   , state = None Text
+  , version_id = None Text
   , work_request_id = None Text
   , source_uri_details =
       None
@@ -58,6 +63,7 @@
             , object : Text
             , region : Text
             , source_object_if_match_etag : Optional Text
+            , source_version_id : Optional Text
             }
         )
   , timeouts =
