@@ -1,5 +1,9 @@
 { oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
 , oci_analytics_analytics_instances = ./oci_analytics_analytics_instances.dhall
+, oci_apigateway_deployment = ./oci_apigateway_deployment.dhall
+, oci_apigateway_deployments = ./oci_apigateway_deployments.dhall
+, oci_apigateway_gateway = ./oci_apigateway_gateway.dhall
+, oci_apigateway_gateways = ./oci_apigateway_gateways.dhall
 , oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_audit_events = ./oci_audit_events.dhall
 , oci_autoscaling_auto_scaling_configuration =
@@ -220,6 +224,8 @@
 , oci_dns_steering_policy_attachments =
     ./oci_dns_steering_policy_attachments.dhall
 , oci_dns_steering_policy = ./oci_dns_steering_policy.dhall
+, oci_dns_tsig_key = ./oci_dns_tsig_key.dhall
+, oci_dns_tsig_keys = ./oci_dns_tsig_keys.dhall
 , oci_dns_zones = ./oci_dns_zones.dhall
 , oci_email_sender = ./oci_email_sender.dhall
 , oci_email_senders = ./oci_email_senders.dhall
@@ -315,6 +321,18 @@
 , oci_load_balancer_rule_sets = ./oci_load_balancer_rule_sets.dhall
 , oci_load_balancers = ./oci_load_balancers.dhall
 , oci_load_balancer_shapes = ./oci_load_balancer_shapes.dhall
+, oci_marketplace_accepted_agreement =
+    ./oci_marketplace_accepted_agreement.dhall
+, oci_marketplace_accepted_agreements =
+    ./oci_marketplace_accepted_agreements.dhall
+, oci_marketplace_categories = ./oci_marketplace_categories.dhall
+, oci_marketplace_listing = ./oci_marketplace_listing.dhall
+, oci_marketplace_listing_package_agreements =
+    ./oci_marketplace_listing_package_agreements.dhall
+, oci_marketplace_listing_package = ./oci_marketplace_listing_package.dhall
+, oci_marketplace_listing_packages = ./oci_marketplace_listing_packages.dhall
+, oci_marketplace_listings = ./oci_marketplace_listings.dhall
+, oci_marketplace_publishers = ./oci_marketplace_publishers.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
 , oci_monitoring_alarm_history_collection =
     ./oci_monitoring_alarm_history_collection.dhall
@@ -343,12 +361,25 @@
 , oci_ons_notification_topics = ./oci_ons_notification_topics.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
 , oci_ons_subscriptions = ./oci_ons_subscriptions.dhall
+, oci_osmanagement_managed_instance = ./oci_osmanagement_managed_instance.dhall
+, oci_osmanagement_managed_instance_group =
+    ./oci_osmanagement_managed_instance_group.dhall
+, oci_osmanagement_managed_instance_groups =
+    ./oci_osmanagement_managed_instance_groups.dhall
+, oci_osmanagement_managed_instances =
+    ./oci_osmanagement_managed_instances.dhall
+, oci_osmanagement_software_source = ./oci_osmanagement_software_source.dhall
+, oci_osmanagement_software_sources = ./oci_osmanagement_software_sources.dhall
 , oci_resourcemanager_stack = ./oci_resourcemanager_stack.dhall
 , oci_resourcemanager_stacks = ./oci_resourcemanager_stacks.dhall
 , oci_resourcemanager_stack_tf_state =
     ./oci_resourcemanager_stack_tf_state.dhall
+, oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
+, oci_streaming_connect_harnesses = ./oci_streaming_connect_harnesses.dhall
 , oci_streaming_stream_archiver = ./oci_streaming_stream_archiver.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
+, oci_streaming_stream_pool = ./oci_streaming_stream_pool.dhall
+, oci_streaming_stream_pools = ./oci_streaming_stream_pools.dhall
 , oci_streaming_streams = ./oci_streaming_streams.dhall
 , oci_waas_address_list = ./oci_waas_address_list.dhall
 , oci_waas_address_lists = ./oci_waas_address_lists.dhall

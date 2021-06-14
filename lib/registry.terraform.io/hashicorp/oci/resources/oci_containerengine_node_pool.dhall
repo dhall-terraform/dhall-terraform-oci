@@ -8,6 +8,9 @@
     , node_image_name : Optional Text
     , node_metadata : Optional (List { mapKey : Text, mapValue : Text })
     , node_shape : Text
+    , node_source :
+        Optional
+          (List { image_id : Text, source_name : Text, source_type : Text })
     , nodes :
         Optional
           ( List
@@ -35,6 +38,8 @@
                   List { availability_domain : Text, subnet_id : Text }
               }
           )
+    , node_source_details :
+        Optional (List { image_id : Text, source_type : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -47,6 +52,8 @@
   , node_image_id = None Text
   , node_image_name = None Text
   , node_metadata = None (List { mapKey : Text, mapValue : Text })
+  , node_source =
+      None (List { image_id : Text, source_name : Text, source_type : Text })
   , nodes =
       None
         ( List
@@ -74,6 +81,7 @@
                 List { availability_domain : Text, subnet_id : Text }
             }
         )
+  , node_source_details = None (List { image_id : Text, source_type : Text })
   , timeouts =
       None
         { create : Optional Text

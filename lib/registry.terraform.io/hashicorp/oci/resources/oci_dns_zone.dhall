@@ -16,6 +16,7 @@
           ( List
               { address : Text
               , port : Optional Natural
+              , tsig_key_id : Optional Text
               , tsig :
                   Optional
                     (List { algorithm : Text, name : Text, secret : Text })
@@ -43,6 +44,7 @@
         ( List
             { address : Text
             , port : Optional Natural
+            , tsig_key_id : Optional Text
             , tsig :
                 Optional (List { algorithm : Text, name : Text, secret : Text })
             }

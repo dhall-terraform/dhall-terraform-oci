@@ -5,7 +5,11 @@
     , images :
         Optional
           ( List
-              { agent_features : List { is_monitoring_supported : Bool }
+              { agent_features :
+                  List
+                    { is_management_supported : Bool
+                    , is_monitoring_supported : Bool
+                    }
               , base_image_id : Text
               , compartment_id : Text
               , create_image_allowed : Bool
@@ -58,7 +62,11 @@
   , images =
       None
         ( List
-            { agent_features : List { is_monitoring_supported : Bool }
+            { agent_features :
+                List
+                  { is_management_supported : Bool
+                  , is_monitoring_supported : Bool
+                  }
             , base_image_id : Text
             , compartment_id : Text
             , create_image_allowed : Bool

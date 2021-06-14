@@ -20,6 +20,7 @@
                     , port : Natural
                     , tsig :
                         List { algorithm : Text, name : Text, secret : Text }
+                    , tsig_key_id : Text
                     }
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
@@ -57,6 +58,7 @@
                   { address : Text
                   , port : Natural
                   , tsig : List { algorithm : Text, name : Text, secret : Text }
+                  , tsig_key_id : Text
                   }
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text

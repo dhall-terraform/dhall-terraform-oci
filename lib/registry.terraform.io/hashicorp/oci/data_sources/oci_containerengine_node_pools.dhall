@@ -23,6 +23,11 @@
               , node_metadata : List { mapKey : Text, mapValue : Text }
               , node_pool_id : Text
               , node_shape : Text
+              , node_source :
+                  List
+                    { image_id : Text, source_name : Text, source_type : Text }
+              , node_source_details :
+                  List { image_id : Text, source_type : Text }
               , nodes :
                   List
                     { availability_domain : Text
@@ -69,6 +74,9 @@
             , node_metadata : List { mapKey : Text, mapValue : Text }
             , node_pool_id : Text
             , node_shape : Text
+            , node_source :
+                List { image_id : Text, source_name : Text, source_type : Text }
+            , node_source_details : List { image_id : Text, source_type : Text }
             , nodes :
                 List
                   { availability_domain : Text

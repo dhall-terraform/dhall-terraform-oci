@@ -18,6 +18,11 @@
     , node_metadata : Optional (List { mapKey : Text, mapValue : Text })
     , node_pool_id : Text
     , node_shape : Optional Text
+    , node_source :
+        Optional
+          (List { image_id : Text, source_name : Text, source_type : Text })
+    , node_source_details :
+        Optional (List { image_id : Text, source_type : Text })
     , nodes :
         Optional
           ( List
@@ -55,6 +60,9 @@
   , node_image_name = None Text
   , node_metadata = None (List { mapKey : Text, mapValue : Text })
   , node_shape = None Text
+  , node_source =
+      None (List { image_id : Text, source_name : Text, source_type : Text })
+  , node_source_details = None (List { image_id : Text, source_type : Text })
   , nodes =
       None
         ( List

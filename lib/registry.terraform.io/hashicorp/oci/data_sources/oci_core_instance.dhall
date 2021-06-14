@@ -1,5 +1,9 @@
 { Type =
-    { agent_config : Optional (List { is_monitoring_disabled : Bool })
+    { agent_config :
+        Optional
+          ( List
+              { is_management_disabled : Bool, is_monitoring_disabled : Bool }
+          )
     , availability_domain : Optional Text
     , boot_volume_id : Optional Text
     , compartment_id : Optional Text
@@ -63,7 +67,9 @@
     , time_maintenance_reboot_due : Optional Text
     }
 , default =
-  { agent_config = None (List { is_monitoring_disabled : Bool })
+  { agent_config =
+      None
+        (List { is_management_disabled : Bool, is_monitoring_disabled : Bool })
   , availability_domain = None Text
   , boot_volume_id = None Text
   , compartment_id = None Text

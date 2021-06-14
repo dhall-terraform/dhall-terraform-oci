@@ -6,7 +6,11 @@
     , instances :
         Optional
           ( List
-              { agent_config : List { is_monitoring_disabled : Bool }
+              { agent_config :
+                  List
+                    { is_management_disabled : Bool
+                    , is_monitoring_disabled : Bool
+                    }
               , availability_domain : Text
               , boot_volume_id : Text
               , compartment_id : Text
@@ -75,7 +79,11 @@
   , instances =
       None
         ( List
-            { agent_config : List { is_monitoring_disabled : Bool }
+            { agent_config :
+                List
+                  { is_management_disabled : Bool
+                  , is_monitoring_disabled : Bool
+                  }
             , availability_domain : Text
             , boot_volume_id : Text
             , compartment_id : Text

@@ -1,4 +1,6 @@
 { oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
+, oci_apigateway_deployment = ./oci_apigateway_deployment.dhall
+, oci_apigateway_gateway = ./oci_apigateway_gateway.dhall
 , oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_autoscaling_auto_scaling_configuration =
     ./oci_autoscaling_auto_scaling_configuration.dhall
@@ -93,6 +95,7 @@
 , oci_dns_steering_policy_attachment =
     ./oci_dns_steering_policy_attachment.dhall
 , oci_dns_steering_policy = ./oci_dns_steering_policy.dhall
+, oci_dns_tsig_key = ./oci_dns_tsig_key.dhall
 , oci_dns_zone = ./oci_dns_zone.dhall
 , oci_email_sender = ./oci_email_sender.dhall
 , oci_email_suppression = ./oci_email_suppression.dhall
@@ -149,6 +152,10 @@
 , oci_load_balancer_load_balancer = ./oci_load_balancer_load_balancer.dhall
 , oci_load_balancer_path_route_set = ./oci_load_balancer_path_route_set.dhall
 , oci_load_balancer_rule_set = ./oci_load_balancer_rule_set.dhall
+, oci_marketplace_accepted_agreement =
+    ./oci_marketplace_accepted_agreement.dhall
+, oci_marketplace_listing_package_agreement =
+    ./oci_marketplace_listing_package_agreement.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
 , oci_objectstorage_bucket = ./oci_objectstorage_bucket.dhall
 , oci_objectstorage_namespace_metadata =
@@ -161,8 +168,15 @@
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
+, oci_osmanagement_managed_instance_group =
+    ./oci_osmanagement_managed_instance_group.dhall
+, oci_osmanagement_managed_instance_management =
+    ./oci_osmanagement_managed_instance_management.dhall
+, oci_osmanagement_software_source = ./oci_osmanagement_software_source.dhall
+, oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
 , oci_streaming_stream_archiver = ./oci_streaming_stream_archiver.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
+, oci_streaming_stream_pool = ./oci_streaming_stream_pool.dhall
 , oci_waas_address_list = ./oci_waas_address_list.dhall
 , oci_waas_certificate = ./oci_waas_certificate.dhall
 , oci_waas_custom_protection_rule = ./oci_waas_custom_protection_rule.dhall

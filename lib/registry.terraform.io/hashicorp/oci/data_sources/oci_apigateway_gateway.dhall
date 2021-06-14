@@ -1,30 +1,30 @@
 { Type =
     { compartment_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , display_name : Optional Text
+    , endpoint_type : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , gateway_id : Text
+    , hostname : Optional Text
     , id : Optional Text
-    , lifecycle_state_details : Optional Text
-    , messages_endpoint : Optional Text
-    , name : Optional Text
-    , partitions : Optional Natural
-    , retention_in_hours : Optional Natural
+    , lifecycle_details : Optional Text
     , state : Optional Text
-    , stream_id : Text
-    , stream_pool_id : Optional Text
+    , subnet_id : Optional Text
     , time_created : Optional Text
+    , time_updated : Optional Text
     }
 , default =
   { compartment_id = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
+  , display_name = None Text
+  , endpoint_type = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
+  , hostname = None Text
   , id = None Text
-  , lifecycle_state_details = None Text
-  , messages_endpoint = None Text
-  , name = None Text
-  , partitions = None Natural
-  , retention_in_hours = None Natural
+  , lifecycle_details = None Text
   , state = None Text
-  , stream_pool_id = None Text
+  , subnet_id = None Text
   , time_created = None Text
+  , time_updated = None Text
   }
 }

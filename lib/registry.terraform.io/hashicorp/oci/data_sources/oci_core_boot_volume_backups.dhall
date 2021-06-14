@@ -12,6 +12,13 @@
               , image_id : Text
               , kms_key_id : Text
               , size_in_gbs : Text
+              , source_boot_volume_backup_id : Text
+              , source_details :
+                  List
+                    { boot_volume_backup_id : Text
+                    , kms_key_id : Text
+                    , region : Text
+                    }
               , source_type : Text
               , state : Text
               , system_tags : List { mapKey : Text, mapValue : Text }
@@ -25,6 +32,7 @@
     , compartment_id : Text
     , display_name : Optional Text
     , id : Optional Text
+    , source_boot_volume_backup_id : Optional Text
     , state : Optional Text
     , filter :
         Optional
@@ -44,6 +52,13 @@
             , image_id : Text
             , kms_key_id : Text
             , size_in_gbs : Text
+            , source_boot_volume_backup_id : Text
+            , source_details :
+                List
+                  { boot_volume_backup_id : Text
+                  , kms_key_id : Text
+                  , region : Text
+                  }
             , source_type : Text
             , state : Text
             , system_tags : List { mapKey : Text, mapValue : Text }
@@ -56,6 +71,7 @@
   , boot_volume_id = None Text
   , display_name = None Text
   , id = None Text
+  , source_boot_volume_backup_id = None Text
   , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

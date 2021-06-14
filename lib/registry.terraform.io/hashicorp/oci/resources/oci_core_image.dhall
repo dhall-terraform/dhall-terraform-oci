@@ -1,5 +1,9 @@
 { Type =
-    { agent_features : Optional (List { is_monitoring_supported : Bool })
+    { agent_features :
+        Optional
+          ( List
+              { is_management_supported : Bool, is_monitoring_supported : Bool }
+          )
     , base_image_id : Optional Text
     , compartment_id : Text
     , create_image_allowed : Optional Bool
@@ -46,7 +50,11 @@
           }
     }
 , default =
-  { agent_features = None (List { is_monitoring_supported : Bool })
+  { agent_features =
+      None
+        ( List
+            { is_management_supported : Bool, is_monitoring_supported : Bool }
+        )
   , base_image_id = None Text
   , create_image_allowed = None Bool
   , defined_tags = None (List { mapKey : Text, mapValue : Text })

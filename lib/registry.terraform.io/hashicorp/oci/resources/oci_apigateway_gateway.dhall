@@ -1,16 +1,16 @@
 { Type =
-    { compartment_id : Optional Text
+    { compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , display_name : Optional Text
+    , endpoint_type : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , hostname : Optional Text
     , id : Optional Text
-    , lifecycle_state_details : Optional Text
-    , messages_endpoint : Optional Text
-    , name : Text
-    , partitions : Natural
-    , retention_in_hours : Optional Natural
+    , lifecycle_details : Optional Text
     , state : Optional Text
-    , stream_pool_id : Optional Text
+    , subnet_id : Text
     , time_created : Optional Text
+    , time_updated : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,16 +19,15 @@
           }
     }
 , default =
-  { compartment_id = None Text
-  , defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
+  , hostname = None Text
   , id = None Text
-  , lifecycle_state_details = None Text
-  , messages_endpoint = None Text
-  , retention_in_hours = None Natural
+  , lifecycle_details = None Text
   , state = None Text
-  , stream_pool_id = None Text
   , time_created = None Text
+  , time_updated = None Text
   , timeouts =
       None
         { create : Optional Text

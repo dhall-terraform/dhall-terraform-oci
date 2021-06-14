@@ -1,23 +1,25 @@
 { Type =
-    { compartment_id : Optional Text
+    { compartment_id : Text
     , id : Optional Text
     , name : Optional Text
     , state : Optional Text
-    , stream_pool_id : Optional Text
-    , streams :
+    , stream_pools :
         Optional
           ( List
               { compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , kafka_settings :
+                  List
+                    { auto_create_topics_enable : Bool
+                    , bootstrap_servers : Text
+                    , log_retention_hours : Natural
+                    , num_partitions : Natural
+                    }
               , lifecycle_state_details : Text
-              , messages_endpoint : Text
               , name : Text
-              , partitions : Natural
-              , retention_in_hours : Natural
               , state : Text
-              , stream_pool_id : Text
               , time_created : Text
               }
           )
@@ -26,25 +28,26 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { compartment_id = None Text
-  , id = None Text
+  { id = None Text
   , name = None Text
   , state = None Text
-  , stream_pool_id = None Text
-  , streams =
+  , stream_pools =
       None
         ( List
             { compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , kafka_settings :
+                List
+                  { auto_create_topics_enable : Bool
+                  , bootstrap_servers : Text
+                  , log_retention_hours : Natural
+                  , num_partitions : Natural
+                  }
             , lifecycle_state_details : Text
-            , messages_endpoint : Text
             , name : Text
-            , partitions : Natural
-            , retention_in_hours : Natural
             , state : Text
-            , stream_pool_id : Text
             , time_created : Text
             }
         )

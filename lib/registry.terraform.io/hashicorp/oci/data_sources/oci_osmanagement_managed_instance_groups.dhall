@@ -1,53 +1,44 @@
 { Type =
-    { compartment_id : Optional Text
+    { compartment_id : Text
+    , display_name : Optional Text
     , id : Optional Text
-    , name : Optional Text
-    , state : Optional Text
-    , stream_pool_id : Optional Text
-    , streams :
+    , managed_instance_groups :
         Optional
           ( List
               { compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
+              , description : Text
+              , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
-              , lifecycle_state_details : Text
-              , messages_endpoint : Text
-              , name : Text
-              , partitions : Natural
-              , retention_in_hours : Natural
+              , managed_instance_count : Natural
+              , managed_instances : List { display_name : Text, id : Text }
               , state : Text
-              , stream_pool_id : Text
-              , time_created : Text
               }
           )
+    , state : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { compartment_id = None Text
+  { display_name = None Text
   , id = None Text
-  , name = None Text
-  , state = None Text
-  , stream_pool_id = None Text
-  , streams =
+  , managed_instance_groups =
       None
         ( List
             { compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
+            , description : Text
+            , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , lifecycle_state_details : Text
-            , messages_endpoint : Text
-            , name : Text
-            , partitions : Natural
-            , retention_in_hours : Natural
+            , managed_instance_count : Natural
+            , managed_instances : List { display_name : Text, id : Text }
             , state : Text
-            , stream_pool_id : Text
-            , time_created : Text
             }
         )
+  , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }
