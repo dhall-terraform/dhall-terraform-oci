@@ -11,6 +11,7 @@
     , management_endpoint : Text
     , state : Optional Text
     , time_created : Optional Text
+    , time_of_deletion : Optional Text
     , vault_id : Optional Text
     }
 , default =
@@ -24,6 +25,7 @@
   , key_shape = None (List { algorithm : Text, length : Natural })
   , state = None Text
   , time_created = None Text
+  , time_of_deletion = None Text
   , vault_id = None Text
   }
 }
