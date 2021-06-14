@@ -1,20 +1,20 @@
 { Type =
     { compartment_id : Text
-    , consumption_model : Optional Text
+    , database_software_image_included_patches : Optional (List Text)
+    , database_software_image_one_off_patches : Optional (List Text)
+    , database_version : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , idcs_at : Optional Text
-    , instance_url : Optional Text
-    , integration_instance_type : Text
-    , is_byol : Bool
-    , is_file_server_enabled : Optional Bool
-    , message_packs : Natural
+    , image_shape_family : Optional Text
+    , image_type : Optional Text
+    , included_patches_summary : Optional Text
+    , lifecycle_details : Optional Text
+    , ls_inventory : Optional Text
+    , patch_set : Text
     , state : Optional Text
-    , state_message : Optional Text
     , time_created : Optional Text
-    , time_updated : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -23,17 +23,18 @@
           }
     }
 , default =
-  { consumption_model = None Text
+  { database_software_image_included_patches = None (List Text)
+  , database_software_image_one_off_patches = None (List Text)
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , idcs_at = None Text
-  , instance_url = None Text
-  , is_file_server_enabled = None Bool
+  , image_shape_family = None Text
+  , image_type = None Text
+  , included_patches_summary = None Text
+  , lifecycle_details = None Text
+  , ls_inventory = None Text
   , state = None Text
-  , state_message = None Text
   , time_created = None Text
-  , time_updated = None Text
   , timeouts =
       None
         { create : Optional Text

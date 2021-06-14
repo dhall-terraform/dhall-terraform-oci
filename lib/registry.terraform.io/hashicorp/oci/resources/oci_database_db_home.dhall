@@ -1,5 +1,6 @@
 { Type =
     { compartment_id : Optional Text
+    , database_software_image_id : Optional Text
     , db_home_location : Optional Text
     , db_system_id : Optional Text
     , db_version : Optional Text
@@ -29,6 +30,7 @@
                     }
                 )
           , database_id : Optional Text
+          , database_software_image_id : Optional Text
           , db_name : Optional Text
           , db_unique_name : Optional Text
           , db_workload : Optional Text
@@ -63,6 +65,7 @@
     }
 , default =
   { compartment_id = None Text
+  , database_software_image_id = None Text
   , db_home_location = None Text
   , db_system_id = None Text
   , db_version = None Text

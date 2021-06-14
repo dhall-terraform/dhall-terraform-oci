@@ -1,18 +1,18 @@
 { Type =
     { compartment_id : Text
-    , consumption_model : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , description : Optional Text
     , display_name : Text
+    , feed_provider : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , idcs_at : Optional Text
-    , instance_url : Optional Text
-    , integration_instance_type : Text
-    , is_byol : Bool
-    , is_file_server_enabled : Optional Bool
-    , message_packs : Natural
+    , is_editable : Optional Bool
+    , lifecyle_details : Optional Text
+    , list_items : Optional (List Text)
+    , list_type : Optional Text
+    , source_managed_list_id : Optional Text
     , state : Optional Text
-    , state_message : Optional Text
+    , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , time_updated : Optional Text
     , timeouts :
@@ -23,15 +23,18 @@
           }
     }
 , default =
-  { consumption_model = None Text
-  , defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  , description = None Text
+  , feed_provider = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , idcs_at = None Text
-  , instance_url = None Text
-  , is_file_server_enabled = None Bool
+  , is_editable = None Bool
+  , lifecyle_details = None Text
+  , list_items = None (List Text)
+  , list_type = None Text
+  , source_managed_list_id = None Text
   , state = None Text
-  , state_message = None Text
+  , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , time_updated = None Text
   , timeouts =

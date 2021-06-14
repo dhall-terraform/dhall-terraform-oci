@@ -15,6 +15,7 @@
                     , cdb_ip_default : Text
                     }
               , database_id : Text
+              , database_software_image_id : Text
               , db_backup_config :
                   List
                     { auto_backup_enabled : Bool
@@ -38,6 +39,7 @@
               , time_stamp_for_point_in_time_recovery : Text
               }
           )
+    , database_software_image_id : Optional Text
     , db_home_id : Text
     , db_home_location : Optional Text
     , db_system_id : Optional Text
@@ -70,6 +72,7 @@
                   , cdb_ip_default : Text
                   }
             , database_id : Text
+            , database_software_image_id : Text
             , db_backup_config :
                 List
                   { auto_backup_enabled : Bool
@@ -92,6 +95,7 @@
             , time_stamp_for_point_in_time_recovery : Text
             }
         )
+  , database_software_image_id = None Text
   , db_home_location = None Text
   , db_system_id = None Text
   , db_version = None Text

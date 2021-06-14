@@ -6,6 +6,7 @@
         Optional
           ( List
               { compartment_id : Text
+              , consumption_model : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -34,6 +35,7 @@
       None
         ( List
             { compartment_id : Text
+            , consumption_model : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }

@@ -18,6 +18,7 @@
                     , backup_id : Text
                     , backup_tde_password : Text
                     , character_set : Text
+                    , database_software_image_id : Text
                     , db_backup_config :
                         List
                           { auto_backup_enabled : Bool
@@ -34,6 +35,7 @@
                     , ncharacter_set : Text
                     , pdb_name : Text
                     }
+              , database_software_image_id : Text
               , db_backup_config :
                   List
                     { auto_backup_enabled : Bool
@@ -90,6 +92,7 @@
                   , backup_id : Text
                   , backup_tde_password : Text
                   , character_set : Text
+                  , database_software_image_id : Text
                   , db_backup_config :
                       List
                         { auto_backup_enabled : Bool
@@ -106,6 +109,7 @@
                   , ncharacter_set : Text
                   , pdb_name : Text
                   }
+            , database_software_image_id : Text
             , db_backup_config :
                 List
                   { auto_backup_enabled : Bool

@@ -11,6 +11,12 @@
 , oci_blockchain_peer = ./oci_blockchain_peer.dhall
 , oci_budget_alert_rule = ./oci_budget_alert_rule.dhall
 , oci_budget_budget = ./oci_budget_budget.dhall
+, oci_cloud_guard_cloud_guard_configuration =
+    ./oci_cloud_guard_cloud_guard_configuration.dhall
+, oci_cloud_guard_detector_recipe = ./oci_cloud_guard_detector_recipe.dhall
+, oci_cloud_guard_managed_list = ./oci_cloud_guard_managed_list.dhall
+, oci_cloud_guard_responder_recipe = ./oci_cloud_guard_responder_recipe.dhall
+, oci_cloud_guard_target = ./oci_cloud_guard_target.dhall
 , oci_containerengine_cluster = ./oci_containerengine_cluster.dhall
 , oci_containerengine_node_pool = ./oci_containerengine_node_pool.dhall
 , oci_core_app_catalog_listing_resource_version_agreement =
@@ -88,6 +94,8 @@
 , oci_database_backup_destination = ./oci_database_backup_destination.dhall
 , oci_database_backup = ./oci_database_backup.dhall
 , oci_database_database = ./oci_database_database.dhall
+, oci_database_database_software_image =
+    ./oci_database_database_software_image.dhall
 , oci_database_data_guard_association =
     ./oci_database_data_guard_association.dhall
 , oci_database_db_home = ./oci_database_db_home.dhall

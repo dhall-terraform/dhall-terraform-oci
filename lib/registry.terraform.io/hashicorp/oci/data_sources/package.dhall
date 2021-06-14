@@ -24,6 +24,16 @@
 , oci_budget_alert_rules = ./oci_budget_alert_rules.dhall
 , oci_budget_budget = ./oci_budget_budget.dhall
 , oci_budget_budgets = ./oci_budget_budgets.dhall
+, oci_cloud_guard_cloud_guard_configuration =
+    ./oci_cloud_guard_cloud_guard_configuration.dhall
+, oci_cloud_guard_detector_recipe = ./oci_cloud_guard_detector_recipe.dhall
+, oci_cloud_guard_detector_recipes = ./oci_cloud_guard_detector_recipes.dhall
+, oci_cloud_guard_managed_list = ./oci_cloud_guard_managed_list.dhall
+, oci_cloud_guard_managed_lists = ./oci_cloud_guard_managed_lists.dhall
+, oci_cloud_guard_responder_recipe = ./oci_cloud_guard_responder_recipe.dhall
+, oci_cloud_guard_responder_recipes = ./oci_cloud_guard_responder_recipes.dhall
+, oci_cloud_guard_target = ./oci_cloud_guard_target.dhall
+, oci_cloud_guard_targets = ./oci_cloud_guard_targets.dhall
 , oci_containerengine_cluster_kube_config =
     ./oci_containerengine_cluster_kube_config.dhall
 , oci_containerengine_cluster_option =
@@ -212,6 +222,10 @@
 , oci_database_backups = ./oci_database_backups.dhall
 , oci_database_database = ./oci_database_database.dhall
 , oci_database_databases = ./oci_database_databases.dhall
+, oci_database_database_software_image =
+    ./oci_database_database_software_image.dhall
+, oci_database_database_software_images =
+    ./oci_database_database_software_images.dhall
 , oci_database_data_guard_association =
     ./oci_database_data_guard_association.dhall
 , oci_database_data_guard_associations =

@@ -68,7 +68,8 @@
     , vip_ids : Optional (List Text)
     , db_home :
         List
-          { db_home_location : Optional Text
+          { database_software_image_id : Optional Text
+          , db_home_location : Optional Text
           , db_version : Optional Text
           , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
           , display_name : Optional Text
@@ -94,6 +95,7 @@
                           }
                       )
                 , database_id : Optional Text
+                , database_software_image_id : Optional Text
                 , db_domain : Optional Text
                 , db_name : Optional Text
                 , db_unique_name : Optional Text

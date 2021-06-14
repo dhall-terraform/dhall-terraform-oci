@@ -9,6 +9,7 @@
               , cdb_ip_default : Text
               }
           )
+    , database_software_image_id : Optional Text
     , db_backup_config :
         Optional
           ( List
@@ -42,6 +43,7 @@
           , backup_id : Optional Text
           , backup_tde_password : Optional Text
           , character_set : Optional Text
+          , database_software_image_id : Optional Text
           , db_name : Text
           , db_unique_name : Optional Text
           , db_workload : Optional Text
@@ -79,6 +81,7 @@
             , cdb_ip_default : Text
             }
         )
+  , database_software_image_id = None Text
   , db_backup_config =
       None
         ( List
