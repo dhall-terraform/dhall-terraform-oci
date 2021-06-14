@@ -176,6 +176,8 @@
 , oci_core_ipsec_connection_tunnel = ./oci_core_ipsec_connection_tunnel.dhall
 , oci_core_ipsec_connection_tunnels = ./oci_core_ipsec_connection_tunnels.dhall
 , oci_core_ipsec_status = ./oci_core_ipsec_status.dhall
+, oci_core_ipv6 = ./oci_core_ipv6.dhall
+, oci_core_ipv6s = ./oci_core_ipv6s.dhall
 , oci_core_letter_of_authority = ./oci_core_letter_of_authority.dhall
 , oci_core_listing_resource_version = ./oci_core_listing_resource_version.dhall
 , oci_core_listing_resource_versions =
@@ -680,6 +682,7 @@
 , oci_ocvp_esxi_hosts = ./oci_ocvp_esxi_hosts.dhall
 , oci_ocvp_sddc = ./oci_ocvp_sddc.dhall
 , oci_ocvp_sddcs = ./oci_ocvp_sddcs.dhall
+, oci_ocvp_supported_skus = ./oci_ocvp_supported_skus.dhall
 , oci_ocvp_supported_vmware_software_versions =
     ./oci_ocvp_supported_vmware_software_versions.dhall
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall

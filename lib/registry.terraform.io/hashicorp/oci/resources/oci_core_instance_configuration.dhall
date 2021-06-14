@@ -146,10 +146,21 @@
                                   , type : Text
                                   }
                               )
+                        , preemptible_instance_config :
+                            Optional
+                              ( List
+                                  { preemption_action :
+                                      List
+                                        { preserve_boot_volume : Optional Bool
+                                        , type : Text
+                                        }
+                                  }
+                              )
                         , shape_config :
                             Optional
                               ( List
-                                  { memory_in_gbs : Optional Natural
+                                  { baseline_ocpu_utilization : Optional Text
+                                  , memory_in_gbs : Optional Natural
                                   , ocpus : Optional Natural
                                   }
                               )
@@ -337,10 +348,21 @@
                                 , type : Text
                                 }
                             )
+                      , preemptible_instance_config :
+                          Optional
+                            ( List
+                                { preemption_action :
+                                    List
+                                      { preserve_boot_volume : Optional Bool
+                                      , type : Text
+                                      }
+                                }
+                            )
                       , shape_config :
                           Optional
                             ( List
-                                { memory_in_gbs : Optional Natural
+                                { baseline_ocpu_utilization : Optional Text
+                                , memory_in_gbs : Optional Natural
                                 , ocpus : Optional Natural
                                 }
                             )

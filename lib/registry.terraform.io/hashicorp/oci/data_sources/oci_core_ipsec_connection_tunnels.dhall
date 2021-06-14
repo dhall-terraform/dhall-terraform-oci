@@ -5,11 +5,14 @@
           ( List
               { bgp_session_info :
                   List
-                    { bgp_state : Text
+                    { bgp_ipv6state : Text
+                    , bgp_state : Text
                     , customer_bgp_asn : Text
                     , customer_interface_ip : Text
+                    , customer_interface_ipv6 : Text
                     , oracle_bgp_asn : Text
                     , oracle_interface_ip : Text
+                    , oracle_interface_ipv6 : Text
                     }
               , compartment_id : Text
               , cpe_ip : Text
@@ -41,11 +44,14 @@
         ( List
             { bgp_session_info :
                 List
-                  { bgp_state : Text
+                  { bgp_ipv6state : Text
+                  , bgp_state : Text
                   , customer_bgp_asn : Text
                   , customer_interface_ip : Text
+                  , customer_interface_ipv6 : Text
                   , oracle_bgp_asn : Text
                   , oracle_interface_ip : Text
+                  , oracle_interface_ipv6 : Text
                   }
             , compartment_id : Text
             , cpe_ip : Text

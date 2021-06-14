@@ -16,13 +16,15 @@
                     , lifecyle_details : Text
                     , source :
                         List
-                          { kind : Text
+                          { cursor : List { kind : Text }
+                          , kind : Text
                           , log_sources :
                               List
                                 { compartment_id : Text
                                 , log_group_id : Text
                                 , log_id : Text
                                 }
+                          , stream_id : Text
                           }
                     , state : Text
                     , system_tags : List { mapKey : Text, mapValue : Text }
@@ -43,7 +45,14 @@
                           , stream_id : Text
                           , topic_id : Text
                           }
-                    , tasks : List { condition : Text, kind : Text }
+                    , tasks :
+                        List
+                          { batch_size_in_kbs : Natural
+                          , batch_time_in_sec : Natural
+                          , condition : Text
+                          , function_id : Text
+                          , kind : Text
+                          }
                     , time_created : Text
                     , time_updated : Text
                     }
@@ -71,13 +80,15 @@
                   , lifecyle_details : Text
                   , source :
                       List
-                        { kind : Text
+                        { cursor : List { kind : Text }
+                        , kind : Text
                         , log_sources :
                             List
                               { compartment_id : Text
                               , log_group_id : Text
                               , log_id : Text
                               }
+                        , stream_id : Text
                         }
                   , state : Text
                   , system_tags : List { mapKey : Text, mapValue : Text }
@@ -98,7 +109,14 @@
                         , stream_id : Text
                         , topic_id : Text
                         }
-                  , tasks : List { condition : Text, kind : Text }
+                  , tasks :
+                      List
+                        { batch_size_in_kbs : Natural
+                        , batch_time_in_sec : Natural
+                        , condition : Text
+                        , function_id : Text
+                        , kind : Text
+                        }
                   , time_created : Text
                   , time_updated : Text
                   }

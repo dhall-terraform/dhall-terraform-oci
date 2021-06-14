@@ -16,8 +16,8 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , ipv6cidr_block : Text
-              , ipv6public_cidr_block : Text
               , ipv6virtual_router_ip : Text
+              , prohibit_internet_ingress : Bool
               , prohibit_public_ip_on_vnic : Bool
               , route_table_id : Text
               , security_list_ids : List Text
@@ -51,8 +51,8 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , ipv6cidr_block : Text
-            , ipv6public_cidr_block : Text
             , ipv6virtual_router_ip : Text
+            , prohibit_internet_ingress : Bool
             , prohibit_public_ip_on_vnic : Bool
             , route_table_id : Text
             , security_list_ids : List Text

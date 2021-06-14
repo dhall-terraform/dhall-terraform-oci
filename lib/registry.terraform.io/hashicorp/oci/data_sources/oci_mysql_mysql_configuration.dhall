@@ -23,6 +23,7 @@
               , default_authentication_plugin : Text
               , foreign_key_checks : Bool
               , generated_random_password_length : Natural
+              , group_replication_consistency : Text
               , information_schema_stats_expiry : Natural
               , innodb_buffer_pool_instances : Natural
               , innodb_buffer_pool_size : Text
@@ -92,6 +93,7 @@
             , default_authentication_plugin : Text
             , foreign_key_checks : Bool
             , generated_random_password_length : Natural
+            , group_replication_consistency : Text
             , information_schema_stats_expiry : Natural
             , innodb_buffer_pool_instances : Natural
             , innodb_buffer_pool_size : Text

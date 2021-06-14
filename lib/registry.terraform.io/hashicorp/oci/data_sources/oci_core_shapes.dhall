@@ -6,7 +6,8 @@
     , shapes :
         Optional
           ( List
-              { gpu_description : Text
+              { baseline_ocpu_utilizations : List Text
+              , gpu_description : Text
               , gpus : Natural
               , local_disk_description : Text
               , local_disks : Natural
@@ -24,6 +25,7 @@
                     , min_in_gbs : Natural
                     , min_per_ocpu_in_gbs : Natural
                     }
+              , min_total_baseline_ocpus_required : Natural
               , name : Text
               , networking_bandwidth_in_gbps : Natural
               , networking_bandwidth_options :
@@ -48,7 +50,8 @@
   , shapes =
       None
         ( List
-            { gpu_description : Text
+            { baseline_ocpu_utilizations : List Text
+            , gpu_description : Text
             , gpus : Natural
             , local_disk_description : Text
             , local_disks : Natural
@@ -66,6 +69,7 @@
                   , min_in_gbs : Natural
                   , min_per_ocpu_in_gbs : Natural
                   }
+            , min_total_baseline_ocpus_required : Natural
             , name : Text
             , networking_bandwidth_in_gbps : Natural
             , networking_bandwidth_options :

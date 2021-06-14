@@ -56,6 +56,8 @@
           )
     , compartment_id : Optional Text
     , configuration_id : Optional Text
+    , current_placement :
+        Optional (List { availability_domain : Text, fault_domain : Text })
     , data_storage_size_in_gb : Optional Natural
     , db_system_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -90,6 +92,7 @@
     , ip_address : Optional Text
     , is_analytics_cluster_attached : Optional Bool
     , is_heat_wave_cluster_attached : Optional Bool
+    , is_highly_available : Optional Bool
     , lifecycle_details : Optional Text
     , maintenance : Optional (List { window_start_time : Text })
     , mysql_version : Optional Text
@@ -161,6 +164,8 @@
         )
   , compartment_id = None Text
   , configuration_id = None Text
+  , current_placement =
+      None (List { availability_domain : Text, fault_domain : Text })
   , data_storage_size_in_gb = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , description = None Text
@@ -194,6 +199,7 @@
   , ip_address = None Text
   , is_analytics_cluster_attached = None Bool
   , is_heat_wave_cluster_attached = None Bool
+  , is_highly_available = None Bool
   , lifecycle_details = None Text
   , maintenance = None (List { window_start_time : Text })
   , mysql_version = None Text

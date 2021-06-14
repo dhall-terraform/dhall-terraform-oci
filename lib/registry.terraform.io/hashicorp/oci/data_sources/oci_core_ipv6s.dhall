@@ -1,55 +1,47 @@
 { Type =
-    { compute_instance_id : Optional Text
-    , display_name : Optional Text
-    , esxi_host_collection :
+    { id : Optional Text
+    , ip_address : Optional Text
+    , ipv6s :
         Optional
           ( List
-              { billing_contract_end_date : Text
-              , compartment_id : Text
-              , compute_instance_id : Text
-              , current_sku : Text
+              { compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
-              , next_sku : Text
-              , sddc_id : Text
+              , ip_address : Text
               , state : Text
+              , subnet_id : Text
               , time_created : Text
-              , time_updated : Text
+              , vnic_id : Text
               }
           )
-    , id : Optional Text
-    , sddc_id : Optional Text
-    , state : Optional Text
+    , subnet_id : Optional Text
+    , vnic_id : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { compute_instance_id = None Text
-  , display_name = None Text
-  , esxi_host_collection =
+  { id = None Text
+  , ip_address = None Text
+  , ipv6s =
       None
         ( List
-            { billing_contract_end_date : Text
-            , compartment_id : Text
-            , compute_instance_id : Text
-            , current_sku : Text
+            { compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , next_sku : Text
-            , sddc_id : Text
+            , ip_address : Text
             , state : Text
+            , subnet_id : Text
             , time_created : Text
-            , time_updated : Text
+            , vnic_id : Text
             }
         )
-  , id = None Text
-  , sddc_id = None Text
-  , state = None Text
+  , subnet_id = None Text
+  , vnic_id = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

@@ -10,8 +10,7 @@
     , dns_label : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , ipv6cidr_block : Optional Text
-    , ipv6public_cidr_block : Optional Text
+    , ipv6cidr_blocks : Optional (List Text)
     , is_ipv6enabled : Optional Bool
     , state : Optional Text
     , time_created : Optional Text
@@ -34,8 +33,7 @@
   , dns_label = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , ipv6cidr_block = None Text
-  , ipv6public_cidr_block = None Text
+  , ipv6cidr_blocks = None (List Text)
   , is_ipv6enabled = None Bool
   , state = None Text
   , time_created = None Text

@@ -69,10 +69,18 @@
           )
     , platform_config :
         Optional (List { numa_nodes_per_socket : Optional Text, type : Text })
+    , preemptible_instance_config :
+        Optional
+          ( List
+              { preemption_action :
+                  List { preserve_boot_volume : Optional Bool, type : Text }
+              }
+          )
     , shape_config :
         Optional
           ( List
-              { gpu_description : Optional Text
+              { baseline_ocpu_utilization : Optional Text
+              , gpu_description : Optional Text
               , gpus : Optional Natural
               , local_disk_description : Optional Text
               , local_disks : Optional Natural
@@ -166,10 +174,18 @@
         )
   , platform_config =
       None (List { numa_nodes_per_socket : Optional Text, type : Text })
+  , preemptible_instance_config =
+      None
+        ( List
+            { preemption_action :
+                List { preserve_boot_volume : Optional Bool, type : Text }
+            }
+        )
   , shape_config =
       None
         ( List
-            { gpu_description : Optional Text
+            { baseline_ocpu_utilization : Optional Text
+            , gpu_description : Optional Text
             , gpus : Optional Natural
             , local_disk_description : Optional Text
             , local_disks : Optional Natural

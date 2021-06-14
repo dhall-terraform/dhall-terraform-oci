@@ -1,5 +1,6 @@
 { Type =
     { bandwidth_shape_name : Optional Text
+    , bgp_ipv6session_state : Optional Text
     , bgp_management : Optional Text
     , bgp_session_state : Optional Text
     , compartment_id : Optional Text
@@ -38,6 +39,7 @@
     }
 , default =
   { bandwidth_shape_name = None Text
+  , bgp_ipv6session_state = None Text
   , bgp_management = None Text
   , bgp_session_state = None Text
   , compartment_id = None Text

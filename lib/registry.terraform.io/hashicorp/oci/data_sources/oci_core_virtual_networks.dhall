@@ -17,8 +17,7 @@
               , dns_label : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
-              , ipv6cidr_block : Text
-              , ipv6public_cidr_block : Text
+              , ipv6cidr_blocks : List Text
               , is_ipv6enabled : Bool
               , state : Text
               , time_created : Text
@@ -47,8 +46,7 @@
             , dns_label : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , ipv6cidr_block : Text
-            , ipv6public_cidr_block : Text
+            , ipv6cidr_blocks : List Text
             , is_ipv6enabled : Bool
             , state : Text
             , time_created : Text

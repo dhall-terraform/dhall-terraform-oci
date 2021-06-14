@@ -9,8 +9,8 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , ipv6cidr_block : Optional Text
-    , ipv6public_cidr_block : Optional Text
     , ipv6virtual_router_ip : Optional Text
+    , prohibit_internet_ingress : Optional Bool
     , prohibit_public_ip_on_vnic : Optional Bool
     , route_table_id : Optional Text
     , security_list_ids : Optional (List Text)
@@ -36,8 +36,8 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , ipv6cidr_block = None Text
-  , ipv6public_cidr_block = None Text
   , ipv6virtual_router_ip = None Text
+  , prohibit_internet_ingress = None Bool
   , prohibit_public_ip_on_vnic = None Bool
   , route_table_id = None Text
   , security_list_ids = None (List Text)

@@ -59,6 +59,11 @@
               , metadata : List { mapKey : Text, mapValue : Text }
               , platform_config :
                   List { numa_nodes_per_socket : Text, type : Text }
+              , preemptible_instance_config :
+                  List
+                    { preemption_action :
+                        List { preserve_boot_volume : Bool, type : Text }
+                    }
               , preserve_boot_volume : Bool
               , private_ip : Text
               , public_ip : Text
@@ -66,7 +71,8 @@
               , shape : Text
               , shape_config :
                   List
-                    { gpu_description : Text
+                    { baseline_ocpu_utilization : Text
+                    , gpu_description : Text
                     , gpus : Natural
                     , local_disk_description : Text
                     , local_disks : Natural
@@ -155,6 +161,11 @@
             , metadata : List { mapKey : Text, mapValue : Text }
             , platform_config :
                 List { numa_nodes_per_socket : Text, type : Text }
+            , preemptible_instance_config :
+                List
+                  { preemption_action :
+                      List { preserve_boot_volume : Bool, type : Text }
+                  }
             , preserve_boot_volume : Bool
             , private_ip : Text
             , public_ip : Text
@@ -162,7 +173,8 @@
             , shape : Text
             , shape_config :
                 List
-                  { gpu_description : Text
+                  { baseline_ocpu_utilization : Text
+                  , gpu_description : Text
                   , gpus : Natural
                   , local_disk_description : Text
                   , local_disks : Natural

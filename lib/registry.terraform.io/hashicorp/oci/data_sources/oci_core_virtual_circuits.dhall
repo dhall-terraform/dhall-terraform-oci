@@ -7,6 +7,7 @@
         Optional
           ( List
               { bandwidth_shape_name : Text
+              , bgp_ipv6session_state : Text
               , bgp_management : Text
               , bgp_session_state : Text
               , compartment_id : Text
@@ -54,6 +55,7 @@
       None
         ( List
             { bandwidth_shape_name : Text
+            , bgp_ipv6session_state : Text
             , bgp_management : Text
             , bgp_session_state : Text
             , compartment_id : Text

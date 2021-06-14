@@ -10,13 +10,15 @@
     , source :
         Optional
           ( List
-              { kind : Text
+              { cursor : List { kind : Text }
+              , kind : Text
               , log_sources :
                   List
                     { compartment_id : Text
                     , log_group_id : Text
                     , log_id : Text
                     }
+              , stream_id : Text
               }
           )
     , state : Optional Text
@@ -40,7 +42,16 @@
               , topic_id : Text
               }
           )
-    , tasks : Optional (List { condition : Text, kind : Text })
+    , tasks :
+        Optional
+          ( List
+              { batch_size_in_kbs : Natural
+              , batch_time_in_sec : Natural
+              , condition : Text
+              , function_id : Text
+              , kind : Text
+              }
+          )
     , time_created : Optional Text
     , time_updated : Optional Text
     }
@@ -55,10 +66,12 @@
   , source =
       None
         ( List
-            { kind : Text
+            { cursor : List { kind : Text }
+            , kind : Text
             , log_sources :
                 List
                   { compartment_id : Text, log_group_id : Text, log_id : Text }
+            , stream_id : Text
             }
         )
   , state = None Text
@@ -82,7 +95,16 @@
             , topic_id : Text
             }
         )
-  , tasks = None (List { condition : Text, kind : Text })
+  , tasks =
+      None
+        ( List
+            { batch_size_in_kbs : Natural
+            , batch_time_in_sec : Natural
+            , condition : Text
+            , function_id : Text
+            , kind : Text
+            }
+        )
   , time_created = None Text
   , time_updated = None Text
   }

@@ -6,6 +6,8 @@
           ( List
               { are_quotas_supported : Bool
               , description : Text
+              , is_deprecated : Bool
+              , is_eligible_for_limit_increase : Bool
               , is_resource_availability_supported : Bool
               , name : Text
               , scope_type : Text
@@ -25,6 +27,8 @@
         ( List
             { are_quotas_supported : Bool
             , description : Text
+            , is_deprecated : Bool
+            , is_eligible_for_limit_increase : Bool
             , is_resource_availability_supported : Bool
             , name : Text
             , scope_type : Text

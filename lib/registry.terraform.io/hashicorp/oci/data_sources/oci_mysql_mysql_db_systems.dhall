@@ -56,6 +56,8 @@
                     }
               , compartment_id : Text
               , configuration_id : Text
+              , current_placement :
+                  List { availability_domain : Text, fault_domain : Text }
               , data_storage_size_in_gb : Natural
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , description : Text
@@ -85,6 +87,7 @@
               , ip_address : Text
               , is_analytics_cluster_attached : Bool
               , is_heat_wave_cluster_attached : Bool
+              , is_highly_available : Bool
               , lifecycle_details : Text
               , maintenance : List { window_start_time : Text }
               , mysql_version : Text
@@ -166,6 +169,8 @@
                   }
             , compartment_id : Text
             , configuration_id : Text
+            , current_placement :
+                List { availability_domain : Text, fault_domain : Text }
             , data_storage_size_in_gb : Natural
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , description : Text
@@ -195,6 +200,7 @@
             , ip_address : Text
             , is_analytics_cluster_attached : Bool
             , is_heat_wave_cluster_attached : Bool
+            , is_highly_available : Bool
             , lifecycle_details : Text
             , maintenance : List { window_start_time : Text }
             , mysql_version : Text

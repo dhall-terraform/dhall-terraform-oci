@@ -40,6 +40,7 @@
               , hostname_label : Text
               , id : Text
               , ip_address : Text
+              , is_highly_available : Bool
               , maintenance : List { window_start_time : Text }
               , mysql_version : Text
               , port : Natural
@@ -102,6 +103,7 @@
             , hostname_label : Text
             , id : Text
             , ip_address : Text
+            , is_highly_available : Bool
             , maintenance : List { window_start_time : Text }
             , mysql_version : Text
             , port : Natural

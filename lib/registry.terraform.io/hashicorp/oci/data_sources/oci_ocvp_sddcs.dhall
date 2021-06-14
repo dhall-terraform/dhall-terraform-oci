@@ -19,6 +19,7 @@
               , hcx_private_ip_id : Text
               , hcx_vlan_id : Text
               , id : Text
+              , initial_sku : Text
               , instance_display_name_prefix : Text
               , is_hcx_enabled : Bool
               , nsx_edge_uplink1vlan_id : Text
@@ -74,6 +75,7 @@
             , hcx_private_ip_id : Text
             , hcx_vlan_id : Text
             , id : Text
+            , initial_sku : Text
             , instance_display_name_prefix : Text
             , is_hcx_enabled : Bool
             , nsx_edge_uplink1vlan_id : Text

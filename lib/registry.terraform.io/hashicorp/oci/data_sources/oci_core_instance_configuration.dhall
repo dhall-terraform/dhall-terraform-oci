@@ -91,10 +91,19 @@
                     , metadata : List { mapKey : Text, mapValue : Text }
                     , platform_config :
                         List { numa_nodes_per_socket : Text, type : Text }
+                    , preemptible_instance_config :
+                        List
+                          { preemption_action :
+                              List { preserve_boot_volume : Bool, type : Text }
+                          }
                     , preferred_maintenance_action : Text
                     , shape : Text
                     , shape_config :
-                        List { memory_in_gbs : Natural, ocpus : Natural }
+                        List
+                          { baseline_ocpu_utilization : Text
+                          , memory_in_gbs : Natural
+                          , ocpus : Natural
+                          }
                     , source_details :
                         List
                           { boot_volume_id : Text
@@ -217,10 +226,19 @@
                   , metadata : List { mapKey : Text, mapValue : Text }
                   , platform_config :
                       List { numa_nodes_per_socket : Text, type : Text }
+                  , preemptible_instance_config :
+                      List
+                        { preemption_action :
+                            List { preserve_boot_volume : Bool, type : Text }
+                        }
                   , preferred_maintenance_action : Text
                   , shape : Text
                   , shape_config :
-                      List { memory_in_gbs : Natural, ocpus : Natural }
+                      List
+                        { baseline_ocpu_utilization : Text
+                        , memory_in_gbs : Natural
+                        , ocpus : Natural
+                        }
                   , source_details :
                       List
                         { boot_volume_id : Text
