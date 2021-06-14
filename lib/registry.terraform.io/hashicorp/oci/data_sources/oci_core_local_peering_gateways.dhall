@@ -21,7 +21,7 @@
               , vcn_id : Text
               }
           )
-    , vcn_id : Text
+    , vcn_id : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -48,6 +48,7 @@
             , vcn_id : Text
             }
         )
+  , vcn_id = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

@@ -33,10 +33,12 @@
               , db_workload : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
+              , failed_data_recovery_in_seconds : Natural
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , infrastructure_type : Text
               , is_auto_scaling_enabled : Bool
+              , is_data_guard_enabled : Bool
               , is_dedicated : Bool
               , is_free_tier : Bool
               , is_preview : Bool
@@ -50,13 +52,22 @@
               , service_console_url : Text
               , source : Text
               , source_id : Text
+              , standby_db :
+                  List
+                    { lag_time_in_seconds : Natural
+                    , lifecycle_details : Text
+                    , state : Text
+                    }
               , state : Text
               , subnet_id : Text
+              , switchover_to : Text
               , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               , time_deletion_of_free_autonomous_database : Text
               , time_maintenance_begin : Text
               , time_maintenance_end : Text
+              , time_of_last_failover : Text
+              , time_of_last_switchover : Text
               , time_reclamation_of_free_autonomous_database : Text
               , timestamp : Text
               , used_data_storage_size_in_tbs : Natural
@@ -69,6 +80,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , infrastructure_type : Optional Text
+    , is_data_guard_enabled : Optional Bool
     , is_free_tier : Optional Bool
     , state : Optional Text
     , filter :
@@ -110,10 +122,12 @@
             , db_workload : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
+            , failed_data_recovery_in_seconds : Natural
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , infrastructure_type : Text
             , is_auto_scaling_enabled : Bool
+            , is_data_guard_enabled : Bool
             , is_dedicated : Bool
             , is_free_tier : Bool
             , is_preview : Bool
@@ -127,13 +141,22 @@
             , service_console_url : Text
             , source : Text
             , source_id : Text
+            , standby_db :
+                List
+                  { lag_time_in_seconds : Natural
+                  , lifecycle_details : Text
+                  , state : Text
+                  }
             , state : Text
             , subnet_id : Text
+            , switchover_to : Text
             , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             , time_deletion_of_free_autonomous_database : Text
             , time_maintenance_begin : Text
             , time_maintenance_end : Text
+            , time_of_last_failover : Text
+            , time_of_last_switchover : Text
             , time_reclamation_of_free_autonomous_database : Text
             , timestamp : Text
             , used_data_storage_size_in_tbs : Natural
@@ -145,6 +168,7 @@
   , display_name = None Text
   , id = None Text
   , infrastructure_type = None Text
+  , is_data_guard_enabled = None Bool
   , is_free_tier = None Bool
   , state = None Text
   , filter =

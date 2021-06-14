@@ -5,6 +5,10 @@
 , oci_autoscaling_auto_scaling_configuration =
     ./oci_autoscaling_auto_scaling_configuration.dhall
 , oci_bds_bds_instance = ./oci_bds_bds_instance.dhall
+, oci_blockchain_blockchain_platform =
+    ./oci_blockchain_blockchain_platform.dhall
+, oci_blockchain_osn = ./oci_blockchain_osn.dhall
+, oci_blockchain_peer = ./oci_blockchain_peer.dhall
 , oci_budget_alert_rule = ./oci_budget_alert_rule.dhall
 , oci_budget_budget = ./oci_budget_budget.dhall
 , oci_containerengine_cluster = ./oci_containerengine_cluster.dhall

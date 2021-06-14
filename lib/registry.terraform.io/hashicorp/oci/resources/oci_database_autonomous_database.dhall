@@ -32,10 +32,12 @@
     , db_workload : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
+    , failed_data_recovery_in_seconds : Optional Natural
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , infrastructure_type : Optional Text
     , is_auto_scaling_enabled : Optional Bool
+    , is_data_guard_enabled : Optional Bool
     , is_dedicated : Optional Bool
     , is_free_tier : Optional Bool
     , is_preview : Optional Bool
@@ -49,13 +51,24 @@
     , service_console_url : Optional Text
     , source : Optional Text
     , source_id : Optional Text
+    , standby_db :
+        Optional
+          ( List
+              { lag_time_in_seconds : Natural
+              , lifecycle_details : Text
+              , state : Text
+              }
+          )
     , state : Optional Text
     , subnet_id : Optional Text
+    , switchover_to : Optional Text
     , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , time_deletion_of_free_autonomous_database : Optional Text
     , time_maintenance_begin : Optional Text
     , time_maintenance_end : Optional Text
+    , time_of_last_failover : Optional Text
+    , time_of_last_switchover : Optional Text
     , time_reclamation_of_free_autonomous_database : Optional Text
     , timestamp : Optional Text
     , used_data_storage_size_in_tbs : Optional Natural
@@ -96,10 +109,12 @@
   , db_workload = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
+  , failed_data_recovery_in_seconds = None Natural
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , infrastructure_type = None Text
   , is_auto_scaling_enabled = None Bool
+  , is_data_guard_enabled = None Bool
   , is_dedicated = None Bool
   , is_free_tier = None Bool
   , is_preview = None Bool
@@ -113,13 +128,24 @@
   , service_console_url = None Text
   , source = None Text
   , source_id = None Text
+  , standby_db =
+      None
+        ( List
+            { lag_time_in_seconds : Natural
+            , lifecycle_details : Text
+            , state : Text
+            }
+        )
   , state = None Text
   , subnet_id = None Text
+  , switchover_to = None Text
   , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , time_deletion_of_free_autonomous_database = None Text
   , time_maintenance_begin = None Text
   , time_maintenance_end = None Text
+  , time_of_last_failover = None Text
+  , time_of_last_switchover = None Text
   , time_reclamation_of_free_autonomous_database = None Text
   , timestamp = None Text
   , used_data_storage_size_in_tbs = None Natural
