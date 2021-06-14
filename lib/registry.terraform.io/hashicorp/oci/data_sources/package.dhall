@@ -227,6 +227,12 @@
 , oci_database_backup_destination = ./oci_database_backup_destination.dhall
 , oci_database_backup_destinations = ./oci_database_backup_destinations.dhall
 , oci_database_backups = ./oci_database_backups.dhall
+, oci_database_cloud_exadata_infrastructure =
+    ./oci_database_cloud_exadata_infrastructure.dhall
+, oci_database_cloud_exadata_infrastructures =
+    ./oci_database_cloud_exadata_infrastructures.dhall
+, oci_database_cloud_vm_cluster = ./oci_database_cloud_vm_cluster.dhall
+, oci_database_cloud_vm_clusters = ./oci_database_cloud_vm_clusters.dhall
 , oci_database_database = ./oci_database_database.dhall
 , oci_database_databases = ./oci_database_databases.dhall
 , oci_database_database_software_image =
@@ -455,6 +461,7 @@
 , oci_marketplace_listing_package = ./oci_marketplace_listing_package.dhall
 , oci_marketplace_listing_packages = ./oci_marketplace_listing_packages.dhall
 , oci_marketplace_listings = ./oci_marketplace_listings.dhall
+, oci_marketplace_listing_taxes = ./oci_marketplace_listing_taxes.dhall
 , oci_marketplace_publishers = ./oci_marketplace_publishers.dhall
 , oci_metering_computation_configuration =
     ./oci_metering_computation_configuration.dhall

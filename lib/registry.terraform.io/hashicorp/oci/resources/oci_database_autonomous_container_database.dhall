@@ -10,6 +10,7 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , infrastructure_type : Optional Text
+    , kms_key_id : Optional Text
     , last_maintenance_run_id : Optional Text
     , lifecycle_details : Optional Text
     , maintenance_window :
@@ -26,9 +27,11 @@
     , next_maintenance_run_id : Optional Text
     , patch_id : Optional Text
     , patch_model : Text
+    , rotate_key_trigger : Optional Bool
     , service_level_agreement_type : Optional Text
     , state : Optional Text
     , time_created : Optional Text
+    , vault_id : Optional Text
     , backup_config :
         Optional
           ( List
@@ -74,6 +77,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , infrastructure_type = None Text
+  , kms_key_id = None Text
   , last_maintenance_run_id = None Text
   , lifecycle_details = None Text
   , maintenance_window =
@@ -89,9 +93,11 @@
         )
   , next_maintenance_run_id = None Text
   , patch_id = None Text
+  , rotate_key_trigger = None Bool
   , service_level_agreement_type = None Text
   , state = None Text
   , time_created = None Text
+  , vault_id = None Text
   , backup_config =
       None
         ( List

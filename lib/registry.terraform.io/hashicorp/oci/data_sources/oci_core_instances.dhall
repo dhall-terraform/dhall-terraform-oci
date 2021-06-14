@@ -37,6 +37,8 @@
               , hostname_label : Text
               , id : Text
               , image : Text
+              , instance_options :
+                  List { are_legacy_imds_endpoints_disabled : Bool }
               , ipxe_script : Text
               , is_pv_encryption_in_transit_enabled : Bool
               , launch_mode : Text
@@ -125,6 +127,8 @@
             , hostname_label : Text
             , id : Text
             , image : Text
+            , instance_options :
+                List { are_legacy_imds_endpoints_disabled : Bool }
             , ipxe_script : Text
             , is_pv_encryption_in_transit_enabled : Bool
             , launch_mode : Text

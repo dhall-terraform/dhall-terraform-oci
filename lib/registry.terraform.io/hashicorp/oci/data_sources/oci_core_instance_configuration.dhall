@@ -70,6 +70,8 @@
                         List { mapKey : Text, mapValue : Text }
                     , fault_domain : Text
                     , freeform_tags : List { mapKey : Text, mapValue : Text }
+                    , instance_options :
+                        List { are_legacy_imds_endpoints_disabled : Bool }
                     , ipxe_script : Text
                     , is_pv_encryption_in_transit_enabled : Bool
                     , launch_mode : Text
@@ -187,6 +189,8 @@
                   , extended_metadata : List { mapKey : Text, mapValue : Text }
                   , fault_domain : Text
                   , freeform_tags : List { mapKey : Text, mapValue : Text }
+                  , instance_options :
+                      List { are_legacy_imds_endpoints_disabled : Bool }
                   , ipxe_script : Text
                   , is_pv_encryption_in_transit_enabled : Bool
                   , launch_mode : Text

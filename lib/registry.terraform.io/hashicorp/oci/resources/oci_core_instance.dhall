@@ -50,6 +50,8 @@
               , vlan_id : Optional Text
               }
           )
+    , instance_options :
+        Optional (List { are_legacy_imds_endpoints_disabled : Optional Bool })
     , launch_options :
         Optional
           ( List
@@ -139,6 +141,8 @@
             , vlan_id : Optional Text
             }
         )
+  , instance_options =
+      None (List { are_legacy_imds_endpoints_disabled : Optional Bool })
   , launch_options =
       None
         ( List

@@ -96,6 +96,9 @@
     ./oci_database_autonomous_vm_cluster.dhall
 , oci_database_backup_destination = ./oci_database_backup_destination.dhall
 , oci_database_backup = ./oci_database_backup.dhall
+, oci_database_cloud_exadata_infrastructure =
+    ./oci_database_cloud_exadata_infrastructure.dhall
+, oci_database_cloud_vm_cluster = ./oci_database_cloud_vm_cluster.dhall
 , oci_database_database = ./oci_database_database.dhall
 , oci_database_database_software_image =
     ./oci_database_database_software_image.dhall
@@ -109,6 +112,7 @@
     ./oci_database_exadata_infrastructure.dhall
 , oci_database_exadata_iorm_config = ./oci_database_exadata_iorm_config.dhall
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
+, oci_database_migration = ./oci_database_migration.dhall
 , oci_database_vm_cluster = ./oci_database_vm_cluster.dhall
 , oci_database_vm_cluster_network = ./oci_database_vm_cluster_network.dhall
 , oci_datacatalog_catalog = ./oci_datacatalog_catalog.dhall

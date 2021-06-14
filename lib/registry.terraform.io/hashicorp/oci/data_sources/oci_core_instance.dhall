@@ -33,6 +33,8 @@
     , id : Optional Text
     , image : Optional Text
     , instance_id : Text
+    , instance_options :
+        Optional (List { are_legacy_imds_endpoints_disabled : Bool })
     , ipxe_script : Optional Text
     , is_pv_encryption_in_transit_enabled : Optional Bool
     , launch_mode : Optional Text
@@ -115,6 +117,7 @@
   , hostname_label = None Text
   , id = None Text
   , image = None Text
+  , instance_options = None (List { are_legacy_imds_endpoints_disabled : Bool })
   , ipxe_script = None Text
   , is_pv_encryption_in_transit_enabled = None Bool
   , launch_mode = None Text

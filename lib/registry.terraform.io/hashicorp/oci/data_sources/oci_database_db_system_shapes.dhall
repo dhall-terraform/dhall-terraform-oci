@@ -5,6 +5,7 @@
         Optional
           ( List
               { available_core_count : Natural
+              , available_core_count_per_node : Natural
               , available_data_storage_in_tbs : Natural
               , available_db_node_storage_in_gbs : Natural
               , available_memory_in_gbs : Natural
@@ -32,6 +33,7 @@
       None
         ( List
             { available_core_count : Natural
+            , available_core_count_per_node : Natural
             , available_data_storage_in_tbs : Natural
             , available_db_node_storage_in_gbs : Natural
             , available_memory_in_gbs : Natural

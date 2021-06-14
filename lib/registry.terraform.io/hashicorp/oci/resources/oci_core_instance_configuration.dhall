@@ -110,6 +110,13 @@
                                   , subnet_id : Optional Text
                                   }
                               )
+                        , instance_options :
+                            Optional
+                              ( List
+                                  { are_legacy_imds_endpoints_disabled :
+                                      Optional Bool
+                                  }
+                              )
                         , launch_options :
                             Optional
                               ( List
@@ -273,6 +280,13 @@
                                 , private_ip : Optional Text
                                 , skip_source_dest_check : Optional Bool
                                 , subnet_id : Optional Text
+                                }
+                            )
+                      , instance_options :
+                          Optional
+                            ( List
+                                { are_legacy_imds_endpoints_disabled :
+                                    Optional Bool
                                 }
                             )
                       , launch_options :

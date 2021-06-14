@@ -25,6 +25,7 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , infrastructure_type : Text
+              , kms_key_id : Text
               , last_maintenance_run_id : Text
               , lifecycle_details : Text
               , maintenance_window :
@@ -48,9 +49,11 @@
               , next_maintenance_run_id : Text
               , patch_id : Text
               , patch_model : Text
+              , rotate_key_trigger : Bool
               , service_level_agreement_type : Text
               , state : Text
               , time_created : Text
+              , vault_id : Text
               }
           )
     , autonomous_exadata_infrastructure_id : Optional Text
@@ -92,6 +95,7 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , infrastructure_type : Text
+            , kms_key_id : Text
             , last_maintenance_run_id : Text
             , lifecycle_details : Text
             , maintenance_window :
@@ -115,9 +119,11 @@
             , next_maintenance_run_id : Text
             , patch_id : Text
             , patch_model : Text
+            , rotate_key_trigger : Bool
             , service_level_agreement_type : Text
             , state : Text
             , time_created : Text
+            , vault_id : Text
             }
         )
   , autonomous_exadata_infrastructure_id = None Text

@@ -53,6 +53,7 @@
     , private_endpoint_label : Optional Text
     , refreshable_mode : Optional Text
     , refreshable_status : Optional Text
+    , rotate_key_trigger : Optional Bool
     , service_console_url : Optional Text
     , source : Optional Text
     , source_id : Optional Text
@@ -136,6 +137,7 @@
   , private_endpoint_label = None Text
   , refreshable_mode = None Text
   , refreshable_status = None Text
+  , rotate_key_trigger = None Bool
   , service_console_url = None Text
   , source = None Text
   , source_id = None Text
