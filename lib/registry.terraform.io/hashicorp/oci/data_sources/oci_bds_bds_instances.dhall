@@ -57,6 +57,7 @@
                     , availability_domain : Text
                     , display_name : Text
                     , fault_domain : Text
+                    , hostname : Text
                     , image_id : Text
                     , instance_id : Text
                     , ip_address : Text
@@ -154,6 +155,7 @@
                   , availability_domain : Text
                   , display_name : Text
                   , fault_domain : Text
+                  , hostname : Text
                   , image_id : Text
                   , instance_id : Text
                   , ip_address : Text

@@ -22,7 +22,9 @@
               , time_created : Text
               }
           )
+    , name : Optional Text
     , protocol : Text
+    , state : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -50,6 +52,8 @@
             , time_created : Text
             }
         )
+  , name = None Text
+  , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

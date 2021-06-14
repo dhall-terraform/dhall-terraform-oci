@@ -1,6 +1,7 @@
 { Type =
     { compartment_id : Text
     , id : Optional Text
+    , name : Optional Text
     , policies :
         Optional
           ( List
@@ -20,12 +21,14 @@
               , version_date : Text
               }
           )
+    , state : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
   { id = None Text
+  , name = None Text
   , policies =
       None
         ( List
@@ -45,6 +48,7 @@
             , version_date : Text
             }
         )
+  , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

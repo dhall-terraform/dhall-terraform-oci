@@ -13,6 +13,8 @@
               }
           )
     , identity_provider_id : Text
+    , name : Optional Text
+    , state : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -31,6 +33,8 @@
             , time_modified : Text
             }
         )
+  , name = None Text
+  , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

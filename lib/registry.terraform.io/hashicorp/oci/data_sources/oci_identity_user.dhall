@@ -14,6 +14,7 @@
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , description : Optional Text
     , email : Optional Text
+    , email_verified : Optional Bool
     , external_identifier : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
@@ -42,6 +43,7 @@
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , description = None Text
   , email = None Text
+  , email_verified = None Bool
   , external_identifier = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text

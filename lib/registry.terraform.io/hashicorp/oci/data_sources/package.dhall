@@ -18,6 +18,10 @@
     ./oci_autoscaling_auto_scaling_configuration.dhall
 , oci_autoscaling_auto_scaling_configurations =
     ./oci_autoscaling_auto_scaling_configurations.dhall
+, oci_bds_auto_scaling_configuration =
+    ./oci_bds_auto_scaling_configuration.dhall
+, oci_bds_auto_scaling_configurations =
+    ./oci_bds_auto_scaling_configurations.dhall
 , oci_bds_bds_instance = ./oci_bds_bds_instance.dhall
 , oci_bds_bds_instances = ./oci_bds_bds_instances.dhall
 , oci_blockchain_blockchain_platform =

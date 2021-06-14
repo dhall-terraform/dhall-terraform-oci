@@ -19,6 +19,8 @@
               }
           )
     , id : Optional Text
+    , name : Optional Text
+    , state : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -43,6 +45,8 @@
             }
         )
   , id = None Text
+  , name = None Text
+  , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

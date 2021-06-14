@@ -3,6 +3,8 @@
     , external_identifier : Optional Text
     , id : Optional Text
     , identity_provider_id : Optional Text
+    , name : Optional Text
+    , state : Optional Text
     , users :
         Optional
           ( List
@@ -19,6 +21,7 @@
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , description : Text
               , email : Text
+              , email_verified : Bool
               , external_identifier : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
@@ -39,6 +42,8 @@
   { external_identifier = None Text
   , id = None Text
   , identity_provider_id = None Text
+  , name = None Text
+  , state = None Text
   , users =
       None
         ( List
@@ -55,6 +60,7 @@
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , description : Text
             , email : Text
+            , email_verified : Bool
             , external_identifier : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text

@@ -6,6 +6,8 @@
 , oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_autoscaling_auto_scaling_configuration =
     ./oci_autoscaling_auto_scaling_configuration.dhall
+, oci_bds_auto_scaling_configuration =
+    ./oci_bds_auto_scaling_configuration.dhall
 , oci_bds_bds_instance = ./oci_bds_bds_instance.dhall
 , oci_blockchain_blockchain_platform =
     ./oci_blockchain_blockchain_platform.dhall
