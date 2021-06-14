@@ -148,6 +148,14 @@
     ./oci_core_dedicated_vm_hosts_instances.dhall
 , oci_core_dhcp_options = ./oci_core_dhcp_options.dhall
 , oci_core_drg_attachments = ./oci_core_drg_attachments.dhall
+, oci_core_drg_route_distribution = ./oci_core_drg_route_distribution.dhall
+, oci_core_drg_route_distributions = ./oci_core_drg_route_distributions.dhall
+, oci_core_drg_route_distribution_statements =
+    ./oci_core_drg_route_distribution_statements.dhall
+, oci_core_drg_route_table = ./oci_core_drg_route_table.dhall
+, oci_core_drg_route_table_route_rules =
+    ./oci_core_drg_route_table_route_rules.dhall
+, oci_core_drg_route_tables = ./oci_core_drg_route_tables.dhall
 , oci_core_drgs = ./oci_core_drgs.dhall
 , oci_core_fast_connect_provider_service =
     ./oci_core_fast_connect_provider_service.dhall
@@ -727,6 +735,22 @@
     ./oci_resourcemanager_stack_tf_state.dhall
 , oci_sch_service_connector = ./oci_sch_service_connector.dhall
 , oci_sch_service_connectors = ./oci_sch_service_connectors.dhall
+, oci_service_catalog_private_application =
+    ./oci_service_catalog_private_application.dhall
+, oci_service_catalog_private_application_package =
+    ./oci_service_catalog_private_application_package.dhall
+, oci_service_catalog_private_application_packages =
+    ./oci_service_catalog_private_application_packages.dhall
+, oci_service_catalog_private_applications =
+    ./oci_service_catalog_private_applications.dhall
+, oci_service_catalog_service_catalog_association =
+    ./oci_service_catalog_service_catalog_association.dhall
+, oci_service_catalog_service_catalog_associations =
+    ./oci_service_catalog_service_catalog_associations.dhall
+, oci_service_catalog_service_catalog =
+    ./oci_service_catalog_service_catalog.dhall
+, oci_service_catalog_service_catalogs =
+    ./oci_service_catalog_service_catalogs.dhall
 , oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
 , oci_streaming_connect_harnesses = ./oci_streaming_connect_harnesses.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall

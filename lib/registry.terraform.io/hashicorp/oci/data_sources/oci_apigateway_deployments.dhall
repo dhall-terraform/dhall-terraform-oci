@@ -155,6 +155,13 @@
                                                   }
                                             }
                                       }
+                                , response_cache_lookup :
+                                    List
+                                      { cache_key_additions : List Text
+                                      , is_enabled : Bool
+                                      , is_private_caching_enabled : Bool
+                                      , type : Text
+                                      }
                                 }
                           , response_policies :
                               List
@@ -179,6 +186,11 @@
                                                   , values : List Text
                                                   }
                                             }
+                                      }
+                                , response_cache_store :
+                                    List
+                                      { time_to_live_in_seconds : Natural
+                                      , type : Text
                                       }
                                 }
                           }
@@ -352,6 +364,13 @@
                                                 }
                                           }
                                     }
+                              , response_cache_lookup :
+                                  List
+                                    { cache_key_additions : List Text
+                                    , is_enabled : Bool
+                                    , is_private_caching_enabled : Bool
+                                    , type : Text
+                                    }
                               }
                         , response_policies :
                             List
@@ -376,6 +395,11 @@
                                                 , values : List Text
                                                 }
                                           }
+                                    }
+                              , response_cache_store :
+                                  List
+                                    { time_to_live_in_seconds : Natural
+                                    , type : Text
                                     }
                               }
                         }

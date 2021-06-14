@@ -54,7 +54,14 @@
 , oci_core_default_security_list = ./oci_core_default_security_list.dhall
 , oci_core_dhcp_options = ./oci_core_dhcp_options.dhall
 , oci_core_drg_attachment = ./oci_core_drg_attachment.dhall
+, oci_core_drg_attachments_list = ./oci_core_drg_attachments_list.dhall
 , oci_core_drg = ./oci_core_drg.dhall
+, oci_core_drg_route_distribution = ./oci_core_drg_route_distribution.dhall
+, oci_core_drg_route_distribution_statement =
+    ./oci_core_drg_route_distribution_statement.dhall
+, oci_core_drg_route_table = ./oci_core_drg_route_table.dhall
+, oci_core_drg_route_table_route_rule =
+    ./oci_core_drg_route_table_route_rule.dhall
 , oci_core_image = ./oci_core_image.dhall
 , oci_core_instance_configuration = ./oci_core_instance_configuration.dhall
 , oci_core_instance_console_connection =
@@ -318,6 +325,12 @@
     ./oci_osmanagement_managed_instance_management.dhall
 , oci_osmanagement_software_source = ./oci_osmanagement_software_source.dhall
 , oci_sch_service_connector = ./oci_sch_service_connector.dhall
+, oci_service_catalog_private_application =
+    ./oci_service_catalog_private_application.dhall
+, oci_service_catalog_service_catalog_association =
+    ./oci_service_catalog_service_catalog_association.dhall
+, oci_service_catalog_service_catalog =
+    ./oci_service_catalog_service_catalog.dhall
 , oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
 , oci_streaming_stream_pool = ./oci_streaming_stream_pool.dhall

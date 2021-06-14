@@ -13,6 +13,22 @@
     , subnet_id : Text
     , time_created : Optional Text
     , time_updated : Optional Text
+    , response_cache_details :
+        Optional
+          ( List
+              { authentication_secret_id : Optional Text
+              , authentication_secret_version_number : Optional Text
+              , connect_timeout_in_ms : Optional Natural
+              , is_ssl_enabled : Optional Bool
+              , is_ssl_verify_disabled : Optional Bool
+              , read_timeout_in_ms : Optional Natural
+              , send_timeout_in_ms : Optional Natural
+              , type : Text
+              , servers :
+                  Optional
+                    (List { host : Optional Text, port : Optional Natural })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -32,6 +48,22 @@
   , state = None Text
   , time_created = None Text
   , time_updated = None Text
+  , response_cache_details =
+      None
+        ( List
+            { authentication_secret_id : Optional Text
+            , authentication_secret_version_number : Optional Text
+            , connect_timeout_in_ms : Optional Natural
+            , is_ssl_enabled : Optional Bool
+            , is_ssl_verify_disabled : Optional Bool
+            , read_timeout_in_ms : Optional Natural
+            , send_timeout_in_ms : Optional Natural
+            , type : Text
+            , servers :
+                Optional
+                  (List { host : Optional Text, port : Optional Natural })
+            }
+        )
   , timeouts =
       None
         { create : Optional Text
