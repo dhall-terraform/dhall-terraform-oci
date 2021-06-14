@@ -15,6 +15,7 @@
           ( List
               { auto_backup_enabled : Bool
               , auto_backup_window : Text
+              , backup_destination_details : List { id : Text, type : Text }
               , recovery_window_in_days : Natural
               }
           )
@@ -47,6 +48,7 @@
         ( List
             { auto_backup_enabled : Bool
             , auto_backup_window : Text
+            , backup_destination_details : List { id : Text, type : Text }
             , recovery_window_in_days : Natural
             }
         )

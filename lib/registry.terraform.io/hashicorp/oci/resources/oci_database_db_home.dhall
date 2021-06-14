@@ -1,6 +1,6 @@
 { Type =
     { compartment_id : Optional Text
-    , db_system_id : Text
+    , db_system_id : Optional Text
     , db_version : Optional Text
     , display_name : Optional Text
     , id : Optional Text
@@ -8,6 +8,7 @@
     , source : Optional Text
     , state : Optional Text
     , time_created : Optional Text
+    , vm_cluster_id : Optional Text
     , database :
         List
           { admin_password : Text
@@ -40,6 +41,9 @@
                     { auto_backup_enabled : Optional Bool
                     , auto_backup_window : Optional Text
                     , recovery_window_in_days : Optional Natural
+                    , backup_destination_details :
+                        Optional
+                          (List { id : Optional Text, type : Optional Text })
                     }
                 )
           }
@@ -52,6 +56,7 @@
     }
 , default =
   { compartment_id = None Text
+  , db_system_id = None Text
   , db_version = None Text
   , display_name = None Text
   , id = None Text
@@ -59,6 +64,7 @@
   , source = None Text
   , state = None Text
   , time_created = None Text
+  , vm_cluster_id = None Text
   , timeouts =
       None
         { create : Optional Text

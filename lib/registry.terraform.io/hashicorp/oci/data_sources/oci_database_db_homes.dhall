@@ -21,6 +21,8 @@
                         List
                           { auto_backup_enabled : Bool
                           , auto_backup_window : Text
+                          , backup_destination_details :
+                              List { id : Text, type : Text }
                           , recovery_window_in_days : Natural
                           }
                     , db_name : Text
@@ -44,12 +46,14 @@
               , source : Text
               , state : Text
               , time_created : Text
+              , vm_cluster_id : Text
               }
           )
     , db_system_id : Text
     , display_name : Optional Text
     , id : Optional Text
     , state : Optional Text
+    , vm_cluster_id : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -76,6 +80,8 @@
                       List
                         { auto_backup_enabled : Bool
                         , auto_backup_window : Text
+                        , backup_destination_details :
+                            List { id : Text, type : Text }
                         , recovery_window_in_days : Natural
                         }
                   , db_name : Text
@@ -99,11 +105,13 @@
             , source : Text
             , state : Text
             , time_created : Text
+            , vm_cluster_id : Text
             }
         )
   , display_name = None Text
   , id = None Text
   , state = None Text
+  , vm_cluster_id = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

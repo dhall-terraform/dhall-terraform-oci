@@ -165,6 +165,8 @@
     ./oci_database_autonomous_exadata_infrastructures.dhall
 , oci_database_autonomous_exadata_infrastructure_shapes =
     ./oci_database_autonomous_exadata_infrastructure_shapes.dhall
+, oci_database_backup_destination = ./oci_database_backup_destination.dhall
+, oci_database_backup_destinations = ./oci_database_backup_destinations.dhall
 , oci_database_backups = ./oci_database_backups.dhall
 , oci_database_database = ./oci_database_database.dhall
 , oci_database_databases = ./oci_database_databases.dhall
@@ -185,9 +187,24 @@
 , oci_database_db_systems = ./oci_database_db_systems.dhall
 , oci_database_db_system_shapes = ./oci_database_db_system_shapes.dhall
 , oci_database_db_versions = ./oci_database_db_versions.dhall
+, oci_database_exadata_infrastructure =
+    ./oci_database_exadata_infrastructure.dhall
+, oci_database_exadata_infrastructure_download_config_file =
+    ./oci_database_exadata_infrastructure_download_config_file.dhall
+, oci_database_exadata_infrastructures =
+    ./oci_database_exadata_infrastructures.dhall
 , oci_database_exadata_iorm_config = ./oci_database_exadata_iorm_config.dhall
+, oci_database_gi_versions = ./oci_database_gi_versions.dhall
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
 , oci_database_maintenance_runs = ./oci_database_maintenance_runs.dhall
+, oci_database_vm_cluster = ./oci_database_vm_cluster.dhall
+, oci_database_vm_cluster_network = ./oci_database_vm_cluster_network.dhall
+, oci_database_vm_cluster_network_download_config_file =
+    ./oci_database_vm_cluster_network_download_config_file.dhall
+, oci_database_vm_cluster_networks = ./oci_database_vm_cluster_networks.dhall
+, oci_database_vm_cluster_recommended_network =
+    ./oci_database_vm_cluster_recommended_network.dhall
+, oci_database_vm_clusters = ./oci_database_vm_clusters.dhall
 , oci_dns_records = ./oci_dns_records.dhall
 , oci_dns_steering_policies = ./oci_dns_steering_policies.dhall
 , oci_dns_steering_policy_attachment =

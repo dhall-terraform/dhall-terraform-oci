@@ -18,6 +18,7 @@
     , db_system_id : Text
     , id : Optional Text
     , state : Optional Text
+    , vm_cluster_id : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -40,6 +41,7 @@
         )
   , id = None Text
   , state = None Text
+  , vm_cluster_id = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

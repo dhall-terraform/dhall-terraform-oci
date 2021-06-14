@@ -18,6 +18,8 @@
                   List
                     { auto_backup_enabled : Bool
                     , auto_backup_window : Text
+                    , backup_destination_details :
+                        List { id : Text, type : Text }
                     , recovery_window_in_days : Natural
                     }
               , db_name : Text
@@ -42,6 +44,7 @@
     , source : Optional Text
     , state : Optional Text
     , time_created : Optional Text
+    , vm_cluster_id : Optional Text
     }
 , default =
   { compartment_id = None Text
@@ -63,6 +66,7 @@
                 List
                   { auto_backup_enabled : Bool
                   , auto_backup_window : Text
+                  , backup_destination_details : List { id : Text, type : Text }
                   , recovery_window_in_days : Natural
                   }
             , db_name : Text
@@ -86,5 +90,6 @@
   , source = None Text
   , state = None Text
   , time_created = None Text
+  , vm_cluster_id = None Text
   }
 }

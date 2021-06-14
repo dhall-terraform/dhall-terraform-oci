@@ -1,5 +1,5 @@
 { Type =
-    { availability_domain : Text
+    { availability_domain : Optional Text
     , compartment_id : Text
     , db_system_shapes :
         Optional
@@ -11,6 +11,7 @@
               , minimum_node_count : Natural
               , name : Text
               , shape : Text
+              , shape_family : Text
               }
           )
     , id : Optional Text
@@ -19,7 +20,8 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { db_system_shapes =
+  { availability_domain = None Text
+  , db_system_shapes =
       None
         ( List
             { available_core_count : Natural
@@ -29,6 +31,7 @@
             , minimum_node_count : Natural
             , name : Text
             , shape : Text
+            , shape_family : Text
             }
         )
   , id = None Text

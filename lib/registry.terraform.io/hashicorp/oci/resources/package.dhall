@@ -70,13 +70,18 @@
     ./oci_database_autonomous_data_warehouse.dhall
 , oci_database_autonomous_exadata_infrastructure =
     ./oci_database_autonomous_exadata_infrastructure.dhall
+, oci_database_backup_destination = ./oci_database_backup_destination.dhall
 , oci_database_backup = ./oci_database_backup.dhall
 , oci_database_data_guard_association =
     ./oci_database_data_guard_association.dhall
 , oci_database_db_home = ./oci_database_db_home.dhall
 , oci_database_db_system = ./oci_database_db_system.dhall
+, oci_database_exadata_infrastructure =
+    ./oci_database_exadata_infrastructure.dhall
 , oci_database_exadata_iorm_config = ./oci_database_exadata_iorm_config.dhall
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
+, oci_database_vm_cluster = ./oci_database_vm_cluster.dhall
+, oci_database_vm_cluster_network = ./oci_database_vm_cluster_network.dhall
 , oci_dns_record = ./oci_dns_record.dhall
 , oci_dns_steering_policy_attachment =
     ./oci_dns_steering_policy_attachment.dhall
