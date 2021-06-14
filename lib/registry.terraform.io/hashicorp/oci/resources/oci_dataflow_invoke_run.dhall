@@ -1,5 +1,5 @@
 { Type =
-    { application_id : Text
+    { application_id : Optional Text
     , archive_uri : Optional Text
     , arguments : Optional (List Text)
     , asynchronous : Optional Bool
@@ -9,8 +9,9 @@
     , data_read_in_bytes : Optional Text
     , data_written_in_bytes : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , display_name : Text
+    , display_name : Optional Text
     , driver_shape : Optional Text
+    , execute : Optional Text
     , executor_shape : Optional Text
     , file_uri : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -43,7 +44,8 @@
           }
     }
 , default =
-  { archive_uri = None Text
+  { application_id = None Text
+  , archive_uri = None Text
   , arguments = None (List Text)
   , asynchronous = None Bool
   , class_name = None Text
@@ -51,7 +53,9 @@
   , data_read_in_bytes = None Text
   , data_written_in_bytes = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
+  , display_name = None Text
   , driver_shape = None Text
+  , execute = None Text
   , executor_shape = None Text
   , file_uri = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })

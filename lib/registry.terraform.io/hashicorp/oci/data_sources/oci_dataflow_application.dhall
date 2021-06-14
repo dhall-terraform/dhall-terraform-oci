@@ -9,6 +9,7 @@
     , description : Optional Text
     , display_name : Optional Text
     , driver_shape : Optional Text
+    , execute : Optional Text
     , executor_shape : Optional Text
     , file_uri : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -36,6 +37,7 @@
   , description = None Text
   , display_name = None Text
   , driver_shape = None Text
+  , execute = None Text
   , executor_shape = None Text
   , file_uri = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })

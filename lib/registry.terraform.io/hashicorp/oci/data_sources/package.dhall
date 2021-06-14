@@ -705,6 +705,14 @@
 , oci_ons_notification_topics = ./oci_ons_notification_topics.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
 , oci_ons_subscriptions = ./oci_ons_subscriptions.dhall
+, oci_opsi_database_insight = ./oci_opsi_database_insight.dhall
+, oci_opsi_database_insights = ./oci_opsi_database_insights.dhall
+, oci_opsi_enterprise_manager_bridge =
+    ./oci_opsi_enterprise_manager_bridge.dhall
+, oci_opsi_enterprise_manager_bridges =
+    ./oci_opsi_enterprise_manager_bridges.dhall
+, oci_opsi_host_insight = ./oci_opsi_host_insight.dhall
+, oci_opsi_host_insights = ./oci_opsi_host_insights.dhall
 , oci_optimizer_categories = ./oci_optimizer_categories.dhall
 , oci_optimizer_category = ./oci_optimizer_category.dhall
 , oci_optimizer_enrollment_status = ./oci_optimizer_enrollment_status.dhall

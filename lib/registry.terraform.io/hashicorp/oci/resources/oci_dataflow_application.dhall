@@ -8,6 +8,7 @@
     , description : Optional Text
     , display_name : Text
     , driver_shape : Text
+    , execute : Optional Text
     , executor_shape : Text
     , file_uri : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -38,6 +39,7 @@
   , configuration = None (List { mapKey : Text, mapValue : Text })
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , description = None Text
+  , execute = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , logs_bucket_uri = None Text

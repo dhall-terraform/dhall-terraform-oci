@@ -315,6 +315,10 @@
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
+, oci_opsi_database_insight = ./oci_opsi_database_insight.dhall
+, oci_opsi_enterprise_manager_bridge =
+    ./oci_opsi_enterprise_manager_bridge.dhall
+, oci_opsi_host_insight = ./oci_opsi_host_insight.dhall
 , oci_optimizer_enrollment_status = ./oci_optimizer_enrollment_status.dhall
 , oci_optimizer_profile = ./oci_optimizer_profile.dhall
 , oci_optimizer_recommendation = ./oci_optimizer_recommendation.dhall

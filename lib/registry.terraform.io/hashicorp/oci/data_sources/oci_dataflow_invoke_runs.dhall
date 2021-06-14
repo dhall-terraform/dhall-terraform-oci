@@ -20,6 +20,7 @@
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , driver_shape : Text
+              , execute : Text
               , executor_shape : Text
               , file_uri : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -73,6 +74,7 @@
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , driver_shape : Text
+            , execute : Text
             , executor_shape : Text
             , file_uri : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
