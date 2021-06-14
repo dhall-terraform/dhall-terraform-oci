@@ -6,8 +6,14 @@
     , display_name : Optional Text
     , esxi_hosts_count : Optional Natural
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , hcx_fqdn : Optional Text
+    , hcx_initial_password : Optional Text
+    , hcx_on_prem_key : Optional Text
+    , hcx_private_ip_id : Optional Text
+    , hcx_vlan_id : Optional Text
     , id : Optional Text
     , instance_display_name_prefix : Optional Text
+    , is_hcx_enabled : Optional Bool
     , nsx_edge_uplink1vlan_id : Optional Text
     , nsx_edge_uplink2vlan_id : Optional Text
     , nsx_edge_uplink_ip_id : Optional Text
@@ -42,8 +48,14 @@
   , display_name = None Text
   , esxi_hosts_count = None Natural
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
+  , hcx_fqdn = None Text
+  , hcx_initial_password = None Text
+  , hcx_on_prem_key = None Text
+  , hcx_private_ip_id = None Text
+  , hcx_vlan_id = None Text
   , id = None Text
   , instance_display_name_prefix = None Text
+  , is_hcx_enabled = None Bool
   , nsx_edge_uplink1vlan_id = None Text
   , nsx_edge_uplink2vlan_id = None Text
   , nsx_edge_uplink_ip_id = None Text

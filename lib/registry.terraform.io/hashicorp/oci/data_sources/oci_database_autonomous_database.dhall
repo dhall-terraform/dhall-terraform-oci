@@ -47,6 +47,7 @@
     , lifecycle_details : Optional Text
     , nsg_ids : Optional (List Text)
     , open_mode : Optional Text
+    , operations_insights_status : Optional Text
     , permission_level : Optional Text
     , private_endpoint : Optional Text
     , private_endpoint_ip : Optional Text
@@ -132,6 +133,7 @@
   , lifecycle_details = None Text
   , nsg_ids = None (List Text)
   , open_mode = None Text
+  , operations_insights_status = None Text
   , permission_level = None Text
   , private_endpoint = None Text
   , private_endpoint_ip = None Text
