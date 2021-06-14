@@ -14,6 +14,7 @@
               , metadata : List { mapKey : Text, mapValue : Text }
               , name : Text
               , namespace : Text
+              , object_events_enabled : Bool
               , object_lifecycle_policy_etag : Text
               , storage_tier : Text
               , time_created : Text
@@ -42,6 +43,7 @@
             , metadata : List { mapKey : Text, mapValue : Text }
             , name : Text
             , namespace : Text
+            , object_events_enabled : Bool
             , object_lifecycle_policy_etag : Text
             , storage_tier : Text
             , time_created : Text

@@ -12,6 +12,7 @@
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
     , namespace : Text
+    , object_events_enabled : Optional Bool
     , object_lifecycle_policy_etag : Optional Text
     , storage_tier : Optional Text
     , time_created : Optional Text
@@ -33,6 +34,7 @@
   , id = None Text
   , kms_key_id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
+  , object_events_enabled = None Bool
   , object_lifecycle_policy_etag = None Text
   , storage_tier = None Text
   , time_created = None Text
