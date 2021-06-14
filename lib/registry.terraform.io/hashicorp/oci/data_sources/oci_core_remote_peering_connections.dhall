@@ -6,8 +6,10 @@
         Optional
           ( List
               { compartment_id : Text
+              , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , drg_id : Text
+              , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , is_cross_tenancy_peering : Bool
               , peer_id : Text
@@ -29,8 +31,10 @@
       None
         ( List
             { compartment_id : Text
+            , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , drg_id : Text
+            , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , is_cross_tenancy_peering : Bool
             , peer_id : Text

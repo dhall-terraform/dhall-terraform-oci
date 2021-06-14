@@ -7,8 +7,10 @@
               { compartment_id : Text
               , cross_connect_group_id : Text
               , customer_reference_name : Text
+              , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , far_cross_connect_or_cross_connect_group_id : Text
+              , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , is_active : Bool
               , location_name : Text
@@ -34,8 +36,10 @@
             { compartment_id : Text
             , cross_connect_group_id : Text
             , customer_reference_name : Text
+            , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , far_cross_connect_or_cross_connect_group_id : Text
+            , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , is_active : Bool
             , location_name : Text

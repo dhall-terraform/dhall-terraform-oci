@@ -14,7 +14,9 @@
               }
           )
     , customer_bgp_asn : Optional Natural
+    , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
+    , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , gateway_id : Optional Text
     , id : Optional Text
     , oracle_bgp_asn : Optional Natural
@@ -46,7 +48,9 @@
             }
         )
   , customer_bgp_asn = None Natural
+  , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
+  , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , gateway_id = None Text
   , id = None Text
   , oracle_bgp_asn = None Natural

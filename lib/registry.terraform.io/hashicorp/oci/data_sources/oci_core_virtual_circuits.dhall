@@ -19,7 +19,9 @@
                     , vlan : Natural
                     }
               , customer_bgp_asn : Natural
+              , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
+              , freeform_tags : List { mapKey : Text, mapValue : Text }
               , gateway_id : Text
               , id : Text
               , oracle_bgp_asn : Natural
@@ -60,7 +62,9 @@
                   , vlan : Natural
                   }
             , customer_bgp_asn : Natural
+            , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
+            , freeform_tags : List { mapKey : Text, mapValue : Text }
             , gateway_id : Text
             , id : Text
             , oracle_bgp_asn : Natural

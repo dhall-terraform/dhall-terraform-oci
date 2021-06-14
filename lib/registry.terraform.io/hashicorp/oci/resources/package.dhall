@@ -82,6 +82,7 @@
 , oci_dns_zone = ./oci_dns_zone.dhall
 , oci_email_sender = ./oci_email_sender.dhall
 , oci_email_suppression = ./oci_email_suppression.dhall
+, oci_events_rule = ./oci_events_rule.dhall
 , oci_file_storage_export = ./oci_file_storage_export.dhall
 , oci_file_storage_export_set = ./oci_file_storage_export_set.dhall
 , oci_file_storage_file_system = ./oci_file_storage_file_system.dhall

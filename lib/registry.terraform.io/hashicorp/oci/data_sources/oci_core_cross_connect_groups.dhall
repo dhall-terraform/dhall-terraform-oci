@@ -5,7 +5,9 @@
           ( List
               { compartment_id : Text
               , customer_reference_name : Text
+              , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
+              , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , state : Text
               , time_created : Text
@@ -24,7 +26,9 @@
         ( List
             { compartment_id : Text
             , customer_reference_name : Text
+            , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
+            , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , state : Text
             , time_created : Text
