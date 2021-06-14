@@ -231,6 +231,15 @@
 , oci_dataflow_invoke_runs = ./oci_dataflow_invoke_runs.dhall
 , oci_dataflow_run_log = ./oci_dataflow_run_log.dhall
 , oci_dataflow_run_logs = ./oci_dataflow_run_logs.dhall
+, oci_datascience_model = ./oci_datascience_model.dhall
+, oci_datascience_model_provenance = ./oci_datascience_model_provenance.dhall
+, oci_datascience_models = ./oci_datascience_models.dhall
+, oci_datascience_notebook_session = ./oci_datascience_notebook_session.dhall
+, oci_datascience_notebook_sessions = ./oci_datascience_notebook_sessions.dhall
+, oci_datascience_notebook_session_shapes =
+    ./oci_datascience_notebook_session_shapes.dhall
+, oci_datascience_project = ./oci_datascience_project.dhall
+, oci_datascience_projects = ./oci_datascience_projects.dhall
 , oci_dns_records = ./oci_dns_records.dhall
 , oci_dns_steering_policies = ./oci_dns_steering_policies.dhall
 , oci_dns_steering_policy_attachment =

@@ -97,6 +97,10 @@
 , oci_datacatalog_data_asset = ./oci_datacatalog_data_asset.dhall
 , oci_dataflow_application = ./oci_dataflow_application.dhall
 , oci_dataflow_invoke_run = ./oci_dataflow_invoke_run.dhall
+, oci_datascience_model = ./oci_datascience_model.dhall
+, oci_datascience_model_provenance = ./oci_datascience_model_provenance.dhall
+, oci_datascience_notebook_session = ./oci_datascience_notebook_session.dhall
+, oci_datascience_project = ./oci_datascience_project.dhall
 , oci_dns_record = ./oci_dns_record.dhall
 , oci_dns_steering_policy_attachment =
     ./oci_dns_steering_policy_attachment.dhall
