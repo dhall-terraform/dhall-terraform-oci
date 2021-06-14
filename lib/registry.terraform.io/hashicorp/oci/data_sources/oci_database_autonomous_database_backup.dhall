@@ -6,6 +6,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , is_automatic : Optional Bool
+    , is_restorable : Optional Bool
     , lifecycle_details : Optional Text
     , state : Optional Text
     , time_ended : Optional Text
@@ -19,6 +20,7 @@
   , display_name = None Text
   , id = None Text
   , is_automatic = None Bool
+  , is_restorable = None Bool
   , lifecycle_details = None Text
   , state = None Text
   , time_ended = None Text

@@ -8,6 +8,7 @@
               , display_name : Text
               , id : Text
               , is_automatic : Bool
+              , is_restorable : Bool
               , lifecycle_details : Text
               , state : Text
               , time_ended : Text
@@ -34,6 +35,7 @@
             , display_name : Text
             , id : Text
             , is_automatic : Bool
+            , is_restorable : Bool
             , lifecycle_details : Text
             , state : Text
             , time_ended : Text

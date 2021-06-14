@@ -4,6 +4,7 @@
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , redundancy_status : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     , timeouts :
@@ -18,6 +19,7 @@
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , redundancy_status = None Text
   , state = None Text
   , time_created = None Text
   , timeouts =

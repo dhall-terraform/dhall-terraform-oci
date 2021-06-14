@@ -5,6 +5,8 @@
           ( List
               { admin_password : Text
               , autonomous_container_database_id : Text
+              , autonomous_database_backup_id : Text
+              , autonomous_database_id : Text
               , clone_type : Text
               , compartment_id : Text
               , connection_strings :
@@ -49,6 +51,7 @@
               , time_maintenance_begin : Text
               , time_maintenance_end : Text
               , time_reclamation_of_free_autonomous_database : Text
+              , timestamp : Text
               , used_data_storage_size_in_tbs : Natural
               , whitelisted_ips : List Text
               }
@@ -70,6 +73,8 @@
         ( List
             { admin_password : Text
             , autonomous_container_database_id : Text
+            , autonomous_database_backup_id : Text
+            , autonomous_database_id : Text
             , clone_type : Text
             , compartment_id : Text
             , connection_strings :
@@ -114,6 +119,7 @@
             , time_maintenance_begin : Text
             , time_maintenance_end : Text
             , time_reclamation_of_free_autonomous_database : Text
+            , timestamp : Text
             , used_data_storage_size_in_tbs : Natural
             , whitelisted_ips : List Text
             }

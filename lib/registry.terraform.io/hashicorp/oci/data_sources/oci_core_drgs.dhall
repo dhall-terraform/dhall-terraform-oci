@@ -8,6 +8,7 @@
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , redundancy_status : Text
               , state : Text
               , time_created : Text
               }
@@ -26,6 +27,7 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , redundancy_status : Text
             , state : Text
             , time_created : Text
             }

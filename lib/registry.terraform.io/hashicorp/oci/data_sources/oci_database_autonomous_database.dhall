@@ -1,6 +1,7 @@
 { Type =
     { admin_password : Optional Text
     , autonomous_container_database_id : Optional Text
+    , autonomous_database_backup_id : Optional Text
     , autonomous_database_id : Text
     , clone_type : Optional Text
     , compartment_id : Optional Text
@@ -49,12 +50,14 @@
     , time_maintenance_begin : Optional Text
     , time_maintenance_end : Optional Text
     , time_reclamation_of_free_autonomous_database : Optional Text
+    , timestamp : Optional Text
     , used_data_storage_size_in_tbs : Optional Natural
     , whitelisted_ips : Optional (List Text)
     }
 , default =
   { admin_password = None Text
   , autonomous_container_database_id = None Text
+  , autonomous_database_backup_id = None Text
   , clone_type = None Text
   , compartment_id = None Text
   , connection_strings =
@@ -102,6 +105,7 @@
   , time_maintenance_begin = None Text
   , time_maintenance_end = None Text
   , time_reclamation_of_free_autonomous_database = None Text
+  , timestamp = None Text
   , used_data_storage_size_in_tbs = None Natural
   , whitelisted_ips = None (List Text)
   }
