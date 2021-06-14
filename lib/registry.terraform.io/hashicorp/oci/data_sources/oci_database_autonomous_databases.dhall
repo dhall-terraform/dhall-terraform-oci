@@ -48,6 +48,7 @@
               , lifecycle_details : Text
               , nsg_ids : List Text
               , open_mode : Text
+              , permission_level : Text
               , private_endpoint : Text
               , private_endpoint_ip : Text
               , private_endpoint_label : Text
@@ -145,6 +146,7 @@
             , lifecycle_details : Text
             , nsg_ids : List Text
             , open_mode : Text
+            , permission_level : Text
             , private_endpoint : Text
             , private_endpoint_ip : Text
             , private_endpoint_label : Text

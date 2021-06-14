@@ -4,8 +4,18 @@
     , cloud_control_plane_server1 : Optional Text
     , cloud_control_plane_server2 : Optional Text
     , compartment_id : Optional Text
+    , contacts :
+        Optional
+          ( List
+              { email : Text
+              , is_primary : Bool
+              , name : Text
+              , phone_number : Text
+              }
+          )
     , corporate_proxy : Optional Text
     , cpus_enabled : Optional Natural
+    , csi_number : Optional Text
     , data_storage_size_in_tbs : Optional Natural
     , db_node_storage_size_in_gbs : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -35,8 +45,18 @@
   , cloud_control_plane_server1 = None Text
   , cloud_control_plane_server2 = None Text
   , compartment_id = None Text
+  , contacts =
+      None
+        ( List
+            { email : Text
+            , is_primary : Bool
+            , name : Text
+            , phone_number : Text
+            }
+        )
   , corporate_proxy = None Text
   , cpus_enabled = None Natural
+  , csi_number = None Text
   , data_storage_size_in_tbs = None Natural
   , db_node_storage_size_in_gbs = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })

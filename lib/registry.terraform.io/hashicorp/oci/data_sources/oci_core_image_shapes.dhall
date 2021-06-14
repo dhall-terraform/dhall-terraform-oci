@@ -5,6 +5,8 @@
         Optional
           ( List
               { image_id : Text
+              , memory_constraints :
+                  List { max_in_gbs : Natural, min_in_gbs : Natural }
               , ocpu_constraints : List { max : Natural, min : Natural }
               , shape : Text
               }
@@ -19,6 +21,8 @@
       None
         ( List
             { image_id : Text
+            , memory_constraints :
+                List { max_in_gbs : Natural, min_in_gbs : Natural }
             , ocpu_constraints : List { max : Natural, min : Natural }
             , shape : Text
             }

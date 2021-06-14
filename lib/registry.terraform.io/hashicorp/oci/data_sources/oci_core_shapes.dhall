@@ -20,7 +20,9 @@
                   List
                     { default_per_ocpu_in_gbs : Natural
                     , max_in_gbs : Natural
+                    , max_per_ocpu_in_gbs : Natural
                     , min_in_gbs : Natural
+                    , min_per_ocpu_in_gbs : Natural
                     }
               , name : Text
               , networking_bandwidth_in_gbps : Natural
@@ -60,7 +62,9 @@
                 List
                   { default_per_ocpu_in_gbs : Natural
                   , max_in_gbs : Natural
+                  , max_per_ocpu_in_gbs : Natural
                   , min_in_gbs : Natural
+                  , min_per_ocpu_in_gbs : Natural
                   }
             , name : Text
             , networking_bandwidth_in_gbps : Natural

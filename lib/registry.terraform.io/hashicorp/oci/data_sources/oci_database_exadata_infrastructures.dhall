@@ -9,8 +9,16 @@
               , cloud_control_plane_server1 : Text
               , cloud_control_plane_server2 : Text
               , compartment_id : Text
+              , contacts :
+                  List
+                    { email : Text
+                    , is_primary : Bool
+                    , name : Text
+                    , phone_number : Text
+                    }
               , corporate_proxy : Text
               , cpus_enabled : Natural
+              , csi_number : Text
               , data_storage_size_in_tbs : Natural
               , db_node_storage_size_in_gbs : Natural
               , defined_tags : List { mapKey : Text, mapValue : Text }
@@ -50,8 +58,16 @@
             , cloud_control_plane_server1 : Text
             , cloud_control_plane_server2 : Text
             , compartment_id : Text
+            , contacts :
+                List
+                  { email : Text
+                  , is_primary : Bool
+                  , name : Text
+                  , phone_number : Text
+                  }
             , corporate_proxy : Text
             , cpus_enabled : Natural
+            , csi_number : Text
             , data_storage_size_in_tbs : Natural
             , db_node_storage_size_in_gbs : Natural
             , defined_tags : List { mapKey : Text, mapValue : Text }

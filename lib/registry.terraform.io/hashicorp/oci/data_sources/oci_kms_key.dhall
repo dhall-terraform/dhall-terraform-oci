@@ -9,6 +9,7 @@
     , key_id : Text
     , key_shape : Optional (List { algorithm : Text, length : Natural })
     , management_endpoint : Text
+    , protection_mode : Optional Text
     , restore_from_file :
         Optional
           ( List
@@ -43,6 +44,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , key_shape = None (List { algorithm : Text, length : Natural })
+  , protection_mode = None Text
   , restore_from_file =
       None
         ( List

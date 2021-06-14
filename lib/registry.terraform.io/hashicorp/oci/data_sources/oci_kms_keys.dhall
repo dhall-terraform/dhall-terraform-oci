@@ -13,6 +13,7 @@
               , id : Text
               , key_shape : List { algorithm : Text, length : Natural }
               , management_endpoint : Text
+              , protection_mode : Text
               , restore_from_file :
                   List
                     { content_length : Text
@@ -36,6 +37,7 @@
               }
           )
     , management_endpoint : Text
+    , protection_mode : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -54,6 +56,7 @@
             , id : Text
             , key_shape : List { algorithm : Text, length : Natural }
             , management_endpoint : Text
+            , protection_mode : Text
             , restore_from_file :
                 List
                   { content_length : Text
@@ -76,6 +79,7 @@
             , vault_id : Text
             }
         )
+  , protection_mode = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

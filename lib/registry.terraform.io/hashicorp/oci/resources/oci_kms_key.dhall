@@ -7,6 +7,7 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , management_endpoint : Text
+    , protection_mode : Optional Text
     , restore_trigger : Optional Bool
     , restored_from_key_id : Optional Text
     , state : Optional Text
@@ -45,6 +46,7 @@
   , desired_state = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , protection_mode = None Text
   , restore_trigger = None Bool
   , restored_from_key_id = None Text
   , state = None Text

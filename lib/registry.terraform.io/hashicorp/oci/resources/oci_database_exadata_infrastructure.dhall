@@ -6,6 +6,7 @@
     , compartment_id : Text
     , corporate_proxy : Optional Text
     , cpus_enabled : Optional Natural
+    , csi_number : Optional Text
     , data_storage_size_in_tbs : Optional Natural
     , db_node_storage_size_in_gbs : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -27,6 +28,15 @@
     , state : Optional Text
     , time_created : Optional Text
     , time_zone : Text
+    , contacts :
+        Optional
+          ( List
+              { email : Text
+              , is_primary : Bool
+              , name : Text
+              , phone_number : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -38,6 +48,7 @@
   { activation_file = None Text
   , corporate_proxy = None Text
   , cpus_enabled = None Natural
+  , csi_number = None Text
   , data_storage_size_in_tbs = None Natural
   , db_node_storage_size_in_gbs = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
@@ -51,6 +62,15 @@
   , memory_size_in_gbs = None Natural
   , state = None Text
   , time_created = None Text
+  , contacts =
+      None
+        ( List
+            { email : Text
+            , is_primary : Bool
+            , name : Text
+            , phone_number : Optional Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text
