@@ -29,6 +29,15 @@
               , id : Text
               , infini_band_network_cidr : Text
               , lifecycle_details : Text
+              , maintenance_window :
+                  List
+                    { days_of_week : List { name : Text }
+                    , hours_of_day : List Natural
+                    , lead_time_in_weeks : Natural
+                    , months : List { name : Text }
+                    , preference : Text
+                    , weeks_of_month : List Natural
+                    }
               , max_cpu_count : Natural
               , max_data_storage_in_tbs : Natural
               , max_db_node_storage_in_gbs : Natural
@@ -78,6 +87,15 @@
             , id : Text
             , infini_band_network_cidr : Text
             , lifecycle_details : Text
+            , maintenance_window :
+                List
+                  { days_of_week : List { name : Text }
+                  , hours_of_day : List Natural
+                  , lead_time_in_weeks : Natural
+                  , months : List { name : Text }
+                  , preference : Text
+                  , weeks_of_month : List Natural
+                  }
             , max_cpu_count : Natural
             , max_data_storage_in_tbs : Natural
             , max_db_node_storage_in_gbs : Natural

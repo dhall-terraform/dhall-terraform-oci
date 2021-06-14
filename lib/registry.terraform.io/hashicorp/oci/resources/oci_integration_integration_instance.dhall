@@ -10,11 +10,28 @@
     , integration_instance_type : Text
     , is_byol : Bool
     , is_file_server_enabled : Optional Bool
+    , is_visual_builder_enabled : Optional Bool
     , message_packs : Natural
     , state : Optional Text
     , state_message : Optional Text
     , time_created : Optional Text
     , time_updated : Optional Text
+    , alternate_custom_endpoints :
+        Optional
+          ( List
+              { certificate_secret_id : Optional Text
+              , certificate_secret_version : Optional Natural
+              , hostname : Text
+              }
+          )
+    , custom_endpoint :
+        Optional
+          ( List
+              { certificate_secret_id : Optional Text
+              , certificate_secret_version : Optional Natural
+              , hostname : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -30,10 +47,27 @@
   , idcs_at = None Text
   , instance_url = None Text
   , is_file_server_enabled = None Bool
+  , is_visual_builder_enabled = None Bool
   , state = None Text
   , state_message = None Text
   , time_created = None Text
   , time_updated = None Text
+  , alternate_custom_endpoints =
+      None
+        ( List
+            { certificate_secret_id : Optional Text
+            , certificate_secret_version : Optional Natural
+            , hostname : Text
+            }
+        )
+  , custom_endpoint =
+      None
+        ( List
+            { certificate_secret_id : Optional Text
+            , certificate_secret_version : Optional Natural
+            , hostname : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

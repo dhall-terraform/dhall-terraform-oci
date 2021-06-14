@@ -27,6 +27,17 @@
     , id : Optional Text
     , infini_band_network_cidr : Optional Text
     , lifecycle_details : Optional Text
+    , maintenance_window :
+        Optional
+          ( List
+              { days_of_week : List { name : Text }
+              , hours_of_day : List Natural
+              , lead_time_in_weeks : Natural
+              , months : List { name : Text }
+              , preference : Text
+              , weeks_of_month : List Natural
+              }
+          )
     , max_cpu_count : Optional Natural
     , max_data_storage_in_tbs : Optional Natural
     , max_db_node_storage_in_gbs : Optional Natural
@@ -67,6 +78,17 @@
   , id = None Text
   , infini_band_network_cidr = None Text
   , lifecycle_details = None Text
+  , maintenance_window =
+      None
+        ( List
+            { days_of_week : List { name : Text }
+            , hours_of_day : List Natural
+            , lead_time_in_weeks : Natural
+            , months : List { name : Text }
+            , preference : Text
+            , weeks_of_month : List Natural
+            }
+        )
   , max_cpu_count = None Natural
   , max_data_storage_in_tbs = None Natural
   , max_db_node_storage_in_gbs = None Natural

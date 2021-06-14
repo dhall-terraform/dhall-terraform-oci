@@ -5,8 +5,20 @@
     , integration_instances :
         Optional
           ( List
-              { compartment_id : Text
+              { alternate_custom_endpoints :
+                  List
+                    { certificate_secret_id : Text
+                    , certificate_secret_version : Natural
+                    , hostname : Text
+                    }
+              , compartment_id : Text
               , consumption_model : Text
+              , custom_endpoint :
+                  List
+                    { certificate_secret_id : Text
+                    , certificate_secret_version : Natural
+                    , hostname : Text
+                    }
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -16,6 +28,7 @@
               , integration_instance_type : Text
               , is_byol : Bool
               , is_file_server_enabled : Bool
+              , is_visual_builder_enabled : Bool
               , message_packs : Natural
               , state : Text
               , state_message : Text
@@ -34,8 +47,20 @@
   , integration_instances =
       None
         ( List
-            { compartment_id : Text
+            { alternate_custom_endpoints :
+                List
+                  { certificate_secret_id : Text
+                  , certificate_secret_version : Natural
+                  , hostname : Text
+                  }
+            , compartment_id : Text
             , consumption_model : Text
+            , custom_endpoint :
+                List
+                  { certificate_secret_id : Text
+                  , certificate_secret_version : Natural
+                  , hostname : Text
+                  }
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -45,6 +70,7 @@
             , integration_instance_type : Text
             , is_byol : Bool
             , is_file_server_enabled : Bool
+            , is_visual_builder_enabled : Bool
             , message_packs : Natural
             , state : Text
             , state_message : Text

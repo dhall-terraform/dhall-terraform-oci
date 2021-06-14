@@ -1,6 +1,22 @@
 { Type =
-    { compartment_id : Optional Text
+    { alternate_custom_endpoints :
+        Optional
+          ( List
+              { certificate_secret_id : Text
+              , certificate_secret_version : Natural
+              , hostname : Text
+              }
+          )
+    , compartment_id : Optional Text
     , consumption_model : Optional Text
+    , custom_endpoint :
+        Optional
+          ( List
+              { certificate_secret_id : Text
+              , certificate_secret_version : Natural
+              , hostname : Text
+              }
+          )
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -11,6 +27,7 @@
     , integration_instance_type : Optional Text
     , is_byol : Optional Bool
     , is_file_server_enabled : Optional Bool
+    , is_visual_builder_enabled : Optional Bool
     , message_packs : Optional Natural
     , state : Optional Text
     , state_message : Optional Text
@@ -18,8 +35,24 @@
     , time_updated : Optional Text
     }
 , default =
-  { compartment_id = None Text
+  { alternate_custom_endpoints =
+      None
+        ( List
+            { certificate_secret_id : Text
+            , certificate_secret_version : Natural
+            , hostname : Text
+            }
+        )
+  , compartment_id = None Text
   , consumption_model = None Text
+  , custom_endpoint =
+      None
+        ( List
+            { certificate_secret_id : Text
+            , certificate_secret_version : Natural
+            , hostname : Text
+            }
+        )
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
@@ -29,6 +62,7 @@
   , integration_instance_type = None Text
   , is_byol = None Bool
   , is_file_server_enabled = None Bool
+  , is_visual_builder_enabled = None Bool
   , message_packs = None Natural
   , state = None Text
   , state_message = None Text

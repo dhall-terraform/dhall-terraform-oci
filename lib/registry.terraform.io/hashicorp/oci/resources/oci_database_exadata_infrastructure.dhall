@@ -37,6 +37,17 @@
               , phone_number : Optional Text
               }
           )
+    , maintenance_window :
+        Optional
+          ( List
+              { hours_of_day : Optional (List Natural)
+              , lead_time_in_weeks : Optional Natural
+              , preference : Text
+              , weeks_of_month : Optional (List Natural)
+              , days_of_week : Optional (List { name : Text })
+              , months : Optional (List { name : Text })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -69,6 +80,17 @@
             , is_primary : Bool
             , name : Text
             , phone_number : Optional Text
+            }
+        )
+  , maintenance_window =
+      None
+        ( List
+            { hours_of_day : Optional (List Natural)
+            , lead_time_in_weeks : Optional Natural
+            , preference : Text
+            , weeks_of_month : Optional (List Natural)
+            , days_of_week : Optional (List { name : Text })
+            , months : Optional (List { name : Text })
             }
         )
   , timeouts =

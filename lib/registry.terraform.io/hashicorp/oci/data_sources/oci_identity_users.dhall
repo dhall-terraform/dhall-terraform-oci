@@ -19,7 +19,6 @@
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , description : Text
               , email : Text
-              , email_verified : Bool
               , external_identifier : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
@@ -56,7 +55,6 @@
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , description : Text
             , email : Text
-            , email_verified : Bool
             , external_identifier : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
