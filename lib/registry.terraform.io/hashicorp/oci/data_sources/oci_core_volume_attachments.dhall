@@ -13,13 +13,18 @@
               , compartment_id : Text
               , device : Text
               , display_name : Text
+              , encryption_in_transit_type : Text
               , id : Text
               , instance_id : Text
               , ipv4 : Text
               , iqn : Text
+              , is_multipath : Bool
               , is_pv_encryption_in_transit_enabled : Bool
               , is_read_only : Bool
               , is_shareable : Bool
+              , iscsi_login_state : Text
+              , multipath_devices :
+                  List { ipv4 : Text, iqn : Text, port : Natural }
               , port : Natural
               , state : Text
               , time_created : Text
@@ -46,13 +51,18 @@
             , compartment_id : Text
             , device : Text
             , display_name : Text
+            , encryption_in_transit_type : Text
             , id : Text
             , instance_id : Text
             , ipv4 : Text
             , iqn : Text
+            , is_multipath : Bool
             , is_pv_encryption_in_transit_enabled : Bool
             , is_read_only : Bool
             , is_shareable : Bool
+            , iscsi_login_state : Text
+            , multipath_devices :
+                List { ipv4 : Text, iqn : Text, port : Natural }
             , port : Natural
             , state : Text
             , time_created : Text

@@ -251,6 +251,7 @@
     ./oci_identity_user_group_membership.dhall
 , oci_integration_integration_instance =
     ./oci_integration_integration_instance.dhall
+, oci_jms_fleet = ./oci_jms_fleet.dhall
 , oci_kms_encrypted_data = ./oci_kms_encrypted_data.dhall
 , oci_kms_generated_key = ./oci_kms_generated_key.dhall
 , oci_kms_key = ./oci_kms_key.dhall

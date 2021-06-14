@@ -529,6 +529,8 @@
     ./oci_integration_integration_instance.dhall
 , oci_integration_integration_instances =
     ./oci_integration_integration_instances.dhall
+, oci_jms_fleet = ./oci_jms_fleet.dhall
+, oci_jms_fleets = ./oci_jms_fleets.dhall
 , oci_kms_decrypted_data = ./oci_kms_decrypted_data.dhall
 , oci_kms_encrypted_data = ./oci_kms_encrypted_data.dhall
 , oci_kms_key = ./oci_kms_key.dhall

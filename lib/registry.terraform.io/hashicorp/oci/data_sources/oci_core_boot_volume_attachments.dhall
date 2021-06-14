@@ -7,6 +7,7 @@
               , boot_volume_id : Text
               , compartment_id : Text
               , display_name : Text
+              , encryption_in_transit_type : Text
               , id : Text
               , instance_id : Text
               , is_pv_encryption_in_transit_enabled : Bool
@@ -30,6 +31,7 @@
             , boot_volume_id : Text
             , compartment_id : Text
             , display_name : Text
+            , encryption_in_transit_type : Text
             , id : Text
             , instance_id : Text
             , is_pv_encryption_in_transit_enabled : Bool
