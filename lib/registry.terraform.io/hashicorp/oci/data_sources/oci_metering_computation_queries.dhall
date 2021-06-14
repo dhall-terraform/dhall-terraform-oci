@@ -18,6 +18,12 @@
                                 { compartment_depth : Natural
                                 , date_range_name : Text
                                 , filter : Text
+                                , forecast :
+                                    List
+                                      { forecast_type : Text
+                                      , time_forecast_ended : Text
+                                      , time_forecast_started : Text
+                                      }
                                 , granularity : Text
                                 , group_by : List Text
                                 , group_by_tag :
@@ -60,6 +66,12 @@
                               { compartment_depth : Natural
                               , date_range_name : Text
                               , filter : Text
+                              , forecast :
+                                  List
+                                    { forecast_type : Text
+                                    , time_forecast_ended : Text
+                                    , time_forecast_started : Text
+                                    }
                               , granularity : Text
                               , group_by : List Text
                               , group_by_tag :

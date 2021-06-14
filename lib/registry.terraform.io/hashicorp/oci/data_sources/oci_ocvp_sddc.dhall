@@ -25,6 +25,8 @@
     , nsx_overlay_segment_name : Optional Text
     , nsx_vtep_vlan_id : Optional Text
     , provisioning_subnet_id : Optional Text
+    , provisioning_vlan_id : Optional Text
+    , replication_vlan_id : Optional Text
     , sddc_id : Text
     , ssh_authorized_keys : Optional Text
     , state : Optional Text
@@ -67,6 +69,8 @@
   , nsx_overlay_segment_name = None Text
   , nsx_vtep_vlan_id = None Text
   , provisioning_subnet_id = None Text
+  , provisioning_vlan_id = None Text
+  , replication_vlan_id = None Text
   , ssh_authorized_keys = None Text
   , state = None Text
   , time_created = None Text

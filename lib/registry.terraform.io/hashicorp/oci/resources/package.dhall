@@ -312,6 +312,10 @@
 , oci_streaming_connect_harness = ./oci_streaming_connect_harness.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
 , oci_streaming_stream_pool = ./oci_streaming_stream_pool.dhall
+, oci_vulnerability_scanning_host_scan_recipe =
+    ./oci_vulnerability_scanning_host_scan_recipe.dhall
+, oci_vulnerability_scanning_host_scan_target =
+    ./oci_vulnerability_scanning_host_scan_target.dhall
 , oci_waas_address_list = ./oci_waas_address_list.dhall
 , oci_waas_certificate = ./oci_waas_certificate.dhall
 , oci_waas_custom_protection_rule = ./oci_waas_custom_protection_rule.dhall

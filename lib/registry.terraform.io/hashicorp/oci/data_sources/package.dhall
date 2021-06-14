@@ -16,6 +16,8 @@
 , oci_apigateway_gateways = ./oci_apigateway_gateways.dhall
 , oci_artifacts_container_configuration =
     ./oci_artifacts_container_configuration.dhall
+, oci_artifacts_container_image = ./oci_artifacts_container_image.dhall
+, oci_artifacts_container_images = ./oci_artifacts_container_images.dhall
 , oci_artifacts_container_repositories =
     ./oci_artifacts_container_repositories.dhall
 , oci_artifacts_container_repository =
@@ -715,6 +717,14 @@
 , oci_vault_secret = ./oci_vault_secret.dhall
 , oci_vault_secrets = ./oci_vault_secrets.dhall
 , oci_vault_secret_version = ./oci_vault_secret_version.dhall
+, oci_vulnerability_scanning_host_scan_recipe =
+    ./oci_vulnerability_scanning_host_scan_recipe.dhall
+, oci_vulnerability_scanning_host_scan_recipes =
+    ./oci_vulnerability_scanning_host_scan_recipes.dhall
+, oci_vulnerability_scanning_host_scan_target =
+    ./oci_vulnerability_scanning_host_scan_target.dhall
+, oci_vulnerability_scanning_host_scan_targets =
+    ./oci_vulnerability_scanning_host_scan_targets.dhall
 , oci_waas_address_list = ./oci_waas_address_list.dhall
 , oci_waas_address_lists = ./oci_waas_address_lists.dhall
 , oci_waas_certificate = ./oci_waas_certificate.dhall

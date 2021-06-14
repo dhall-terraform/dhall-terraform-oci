@@ -20,6 +20,14 @@
                 , tenant_id : Text
                 , time_usage_ended : Optional Text
                 , time_usage_started : Optional Text
+                , forecast :
+                    Optional
+                      ( List
+                          { forecast_type : Optional Text
+                          , time_forecast_ended : Text
+                          , time_forecast_started : Optional Text
+                          }
+                      )
                 , group_by_tag :
                     Optional
                       ( List
