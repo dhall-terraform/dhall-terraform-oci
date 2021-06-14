@@ -15,6 +15,7 @@
               , time_ended : Text
               , time_started : Text
               , type : Text
+              , version : Text
               }
           )
     , compartment_id : Optional Text
@@ -41,6 +42,7 @@
             , time_ended : Text
             , time_started : Text
             , type : Text
+            , version : Text
             }
         )
   , compartment_id = None Text

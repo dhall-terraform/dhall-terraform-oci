@@ -227,6 +227,12 @@
 , oci_database_vm_cluster_network_download_config_file =
     ./oci_database_vm_cluster_network_download_config_file.dhall
 , oci_database_vm_cluster_networks = ./oci_database_vm_cluster_networks.dhall
+, oci_database_vm_cluster_patch = ./oci_database_vm_cluster_patch.dhall
+, oci_database_vm_cluster_patches = ./oci_database_vm_cluster_patches.dhall
+, oci_database_vm_cluster_patch_history_entries =
+    ./oci_database_vm_cluster_patch_history_entries.dhall
+, oci_database_vm_cluster_patch_history_entry =
+    ./oci_database_vm_cluster_patch_history_entry.dhall
 , oci_database_vm_cluster_recommended_network =
     ./oci_database_vm_cluster_recommended_network.dhall
 , oci_database_vm_clusters = ./oci_database_vm_clusters.dhall

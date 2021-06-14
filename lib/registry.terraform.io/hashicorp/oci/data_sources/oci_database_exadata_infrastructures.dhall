@@ -12,6 +12,7 @@
               , corporate_proxy : Text
               , cpus_enabled : Natural
               , data_storage_size_in_tbs : Natural
+              , db_node_storage_size_in_gbs : Natural
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , dns_server : List Text
@@ -20,6 +21,11 @@
               , id : Text
               , infini_band_network_cidr : Text
               , lifecycle_details : Text
+              , max_cpu_count : Natural
+              , max_data_storage_in_tbs : Natural
+              , max_db_node_storage_in_gbs : Natural
+              , max_memory_in_gbs : Natural
+              , memory_size_in_gbs : Natural
               , netmask : Text
               , ntp_server : List Text
               , shape : Text
@@ -47,6 +53,7 @@
             , corporate_proxy : Text
             , cpus_enabled : Natural
             , data_storage_size_in_tbs : Natural
+            , db_node_storage_size_in_gbs : Natural
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , dns_server : List Text
@@ -55,6 +62,11 @@
             , id : Text
             , infini_band_network_cidr : Text
             , lifecycle_details : Text
+            , max_cpu_count : Natural
+            , max_data_storage_in_tbs : Natural
+            , max_db_node_storage_in_gbs : Natural
+            , max_memory_in_gbs : Natural
+            , memory_size_in_gbs : Natural
             , netmask : Text
             , ntp_server : List Text
             , shape : Text

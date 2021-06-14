@@ -12,6 +12,7 @@
     , time_ended : Optional Text
     , time_started : Optional Text
     , type : Optional Text
+    , version : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -31,6 +32,7 @@
   , time_ended = None Text
   , time_started = None Text
   , type = None Text
+  , version = None Text
   , timeouts =
       None
         { create : Optional Text

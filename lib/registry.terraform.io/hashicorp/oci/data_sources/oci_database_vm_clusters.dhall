@@ -11,6 +11,7 @@
               , cpu_core_count : Natural
               , cpus_enabled : Natural
               , data_storage_size_in_tbs : Natural
+              , db_node_storage_size_in_gbs : Natural
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , exadata_infrastructure_id : Text
@@ -19,8 +20,10 @@
               , id : Text
               , is_local_backup_enabled : Bool
               , is_sparse_diskgroup_enabled : Bool
+              , last_patch_history_entry_id : Text
               , license_model : Text
               , lifecycle_details : Text
+              , memory_size_in_gbs : Natural
               , shape : Text
               , ssh_public_keys : List Text
               , state : Text
@@ -45,6 +48,7 @@
             , cpu_core_count : Natural
             , cpus_enabled : Natural
             , data_storage_size_in_tbs : Natural
+            , db_node_storage_size_in_gbs : Natural
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , exadata_infrastructure_id : Text
@@ -53,8 +57,10 @@
             , id : Text
             , is_local_backup_enabled : Bool
             , is_sparse_diskgroup_enabled : Bool
+            , last_patch_history_entry_id : Text
             , license_model : Text
             , lifecycle_details : Text
+            , memory_size_in_gbs : Natural
             , shape : Text
             , ssh_public_keys : List Text
             , state : Text

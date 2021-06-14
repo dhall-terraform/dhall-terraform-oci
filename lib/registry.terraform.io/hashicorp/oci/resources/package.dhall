@@ -109,6 +109,7 @@
 , oci_datascience_notebook_session = ./oci_datascience_notebook_session.dhall
 , oci_datascience_project = ./oci_datascience_project.dhall
 , oci_dns_record = ./oci_dns_record.dhall
+, oci_dns_rrset = ./oci_dns_rrset.dhall
 , oci_dns_steering_policy_attachment =
     ./oci_dns_steering_policy_attachment.dhall
 , oci_dns_steering_policy = ./oci_dns_steering_policy.dhall

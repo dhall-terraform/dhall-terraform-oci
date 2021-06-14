@@ -9,6 +9,7 @@
     , integration_instance_id : Text
     , integration_instance_type : Optional Text
     , is_byol : Optional Bool
+    , is_file_server_enabled : Optional Bool
     , message_packs : Optional Natural
     , state : Optional Text
     , state_message : Optional Text
@@ -25,6 +26,7 @@
   , instance_url = None Text
   , integration_instance_type = None Text
   , is_byol = None Bool
+  , is_file_server_enabled = None Bool
   , message_packs = None Natural
   , state = None Text
   , state_message = None Text

@@ -7,6 +7,7 @@
     , corporate_proxy : Optional Text
     , cpus_enabled : Optional Natural
     , data_storage_size_in_tbs : Optional Natural
+    , db_node_storage_size_in_gbs : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , dns_server : Optional (List Text)
@@ -16,6 +17,11 @@
     , id : Optional Text
     , infini_band_network_cidr : Optional Text
     , lifecycle_details : Optional Text
+    , max_cpu_count : Optional Natural
+    , max_data_storage_in_tbs : Optional Natural
+    , max_db_node_storage_in_gbs : Optional Natural
+    , max_memory_in_gbs : Optional Natural
+    , memory_size_in_gbs : Optional Natural
     , netmask : Optional Text
     , ntp_server : Optional (List Text)
     , shape : Optional Text
@@ -32,6 +38,7 @@
   , corporate_proxy = None Text
   , cpus_enabled = None Natural
   , data_storage_size_in_tbs = None Natural
+  , db_node_storage_size_in_gbs = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , dns_server = None (List Text)
@@ -40,6 +47,11 @@
   , id = None Text
   , infini_band_network_cidr = None Text
   , lifecycle_details = None Text
+  , max_cpu_count = None Natural
+  , max_data_storage_in_tbs = None Natural
+  , max_db_node_storage_in_gbs = None Natural
+  , max_memory_in_gbs = None Natural
+  , memory_size_in_gbs = None Natural
   , netmask = None Text
   , ntp_server = None (List Text)
   , shape = None Text

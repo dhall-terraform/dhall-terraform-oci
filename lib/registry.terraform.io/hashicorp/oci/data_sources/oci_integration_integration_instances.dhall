@@ -14,6 +14,7 @@
               , instance_url : Text
               , integration_instance_type : Text
               , is_byol : Bool
+              , is_file_server_enabled : Bool
               , message_packs : Natural
               , state : Text
               , state_message : Text
@@ -41,6 +42,7 @@
             , instance_url : Text
             , integration_instance_type : Text
             , is_byol : Bool
+            , is_file_server_enabled : Bool
             , message_packs : Natural
             , state : Text
             , state_message : Text

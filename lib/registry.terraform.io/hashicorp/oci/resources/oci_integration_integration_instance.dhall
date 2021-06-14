@@ -8,6 +8,7 @@
     , instance_url : Optional Text
     , integration_instance_type : Text
     , is_byol : Bool
+    , is_file_server_enabled : Optional Bool
     , message_packs : Natural
     , state : Optional Text
     , state_message : Optional Text
@@ -26,6 +27,7 @@
   , id = None Text
   , idcs_at = None Text
   , instance_url = None Text
+  , is_file_server_enabled = None Bool
   , state = None Text
   , state_message = None Text
   , time_created = None Text
