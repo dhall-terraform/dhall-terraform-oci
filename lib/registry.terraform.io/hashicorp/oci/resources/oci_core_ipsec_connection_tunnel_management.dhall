@@ -3,6 +3,7 @@
     , cpe_ip : Optional Text
     , display_name : Optional Text
     , id : Optional Text
+    , ike_version : Optional Text
     , ipsec_id : Text
     , routing : Text
     , shared_secret : Optional Text
@@ -34,6 +35,7 @@
   , cpe_ip = None Text
   , display_name = None Text
   , id = None Text
+  , ike_version = None Text
   , shared_secret = None Text
   , state = None Text
   , status = None Text

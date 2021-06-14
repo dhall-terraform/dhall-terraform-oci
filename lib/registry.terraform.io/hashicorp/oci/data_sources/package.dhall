@@ -1,4 +1,6 @@
-{ oci_audit_configuration = ./oci_audit_configuration.dhall
+{ oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
+, oci_analytics_analytics_instances = ./oci_analytics_analytics_instances.dhall
+, oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_audit_events = ./oci_audit_events.dhall
 , oci_autoscaling_auto_scaling_configuration =
     ./oci_autoscaling_auto_scaling_configuration.dhall
@@ -275,6 +277,10 @@
 , oci_identity_user_group_memberships =
     ./oci_identity_user_group_memberships.dhall
 , oci_identity_users = ./oci_identity_users.dhall
+, oci_integration_integration_instance =
+    ./oci_integration_integration_instance.dhall
+, oci_integration_integration_instances =
+    ./oci_integration_integration_instances.dhall
 , oci_kms_decrypted_data = ./oci_kms_decrypted_data.dhall
 , oci_kms_encrypted_data = ./oci_kms_encrypted_data.dhall
 , oci_kms_key = ./oci_kms_key.dhall
@@ -335,6 +341,10 @@
 , oci_ons_notification_topics = ./oci_ons_notification_topics.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
 , oci_ons_subscriptions = ./oci_ons_subscriptions.dhall
+, oci_resourcemanager_stack = ./oci_resourcemanager_stack.dhall
+, oci_resourcemanager_stacks = ./oci_resourcemanager_stacks.dhall
+, oci_resourcemanager_stack_tf_state =
+    ./oci_resourcemanager_stack_tf_state.dhall
 , oci_streaming_stream_archiver = ./oci_streaming_stream_archiver.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
 , oci_streaming_streams = ./oci_streaming_streams.dhall

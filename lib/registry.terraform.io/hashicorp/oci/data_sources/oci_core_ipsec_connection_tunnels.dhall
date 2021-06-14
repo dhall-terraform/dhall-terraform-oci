@@ -15,6 +15,7 @@
               , cpe_ip : Text
               , display_name : Text
               , id : Text
+              , ike_version : Text
               , routing : Text
               , state : Text
               , status : Text
@@ -45,6 +46,7 @@
             , cpe_ip : Text
             , display_name : Text
             , id : Text
+            , ike_version : Text
             , routing : Text
             , state : Text
             , status : Text

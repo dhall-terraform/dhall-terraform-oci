@@ -1,4 +1,5 @@
-{ oci_audit_configuration = ./oci_audit_configuration.dhall
+{ oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
+, oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_autoscaling_auto_scaling_configuration =
     ./oci_autoscaling_auto_scaling_configuration.dhall
 , oci_budget_alert_rule = ./oci_budget_alert_rule.dhall
@@ -130,6 +131,8 @@
 , oci_identity_user = ./oci_identity_user.dhall
 , oci_identity_user_group_membership =
     ./oci_identity_user_group_membership.dhall
+, oci_integration_integration_instance =
+    ./oci_integration_integration_instance.dhall
 , oci_kms_encrypted_data = ./oci_kms_encrypted_data.dhall
 , oci_kms_generated_key = ./oci_kms_generated_key.dhall
 , oci_kms_key = ./oci_kms_key.dhall

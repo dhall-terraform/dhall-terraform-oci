@@ -18,6 +18,8 @@
                     { bucket_name : Text
                     , namespace_name : Text
                     , object_name : Text
+                    , operating_system : Text
+                    , operating_system_version : Text
                     , source_image_type : Text
                     , source_type : Text
                     , source_uri : Text
@@ -69,6 +71,8 @@
                   { bucket_name : Text
                   , namespace_name : Text
                   , object_name : Text
+                  , operating_system : Text
+                  , operating_system_version : Text
                   , source_image_type : Text
                   , source_type : Text
                   , source_uri : Text

@@ -31,6 +31,8 @@
               { bucket_name : Optional Text
               , namespace_name : Optional Text
               , object_name : Optional Text
+              , operating_system : Optional Text
+              , operating_system_version : Optional Text
               , source_image_type : Optional Text
               , source_type : Text
               , source_uri : Optional Text
@@ -75,6 +77,8 @@
             { bucket_name : Optional Text
             , namespace_name : Optional Text
             , object_name : Optional Text
+            , operating_system : Optional Text
+            , operating_system_version : Optional Text
             , source_image_type : Optional Text
             , source_type : Text
             , source_uri : Optional Text
