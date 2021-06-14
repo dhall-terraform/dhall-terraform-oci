@@ -1,6 +1,16 @@
 { Type =
     { admin_password : Text
     , admin_username : Text
+    , analytics_cluster :
+        Optional
+          ( List
+              { cluster_size : Natural
+              , shape_name : Text
+              , state : Text
+              , time_created : Text
+              , time_updated : Text
+              }
+          )
     , availability_domain : Text
     , compartment_id : Text
     , configuration_id : Text
@@ -25,6 +35,7 @@
     , hostname_label : Optional Text
     , id : Optional Text
     , ip_address : Optional Text
+    , is_analytics_cluster_attached : Optional Bool
     , lifecycle_details : Optional Text
     , mysql_version : Optional Text
     , port : Optional Natural
@@ -57,7 +68,17 @@
           }
     }
 , default =
-  { data_storage_size_in_gb = None Natural
+  { analytics_cluster =
+      None
+        ( List
+            { cluster_size : Natural
+            , shape_name : Text
+            , state : Text
+            , time_created : Text
+            , time_updated : Text
+            }
+        )
+  , data_storage_size_in_gb = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , description = None Text
   , display_name = None Text
@@ -78,6 +99,7 @@
   , hostname_label = None Text
   , id = None Text
   , ip_address = None Text
+  , is_analytics_cluster_attached = None Bool
   , lifecycle_details = None Text
   , mysql_version = None Text
   , port = None Natural

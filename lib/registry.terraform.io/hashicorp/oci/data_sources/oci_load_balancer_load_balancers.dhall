@@ -12,11 +12,16 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , ip_address_details :
-                  List { ip_address : Text, is_public : Bool }
+                  List
+                    { ip_address : Text
+                    , is_public : Bool
+                    , reserved_ip : List { id : Text }
+                    }
               , ip_addresses : List Text
               , ip_mode : Text
               , is_private : Bool
               , network_security_group_ids : List Text
+              , reserved_ips : List { id : Text }
               , shape : Text
               , state : Text
               , subnet_ids : List Text
@@ -41,11 +46,17 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , ip_address_details : List { ip_address : Text, is_public : Bool }
+            , ip_address_details :
+                List
+                  { ip_address : Text
+                  , is_public : Bool
+                  , reserved_ip : List { id : Text }
+                  }
             , ip_addresses : List Text
             , ip_mode : Text
             , is_private : Bool
             , network_security_group_ids : List Text
+            , reserved_ips : List { id : Text }
             , shape : Text
             , state : Text
             , subnet_ids : List Text

@@ -6,6 +6,7 @@
     , creation_type : Text
     , database_admin_password : Text
     , database_id : Text
+    , database_software_image_id : Optional Text
     , delete_standby_db_home_on_delete : Text
     , display_name : Optional Text
     , hostname : Optional Text
@@ -37,6 +38,7 @@
   , apply_rate = None Text
   , availability_domain = None Text
   , backup_network_nsg_ids = None (List Text)
+  , database_software_image_id = None Text
   , display_name = None Text
   , hostname = None Text
   , id = None Text

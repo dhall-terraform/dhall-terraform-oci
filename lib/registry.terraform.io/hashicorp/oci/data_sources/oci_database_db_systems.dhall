@@ -52,6 +52,7 @@
                           , ncharacter_set : Text
                           , pdb_name : Text
                           , state : Text
+                          , tde_wallet_password : Text
                           , time_created : Text
                           , time_stamp_for_point_in_time_recovery : Text
                           }
@@ -192,6 +193,7 @@
                         , ncharacter_set : Text
                         , pdb_name : Text
                         , state : Text
+                        , tde_wallet_password : Text
                         , time_created : Text
                         , time_stamp_for_point_in_time_recovery : Text
                         }

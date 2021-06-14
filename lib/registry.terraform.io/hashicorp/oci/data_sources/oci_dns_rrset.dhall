@@ -15,6 +15,8 @@
               }
           )
     , rtype : Text
+    , scope : Optional Text
+    , view_id : Optional Text
     , zone_name_or_id : Text
     , zone_version : Optional Text
     }
@@ -33,6 +35,8 @@
             , ttl : Natural
             }
         )
+  , scope = None Text
+  , view_id = None Text
   , zone_version = None Text
   }
 }

@@ -51,6 +51,7 @@
           , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
           , ncharacter_set : Optional Text
           , pdb_name : Optional Text
+          , tde_wallet_password : Optional Text
           , db_backup_config :
               Optional
                 ( List

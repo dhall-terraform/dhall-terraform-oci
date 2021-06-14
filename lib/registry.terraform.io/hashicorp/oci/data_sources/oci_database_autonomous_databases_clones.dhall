@@ -33,6 +33,7 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , infrastructure_type : Text
+              , is_access_control_enabled : Bool
               , is_auto_scaling_enabled : Bool
               , is_data_guard_enabled : Bool
               , is_dedicated : Bool
@@ -119,6 +120,7 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , infrastructure_type : Text
+            , is_access_control_enabled : Bool
             , is_auto_scaling_enabled : Bool
             , is_data_guard_enabled : Bool
             , is_dedicated : Bool

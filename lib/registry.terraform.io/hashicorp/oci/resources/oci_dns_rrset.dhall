@@ -3,6 +3,8 @@
     , domain : Text
     , id : Optional Text
     , rtype : Text
+    , scope : Optional Text
+    , view_id : Optional Text
     , zone_name_or_id : Text
     , items :
         Optional
@@ -26,6 +28,8 @@
 , default =
   { compartment_id = None Text
   , id = None Text
+  , scope = None Text
+  , view_id = None Text
   , items =
       None
         ( List

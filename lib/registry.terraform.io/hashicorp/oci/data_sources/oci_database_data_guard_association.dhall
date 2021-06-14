@@ -7,6 +7,7 @@
     , data_guard_association_id : Text
     , database_admin_password : Optional Text
     , database_id : Text
+    , database_software_image_id : Optional Text
     , delete_standby_db_home_on_delete : Optional Text
     , display_name : Optional Text
     , hostname : Optional Text
@@ -34,6 +35,7 @@
   , backup_network_nsg_ids = None (List Text)
   , creation_type = None Text
   , database_admin_password = None Text
+  , database_software_image_id = None Text
   , delete_standby_db_home_on_delete = None Text
   , display_name = None Text
   , hostname = None Text

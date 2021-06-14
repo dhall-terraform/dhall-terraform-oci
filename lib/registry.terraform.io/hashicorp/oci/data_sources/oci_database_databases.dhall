@@ -34,6 +34,7 @@
                     , freeform_tags : List { mapKey : Text, mapValue : Text }
                     , ncharacter_set : Text
                     , pdb_name : Text
+                    , tde_wallet_password : Text
                     }
               , database_software_image_id : Text
               , db_backup_config :
@@ -108,6 +109,7 @@
                   , freeform_tags : List { mapKey : Text, mapValue : Text }
                   , ncharacter_set : Text
                   , pdb_name : Text
+                  , tde_wallet_password : Text
                   }
             , database_software_image_id : Text
             , db_backup_config :

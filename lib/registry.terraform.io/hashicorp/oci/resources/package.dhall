@@ -137,11 +137,14 @@
 , oci_datascience_notebook_session = ./oci_datascience_notebook_session.dhall
 , oci_datascience_project = ./oci_datascience_project.dhall
 , oci_dns_record = ./oci_dns_record.dhall
+, oci_dns_resolver = ./oci_dns_resolver.dhall
+, oci_dns_resolver_endpoint = ./oci_dns_resolver_endpoint.dhall
 , oci_dns_rrset = ./oci_dns_rrset.dhall
 , oci_dns_steering_policy_attachment =
     ./oci_dns_steering_policy_attachment.dhall
 , oci_dns_steering_policy = ./oci_dns_steering_policy.dhall
 , oci_dns_tsig_key = ./oci_dns_tsig_key.dhall
+, oci_dns_view = ./oci_dns_view.dhall
 , oci_dns_zone = ./oci_dns_zone.dhall
 , oci_email_sender = ./oci_email_sender.dhall
 , oci_email_suppression = ./oci_email_suppression.dhall
@@ -214,6 +217,7 @@
     ./oci_marketplace_listing_package_agreement.dhall
 , oci_metering_computation_usage = ./oci_metering_computation_usage.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
+, oci_mysql_analytics_cluster = ./oci_mysql_analytics_cluster.dhall
 , oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
 , oci_mysql_mysql_db_system = ./oci_mysql_mysql_db_system.dhall
 , oci_nosql_index = ./oci_nosql_index.dhall

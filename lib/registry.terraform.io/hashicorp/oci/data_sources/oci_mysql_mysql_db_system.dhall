@@ -1,6 +1,16 @@
 { Type =
     { admin_password : Optional Text
     , admin_username : Optional Text
+    , analytics_cluster :
+        Optional
+          ( List
+              { cluster_size : Natural
+              , shape_name : Text
+              , state : Text
+              , time_created : Text
+              , time_updated : Text
+              }
+          )
     , availability_domain : Optional Text
     , backup_policy :
         Optional
@@ -36,6 +46,7 @@
     , hostname_label : Optional Text
     , id : Optional Text
     , ip_address : Optional Text
+    , is_analytics_cluster_attached : Optional Bool
     , lifecycle_details : Optional Text
     , maintenance : Optional (List { window_start_time : Text })
     , mysql_version : Optional Text
@@ -52,6 +63,16 @@
 , default =
   { admin_password = None Text
   , admin_username = None Text
+  , analytics_cluster =
+      None
+        ( List
+            { cluster_size : Natural
+            , shape_name : Text
+            , state : Text
+            , time_created : Text
+            , time_updated : Text
+            }
+        )
   , availability_domain = None Text
   , backup_policy =
       None
@@ -86,6 +107,7 @@
   , hostname_label = None Text
   , id = None Text
   , ip_address = None Text
+  , is_analytics_cluster_attached = None Bool
   , lifecycle_details = None Text
   , maintenance = None (List { window_start_time : Text })
   , mysql_version = None Text

@@ -172,6 +172,8 @@
 , oci_core_subnet = ./oci_core_subnet.dhall
 , oci_core_subnets = ./oci_core_subnets.dhall
 , oci_core_vcn = ./oci_core_vcn.dhall
+, oci_core_vcn_dns_resolver_association =
+    ./oci_core_vcn_dns_resolver_association.dhall
 , oci_core_vcns = ./oci_core_vcns.dhall
 , oci_core_virtual_circuit_bandwidth_shapes =
     ./oci_core_virtual_circuit_bandwidth_shapes.dhall
@@ -338,6 +340,10 @@
 , oci_datascience_project = ./oci_datascience_project.dhall
 , oci_datascience_projects = ./oci_datascience_projects.dhall
 , oci_dns_records = ./oci_dns_records.dhall
+, oci_dns_resolver = ./oci_dns_resolver.dhall
+, oci_dns_resolver_endpoint = ./oci_dns_resolver_endpoint.dhall
+, oci_dns_resolver_endpoints = ./oci_dns_resolver_endpoints.dhall
+, oci_dns_resolvers = ./oci_dns_resolvers.dhall
 , oci_dns_rrset = ./oci_dns_rrset.dhall
 , oci_dns_steering_policies = ./oci_dns_steering_policies.dhall
 , oci_dns_steering_policy_attachment =
@@ -347,6 +353,8 @@
 , oci_dns_steering_policy = ./oci_dns_steering_policy.dhall
 , oci_dns_tsig_key = ./oci_dns_tsig_key.dhall
 , oci_dns_tsig_keys = ./oci_dns_tsig_keys.dhall
+, oci_dns_view = ./oci_dns_view.dhall
+, oci_dns_views = ./oci_dns_views.dhall
 , oci_dns_zones = ./oci_dns_zones.dhall
 , oci_email_sender = ./oci_email_sender.dhall
 , oci_email_senders = ./oci_email_senders.dhall
@@ -490,6 +498,7 @@
 , oci_monitoring_alarm_statuses = ./oci_monitoring_alarm_statuses.dhall
 , oci_monitoring_metric_data = ./oci_monitoring_metric_data.dhall
 , oci_monitoring_metrics = ./oci_monitoring_metrics.dhall
+, oci_mysql_analytics_cluster = ./oci_mysql_analytics_cluster.dhall
 , oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
 , oci_mysql_mysql_backups = ./oci_mysql_mysql_backups.dhall
 , oci_mysql_mysql_configuration = ./oci_mysql_mysql_configuration.dhall

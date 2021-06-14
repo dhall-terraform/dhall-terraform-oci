@@ -36,6 +36,7 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , infrastructure_type : Optional Text
+    , is_access_control_enabled : Optional Bool
     , is_auto_scaling_enabled : Optional Bool
     , is_data_guard_enabled : Optional Bool
     , is_dedicated : Optional Bool
@@ -124,6 +125,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , infrastructure_type = None Text
+  , is_access_control_enabled = None Bool
   , is_auto_scaling_enabled = None Bool
   , is_data_guard_enabled = None Bool
   , is_dedicated = None Bool

@@ -9,6 +9,7 @@
               , creation_type : Text
               , database_admin_password : Text
               , database_id : Text
+              , database_software_image_id : Text
               , delete_standby_db_home_on_delete : Text
               , display_name : Text
               , hostname : Text
@@ -47,6 +48,7 @@
             , creation_type : Text
             , database_admin_password : Text
             , database_id : Text
+            , database_software_image_id : Text
             , delete_standby_db_home_on_delete : Text
             , display_name : Text
             , hostname : Text

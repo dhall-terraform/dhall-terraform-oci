@@ -1,5 +1,6 @@
 { Type =
     { cidr_block : Optional Text
+    , cidr_blocks : Optional (List Text)
     , compartment_id : Optional Text
     , default_dhcp_options_id : Optional Text
     , default_route_table_id : Optional Text
@@ -19,6 +20,7 @@
     }
 , default =
   { cidr_block = None Text
+  , cidr_blocks = None (List Text)
   , compartment_id = None Text
   , default_dhcp_options_id = None Text
   , default_route_table_id = None Text

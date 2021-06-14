@@ -35,6 +35,7 @@
               , one_off_patches : List Text
               , pdb_name : Text
               , state : Text
+              , tde_wallet_password : Text
               , time_created : Text
               , time_stamp_for_point_in_time_recovery : Text
               }
@@ -91,6 +92,7 @@
             , one_off_patches : List Text
             , pdb_name : Text
             , state : Text
+            , tde_wallet_password : Text
             , time_created : Text
             , time_stamp_for_point_in_time_recovery : Text
             }

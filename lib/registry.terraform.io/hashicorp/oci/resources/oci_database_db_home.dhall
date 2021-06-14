@@ -42,6 +42,7 @@
           , one_off_patches : Optional (List Text)
           , pdb_name : Optional Text
           , state : Optional Text
+          , tde_wallet_password : Optional Text
           , time_created : Optional Text
           , time_stamp_for_point_in_time_recovery : Optional Text
           , db_backup_config :

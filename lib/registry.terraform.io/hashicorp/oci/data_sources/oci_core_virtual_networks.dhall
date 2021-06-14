@@ -7,6 +7,7 @@
         Optional
           ( List
               { cidr_block : Text
+              , cidr_blocks : List Text
               , compartment_id : Text
               , default_dhcp_options_id : Text
               , default_route_table_id : Text
@@ -36,6 +37,7 @@
       None
         ( List
             { cidr_block : Text
+            , cidr_blocks : List Text
             , compartment_id : Text
             , default_dhcp_options_id : Text
             , default_route_table_id : Text

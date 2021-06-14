@@ -5,7 +5,10 @@
               { db_workload : Text
               , details : Text
               , is_dedicated : Bool
+              , is_default_for_free : Bool
+              , is_default_for_paid : Bool
               , is_free_tier_enabled : Bool
+              , is_paid_enabled : Bool
               , version : Text
               }
           )
@@ -23,7 +26,10 @@
             { db_workload : Text
             , details : Text
             , is_dedicated : Bool
+            , is_default_for_free : Bool
+            , is_default_for_paid : Bool
             , is_free_tier_enabled : Bool
+            , is_paid_enabled : Bool
             , version : Text
             }
         )
