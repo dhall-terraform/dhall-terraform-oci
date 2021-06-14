@@ -82,6 +82,8 @@
                     }
               }
           )
+    , instance_id : Optional Text
+    , source : Optional Text
     , time_created : Optional Text
     }
 , default =
@@ -165,6 +167,8 @@
                   }
             }
         )
+  , instance_id = None Text
+  , source = None Text
   , time_created = None Text
   }
 }

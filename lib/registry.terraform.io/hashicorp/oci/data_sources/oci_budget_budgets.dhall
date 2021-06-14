@@ -15,6 +15,8 @@
               , reset_period : Text
               , state : Text
               , target_compartment_id : Text
+              , target_type : Text
+              , targets : List Text
               , time_created : Text
               , time_spend_computed : Text
               , time_updated : Text
@@ -25,6 +27,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , state : Optional Text
+    , target_type : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -46,6 +49,8 @@
             , reset_period : Text
             , state : Text
             , target_compartment_id : Text
+            , target_type : Text
+            , targets : List Text
             , time_created : Text
             , time_spend_computed : Text
             , time_updated : Text
@@ -55,6 +60,7 @@
   , display_name = None Text
   , id = None Text
   , state = None Text
+  , target_type = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

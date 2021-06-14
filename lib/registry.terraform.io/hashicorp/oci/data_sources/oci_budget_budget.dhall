@@ -13,6 +13,8 @@
     , reset_period : Optional Text
     , state : Optional Text
     , target_compartment_id : Optional Text
+    , target_type : Optional Text
+    , targets : Optional (List Text)
     , time_created : Optional Text
     , time_spend_computed : Optional Text
     , time_updated : Optional Text
@@ -32,6 +34,8 @@
   , reset_period = None Text
   , state = None Text
   , target_compartment_id = None Text
+  , target_type = None Text
+  , targets = None (List Text)
   , time_created = None Text
   , time_spend_computed = None Text
   , time_updated = None Text

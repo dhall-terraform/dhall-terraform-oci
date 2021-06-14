@@ -87,6 +87,8 @@
                           , nic_index : Natural
                           }
                     }
+              , instance_id : Text
+              , source : Text
               , time_created : Text
               }
           )
@@ -180,6 +182,8 @@
                         , nic_index : Natural
                         }
                   }
+            , instance_id : Text
+            , source : Text
             , time_created : Text
             }
         )
