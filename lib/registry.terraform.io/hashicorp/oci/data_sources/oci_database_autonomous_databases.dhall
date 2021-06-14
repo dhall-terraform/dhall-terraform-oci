@@ -17,8 +17,13 @@
                     , medium : Text
                     }
               , connection_urls :
-                  List { apex_url : Text, sql_dev_web_url : Text }
+                  List
+                    { apex_url : Text
+                    , machine_learning_user_management_url : Text
+                    , sql_dev_web_url : Text
+                    }
               , cpu_core_count : Natural
+              , data_safe_status : Text
               , data_storage_size_in_tbs : Natural
               , db_name : Text
               , db_version : Text
@@ -74,8 +79,14 @@
                   , low : Text
                   , medium : Text
                   }
-            , connection_urls : List { apex_url : Text, sql_dev_web_url : Text }
+            , connection_urls :
+                List
+                  { apex_url : Text
+                  , machine_learning_user_management_url : Text
+                  , sql_dev_web_url : Text
+                  }
             , cpu_core_count : Natural
+            , data_safe_status : Text
             , data_storage_size_in_tbs : Natural
             , db_name : Text
             , db_version : Text

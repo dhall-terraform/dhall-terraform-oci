@@ -10,11 +10,28 @@
           , description : Optional Text
           , header : Optional Text
           , prefix : Optional Text
+          , response_code : Optional Natural
           , status_code : Optional Natural
           , suffix : Optional Text
           , value : Optional Text
           , conditions :
-              Optional (List { attribute_name : Text, attribute_value : Text })
+              Optional
+                ( List
+                    { attribute_name : Text
+                    , attribute_value : Text
+                    , operator : Optional Text
+                    }
+                )
+          , redirect_uri :
+              Optional
+                ( List
+                    { host : Optional Text
+                    , path : Optional Text
+                    , port : Optional Natural
+                    , protocol : Optional Text
+                    , query : Optional Text
+                    }
+                )
           }
     , timeouts :
         Optional

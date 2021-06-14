@@ -15,8 +15,15 @@
               }
           )
     , connection_urls :
-        Optional (List { apex_url : Text, sql_dev_web_url : Text })
+        Optional
+          ( List
+              { apex_url : Text
+              , machine_learning_user_management_url : Text
+              , sql_dev_web_url : Text
+              }
+          )
     , cpu_core_count : Optional Natural
+    , data_safe_status : Optional Text
     , data_storage_size_in_tbs : Optional Natural
     , db_name : Optional Text
     , db_version : Optional Text
@@ -58,8 +65,16 @@
             , medium : Text
             }
         )
-  , connection_urls = None (List { apex_url : Text, sql_dev_web_url : Text })
+  , connection_urls =
+      None
+        ( List
+            { apex_url : Text
+            , machine_learning_user_management_url : Text
+            , sql_dev_web_url : Text
+            }
+        )
   , cpu_core_count = None Natural
+  , data_safe_status = None Text
   , data_storage_size_in_tbs = None Natural
   , db_name = None Text
   , db_version = None Text

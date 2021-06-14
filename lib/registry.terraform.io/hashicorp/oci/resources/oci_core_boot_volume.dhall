@@ -15,6 +15,7 @@
     , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , volume_group_id : Optional Text
+    , vpus_per_gb : Optional Text
     , source_details : List { id : Text, type : Text }
     , timeouts :
         Optional
@@ -38,6 +39,7 @@
   , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , volume_group_id = None Text
+  , vpus_per_gb = None Text
   , timeouts =
       None
         { create : Optional Text

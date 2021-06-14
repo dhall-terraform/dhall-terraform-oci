@@ -20,6 +20,7 @@
               , system_tags : List { mapKey : Text, mapValue : Text }
               , time_created : Text
               , volume_group_id : Text
+              , vpus_per_gb : Text
               }
           )
     , compartment_id : Text
@@ -50,6 +51,7 @@
             , system_tags : List { mapKey : Text, mapValue : Text }
             , time_created : Text
             , volume_group_id : Text
+            , vpus_per_gb : Text
             }
         )
   , id = None Text

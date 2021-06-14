@@ -25,6 +25,7 @@
               , time_created : Text
               , volume_backup_id : Text
               , volume_group_id : Text
+              , vpus_per_gb : Text
               }
           )
     , filter :
@@ -57,6 +58,7 @@
             , time_created : Text
             , volume_backup_id : Text
             , volume_group_id : Text
+            , vpus_per_gb : Text
             }
         )
   , filter =

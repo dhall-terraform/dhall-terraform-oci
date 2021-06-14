@@ -9,10 +9,23 @@
                   List
                     { action : Text
                     , conditions :
-                        List { attribute_name : Text, attribute_value : Text }
+                        List
+                          { attribute_name : Text
+                          , attribute_value : Text
+                          , operator : Text
+                          }
                     , description : Text
                     , header : Text
                     , prefix : Text
+                    , redirect_uri :
+                        List
+                          { host : Text
+                          , path : Text
+                          , port : Natural
+                          , protocol : Text
+                          , query : Text
+                          }
+                    , response_code : Natural
                     , status_code : Natural
                     , suffix : Text
                     , value : Text
@@ -35,10 +48,23 @@
                 List
                   { action : Text
                   , conditions :
-                      List { attribute_name : Text, attribute_value : Text }
+                      List
+                        { attribute_name : Text
+                        , attribute_value : Text
+                        , operator : Text
+                        }
                   , description : Text
                   , header : Text
                   , prefix : Text
+                  , redirect_uri :
+                      List
+                        { host : Text
+                        , path : Text
+                        , port : Natural
+                        , protocol : Text
+                        , query : Text
+                        }
+                  , response_code : Natural
                   , status_code : Natural
                   , suffix : Text
                   , value : Text

@@ -17,6 +17,7 @@
     , volume_backup_id : Optional Text
     , volume_group_id : Optional Text
     , volume_id : Text
+    , vpus_per_gb : Optional Text
     }
 , default =
   { availability_domain = None Text
@@ -36,5 +37,6 @@
   , time_created = None Text
   , volume_backup_id = None Text
   , volume_group_id = None Text
+  , vpus_per_gb = None Text
   }
 }
