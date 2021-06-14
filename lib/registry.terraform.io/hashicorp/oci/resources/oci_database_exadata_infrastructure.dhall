@@ -6,6 +6,7 @@
     , compartment_id : Text
     , corporate_proxy : Optional Text
     , cpus_enabled : Optional Natural
+    , create_async : Optional Bool
     , csi_number : Optional Text
     , data_storage_size_in_tbs : Optional Natural
     , db_node_storage_size_in_gbs : Optional Natural
@@ -61,6 +62,7 @@
   { activation_file = None Text
   , corporate_proxy = None Text
   , cpus_enabled = None Natural
+  , create_async = None Bool
   , csi_number = None Text
   , data_storage_size_in_tbs = None Natural
   , db_node_storage_size_in_gbs = None Natural

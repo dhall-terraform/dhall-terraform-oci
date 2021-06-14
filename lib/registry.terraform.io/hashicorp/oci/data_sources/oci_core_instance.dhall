@@ -8,7 +8,9 @@
               , plugins_config : List { desired_state : Text, name : Text }
               }
           )
-    , availability_config : Optional (List { recovery_action : Text })
+    , availability_config :
+        Optional
+          (List { is_live_migration_preferred : Bool, recovery_action : Text })
     , availability_domain : Optional Text
     , boot_volume_id : Optional Text
     , capacity_reservation_id : Optional Text
@@ -110,7 +112,8 @@
             , plugins_config : List { desired_state : Text, name : Text }
             }
         )
-  , availability_config = None (List { recovery_action : Text })
+  , availability_config =
+      None (List { is_live_migration_preferred : Bool, recovery_action : Text })
   , availability_domain = None Text
   , boot_volume_id = None Text
   , capacity_reservation_id = None Text

@@ -6,6 +6,7 @@
     , cluster_name : Optional Text
     , compartment_id : Text
     , cpu_core_count : Natural
+    , create_async : Optional Bool
     , data_storage_percentage : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , disk_redundancy : Optional Text
@@ -61,6 +62,7 @@
   { availability_domain = None Text
   , backup_network_nsg_ids = None (List Text)
   , cluster_name = None Text
+  , create_async = None Bool
   , data_storage_percentage = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , disk_redundancy = None Text

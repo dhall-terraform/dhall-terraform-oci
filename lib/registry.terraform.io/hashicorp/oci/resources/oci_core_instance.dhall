@@ -36,7 +36,13 @@
                   Optional (List { desired_state : Text, name : Text })
               }
           )
-    , availability_config : Optional (List { recovery_action : Optional Text })
+    , availability_config :
+        Optional
+          ( List
+              { is_live_migration_preferred : Optional Bool
+              , recovery_action : Optional Text
+              }
+          )
     , create_vnic_details :
         Optional
           ( List
@@ -143,7 +149,13 @@
                 Optional (List { desired_state : Text, name : Text })
             }
         )
-  , availability_config = None (List { recovery_action : Optional Text })
+  , availability_config =
+      None
+        ( List
+            { is_live_migration_preferred : Optional Bool
+            , recovery_action : Optional Text
+            }
+        )
   , create_vnic_details =
       None
         ( List

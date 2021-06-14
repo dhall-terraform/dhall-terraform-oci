@@ -2,6 +2,7 @@
     { autonomous_exadata_infrastructure_id : Text
     , availability_domain : Optional Text
     , compartment_id : Optional Text
+    , create_async : Optional Bool
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , domain : Optional Text
@@ -45,6 +46,7 @@
 , default =
   { availability_domain = None Text
   , compartment_id = None Text
+  , create_async = None Bool
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , domain = None Text

@@ -15,7 +15,11 @@
                     , plugins_config :
                         List { desired_state : Text, name : Text }
                     }
-              , availability_config : List { recovery_action : Text }
+              , availability_config :
+                  List
+                    { is_live_migration_preferred : Bool
+                    , recovery_action : Text
+                    }
               , availability_domain : Text
               , boot_volume_id : Text
               , capacity_reservation_id : Text
@@ -117,7 +121,9 @@
                   , is_monitoring_disabled : Bool
                   , plugins_config : List { desired_state : Text, name : Text }
                   }
-            , availability_config : List { recovery_action : Text }
+            , availability_config :
+                List
+                  { is_live_migration_preferred : Bool, recovery_action : Text }
             , availability_domain : Text
             , boot_volume_id : Text
             , capacity_reservation_id : Text

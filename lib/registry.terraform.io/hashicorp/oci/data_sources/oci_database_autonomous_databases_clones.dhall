@@ -25,10 +25,12 @@
               , connection_urls :
                   List
                     { apex_url : Text
+                    , graph_studio_url : Text
                     , machine_learning_user_management_url : Text
                     , sql_dev_web_url : Text
                     }
               , cpu_core_count : Natural
+              , customer_contacts : List { email : Text }
               , data_safe_status : Text
               , data_storage_size_in_gb : Natural
               , data_storage_size_in_tbs : Natural
@@ -121,10 +123,12 @@
             , connection_urls :
                 List
                   { apex_url : Text
+                  , graph_studio_url : Text
                   , machine_learning_user_management_url : Text
                   , sql_dev_web_url : Text
                   }
             , cpu_core_count : Natural
+            , customer_contacts : List { email : Text }
             , data_safe_status : Text
             , data_storage_size_in_gb : Natural
             , data_storage_size_in_tbs : Natural

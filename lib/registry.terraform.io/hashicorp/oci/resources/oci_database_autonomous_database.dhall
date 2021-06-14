@@ -26,6 +26,7 @@
         Optional
           ( List
               { apex_url : Text
+              , graph_studio_url : Text
               , machine_learning_user_management_url : Text
               , sql_dev_web_url : Text
               }
@@ -95,6 +96,7 @@
     , timestamp : Optional Text
     , used_data_storage_size_in_tbs : Optional Natural
     , whitelisted_ips : Optional (List Text)
+    , customer_contacts : Optional (List { email : Optional Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -128,6 +130,7 @@
       None
         ( List
             { apex_url : Text
+            , graph_studio_url : Text
             , machine_learning_user_management_url : Text
             , sql_dev_web_url : Text
             }
@@ -195,6 +198,7 @@
   , timestamp = None Text
   , used_data_storage_size_in_tbs = None Natural
   , whitelisted_ips = None (List Text)
+  , customer_contacts = None (List { email : Optional Text })
   , timeouts =
       None
         { create : Optional Text

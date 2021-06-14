@@ -19,6 +19,7 @@
                     }
               , corporate_proxy : Text
               , cpus_enabled : Natural
+              , create_async : Bool
               , csi_number : Text
               , data_storage_size_in_tbs : Natural
               , db_node_storage_size_in_gbs : Natural
@@ -79,6 +80,7 @@
                   }
             , corporate_proxy : Text
             , cpus_enabled : Natural
+            , create_async : Bool
             , csi_number : Text
             , data_storage_size_in_tbs : Natural
             , db_node_storage_size_in_gbs : Natural

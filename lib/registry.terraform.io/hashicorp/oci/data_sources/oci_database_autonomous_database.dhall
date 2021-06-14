@@ -26,11 +26,13 @@
         Optional
           ( List
               { apex_url : Text
+              , graph_studio_url : Text
               , machine_learning_user_management_url : Text
               , sql_dev_web_url : Text
               }
           )
     , cpu_core_count : Optional Natural
+    , customer_contacts : Optional (List { email : Text })
     , data_safe_status : Optional Text
     , data_storage_size_in_gb : Optional Natural
     , data_storage_size_in_tbs : Optional Natural
@@ -122,11 +124,13 @@
       None
         ( List
             { apex_url : Text
+            , graph_studio_url : Text
             , machine_learning_user_management_url : Text
             , sql_dev_web_url : Text
             }
         )
   , cpu_core_count = None Natural
+  , customer_contacts = None (List { email : Text })
   , data_safe_status = None Text
   , data_storage_size_in_gb = None Natural
   , data_storage_size_in_tbs = None Natural

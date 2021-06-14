@@ -7,6 +7,7 @@
     , cluster_name : Optional Text
     , compartment_id : Optional Text
     , cpu_core_count : Optional Natural
+    , create_async : Optional Bool
     , data_storage_percentage : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , disk_redundancy : Optional Text
@@ -60,6 +61,7 @@
   , cluster_name = None Text
   , compartment_id = None Text
   , cpu_core_count = None Natural
+  , create_async = None Bool
   , data_storage_percentage = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , disk_redundancy = None Text

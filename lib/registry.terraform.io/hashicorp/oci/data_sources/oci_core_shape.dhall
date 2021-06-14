@@ -9,6 +9,7 @@
               { baseline_ocpu_utilizations : List Text
               , gpu_description : Text
               , gpus : Natural
+              , is_live_migration_supported : Bool
               , local_disk_description : Text
               , local_disks : Natural
               , local_disks_total_size_in_gbs : Natural
@@ -53,6 +54,7 @@
             { baseline_ocpu_utilizations : List Text
             , gpu_description : Text
             , gpus : Natural
+            , is_live_migration_supported : Bool
             , local_disk_description : Text
             , local_disks : Natural
             , local_disks_total_size_in_gbs : Natural

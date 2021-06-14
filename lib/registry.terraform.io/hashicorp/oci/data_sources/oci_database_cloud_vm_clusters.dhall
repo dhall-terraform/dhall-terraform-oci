@@ -10,6 +10,7 @@
               , cluster_name : Text
               , compartment_id : Text
               , cpu_core_count : Natural
+              , create_async : Bool
               , data_storage_percentage : Natural
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , disk_redundancy : Text
@@ -74,6 +75,7 @@
             , cluster_name : Text
             , compartment_id : Text
             , cpu_core_count : Natural
+            , create_async : Bool
             , data_storage_percentage : Natural
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , disk_redundancy : Text

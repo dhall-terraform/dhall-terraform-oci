@@ -72,7 +72,8 @@
     , zone_id : Optional Text
     , db_home :
         List
-          { database_software_image_id : Optional Text
+          { create_async : Optional Bool
+          , database_software_image_id : Optional Text
           , db_home_location : Optional Text
           , db_version : Optional Text
           , defined_tags : Optional (List { mapKey : Text, mapValue : Text })

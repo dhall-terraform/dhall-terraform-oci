@@ -4,6 +4,7 @@
           ( List
               { availability_domain : Text
               , compartment_id : Text
+              , create_async : Bool
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , domain : Text
@@ -56,6 +57,7 @@
         ( List
             { availability_domain : Text
             , compartment_id : Text
+            , create_async : Bool
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , domain : Text

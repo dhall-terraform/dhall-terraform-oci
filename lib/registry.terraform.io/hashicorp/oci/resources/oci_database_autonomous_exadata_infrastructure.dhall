@@ -1,6 +1,7 @@
 { Type =
     { availability_domain : Text
     , compartment_id : Text
+    , create_async : Optional Bool
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , domain : Optional Text
@@ -48,7 +49,8 @@
           }
     }
 , default =
-  { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { create_async = None Bool
+  , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , domain = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
