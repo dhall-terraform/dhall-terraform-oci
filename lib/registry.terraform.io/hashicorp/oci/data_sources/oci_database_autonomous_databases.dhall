@@ -57,6 +57,7 @@
               }
           )
     , compartment_id : Text
+    , db_version : Optional Text
     , db_workload : Optional Text
     , display_name : Optional Text
     , id : Optional Text
@@ -124,6 +125,7 @@
             , whitelisted_ips : List Text
             }
         )
+  , db_version = None Text
   , db_workload = None Text
   , display_name = None Text
   , id = None Text

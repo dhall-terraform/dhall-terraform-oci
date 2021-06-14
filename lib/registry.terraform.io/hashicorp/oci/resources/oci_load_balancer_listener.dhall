@@ -10,7 +10,12 @@
     , rule_set_names : Optional (List Text)
     , state : Optional Text
     , connection_configuration :
-        Optional (List { idle_timeout_in_seconds : Text })
+        Optional
+          ( List
+              { backend_tcp_proxy_protocol_version : Optional Natural
+              , idle_timeout_in_seconds : Text
+              }
+          )
     , ssl_configuration :
         Optional
           ( List
@@ -32,7 +37,13 @@
   , path_route_set_name = None Text
   , rule_set_names = None (List Text)
   , state = None Text
-  , connection_configuration = None (List { idle_timeout_in_seconds : Text })
+  , connection_configuration =
+      None
+        ( List
+            { backend_tcp_proxy_protocol_version : Optional Natural
+            , idle_timeout_in_seconds : Text
+            }
+        )
   , ssl_configuration =
       None
         ( List

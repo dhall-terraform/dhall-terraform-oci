@@ -169,6 +169,8 @@
     ./oci_database_autonomous_data_warehouse_wallet.dhall
 , oci_database_autonomous_db_preview_versions =
     ./oci_database_autonomous_db_preview_versions.dhall
+, oci_database_autonomous_db_versions =
+    ./oci_database_autonomous_db_versions.dhall
 , oci_database_autonomous_exadata_infrastructure =
     ./oci_database_autonomous_exadata_infrastructure.dhall
 , oci_database_autonomous_exadata_infrastructure_ocpu =

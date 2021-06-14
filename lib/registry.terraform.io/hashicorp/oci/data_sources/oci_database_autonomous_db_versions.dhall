@@ -1,0 +1,33 @@
+{ Type =
+    { autonomous_db_versions :
+        Optional
+          ( List
+              { db_workload : Text
+              , details : Text
+              , is_dedicated : Bool
+              , version : Text
+              }
+          )
+    , compartment_id : Text
+    , db_workload : Optional Text
+    , id : Optional Text
+    , filter :
+        Optional
+          (List { name : Text, regex : Optional Bool, values : List Text })
+    }
+, default =
+  { autonomous_db_versions =
+      None
+        ( List
+            { db_workload : Text
+            , details : Text
+            , is_dedicated : Bool
+            , version : Text
+            }
+        )
+  , db_workload = None Text
+  , id = None Text
+  , filter =
+      None (List { name : Text, regex : Optional Bool, values : List Text })
+  }
+}
