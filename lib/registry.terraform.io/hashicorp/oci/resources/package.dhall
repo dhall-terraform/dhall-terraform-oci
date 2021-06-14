@@ -27,6 +27,8 @@
 , oci_core_instance = ./oci_core_instance.dhall
 , oci_core_instance_pool = ./oci_core_instance_pool.dhall
 , oci_core_internet_gateway = ./oci_core_internet_gateway.dhall
+, oci_core_ipsec_connection_tunnel_management =
+    ./oci_core_ipsec_connection_tunnel_management.dhall
 , oci_core_ipsec = ./oci_core_ipsec.dhall
 , oci_core_listing_resource_version_agreement =
     ./oci_core_listing_resource_version_agreement.dhall

@@ -15,18 +15,6 @@
               , state : Text
               , static_routes : List Text
               , time_created : Text
-              , tunnel_configuration :
-                  List
-                    { bgp_session_config :
-                        List
-                          { customer_bgp_asn : Text
-                          , customer_interface_ip : Text
-                          , oracle_interface_ip : Text
-                          }
-                    , display_name : Text
-                    , routing : Text
-                    , shared_secret : Text
-                    }
               }
           )
     , cpe_id : Optional Text
@@ -54,18 +42,6 @@
             , state : Text
             , static_routes : List Text
             , time_created : Text
-            , tunnel_configuration :
-                List
-                  { bgp_session_config :
-                      List
-                        { customer_bgp_asn : Text
-                        , customer_interface_ip : Text
-                        , oracle_interface_ip : Text
-                        }
-                  , display_name : Text
-                  , routing : Text
-                  , shared_secret : Text
-                  }
             }
         )
   , cpe_id = None Text

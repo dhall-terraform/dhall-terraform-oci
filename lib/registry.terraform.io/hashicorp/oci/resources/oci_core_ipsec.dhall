@@ -17,22 +17,6 @@
           , delete : Optional Text
           , update : Optional Text
           }
-    , tunnel_configuration :
-        Optional
-          ( List
-              { display_name : Optional Text
-              , routing : Optional Text
-              , shared_secret : Optional Text
-              , bgp_session_config :
-                  Optional
-                    ( List
-                        { customer_bgp_asn : Optional Text
-                        , customer_interface_ip : Optional Text
-                        , oracle_interface_ip : Optional Text
-                        }
-                    )
-              }
-          )
     }
 , default =
   { cpe_local_identifier = None Text
@@ -49,21 +33,5 @@
         , delete : Optional Text
         , update : Optional Text
         }
-  , tunnel_configuration =
-      None
-        ( List
-            { display_name : Optional Text
-            , routing : Optional Text
-            , shared_secret : Optional Text
-            , bgp_session_config :
-                Optional
-                  ( List
-                      { customer_bgp_asn : Optional Text
-                      , customer_interface_ip : Optional Text
-                      , oracle_interface_ip : Optional Text
-                      }
-                  )
-            }
-        )
   }
 }
