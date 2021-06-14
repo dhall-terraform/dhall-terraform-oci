@@ -30,6 +30,7 @@
               , gateway : Text
               , id : Text
               , infini_band_network_cidr : Text
+              , last_maintenance_run_id : Text
               , lifecycle_details : Text
               , maintenance_slo_status : Text
               , maintenance_window :
@@ -47,6 +48,7 @@
               , max_memory_in_gbs : Natural
               , memory_size_in_gbs : Natural
               , netmask : Text
+              , next_maintenance_run_id : Text
               , ntp_server : List Text
               , shape : Text
               , state : Text
@@ -91,6 +93,7 @@
             , gateway : Text
             , id : Text
             , infini_band_network_cidr : Text
+            , last_maintenance_run_id : Text
             , lifecycle_details : Text
             , maintenance_slo_status : Text
             , maintenance_window :
@@ -108,6 +111,7 @@
             , max_memory_in_gbs : Natural
             , memory_size_in_gbs : Natural
             , netmask : Text
+            , next_maintenance_run_id : Text
             , ntp_server : List Text
             , shape : Text
             , state : Text

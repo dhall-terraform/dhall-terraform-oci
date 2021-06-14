@@ -6,6 +6,7 @@
               , apply_rate : Text
               , availability_domain : Text
               , backup_network_nsg_ids : List Text
+              , create_async : Bool
               , creation_type : Text
               , database_admin_password : Text
               , database_id : Text
@@ -45,6 +46,7 @@
             , apply_rate : Text
             , availability_domain : Text
             , backup_network_nsg_ids : List Text
+            , create_async : Bool
             , creation_type : Text
             , database_admin_password : Text
             , database_id : Text

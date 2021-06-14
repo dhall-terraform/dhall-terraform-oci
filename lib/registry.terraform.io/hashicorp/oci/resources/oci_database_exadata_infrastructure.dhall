@@ -17,6 +17,7 @@
     , gateway : Text
     , id : Optional Text
     , infini_band_network_cidr : Text
+    , last_maintenance_run_id : Optional Text
     , lifecycle_details : Optional Text
     , maintenance_slo_status : Optional Text
     , max_cpu_count : Optional Natural
@@ -25,6 +26,7 @@
     , max_memory_in_gbs : Optional Natural
     , memory_size_in_gbs : Optional Natural
     , netmask : Text
+    , next_maintenance_run_id : Optional Text
     , ntp_server : List Text
     , shape : Text
     , state : Optional Text
@@ -69,6 +71,7 @@
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , last_maintenance_run_id = None Text
   , lifecycle_details = None Text
   , maintenance_slo_status = None Text
   , max_cpu_count = None Natural
@@ -76,6 +79,7 @@
   , max_db_node_storage_in_gbs = None Natural
   , max_memory_in_gbs = None Natural
   , memory_size_in_gbs = None Natural
+  , next_maintenance_run_id = None Text
   , state = None Text
   , time_created = None Text
   , contacts =

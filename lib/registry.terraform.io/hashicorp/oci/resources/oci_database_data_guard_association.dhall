@@ -3,6 +3,7 @@
     , apply_rate : Optional Text
     , availability_domain : Optional Text
     , backup_network_nsg_ids : Optional (List Text)
+    , create_async : Optional Bool
     , creation_type : Text
     , database_admin_password : Text
     , database_id : Text
@@ -38,6 +39,7 @@
   , apply_rate = None Text
   , availability_domain = None Text
   , backup_network_nsg_ids = None (List Text)
+  , create_async = None Bool
   , database_software_image_id = None Text
   , display_name = None Text
   , hostname = None Text
