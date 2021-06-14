@@ -29,6 +29,16 @@
     , is_file_server_enabled : Optional Bool
     , is_visual_builder_enabled : Optional Bool
     , message_packs : Optional Natural
+    , network_endpoint_details :
+        Optional
+          ( List
+              { allowlisted_http_ips : List Text
+              , allowlisted_http_vcns :
+                  List { allowlisted_ips : List Text, id : Text }
+              , is_integration_vcn_allowlisted : Bool
+              , network_endpoint_type : Text
+              }
+          )
     , state : Optional Text
     , state_message : Optional Text
     , time_created : Optional Text
@@ -64,6 +74,16 @@
   , is_file_server_enabled = None Bool
   , is_visual_builder_enabled = None Bool
   , message_packs = None Natural
+  , network_endpoint_details =
+      None
+        ( List
+            { allowlisted_http_ips : List Text
+            , allowlisted_http_vcns :
+                List { allowlisted_ips : List Text, id : Text }
+            , is_integration_vcn_allowlisted : Bool
+            , network_endpoint_type : Text
+            }
+        )
   , state = None Text
   , state_message = None Text
   , time_created = None Text

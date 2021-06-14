@@ -55,6 +55,7 @@
     , point_in_time_data_disk_clone_timestamp : Optional Text
     , private_ip : Optional Text
     , reco_storage_size_in_gb : Optional Natural
+    , scan_dns_name : Optional Text
     , scan_dns_record_id : Optional Text
     , scan_ip_ids : Optional (List Text)
     , shape : Text
@@ -68,6 +69,7 @@
     , time_zone : Optional Text
     , version : Optional Text
     , vip_ids : Optional (List Text)
+    , zone_id : Optional Text
     , db_home :
         List
           { database_software_image_id : Optional Text
@@ -199,6 +201,7 @@
   , point_in_time_data_disk_clone_timestamp = None Text
   , private_ip = None Text
   , reco_storage_size_in_gb = None Natural
+  , scan_dns_name = None Text
   , scan_dns_record_id = None Text
   , scan_ip_ids = None (List Text)
   , source = None Text
@@ -209,6 +212,7 @@
   , time_zone = None Text
   , version = None Text
   , vip_ids = None (List Text)
+  , zone_id = None Text
   , db_system_options = None (List { storage_management : Optional Text })
   , maintenance_window_details =
       None

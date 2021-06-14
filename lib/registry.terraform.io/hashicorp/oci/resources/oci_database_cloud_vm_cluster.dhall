@@ -37,6 +37,7 @@
     , listener_port : Optional Text
     , node_count : Optional Natural
     , nsg_ids : Optional (List Text)
+    , scan_dns_name : Optional Text
     , scan_dns_record_id : Optional Text
     , scan_ip_ids : Optional (List Text)
     , shape : Optional Text
@@ -48,6 +49,7 @@
     , time_created : Optional Text
     , time_zone : Optional Text
     , vip_ids : Optional (List Text)
+    , zone_id : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -84,6 +86,7 @@
   , listener_port = None Text
   , node_count = None Natural
   , nsg_ids = None (List Text)
+  , scan_dns_name = None Text
   , scan_dns_record_id = None Text
   , scan_ip_ids = None (List Text)
   , shape = None Text
@@ -93,6 +96,7 @@
   , time_created = None Text
   , time_zone = None Text
   , vip_ids = None (List Text)
+  , zone_id = None Text
   , timeouts =
       None
         { create : Optional Text

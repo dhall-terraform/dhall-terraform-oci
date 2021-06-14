@@ -23,10 +23,12 @@
           )
     , next_maintenance_run_id : Optional Text
     , nsg_ids : Optional (List Text)
+    , scan_dns_name : Optional Text
     , shape : Text
     , state : Optional Text
     , subnet_id : Text
     , time_created : Optional Text
+    , zone_id : Optional Text
     , maintenance_window_details :
         Optional
           ( List
@@ -68,8 +70,10 @@
         )
   , next_maintenance_run_id = None Text
   , nsg_ids = None (List Text)
+  , scan_dns_name = None Text
   , state = None Text
   , time_created = None Text
+  , zone_id = None Text
   , maintenance_window_details =
       None
         ( List

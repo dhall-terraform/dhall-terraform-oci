@@ -35,10 +35,12 @@
           )
     , next_maintenance_run_id : Optional Text
     , nsg_ids : Optional (List Text)
+    , scan_dns_name : Optional Text
     , shape : Optional Text
     , state : Optional Text
     , subnet_id : Optional Text
     , time_created : Optional Text
+    , zone_id : Optional Text
     }
 , default =
   { availability_domain = None Text
@@ -76,9 +78,11 @@
         )
   , next_maintenance_run_id = None Text
   , nsg_ids = None (List Text)
+  , scan_dns_name = None Text
   , shape = None Text
   , state = None Text
   , subnet_id = None Text
   , time_created = None Text
+  , zone_id = None Text
   }
 }

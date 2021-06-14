@@ -39,6 +39,7 @@
               , listener_port : Text
               , node_count : Natural
               , nsg_ids : List Text
+              , scan_dns_name : Text
               , scan_dns_record_id : Text
               , scan_ip_ids : List Text
               , shape : Text
@@ -50,6 +51,7 @@
               , time_created : Text
               , time_zone : Text
               , vip_ids : List Text
+              , zone_id : Text
               }
           )
     , compartment_id : Text
@@ -101,6 +103,7 @@
             , listener_port : Text
             , node_count : Natural
             , nsg_ids : List Text
+            , scan_dns_name : Text
             , scan_dns_record_id : Text
             , scan_ip_ids : List Text
             , shape : Text
@@ -112,6 +115,7 @@
             , time_created : Text
             , time_zone : Text
             , vip_ids : List Text
+            , zone_id : Text
             }
         )
   , display_name = None Text

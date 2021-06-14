@@ -33,10 +33,12 @@
                     }
               , next_maintenance_run_id : Text
               , nsg_ids : List Text
+              , scan_dns_name : Text
               , shape : Text
               , state : Text
               , subnet_id : Text
               , time_created : Text
+              , zone_id : Text
               }
           )
     , availability_domain : Optional Text
@@ -83,10 +85,12 @@
                   }
             , next_maintenance_run_id : Text
             , nsg_ids : List Text
+            , scan_dns_name : Text
             , shape : Text
             , state : Text
             , subnet_id : Text
             , time_created : Text
+            , zone_id : Text
             }
         )
   , availability_domain = None Text

@@ -32,6 +32,17 @@
               , hostname : Text
               }
           )
+    , network_endpoint_details :
+        Optional
+          ( List
+              { allowlisted_http_ips : Optional (List Text)
+              , is_integration_vcn_allowlisted : Optional Bool
+              , network_endpoint_type : Text
+              , allowlisted_http_vcns :
+                  Optional
+                    (List { allowlisted_ips : Optional (List Text), id : Text })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -66,6 +77,17 @@
             { certificate_secret_id : Optional Text
             , certificate_secret_version : Optional Natural
             , hostname : Text
+            }
+        )
+  , network_endpoint_details =
+      None
+        ( List
+            { allowlisted_http_ips : Optional (List Text)
+            , is_integration_vcn_allowlisted : Optional Bool
+            , network_endpoint_type : Text
+            , allowlisted_http_vcns :
+                Optional
+                  (List { allowlisted_ips : Optional (List Text), id : Text })
             }
         )
   , timeouts =

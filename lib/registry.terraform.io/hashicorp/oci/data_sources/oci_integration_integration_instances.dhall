@@ -30,6 +30,14 @@
               , is_file_server_enabled : Bool
               , is_visual_builder_enabled : Bool
               , message_packs : Natural
+              , network_endpoint_details :
+                  List
+                    { allowlisted_http_ips : List Text
+                    , allowlisted_http_vcns :
+                        List { allowlisted_ips : List Text, id : Text }
+                    , is_integration_vcn_allowlisted : Bool
+                    , network_endpoint_type : Text
+                    }
               , state : Text
               , state_message : Text
               , time_created : Text
@@ -72,6 +80,14 @@
             , is_file_server_enabled : Bool
             , is_visual_builder_enabled : Bool
             , message_packs : Natural
+            , network_endpoint_details :
+                List
+                  { allowlisted_http_ips : List Text
+                  , allowlisted_http_vcns :
+                      List { allowlisted_ips : List Text, id : Text }
+                  , is_integration_vcn_allowlisted : Bool
+                  , network_endpoint_type : Text
+                  }
             , state : Text
             , state_message : Text
             , time_created : Text

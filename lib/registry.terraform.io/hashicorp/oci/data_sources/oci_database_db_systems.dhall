@@ -121,6 +121,7 @@
               , point_in_time_data_disk_clone_timestamp : Text
               , private_ip : Text
               , reco_storage_size_in_gb : Natural
+              , scan_dns_name : Text
               , scan_dns_record_id : Text
               , scan_ip_ids : List Text
               , shape : Text
@@ -134,6 +135,7 @@
               , time_zone : Text
               , version : Text
               , vip_ids : List Text
+              , zone_id : Text
               }
           )
     , display_name : Optional Text
@@ -264,6 +266,7 @@
             , point_in_time_data_disk_clone_timestamp : Text
             , private_ip : Text
             , reco_storage_size_in_gb : Natural
+            , scan_dns_name : Text
             , scan_dns_record_id : Text
             , scan_ip_ids : List Text
             , shape : Text
@@ -277,6 +280,7 @@
             , time_zone : Text
             , version : Text
             , vip_ids : List Text
+            , zone_id : Text
             }
         )
   , display_name = None Text
