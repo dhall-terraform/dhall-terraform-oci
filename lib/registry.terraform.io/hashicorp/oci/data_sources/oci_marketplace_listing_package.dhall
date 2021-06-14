@@ -1,6 +1,7 @@
 { Type =
     { app_catalog_listing_id : Optional Text
     , app_catalog_listing_resource_version : Optional Text
+    , compartment_id : Optional Text
     , description : Optional Text
     , id : Optional Text
     , listing_id : Text
@@ -42,6 +43,7 @@
 , default =
   { app_catalog_listing_id = None Text
   , app_catalog_listing_resource_version = None Text
+  , compartment_id = None Text
   , description = None Text
   , id = None Text
   , package_type = None Text

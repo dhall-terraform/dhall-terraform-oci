@@ -100,6 +100,10 @@
 , oci_datacatalog_data_asset = ./oci_datacatalog_data_asset.dhall
 , oci_dataflow_application = ./oci_dataflow_application.dhall
 , oci_dataflow_invoke_run = ./oci_dataflow_invoke_run.dhall
+, oci_data_safe_data_safe_configuration =
+    ./oci_data_safe_data_safe_configuration.dhall
+, oci_data_safe_data_safe_private_endpoint =
+    ./oci_data_safe_data_safe_private_endpoint.dhall
 , oci_datascience_model = ./oci_datascience_model.dhall
 , oci_datascience_model_provenance = ./oci_datascience_model_provenance.dhall
 , oci_datascience_notebook_session = ./oci_datascience_notebook_session.dhall

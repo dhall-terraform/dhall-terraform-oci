@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { compartment_id : Optional Text
+    , id : Optional Text
     , listing_id : Text
     , listing_packages :
         Optional
@@ -18,7 +19,8 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { id = None Text
+  { compartment_id = None Text
+  , id = None Text
   , listing_packages =
       None
         ( List

@@ -9,6 +9,7 @@
               }
           )
     , categories : Optional (List Text)
+    , compartment_id : Optional Text
     , default_package_version : Optional Text
     , documentation_links :
         Optional (List { document_category : Text, name : Text, url : Text })
@@ -94,6 +95,7 @@
             }
         )
   , categories = None (List Text)
+  , compartment_id = None Text
   , default_package_version = None Text
   , documentation_links =
       None (List { document_category : Text, name : Text, url : Text })

@@ -1,5 +1,6 @@
 { Type =
     { category : Optional (List Text)
+    , compartment_id : Optional Text
     , id : Optional Text
     , is_featured : Optional Bool
     , listing_id : Optional Text
@@ -34,6 +35,7 @@
     }
 , default =
   { category = None (List Text)
+  , compartment_id = None Text
   , id = None Text
   , is_featured = None Bool
   , listing_id = None Text

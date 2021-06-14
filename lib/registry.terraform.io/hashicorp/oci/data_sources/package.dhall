@@ -243,6 +243,12 @@
 , oci_dataflow_invoke_runs = ./oci_dataflow_invoke_runs.dhall
 , oci_dataflow_run_log = ./oci_dataflow_run_log.dhall
 , oci_dataflow_run_logs = ./oci_dataflow_run_logs.dhall
+, oci_data_safe_data_safe_configuration =
+    ./oci_data_safe_data_safe_configuration.dhall
+, oci_data_safe_data_safe_private_endpoint =
+    ./oci_data_safe_data_safe_private_endpoint.dhall
+, oci_data_safe_data_safe_private_endpoints =
+    ./oci_data_safe_data_safe_private_endpoints.dhall
 , oci_datascience_model = ./oci_datascience_model.dhall
 , oci_datascience_model_provenance = ./oci_datascience_model_provenance.dhall
 , oci_datascience_models = ./oci_datascience_models.dhall
