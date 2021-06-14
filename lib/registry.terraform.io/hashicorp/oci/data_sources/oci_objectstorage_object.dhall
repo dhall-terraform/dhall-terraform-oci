@@ -20,6 +20,7 @@
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , namespace : Text
     , object : Text
+    , storage_tier : Optional Text
     , version_id : Optional Text
     }
 , default =
@@ -41,6 +42,7 @@
   , http_response_expires = None Text
   , id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
+  , storage_tier = None Text
   , version_id = None Text
   }
 }

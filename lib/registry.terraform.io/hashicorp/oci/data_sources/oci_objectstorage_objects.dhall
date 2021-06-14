@@ -7,14 +7,18 @@
     , objects :
         Optional
           ( List
-              { etag : Text
+              { archival_state : Text
+              , etag : Text
               , md5 : Text
               , name : Text
               , size : Text
+              , storage_tier : Text
               , time_created : Text
+              , time_modified : Text
               }
           )
     , prefix : Optional Text
+    , prefixes : Optional (List Text)
     , start : Optional Text
     , start_after : Optional Text
     , filter :
@@ -28,14 +32,18 @@
   , objects =
       None
         ( List
-            { etag : Text
+            { archival_state : Text
+            , etag : Text
             , md5 : Text
             , name : Text
             , size : Text
+            , storage_tier : Text
             , time_created : Text
+            , time_modified : Text
             }
         )
   , prefix = None Text
+  , prefixes = None (List Text)
   , start = None Text
   , start_after = None Text
   , filter =

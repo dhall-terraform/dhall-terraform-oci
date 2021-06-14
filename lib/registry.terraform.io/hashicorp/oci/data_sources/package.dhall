@@ -293,6 +293,22 @@
 , oci_database_exadata_infrastructures =
     ./oci_database_exadata_infrastructures.dhall
 , oci_database_exadata_iorm_config = ./oci_database_exadata_iorm_config.dhall
+, oci_database_external_container_database =
+    ./oci_database_external_container_database.dhall
+, oci_database_external_container_databases =
+    ./oci_database_external_container_databases.dhall
+, oci_database_external_database_connector =
+    ./oci_database_external_database_connector.dhall
+, oci_database_external_database_connectors =
+    ./oci_database_external_database_connectors.dhall
+, oci_database_external_non_container_database =
+    ./oci_database_external_non_container_database.dhall
+, oci_database_external_non_container_databases =
+    ./oci_database_external_non_container_databases.dhall
+, oci_database_external_pluggable_database =
+    ./oci_database_external_pluggable_database.dhall
+, oci_database_external_pluggable_databases =
+    ./oci_database_external_pluggable_databases.dhall
 , oci_database_flex_components = ./oci_database_flex_components.dhall
 , oci_database_gi_versions = ./oci_database_gi_versions.dhall
 , oci_database_key_store = ./oci_database_key_store.dhall

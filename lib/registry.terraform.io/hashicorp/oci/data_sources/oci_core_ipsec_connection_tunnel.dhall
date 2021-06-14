@@ -12,6 +12,13 @@
     , compartment_id : Optional Text
     , cpe_ip : Optional Text
     , display_name : Optional Text
+    , encryption_domain_config :
+        Optional
+          ( List
+              { cpe_traffic_selector : List Text
+              , oracle_traffic_selector : List Text
+              }
+          )
     , id : Optional Text
     , ike_version : Optional Text
     , ipsec_id : Text
@@ -37,6 +44,13 @@
   , compartment_id = None Text
   , cpe_ip = None Text
   , display_name = None Text
+  , encryption_domain_config =
+      None
+        ( List
+            { cpe_traffic_selector : List Text
+            , oracle_traffic_selector : List Text
+            }
+        )
   , id = None Text
   , ike_version = None Text
   , routing = None Text

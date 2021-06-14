@@ -12,6 +12,7 @@
               , contacts :
                   List
                     { email : Text
+                    , is_contact_mos_validated : Bool
                     , is_primary : Bool
                     , name : Text
                     , phone_number : Text
@@ -29,6 +30,7 @@
               , id : Text
               , infini_band_network_cidr : Text
               , lifecycle_details : Text
+              , maintenance_slo_status : Text
               , maintenance_window :
                   List
                     { days_of_week : List { name : Text }
@@ -70,6 +72,7 @@
             , contacts :
                 List
                   { email : Text
+                  , is_contact_mos_validated : Bool
                   , is_primary : Bool
                   , name : Text
                   , phone_number : Text
@@ -87,6 +90,7 @@
             , id : Text
             , infini_band_network_cidr : Text
             , lifecycle_details : Text
+            , maintenance_slo_status : Text
             , maintenance_window :
                 List
                   { days_of_week : List { name : Text }

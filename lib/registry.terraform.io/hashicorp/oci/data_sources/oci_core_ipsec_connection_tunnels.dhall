@@ -14,6 +14,11 @@
               , compartment_id : Text
               , cpe_ip : Text
               , display_name : Text
+              , encryption_domain_config :
+                  List
+                    { cpe_traffic_selector : List Text
+                    , oracle_traffic_selector : List Text
+                    }
               , id : Text
               , ike_version : Text
               , routing : Text
@@ -45,6 +50,11 @@
             , compartment_id : Text
             , cpe_ip : Text
             , display_name : Text
+            , encryption_domain_config :
+                List
+                  { cpe_traffic_selector : List Text
+                  , oracle_traffic_selector : List Text
+                  }
             , id : Text
             , ike_version : Text
             , routing : Text

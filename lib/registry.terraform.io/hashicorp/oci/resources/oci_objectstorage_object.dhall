@@ -15,6 +15,7 @@
     , object : Text
     , source : Optional Text
     , state : Optional Text
+    , storage_tier : Optional Text
     , version_id : Optional Text
     , work_request_id : Optional Text
     , source_uri_details :
@@ -51,6 +52,7 @@
   , metadata = None (List { mapKey : Text, mapValue : Text })
   , source = None Text
   , state = None Text
+  , storage_tier = None Text
   , version_id = None Text
   , work_request_id = None Text
   , source_uri_details =

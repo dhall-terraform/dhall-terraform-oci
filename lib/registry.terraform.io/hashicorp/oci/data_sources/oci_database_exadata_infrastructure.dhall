@@ -8,6 +8,7 @@
         Optional
           ( List
               { email : Text
+              , is_contact_mos_validated : Bool
               , is_primary : Bool
               , name : Text
               , phone_number : Text
@@ -27,6 +28,7 @@
     , id : Optional Text
     , infini_band_network_cidr : Optional Text
     , lifecycle_details : Optional Text
+    , maintenance_slo_status : Optional Text
     , maintenance_window :
         Optional
           ( List
@@ -60,6 +62,7 @@
       None
         ( List
             { email : Text
+            , is_contact_mos_validated : Bool
             , is_primary : Bool
             , name : Text
             , phone_number : Text
@@ -78,6 +81,7 @@
   , id = None Text
   , infini_band_network_cidr = None Text
   , lifecycle_details = None Text
+  , maintenance_slo_status = None Text
   , maintenance_window =
       None
         ( List

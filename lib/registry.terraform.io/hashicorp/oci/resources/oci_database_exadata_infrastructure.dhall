@@ -17,6 +17,7 @@
     , id : Optional Text
     , infini_band_network_cidr : Text
     , lifecycle_details : Optional Text
+    , maintenance_slo_status : Optional Text
     , max_cpu_count : Optional Natural
     , max_data_storage_in_tbs : Optional Natural
     , max_db_node_storage_in_gbs : Optional Natural
@@ -32,6 +33,7 @@
         Optional
           ( List
               { email : Text
+              , is_contact_mos_validated : Optional Bool
               , is_primary : Bool
               , name : Text
               , phone_number : Optional Text
@@ -66,6 +68,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , lifecycle_details = None Text
+  , maintenance_slo_status = None Text
   , max_cpu_count = None Natural
   , max_data_storage_in_tbs = None Natural
   , max_db_node_storage_in_gbs = None Natural
@@ -77,6 +80,7 @@
       None
         ( List
             { email : Text
+            , is_contact_mos_validated : Optional Bool
             , is_primary : Bool
             , name : Text
             , phone_number : Optional Text

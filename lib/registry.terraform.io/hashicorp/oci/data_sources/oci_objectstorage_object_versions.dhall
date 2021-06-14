@@ -7,11 +7,13 @@
     , items :
         Optional
           ( List
-              { etag : Text
+              { archival_state : Text
+              , etag : Text
               , is_delete_marker : Bool
               , md5 : Text
               , name : Text
               , size : Text
+              , storage_tier : Text
               , time_created : Text
               , time_modified : Text
               , version_id : Text
@@ -34,11 +36,13 @@
   , items =
       None
         ( List
-            { etag : Text
+            { archival_state : Text
+            , etag : Text
             , is_delete_marker : Bool
             , md5 : Text
             , name : Text
             , size : Text
+            , storage_tier : Text
             , time_created : Text
             , time_modified : Text
             , version_id : Text

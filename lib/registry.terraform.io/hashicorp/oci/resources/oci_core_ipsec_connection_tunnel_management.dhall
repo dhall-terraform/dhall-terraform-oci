@@ -23,6 +23,13 @@
               , oracle_interface_ip : Optional Text
               }
           )
+    , encryption_domain_config :
+        Optional
+          ( List
+              { cpe_traffic_selector : Optional (List Text)
+              , oracle_traffic_selector : Optional (List Text)
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -50,6 +57,13 @@
             , customer_interface_ip : Optional Text
             , oracle_bgp_asn : Optional Text
             , oracle_interface_ip : Optional Text
+            }
+        )
+  , encryption_domain_config =
+      None
+        ( List
+            { cpe_traffic_selector : Optional (List Text)
+            , oracle_traffic_selector : Optional (List Text)
             }
         )
   , timeouts =
