@@ -22,6 +22,11 @@
     , opc_request_id : Optional Text
     , owner_principal_id : Optional Text
     , owner_user_name : Optional Text
+    , private_endpoint_dns_zones : Optional (List Text)
+    , private_endpoint_id : Optional Text
+    , private_endpoint_max_host_count : Optional Natural
+    , private_endpoint_nsg_ids : Optional (List Text)
+    , private_endpoint_subnet_id : Optional Text
     , run_duration_in_milliseconds : Optional Text
     , spark_version : Optional Text
     , state : Optional Text
@@ -58,6 +63,11 @@
   , opc_request_id = None Text
   , owner_principal_id = None Text
   , owner_user_name = None Text
+  , private_endpoint_dns_zones = None (List Text)
+  , private_endpoint_id = None Text
+  , private_endpoint_max_host_count = None Natural
+  , private_endpoint_nsg_ids = None (List Text)
+  , private_endpoint_subnet_id = None Text
   , run_duration_in_milliseconds = None Text
   , spark_version = None Text
   , state = None Text

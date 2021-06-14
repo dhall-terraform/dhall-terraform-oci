@@ -111,6 +111,7 @@
 , oci_datacatalog_data_asset = ./oci_datacatalog_data_asset.dhall
 , oci_dataflow_application = ./oci_dataflow_application.dhall
 , oci_dataflow_invoke_run = ./oci_dataflow_invoke_run.dhall
+, oci_dataflow_private_endpoint = ./oci_dataflow_private_endpoint.dhall
 , oci_dataintegration_workspace = ./oci_dataintegration_workspace.dhall
 , oci_data_safe_data_safe_configuration =
     ./oci_data_safe_data_safe_configuration.dhall
@@ -220,6 +221,7 @@
 , oci_waas_certificate = ./oci_waas_certificate.dhall
 , oci_waas_custom_protection_rule = ./oci_waas_custom_protection_rule.dhall
 , oci_waas_http_redirect = ./oci_waas_http_redirect.dhall
+, oci_waas_protection_rule = ./oci_waas_protection_rule.dhall
 , oci_waas_purge_cache = ./oci_waas_purge_cache.dhall
 , oci_waas_waas_policy = ./oci_waas_waas_policy.dhall
 }

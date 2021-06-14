@@ -3,12 +3,18 @@
     , cluster_details :
         Optional
           ( List
-              { bda_version : Text
+              { bd_cell_version : Text
+              , bda_version : Text
               , bdm_version : Text
+              , bds_version : Text
               , big_data_manager_url : Text
               , cloudera_manager_url : Text
+              , csql_cell_version : Text
+              , db_version : Text
               , hue_server_url : Text
+              , os_version : Text
               , time_created : Text
+              , time_refreshed : Text
               }
           )
     , cluster_public_key : Text
@@ -40,7 +46,6 @@
               , state : Text
               , subnet_id : Text
               , time_created : Text
-              , time_refreshed : Text
               }
           )
     , number_of_nodes : Optional Natural
@@ -97,12 +102,18 @@
   { cluster_details =
       None
         ( List
-            { bda_version : Text
+            { bd_cell_version : Text
+            , bda_version : Text
             , bdm_version : Text
+            , bds_version : Text
             , big_data_manager_url : Text
             , cloudera_manager_url : Text
+            , csql_cell_version : Text
+            , db_version : Text
             , hue_server_url : Text
+            , os_version : Text
             , time_created : Text
+            , time_refreshed : Text
             }
         )
   , created_by = None Text
@@ -127,7 +138,6 @@
             , state : Text
             , subnet_id : Text
             , time_created : Text
-            , time_refreshed : Text
             }
         )
   , number_of_nodes = None Natural

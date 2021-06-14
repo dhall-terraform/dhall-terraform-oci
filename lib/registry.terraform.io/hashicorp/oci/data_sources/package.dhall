@@ -278,6 +278,8 @@
 , oci_dataflow_applications = ./oci_dataflow_applications.dhall
 , oci_dataflow_invoke_run = ./oci_dataflow_invoke_run.dhall
 , oci_dataflow_invoke_runs = ./oci_dataflow_invoke_runs.dhall
+, oci_dataflow_private_endpoint = ./oci_dataflow_private_endpoint.dhall
+, oci_dataflow_private_endpoints = ./oci_dataflow_private_endpoints.dhall
 , oci_dataflow_run_log = ./oci_dataflow_run_log.dhall
 , oci_dataflow_run_logs = ./oci_dataflow_run_logs.dhall
 , oci_dataintegration_workspace = ./oci_dataintegration_workspace.dhall
@@ -504,6 +506,8 @@
 , oci_waas_edge_subnets = ./oci_waas_edge_subnets.dhall
 , oci_waas_http_redirect = ./oci_waas_http_redirect.dhall
 , oci_waas_http_redirects = ./oci_waas_http_redirects.dhall
+, oci_waas_protection_rule = ./oci_waas_protection_rule.dhall
+, oci_waas_protection_rules = ./oci_waas_protection_rules.dhall
 , oci_waas_waas_policies = ./oci_waas_waas_policies.dhall
 , oci_waas_waas_policy = ./oci_waas_waas_policy.dhall
 }

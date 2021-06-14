@@ -19,6 +19,7 @@
     , owner_principal_id : Optional Text
     , owner_user_name : Optional Text
     , parameters : Optional (List { name : Text, value : Text })
+    , private_endpoint_id : Optional Text
     , spark_version : Optional Text
     , state : Optional Text
     , time_created : Optional Text
@@ -45,6 +46,7 @@
   , owner_principal_id = None Text
   , owner_user_name = None Text
   , parameters = None (List { name : Text, value : Text })
+  , private_endpoint_id = None Text
   , spark_version = None Text
   , state = None Text
   , time_created = None Text

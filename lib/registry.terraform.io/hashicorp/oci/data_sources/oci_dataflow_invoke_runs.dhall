@@ -32,6 +32,11 @@
               , owner_principal_id : Text
               , owner_user_name : Text
               , parameters : List { name : Text, value : Text }
+              , private_endpoint_dns_zones : List Text
+              , private_endpoint_id : Text
+              , private_endpoint_max_host_count : Natural
+              , private_endpoint_nsg_ids : List Text
+              , private_endpoint_subnet_id : Text
               , run_duration_in_milliseconds : Text
               , spark_version : Text
               , state : Text
@@ -80,6 +85,11 @@
             , owner_principal_id : Text
             , owner_user_name : Text
             , parameters : List { name : Text, value : Text }
+            , private_endpoint_dns_zones : List Text
+            , private_endpoint_id : Text
+            , private_endpoint_max_host_count : Natural
+            , private_endpoint_nsg_ids : List Text
+            , private_endpoint_subnet_id : Text
             , run_duration_in_milliseconds : Text
             , spark_version : Text
             , state : Text
