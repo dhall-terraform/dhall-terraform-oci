@@ -1,5 +1,7 @@
 { Type =
     { admin_password : Optional Text
+    , apex_details :
+        Optional (List { apex_version : Text, ords_version : Text })
     , autonomous_container_database_id : Optional Text
     , autonomous_database_backup_id : Optional Text
     , autonomous_database_id : Text
@@ -29,6 +31,7 @@
           )
     , cpu_core_count : Optional Natural
     , data_safe_status : Optional Text
+    , data_storage_size_in_gb : Optional Natural
     , data_storage_size_in_tbs : Optional Natural
     , db_name : Optional Text
     , db_version : Optional Text
@@ -93,6 +96,7 @@
     }
 , default =
   { admin_password = None Text
+  , apex_details = None (List { apex_version : Text, ords_version : Text })
   , autonomous_container_database_id = None Text
   , autonomous_database_backup_id = None Text
   , available_upgrade_versions = None (List Text)
@@ -121,6 +125,7 @@
         )
   , cpu_core_count = None Natural
   , data_safe_status = None Text
+  , data_storage_size_in_gb = None Natural
   , data_storage_size_in_tbs = None Natural
   , db_name = None Text
   , db_version = None Text

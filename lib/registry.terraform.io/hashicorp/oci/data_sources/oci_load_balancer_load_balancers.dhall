@@ -23,6 +23,11 @@
               , network_security_group_ids : List Text
               , reserved_ips : List { id : Text }
               , shape : Text
+              , shape_details :
+                  List
+                    { maximum_bandwidth_in_mbps : Natural
+                    , minimum_bandwidth_in_mbps : Natural
+                    }
               , state : Text
               , subnet_ids : List Text
               , system_tags : List { mapKey : Text, mapValue : Text }
@@ -58,6 +63,11 @@
             , network_security_group_ids : List Text
             , reserved_ips : List { id : Text }
             , shape : Text
+            , shape_details :
+                List
+                  { maximum_bandwidth_in_mbps : Natural
+                  , minimum_bandwidth_in_mbps : Natural
+                  }
             , state : Text
             , subnet_ids : List Text
             , system_tags : List { mapKey : Text, mapValue : Text }

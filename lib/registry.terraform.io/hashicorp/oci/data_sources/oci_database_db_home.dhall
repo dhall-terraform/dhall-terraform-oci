@@ -49,6 +49,8 @@
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , kms_key_id : Optional Text
+    , kms_key_version_id : Optional Text
     , last_patch_history_entry_id : Optional Text
     , lifecycle_details : Optional Text
     , source : Optional Text
@@ -105,6 +107,8 @@
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , kms_key_id = None Text
+  , kms_key_version_id = None Text
   , last_patch_history_entry_id = None Text
   , lifecycle_details = None Text
   , source = None Text

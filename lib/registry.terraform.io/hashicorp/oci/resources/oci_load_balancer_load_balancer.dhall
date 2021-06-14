@@ -22,6 +22,13 @@
     , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , reserved_ips : Optional (List { id : Optional Text })
+    , shape_details :
+        Optional
+          ( List
+              { maximum_bandwidth_in_mbps : Natural
+              , minimum_bandwidth_in_mbps : Natural
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -49,6 +56,13 @@
   , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , reserved_ips = None (List { id : Optional Text })
+  , shape_details =
+      None
+        ( List
+            { maximum_bandwidth_in_mbps : Natural
+            , minimum_bandwidth_in_mbps : Natural
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

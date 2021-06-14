@@ -31,6 +31,8 @@
               , state : Text
               }
           )
+    , kms_key_id : Optional Text
+    , kms_key_version_id : Optional Text
     , last_maintenance_run_id : Optional Text
     , last_patch_history_entry_id : Optional Text
     , license_model : Optional Text
@@ -173,6 +175,8 @@
             , state : Text
             }
         )
+  , kms_key_id = None Text
+  , kms_key_version_id = None Text
   , last_maintenance_run_id = None Text
   , last_patch_history_entry_id = None Text
   , license_model = None Text

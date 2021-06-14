@@ -52,6 +52,8 @@
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , kms_key_id : Text
+              , kms_key_version_id : Text
               , last_patch_history_entry_id : Text
               , lifecycle_details : Text
               , source : Text
@@ -123,6 +125,8 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , kms_key_id : Text
+            , kms_key_version_id : Text
             , last_patch_history_entry_id : Text
             , lifecycle_details : Text
             , source : Text

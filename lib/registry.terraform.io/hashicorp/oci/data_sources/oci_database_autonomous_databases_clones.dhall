@@ -3,7 +3,8 @@
     , autonomous_databases :
         Optional
           ( List
-              { autonomous_container_database_id : Text
+              { apex_details : List { apex_version : Text, ords_version : Text }
+              , autonomous_container_database_id : Text
               , available_upgrade_versions : List Text
               , backup_config :
                   List
@@ -28,6 +29,7 @@
                     }
               , cpu_core_count : Natural
               , data_safe_status : Text
+              , data_storage_size_in_gb : Natural
               , data_storage_size_in_tbs : Natural
               , db_name : Text
               , db_version : Text
@@ -95,7 +97,8 @@
   { autonomous_databases =
       None
         ( List
-            { autonomous_container_database_id : Text
+            { apex_details : List { apex_version : Text, ords_version : Text }
+            , autonomous_container_database_id : Text
             , available_upgrade_versions : List Text
             , backup_config :
                 List
@@ -120,6 +123,7 @@
                   }
             , cpu_core_count : Natural
             , data_safe_status : Text
+            , data_storage_size_in_gb : Natural
             , data_storage_size_in_tbs : Natural
             , db_name : Text
             , db_version : Text

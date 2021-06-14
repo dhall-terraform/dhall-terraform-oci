@@ -1,5 +1,6 @@
 { Type =
-    { compartment_id : Text
+    { algorithm : Optional Text
+    , compartment_id : Text
     , id : Optional Text
     , keys :
         Optional
@@ -36,6 +37,7 @@
               , vault_id : Text
               }
           )
+    , length : Optional Natural
     , management_endpoint : Text
     , protection_mode : Optional Text
     , filter :
@@ -43,7 +45,8 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { id = None Text
+  { algorithm = None Text
+  , id = None Text
   , keys =
       None
         ( List
@@ -79,6 +82,7 @@
             , vault_id : Text
             }
         )
+  , length = None Natural
   , protection_mode = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

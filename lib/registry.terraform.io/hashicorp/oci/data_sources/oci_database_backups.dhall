@@ -9,6 +9,7 @@
               , database_size_in_gbs : Natural
               , display_name : Text
               , id : Text
+              , kms_key_id : Text
               , lifecycle_details : Text
               , shape : Text
               , state : Text
@@ -36,6 +37,7 @@
             , database_size_in_gbs : Natural
             , display_name : Text
             , id : Text
+            , kms_key_id : Text
             , lifecycle_details : Text
             , shape : Text
             , state : Text

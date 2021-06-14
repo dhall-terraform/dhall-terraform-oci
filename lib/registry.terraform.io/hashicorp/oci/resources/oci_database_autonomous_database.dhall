@@ -1,5 +1,7 @@
 { Type =
     { admin_password : Optional Text
+    , apex_details :
+        Optional (List { apex_version : Text, ords_version : Text })
     , autonomous_container_database_id : Optional Text
     , autonomous_database_backup_id : Optional Text
     , autonomous_database_id : Optional Text
@@ -29,7 +31,8 @@
           )
     , cpu_core_count : Natural
     , data_safe_status : Optional Text
-    , data_storage_size_in_tbs : Natural
+    , data_storage_size_in_gb : Optional Natural
+    , data_storage_size_in_tbs : Optional Natural
     , db_name : Text
     , db_version : Optional Text
     , db_workload : Optional Text
@@ -99,6 +102,7 @@
     }
 , default =
   { admin_password = None Text
+  , apex_details = None (List { apex_version : Text, ords_version : Text })
   , autonomous_container_database_id = None Text
   , autonomous_database_backup_id = None Text
   , autonomous_database_id = None Text
@@ -126,6 +130,8 @@
             }
         )
   , data_safe_status = None Text
+  , data_storage_size_in_gb = None Natural
+  , data_storage_size_in_tbs = None Natural
   , db_version = None Text
   , db_workload = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })

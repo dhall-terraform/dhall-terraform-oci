@@ -93,6 +93,8 @@
     ./oci_database_autonomous_database_instance_wallet_management.dhall
 , oci_database_autonomous_database_regional_wallet_management =
     ./oci_database_autonomous_database_regional_wallet_management.dhall
+, oci_database_autonomous_database_wallet =
+    ./oci_database_autonomous_database_wallet.dhall
 , oci_database_autonomous_exadata_infrastructure =
     ./oci_database_autonomous_exadata_infrastructure.dhall
 , oci_database_autonomous_vm_cluster =
@@ -214,6 +216,8 @@
     ./oci_management_agent_management_agent.dhall
 , oci_management_agent_management_agent_install_key =
     ./oci_management_agent_management_agent_install_key.dhall
+, oci_management_dashboard_management_dashboards_import =
+    ./oci_management_dashboard_management_dashboards_import.dhall
 , oci_marketplace_accepted_agreement =
     ./oci_marketplace_accepted_agreement.dhall
 , oci_marketplace_listing_package_agreement =

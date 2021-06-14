@@ -7,6 +7,7 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , is_enabled : Optional Bool
+    , lifecycle_details : Optional Text
     , source :
         Optional
           ( List
@@ -41,6 +42,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , is_enabled = None Bool
+  , lifecycle_details = None Text
   , source =
       None
         ( List

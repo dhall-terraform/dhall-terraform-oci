@@ -90,6 +90,8 @@
                     , objective : Text
                     , state : Text
                     }
+              , kms_key_id : Text
+              , kms_key_version_id : Text
               , last_maintenance_run_id : Text
               , last_patch_history_entry_id : Text
               , license_model : Text
@@ -231,6 +233,8 @@
                   , objective : Text
                   , state : Text
                   }
+            , kms_key_id : Text
+            , kms_key_version_id : Text
             , last_maintenance_run_id : Text
             , last_patch_history_entry_id : Text
             , license_model : Text

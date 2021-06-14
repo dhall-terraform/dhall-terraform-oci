@@ -55,6 +55,10 @@
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , kms_key_id : Optional Text
+    , kms_key_migration : Optional Bool
+    , kms_key_rotation : Optional Natural
+    , kms_key_version_id : Optional Text
     , last_backup_timestamp : Optional Text
     , lifecycle_details : Optional Text
     , ncharacter_set : Optional Text
@@ -120,6 +124,10 @@
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , kms_key_id = None Text
+  , kms_key_migration = None Bool
+  , kms_key_rotation = None Natural
+  , kms_key_version_id = None Text
   , last_backup_timestamp = None Text
   , lifecycle_details = None Text
   , ncharacter_set = None Text

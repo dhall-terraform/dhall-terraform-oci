@@ -287,6 +287,7 @@
 , oci_database_exadata_infrastructures =
     ./oci_database_exadata_infrastructures.dhall
 , oci_database_exadata_iorm_config = ./oci_database_exadata_iorm_config.dhall
+, oci_database_flex_components = ./oci_database_flex_components.dhall
 , oci_database_gi_versions = ./oci_database_gi_versions.dhall
 , oci_database_key_store = ./oci_database_key_store.dhall
 , oci_database_key_stores = ./oci_database_key_stores.dhall
@@ -486,6 +487,8 @@
     ./oci_management_agent_management_agent_plugins.dhall
 , oci_management_agent_management_agents =
     ./oci_management_agent_management_agents.dhall
+, oci_management_dashboard_management_dashboards_export =
+    ./oci_management_dashboard_management_dashboards_export.dhall
 , oci_marketplace_accepted_agreement =
     ./oci_marketplace_accepted_agreement.dhall
 , oci_marketplace_accepted_agreements =

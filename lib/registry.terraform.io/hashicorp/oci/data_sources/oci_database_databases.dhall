@@ -54,6 +54,10 @@
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , kms_key_id : Text
+              , kms_key_migration : Bool
+              , kms_key_rotation : Natural
+              , kms_key_version_id : Text
               , last_backup_timestamp : Text
               , lifecycle_details : Text
               , ncharacter_set : Text
@@ -128,6 +132,10 @@
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , kms_key_id : Text
+            , kms_key_migration : Bool
+            , kms_key_rotation : Natural
+            , kms_key_version_id : Text
             , last_backup_timestamp : Text
             , lifecycle_details : Text
             , ncharacter_set : Text

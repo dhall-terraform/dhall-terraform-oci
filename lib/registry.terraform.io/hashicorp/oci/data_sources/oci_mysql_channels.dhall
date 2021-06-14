@@ -10,6 +10,7 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , is_enabled : Bool
+              , lifecycle_details : Text
               , source :
                   List
                     { hostname : Text
@@ -55,6 +56,7 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , is_enabled : Bool
+            , lifecycle_details : Text
             , source :
                 List
                   { hostname : Text

@@ -4,6 +4,7 @@
         Optional
           ( List
               { admin_password : Text
+              , apex_details : List { apex_version : Text, ords_version : Text }
               , autonomous_container_database_id : Text
               , autonomous_database_backup_id : Text
               , autonomous_database_id : Text
@@ -32,6 +33,7 @@
                     }
               , cpu_core_count : Natural
               , data_safe_status : Text
+              , data_storage_size_in_gb : Natural
               , data_storage_size_in_tbs : Natural
               , db_name : Text
               , db_version : Text
@@ -113,6 +115,7 @@
       None
         ( List
             { admin_password : Text
+            , apex_details : List { apex_version : Text, ords_version : Text }
             , autonomous_container_database_id : Text
             , autonomous_database_backup_id : Text
             , autonomous_database_id : Text
@@ -141,6 +144,7 @@
                   }
             , cpu_core_count : Natural
             , data_safe_status : Text
+            , data_storage_size_in_gb : Natural
             , data_storage_size_in_tbs : Natural
             , db_name : Text
             , db_version : Text
