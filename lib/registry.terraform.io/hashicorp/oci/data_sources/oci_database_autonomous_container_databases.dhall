@@ -25,6 +25,8 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , infrastructure_type : Text
+              , key_store_id : Text
+              , key_store_wallet_name : Text
               , kms_key_id : Text
               , last_maintenance_run_id : Text
               , lifecycle_details : Text
@@ -101,6 +103,8 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , infrastructure_type : Text
+            , key_store_id : Text
+            , key_store_wallet_name : Text
             , kms_key_id : Text
             , last_maintenance_run_id : Text
             , lifecycle_details : Text

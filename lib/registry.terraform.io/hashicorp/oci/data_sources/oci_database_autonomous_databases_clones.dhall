@@ -39,6 +39,8 @@
               , is_free_tier : Bool
               , is_preview : Bool
               , is_refreshable_clone : Bool
+              , key_store_id : Text
+              , key_store_wallet_name : Text
               , license_model : Text
               , lifecycle_details : Text
               , nsg_ids : List Text
@@ -123,6 +125,8 @@
             , is_free_tier : Bool
             , is_preview : Bool
             , is_refreshable_clone : Bool
+            , key_store_id : Text
+            , key_store_wallet_name : Text
             , license_model : Text
             , lifecycle_details : Text
             , nsg_ids : List Text

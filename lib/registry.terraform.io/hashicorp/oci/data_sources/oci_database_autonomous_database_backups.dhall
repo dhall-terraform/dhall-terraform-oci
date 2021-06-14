@@ -9,6 +9,8 @@
               , id : Text
               , is_automatic : Bool
               , is_restorable : Bool
+              , key_store_id : Text
+              , key_store_wallet_name : Text
               , lifecycle_details : Text
               , state : Text
               , time_ended : Text
@@ -36,6 +38,8 @@
             , id : Text
             , is_automatic : Bool
             , is_restorable : Bool
+            , key_store_id : Text
+            , key_store_wallet_name : Text
             , lifecycle_details : Text
             , state : Text
             , time_ended : Text

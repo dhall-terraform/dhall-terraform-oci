@@ -282,6 +282,8 @@
     ./oci_database_exadata_infrastructures.dhall
 , oci_database_exadata_iorm_config = ./oci_database_exadata_iorm_config.dhall
 , oci_database_gi_versions = ./oci_database_gi_versions.dhall
+, oci_database_key_store = ./oci_database_key_store.dhall
+, oci_database_key_stores = ./oci_database_key_stores.dhall
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
 , oci_database_maintenance_runs = ./oci_database_maintenance_runs.dhall
 , oci_database_vm_cluster = ./oci_database_vm_cluster.dhall

@@ -43,6 +43,8 @@
     , is_preview : Optional Bool
     , is_preview_version_with_service_terms_accepted : Optional Bool
     , is_refreshable_clone : Optional Bool
+    , key_store_id : Optional Text
+    , key_store_wallet_name : Optional Text
     , license_model : Optional Text
     , lifecycle_details : Optional Text
     , nsg_ids : Optional (List Text)
@@ -129,6 +131,8 @@
   , is_preview = None Bool
   , is_preview_version_with_service_terms_accepted = None Bool
   , is_refreshable_clone = None Bool
+  , key_store_id = None Text
+  , key_store_wallet_name = None Text
   , license_model = None Text
   , lifecycle_details = None Text
   , nsg_ids = None (List Text)

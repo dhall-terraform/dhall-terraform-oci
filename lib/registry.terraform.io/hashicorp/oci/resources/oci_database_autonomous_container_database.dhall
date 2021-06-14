@@ -10,6 +10,8 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , infrastructure_type : Optional Text
+    , key_store_id : Optional Text
+    , key_store_wallet_name : Optional Text
     , kms_key_id : Optional Text
     , last_maintenance_run_id : Optional Text
     , lifecycle_details : Optional Text
@@ -82,6 +84,8 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , infrastructure_type = None Text
+  , key_store_id = None Text
+  , key_store_wallet_name = None Text
   , kms_key_id = None Text
   , last_maintenance_run_id = None Text
   , lifecycle_details = None Text

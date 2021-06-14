@@ -114,6 +114,7 @@
 , oci_database_exadata_infrastructure =
     ./oci_database_exadata_infrastructure.dhall
 , oci_database_exadata_iorm_config = ./oci_database_exadata_iorm_config.dhall
+, oci_database_key_store = ./oci_database_key_store.dhall
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
 , oci_database_migration = ./oci_database_migration.dhall
 , oci_database_vm_cluster = ./oci_database_vm_cluster.dhall

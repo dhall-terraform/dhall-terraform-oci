@@ -44,6 +44,8 @@
               , is_preview : Bool
               , is_preview_version_with_service_terms_accepted : Bool
               , is_refreshable_clone : Bool
+              , key_store_id : Text
+              , key_store_wallet_name : Text
               , license_model : Text
               , lifecycle_details : Text
               , nsg_ids : List Text
@@ -145,6 +147,8 @@
             , is_preview : Bool
             , is_preview_version_with_service_terms_accepted : Bool
             , is_refreshable_clone : Bool
+            , key_store_id : Text
+            , key_store_wallet_name : Text
             , license_model : Text
             , lifecycle_details : Text
             , nsg_ids : List Text
