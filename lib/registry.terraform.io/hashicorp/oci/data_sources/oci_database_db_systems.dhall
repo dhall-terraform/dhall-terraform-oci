@@ -6,6 +6,7 @@
         Optional
           ( List
               { availability_domain : Text
+              , backup_network_nsg_ids : List Text
               , backup_subnet_id : Text
               , cluster_name : Text
               , compartment_id : Text
@@ -80,6 +81,7 @@
               , lifecycle_details : Text
               , listener_port : Natural
               , node_count : Natural
+              , nsg_ids : List Text
               , reco_storage_size_in_gb : Natural
               , scan_dns_record_id : Text
               , scan_ip_ids : List Text
@@ -111,6 +113,7 @@
       None
         ( List
             { availability_domain : Text
+            , backup_network_nsg_ids : List Text
             , backup_subnet_id : Text
             , cluster_name : Text
             , compartment_id : Text
@@ -184,6 +187,7 @@
             , lifecycle_details : Text
             , listener_port : Natural
             , node_count : Natural
+            , nsg_ids : List Text
             , reco_storage_size_in_gb : Natural
             , scan_dns_record_id : Text
             , scan_ip_ids : List Text

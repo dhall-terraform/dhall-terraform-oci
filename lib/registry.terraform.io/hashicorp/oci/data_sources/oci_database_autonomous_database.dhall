@@ -27,6 +27,8 @@
     , id : Optional Text
     , is_auto_scaling_enabled : Optional Bool
     , is_dedicated : Optional Bool
+    , is_preview : Optional Bool
+    , is_preview_version_with_service_terms_accepted : Optional Bool
     , license_model : Optional Text
     , lifecycle_details : Optional Text
     , service_console_url : Optional Text
@@ -64,6 +66,8 @@
   , id = None Text
   , is_auto_scaling_enabled = None Bool
   , is_dedicated = None Bool
+  , is_preview = None Bool
+  , is_preview_version_with_service_terms_accepted = None Bool
   , license_model = None Text
   , lifecycle_details = None Text
   , service_console_url = None Text

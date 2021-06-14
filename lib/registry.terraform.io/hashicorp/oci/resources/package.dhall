@@ -34,6 +34,9 @@
     ./oci_core_listing_resource_version_agreement.dhall
 , oci_core_local_peering_gateway = ./oci_core_local_peering_gateway.dhall
 , oci_core_nat_gateway = ./oci_core_nat_gateway.dhall
+, oci_core_network_security_group = ./oci_core_network_security_group.dhall
+, oci_core_network_security_group_security_rule =
+    ./oci_core_network_security_group_security_rule.dhall
 , oci_core_private_ip = ./oci_core_private_ip.dhall
 , oci_core_public_ip = ./oci_core_public_ip.dhall
 , oci_core_remote_peering_connection =

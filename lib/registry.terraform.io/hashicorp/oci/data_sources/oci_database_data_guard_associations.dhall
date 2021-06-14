@@ -5,6 +5,7 @@
               { apply_lag : Text
               , apply_rate : Text
               , availability_domain : Text
+              , backup_network_nsg_ids : List Text
               , creation_type : Text
               , database_admin_password : Text
               , database_id : Text
@@ -13,6 +14,7 @@
               , hostname : Text
               , id : Text
               , lifecycle_details : Text
+              , nsg_ids : List Text
               , peer_data_guard_association_id : Text
               , peer_database_id : Text
               , peer_db_home_id : Text
@@ -39,6 +41,7 @@
             { apply_lag : Text
             , apply_rate : Text
             , availability_domain : Text
+            , backup_network_nsg_ids : List Text
             , creation_type : Text
             , database_admin_password : Text
             , database_id : Text
@@ -47,6 +50,7 @@
             , hostname : Text
             , id : Text
             , lifecycle_details : Text
+            , nsg_ids : List Text
             , peer_data_guard_association_id : Text
             , peer_database_id : Text
             , peer_db_home_id : Text

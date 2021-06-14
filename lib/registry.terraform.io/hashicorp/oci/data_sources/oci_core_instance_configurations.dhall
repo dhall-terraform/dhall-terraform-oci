@@ -47,6 +47,7 @@
                                 { assign_public_ip : Bool
                                 , display_name : Text
                                 , hostname_label : Text
+                                , nsg_ids : List Text
                                 , private_ip : Text
                                 , skip_source_dest_check : Bool
                                 , subnet_id : Text
@@ -77,6 +78,7 @@
                                 { assign_public_ip : Bool
                                 , display_name : Text
                                 , hostname_label : Text
+                                , nsg_ids : List Text
                                 , private_ip : Text
                                 , skip_source_dest_check : Bool
                                 , subnet_id : Text
@@ -139,6 +141,7 @@
                               { assign_public_ip : Bool
                               , display_name : Text
                               , hostname_label : Text
+                              , nsg_ids : List Text
                               , private_ip : Text
                               , skip_source_dest_check : Bool
                               , subnet_id : Text
@@ -168,6 +171,7 @@
                               { assign_public_ip : Bool
                               , display_name : Text
                               , hostname_label : Text
+                              , nsg_ids : List Text
                               , private_ip : Text
                               , skip_source_dest_check : Bool
                               , subnet_id : Text

@@ -66,6 +66,7 @@
                               { assign_public_ip : Optional Bool
                               , display_name : Optional Text
                               , hostname_label : Optional Text
+                              , nsg_ids : Optional (List Text)
                               , private_ip : Optional Text
                               , skip_source_dest_check : Optional Bool
                               , subnet_id : Optional Text
@@ -93,6 +94,7 @@
                               { assign_public_ip : Optional Bool
                               , display_name : Optional Text
                               , hostname_label : Optional Text
+                              , nsg_ids : Optional (List Text)
                               , private_ip : Optional Text
                               , skip_source_dest_check : Optional Bool
                               , subnet_id : Optional Text

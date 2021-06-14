@@ -1,5 +1,6 @@
 { Type =
     { availability_domain : Text
+    , backup_network_nsg_ids : Optional (List Text)
     , backup_subnet_id : Optional Text
     , cluster_name : Optional Text
     , compartment_id : Text
@@ -35,6 +36,7 @@
     , lifecycle_details : Optional Text
     , listener_port : Optional Natural
     , node_count : Optional Natural
+    , nsg_ids : Optional (List Text)
     , reco_storage_size_in_gb : Optional Natural
     , scan_dns_record_id : Optional Text
     , scan_ip_ids : Optional (List Text)
@@ -101,7 +103,8 @@
           }
     }
 , default =
-  { backup_subnet_id = None Text
+  { backup_network_nsg_ids = None (List Text)
+  , backup_subnet_id = None Text
   , cluster_name = None Text
   , cpu_core_count = None Natural
   , data_storage_percentage = None Natural
@@ -130,6 +133,7 @@
   , lifecycle_details = None Text
   , listener_port = None Natural
   , node_count = None Natural
+  , nsg_ids = None (List Text)
   , reco_storage_size_in_gb = None Natural
   , scan_dns_record_id = None Text
   , scan_ip_ids = None (List Text)

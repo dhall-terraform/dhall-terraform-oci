@@ -29,6 +29,8 @@
               , id : Text
               , is_auto_scaling_enabled : Bool
               , is_dedicated : Bool
+              , is_preview : Bool
+              , is_preview_version_with_service_terms_accepted : Bool
               , license_model : Text
               , lifecycle_details : Text
               , service_console_url : Text
@@ -79,6 +81,8 @@
             , id : Text
             , is_auto_scaling_enabled : Bool
             , is_dedicated : Bool
+            , is_preview : Bool
+            , is_preview_version_with_service_terms_accepted : Bool
             , license_model : Text
             , lifecycle_details : Text
             , service_console_url : Text

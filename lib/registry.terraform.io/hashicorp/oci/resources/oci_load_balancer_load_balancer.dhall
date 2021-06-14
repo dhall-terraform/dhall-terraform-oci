@@ -8,6 +8,7 @@
         Optional (List { ip_address : Text, is_public : Bool })
     , ip_addresses : Optional (List Text)
     , is_private : Optional Bool
+    , network_security_group_ids : Optional (List Text)
     , shape : Text
     , state : Optional Text
     , subnet_ids : List Text
@@ -26,6 +27,7 @@
   , ip_address_details = None (List { ip_address : Text, is_public : Bool })
   , ip_addresses = None (List Text)
   , is_private = None Bool
+  , network_security_group_ids = None (List Text)
   , state = None Text
   , time_created = None Text
   , timeouts =

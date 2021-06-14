@@ -17,6 +17,7 @@
                     , display_name : Text
                     , freeform_tags : List { mapKey : Text, mapValue : Text }
                     , hostname_label : Text
+                    , nsg_ids : List Text
                     , private_ip : Text
                     , skip_source_dest_check : Bool
                     , subnet_id : Text
@@ -55,6 +56,7 @@
                   , display_name : Text
                   , freeform_tags : List { mapKey : Text, mapValue : Text }
                   , hostname_label : Text
+                  , nsg_ids : List Text
                   , private_ip : Text
                   , skip_source_dest_check : Bool
                   , subnet_id : Text

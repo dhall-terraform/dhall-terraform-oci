@@ -65,6 +65,8 @@
 , oci_core_instance = ./oci_core_instance.dhall
 , oci_core_instance_pool = ./oci_core_instance_pool.dhall
 , oci_core_instance_pool_instances = ./oci_core_instance_pool_instances.dhall
+, oci_core_instance_pool_load_balancer_attachment =
+    ./oci_core_instance_pool_load_balancer_attachment.dhall
 , oci_core_instance_pools = ./oci_core_instance_pools.dhall
 , oci_core_instances = ./oci_core_instances.dhall
 , oci_core_internet_gateways = ./oci_core_internet_gateways.dhall
@@ -80,6 +82,12 @@
 , oci_core_local_peering_gateways = ./oci_core_local_peering_gateways.dhall
 , oci_core_nat_gateway = ./oci_core_nat_gateway.dhall
 , oci_core_nat_gateways = ./oci_core_nat_gateways.dhall
+, oci_core_network_security_group = ./oci_core_network_security_group.dhall
+, oci_core_network_security_groups = ./oci_core_network_security_groups.dhall
+, oci_core_network_security_group_security_rules =
+    ./oci_core_network_security_group_security_rules.dhall
+, oci_core_network_security_group_vnics =
+    ./oci_core_network_security_group_vnics.dhall
 , oci_core_peer_region_for_remote_peerings =
     ./oci_core_peer_region_for_remote_peerings.dhall
 , oci_core_private_ip = ./oci_core_private_ip.dhall
@@ -138,6 +146,8 @@
     ./oci_database_autonomous_data_warehouses.dhall
 , oci_database_autonomous_data_warehouse_wallet =
     ./oci_database_autonomous_data_warehouse_wallet.dhall
+, oci_database_autonomous_db_preview_versions =
+    ./oci_database_autonomous_db_preview_versions.dhall
 , oci_database_autonomous_exadata_infrastructure =
     ./oci_database_autonomous_exadata_infrastructure.dhall
 , oci_database_autonomous_exadata_infrastructures =

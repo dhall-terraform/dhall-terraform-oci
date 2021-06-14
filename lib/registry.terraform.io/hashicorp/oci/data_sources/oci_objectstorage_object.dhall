@@ -1,5 +1,6 @@
 { Type =
-    { bucket : Text
+    { base64_encode_content : Optional Bool
+    , bucket : Text
     , content : Optional Text
     , content_encoding : Optional Text
     , content_language : Optional Text
@@ -13,7 +14,8 @@
     , object : Text
     }
 , default =
-  { content = None Text
+  { base64_encode_content = None Bool
+  , content = None Text
   , content_encoding = None Text
   , content_language = None Text
   , content_length = None Text

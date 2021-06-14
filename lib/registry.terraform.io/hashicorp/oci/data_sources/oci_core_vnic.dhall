@@ -8,6 +8,7 @@
     , id : Optional Text
     , is_primary : Optional Bool
     , mac_address : Optional Text
+    , nsg_ids : Optional (List Text)
     , private_ip_address : Optional Text
     , public_ip_address : Optional Text
     , skip_source_dest_check : Optional Bool
@@ -26,6 +27,7 @@
   , id = None Text
   , is_primary = None Bool
   , mac_address = None Text
+  , nsg_ids = None (List Text)
   , private_ip_address = None Text
   , public_ip_address = None Text
   , skip_source_dest_check = None Bool

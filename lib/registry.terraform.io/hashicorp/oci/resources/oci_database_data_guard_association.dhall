@@ -2,6 +2,7 @@
     { apply_lag : Optional Text
     , apply_rate : Optional Text
     , availability_domain : Optional Text
+    , backup_network_nsg_ids : Optional (List Text)
     , creation_type : Text
     , database_admin_password : Text
     , database_id : Text
@@ -10,6 +11,7 @@
     , hostname : Optional Text
     , id : Optional Text
     , lifecycle_details : Optional Text
+    , nsg_ids : Optional (List Text)
     , peer_data_guard_association_id : Optional Text
     , peer_database_id : Optional Text
     , peer_db_home_id : Optional Text
@@ -32,10 +34,12 @@
   { apply_lag = None Text
   , apply_rate = None Text
   , availability_domain = None Text
+  , backup_network_nsg_ids = None (List Text)
   , display_name = None Text
   , hostname = None Text
   , id = None Text
   , lifecycle_details = None Text
+  , nsg_ids = None (List Text)
   , peer_data_guard_association_id = None Text
   , peer_database_id = None Text
   , peer_db_home_id = None Text
