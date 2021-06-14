@@ -167,6 +167,8 @@
     ./oci_database_autonomous_db_preview_versions.dhall
 , oci_database_autonomous_exadata_infrastructure =
     ./oci_database_autonomous_exadata_infrastructure.dhall
+, oci_database_autonomous_exadata_infrastructure_ocpu =
+    ./oci_database_autonomous_exadata_infrastructure_ocpu.dhall
 , oci_database_autonomous_exadata_infrastructures =
     ./oci_database_autonomous_exadata_infrastructures.dhall
 , oci_database_autonomous_exadata_infrastructure_shapes =

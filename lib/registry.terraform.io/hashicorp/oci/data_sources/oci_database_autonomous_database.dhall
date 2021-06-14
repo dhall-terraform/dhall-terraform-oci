@@ -46,6 +46,8 @@
     , system_tags : Optional (List { mapKey : Text, mapValue : Text })
     , time_created : Optional Text
     , time_deletion_of_free_autonomous_database : Optional Text
+    , time_maintenance_begin : Optional Text
+    , time_maintenance_end : Optional Text
     , time_reclamation_of_free_autonomous_database : Optional Text
     , used_data_storage_size_in_tbs : Optional Natural
     , whitelisted_ips : Optional (List Text)
@@ -97,6 +99,8 @@
   , system_tags = None (List { mapKey : Text, mapValue : Text })
   , time_created = None Text
   , time_deletion_of_free_autonomous_database = None Text
+  , time_maintenance_begin = None Text
+  , time_maintenance_end = None Text
   , time_reclamation_of_free_autonomous_database = None Text
   , used_data_storage_size_in_tbs = None Natural
   , whitelisted_ips = None (List Text)
