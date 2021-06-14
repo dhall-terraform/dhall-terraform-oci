@@ -4,7 +4,18 @@
           ( List
               { available_kubernetes_upgrades : List Text
               , compartment_id : Text
-              , endpoints : List { kubernetes : Text }
+              , endpoint_config :
+                  List
+                    { is_public_ip_enabled : Bool
+                    , nsg_ids : List Text
+                    , subnet_id : Text
+                    }
+              , endpoints :
+                  List
+                    { kubernetes : Text
+                    , private_endpoint : Text
+                    , public_endpoint : Text
+                    }
               , id : Text
               , kms_key_id : Text
               , kubernetes_version : Text
@@ -53,7 +64,18 @@
         ( List
             { available_kubernetes_upgrades : List Text
             , compartment_id : Text
-            , endpoints : List { kubernetes : Text }
+            , endpoint_config :
+                List
+                  { is_public_ip_enabled : Bool
+                  , nsg_ids : List Text
+                  , subnet_id : Text
+                  }
+            , endpoints :
+                List
+                  { kubernetes : Text
+                  , private_endpoint : Text
+                  , public_endpoint : Text
+                  }
             , id : Text
             , kms_key_id : Text
             , kubernetes_version : Text

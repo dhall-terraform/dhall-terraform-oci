@@ -379,6 +379,10 @@
     ./oci_data_safe_data_safe_private_endpoints.dhall
 , oci_data_safe_on_prem_connector = ./oci_data_safe_on_prem_connector.dhall
 , oci_data_safe_on_prem_connectors = ./oci_data_safe_on_prem_connectors.dhall
+, oci_datascience_model_deployment = ./oci_datascience_model_deployment.dhall
+, oci_datascience_model_deployments = ./oci_datascience_model_deployments.dhall
+, oci_datascience_model_deployment_shapes =
+    ./oci_datascience_model_deployment_shapes.dhall
 , oci_datascience_model = ./oci_datascience_model.dhall
 , oci_datascience_model_provenance = ./oci_datascience_model_provenance.dhall
 , oci_datascience_models = ./oci_datascience_models.dhall
@@ -504,6 +508,10 @@
 , oci_load_balancer_health = ./oci_load_balancer_health.dhall
 , oci_load_balancer_hostnames = ./oci_load_balancer_hostnames.dhall
 , oci_load_balancer_listener_rules = ./oci_load_balancer_listener_rules.dhall
+, oci_load_balancer_load_balancer_routing_policies =
+    ./oci_load_balancer_load_balancer_routing_policies.dhall
+, oci_load_balancer_load_balancer_routing_policy =
+    ./oci_load_balancer_load_balancer_routing_policy.dhall
 , oci_load_balancer_load_balancers = ./oci_load_balancer_load_balancers.dhall
 , oci_load_balancer_path_route_sets = ./oci_load_balancer_path_route_sets.dhall
 , oci_load_balancer_policies = ./oci_load_balancer_policies.dhall

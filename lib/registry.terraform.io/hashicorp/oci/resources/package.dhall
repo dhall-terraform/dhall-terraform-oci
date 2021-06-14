@@ -163,6 +163,7 @@
 , oci_data_safe_data_safe_private_endpoint =
     ./oci_data_safe_data_safe_private_endpoint.dhall
 , oci_data_safe_on_prem_connector = ./oci_data_safe_on_prem_connector.dhall
+, oci_datascience_model_deployment = ./oci_datascience_model_deployment.dhall
 , oci_datascience_model = ./oci_datascience_model.dhall
 , oci_datascience_model_provenance = ./oci_datascience_model_provenance.dhall
 , oci_datascience_notebook_session = ./oci_datascience_notebook_session.dhall
@@ -237,6 +238,8 @@
 , oci_load_balancer_hostname = ./oci_load_balancer_hostname.dhall
 , oci_load_balancer_listener = ./oci_load_balancer_listener.dhall
 , oci_load_balancer_load_balancer = ./oci_load_balancer_load_balancer.dhall
+, oci_load_balancer_load_balancer_routing_policy =
+    ./oci_load_balancer_load_balancer_routing_policy.dhall
 , oci_load_balancer_path_route_set = ./oci_load_balancer_path_route_set.dhall
 , oci_load_balancer_rule_set = ./oci_load_balancer_rule_set.dhall
 , oci_load_balancer_ssl_cipher_suite =

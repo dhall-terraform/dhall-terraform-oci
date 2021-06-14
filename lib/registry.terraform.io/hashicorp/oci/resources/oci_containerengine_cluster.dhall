@@ -1,7 +1,14 @@
 { Type =
     { available_kubernetes_upgrades : Optional (List Text)
     , compartment_id : Text
-    , endpoints : Optional (List { kubernetes : Text })
+    , endpoints :
+        Optional
+          ( List
+              { kubernetes : Text
+              , private_endpoint : Text
+              , public_endpoint : Text
+              }
+          )
     , id : Optional Text
     , kms_key_id : Optional Text
     , kubernetes_version : Text
@@ -23,6 +30,14 @@
     , name : Text
     , state : Optional Text
     , vcn_id : Text
+    , endpoint_config :
+        Optional
+          ( List
+              { is_public_ip_enabled : Optional Bool
+              , nsg_ids : Optional (List Text)
+              , subnet_id : Text
+              }
+          )
     , options :
         Optional
           ( List
@@ -55,7 +70,14 @@
     }
 , default =
   { available_kubernetes_upgrades = None (List Text)
-  , endpoints = None (List { kubernetes : Text })
+  , endpoints =
+      None
+        ( List
+            { kubernetes : Text
+            , private_endpoint : Text
+            , public_endpoint : Text
+            }
+        )
   , id = None Text
   , kms_key_id = None Text
   , lifecycle_details = None Text
@@ -74,6 +96,14 @@
             }
         )
   , state = None Text
+  , endpoint_config =
+      None
+        ( List
+            { is_public_ip_enabled : Optional Bool
+            , nsg_ids : Optional (List Text)
+            , subnet_id : Text
+            }
+        )
   , options =
       None
         ( List
