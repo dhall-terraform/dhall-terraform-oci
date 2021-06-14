@@ -15,6 +15,20 @@
     , gi_version : Text
     , hostname : Text
     , id : Optional Text
+    , iorm_config_cache :
+        Optional
+          ( List
+              { db_plans :
+                  List
+                    { db_name : Text
+                    , flash_cache_limit : Text
+                    , share : Natural
+                    }
+              , lifecycle_details : Text
+              , objective : Text
+              , state : Text
+              }
+          )
     , is_local_backup_enabled : Optional Bool
     , is_sparse_diskgroup_enabled : Optional Bool
     , last_update_history_entry_id : Optional Text
@@ -51,6 +65,17 @@
   , domain = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , iorm_config_cache =
+      None
+        ( List
+            { db_plans :
+                List
+                  { db_name : Text, flash_cache_limit : Text, share : Natural }
+            , lifecycle_details : Text
+            , objective : Text
+            , state : Text
+            }
+        )
   , is_local_backup_enabled = None Bool
   , is_sparse_diskgroup_enabled = None Bool
   , last_update_history_entry_id = None Text

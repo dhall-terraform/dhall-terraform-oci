@@ -28,10 +28,13 @@
                     , system_tags : List { mapKey : Text, mapValue : Text }
                     , target :
                         List
-                          { bucket : Text
+                          { batch_rollover_size_in_mbs : Natural
+                          , batch_rollover_time_in_ms : Natural
+                          , bucket : Text
                           , compartment_id : Text
                           , function_id : Text
                           , kind : Text
+                          , log_group_id : Text
                           , metric : Text
                           , metric_namespace : Text
                           , namespace : Text
@@ -79,10 +82,13 @@
                   , system_tags : List { mapKey : Text, mapValue : Text }
                   , target :
                       List
-                        { bucket : Text
+                        { batch_rollover_size_in_mbs : Natural
+                        , batch_rollover_time_in_ms : Natural
+                        , bucket : Text
                         , compartment_id : Text
                         , function_id : Text
                         , kind : Text
+                        , log_group_id : Text
                         , metric : Text
                         , metric_namespace : Text
                         , namespace : Text

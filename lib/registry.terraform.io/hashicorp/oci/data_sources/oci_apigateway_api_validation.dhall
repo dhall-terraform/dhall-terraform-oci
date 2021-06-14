@@ -1,8 +1,34 @@
 { Type =
     { api_id : Text
     , id : Optional Text
-    , validations : Optional (List { name : Text, result : Text })
+    , validations :
+        Optional
+          ( List
+              { details :
+                  List
+                    { msg : Text
+                    , severity : Text
+                    , src : List { items : List Natural }
+                    }
+              , name : Text
+              , result : Text
+              }
+          )
     }
 , default =
-  { id = None Text, validations = None (List { name : Text, result : Text }) }
+  { id = None Text
+  , validations =
+      None
+        ( List
+            { details :
+                List
+                  { msg : Text
+                  , severity : Text
+                  , src : List { items : List Natural }
+                  }
+            , name : Text
+            , result : Text
+            }
+        )
+  }
 }

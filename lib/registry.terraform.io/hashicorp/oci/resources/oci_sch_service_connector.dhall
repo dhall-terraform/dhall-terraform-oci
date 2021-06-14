@@ -22,10 +22,13 @@
           }
     , target :
         List
-          { bucket : Optional Text
+          { batch_rollover_size_in_mbs : Optional Natural
+          , batch_rollover_time_in_ms : Optional Natural
+          , bucket : Optional Text
           , compartment_id : Optional Text
           , function_id : Optional Text
           , kind : Text
+          , log_group_id : Optional Text
           , metric : Optional Text
           , metric_namespace : Optional Text
           , namespace : Optional Text

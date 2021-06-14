@@ -19,6 +19,18 @@
               , gi_version : Text
               , hostname : Text
               , id : Text
+              , iorm_config_cache :
+                  List
+                    { db_plans :
+                        List
+                          { db_name : Text
+                          , flash_cache_limit : Text
+                          , share : Natural
+                          }
+                    , lifecycle_details : Text
+                    , objective : Text
+                    , state : Text
+                    }
               , is_local_backup_enabled : Bool
               , is_sparse_diskgroup_enabled : Bool
               , last_update_history_entry_id : Text
@@ -69,6 +81,18 @@
             , gi_version : Text
             , hostname : Text
             , id : Text
+            , iorm_config_cache :
+                List
+                  { db_plans :
+                      List
+                        { db_name : Text
+                        , flash_cache_limit : Text
+                        , share : Natural
+                        }
+                  , lifecycle_details : Text
+                  , objective : Text
+                  , state : Text
+                  }
             , is_local_backup_enabled : Bool
             , is_sparse_diskgroup_enabled : Bool
             , last_update_history_entry_id : Text

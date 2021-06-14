@@ -24,10 +24,13 @@
     , target :
         Optional
           ( List
-              { bucket : Text
+              { batch_rollover_size_in_mbs : Natural
+              , batch_rollover_time_in_ms : Natural
+              , bucket : Text
               , compartment_id : Text
               , function_id : Text
               , kind : Text
+              , log_group_id : Text
               , metric : Text
               , metric_namespace : Text
               , namespace : Text
@@ -62,10 +65,13 @@
   , target =
       None
         ( List
-            { bucket : Text
+            { batch_rollover_size_in_mbs : Natural
+            , batch_rollover_time_in_ms : Natural
+            , bucket : Text
             , compartment_id : Text
             , function_id : Text
             , kind : Text
+            , log_group_id : Text
             , metric : Text
             , metric_namespace : Text
             , namespace : Text
