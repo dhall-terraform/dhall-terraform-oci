@@ -10,6 +10,26 @@
     , id : Optional Text
     , last_maintenance_run_id : Optional Text
     , lifecycle_details : Optional Text
+    , maintenance_window :
+        Optional
+          ( List
+              { days_of_week : List { name : Text }
+              , hours_of_day : List Natural
+              , months : List { name : Text }
+              , preference : Text
+              , weeks_of_month : List Natural
+              }
+          )
+    , maintenance_window_details :
+        Optional
+          ( List
+              { days_of_week : List { name : Text }
+              , hours_of_day : List Natural
+              , months : List { name : Text }
+              , preference : Text
+              , weeks_of_month : List Natural
+              }
+          )
     , next_maintenance_run_id : Optional Text
     , patch_model : Optional Text
     , service_level_agreement_type : Optional Text
@@ -27,6 +47,26 @@
   , id = None Text
   , last_maintenance_run_id = None Text
   , lifecycle_details = None Text
+  , maintenance_window =
+      None
+        ( List
+            { days_of_week : List { name : Text }
+            , hours_of_day : List Natural
+            , months : List { name : Text }
+            , preference : Text
+            , weeks_of_month : List Natural
+            }
+        )
+  , maintenance_window_details =
+      None
+        ( List
+            { days_of_week : List { name : Text }
+            , hours_of_day : List Natural
+            , months : List { name : Text }
+            , preference : Text
+            , weeks_of_month : List Natural
+            }
+        )
   , next_maintenance_run_id = None Text
   , patch_model = None Text
   , service_level_agreement_type = None Text

@@ -8,6 +8,16 @@
     , id : Optional Text
     , last_maintenance_run_id : Optional Text
     , lifecycle_details : Optional Text
+    , maintenance_window :
+        Optional
+          ( List
+              { days_of_week : List { name : Text }
+              , hours_of_day : List Natural
+              , months : List { name : Text }
+              , preference : Text
+              , weeks_of_month : List Natural
+              }
+          )
     , next_maintenance_run_id : Optional Text
     , patch_model : Text
     , service_level_agreement_type : Optional Text
@@ -15,6 +25,16 @@
     , time_created : Optional Text
     , backup_config :
         Optional (List { recovery_window_in_days : Optional Natural })
+    , maintenance_window_details :
+        Optional
+          ( List
+              { hours_of_day : Optional (List Natural)
+              , preference : Text
+              , weeks_of_month : Optional (List Natural)
+              , days_of_week : Optional (List { name : Text })
+              , months : Optional (List { name : Text })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -30,11 +50,31 @@
   , id = None Text
   , last_maintenance_run_id = None Text
   , lifecycle_details = None Text
+  , maintenance_window =
+      None
+        ( List
+            { days_of_week : List { name : Text }
+            , hours_of_day : List Natural
+            , months : List { name : Text }
+            , preference : Text
+            , weeks_of_month : List Natural
+            }
+        )
   , next_maintenance_run_id = None Text
   , service_level_agreement_type = None Text
   , state = None Text
   , time_created = None Text
   , backup_config = None (List { recovery_window_in_days : Optional Natural })
+  , maintenance_window_details =
+      None
+        ( List
+            { hours_of_day : Optional (List Natural)
+            , preference : Text
+            , weeks_of_month : Optional (List Natural)
+            , days_of_week : Optional (List { name : Text })
+            , months : Optional (List { name : Text })
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

@@ -4,7 +4,7 @@
     , cloud_control_plane_server1 : Text
     , cloud_control_plane_server2 : Text
     , compartment_id : Text
-    , corporate_proxy : Text
+    , corporate_proxy : Optional Text
     , cpus_enabled : Optional Natural
     , data_storage_size_in_tbs : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -30,6 +30,7 @@
     }
 , default =
   { activation_file = None Text
+  , corporate_proxy = None Text
   , cpus_enabled = None Natural
   , data_storage_size_in_tbs = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
