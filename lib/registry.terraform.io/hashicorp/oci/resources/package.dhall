@@ -4,6 +4,7 @@
 , oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_autoscaling_auto_scaling_configuration =
     ./oci_autoscaling_auto_scaling_configuration.dhall
+, oci_bds_bds_instance = ./oci_bds_bds_instance.dhall
 , oci_budget_alert_rule = ./oci_budget_alert_rule.dhall
 , oci_budget_budget = ./oci_budget_budget.dhall
 , oci_containerengine_cluster = ./oci_containerengine_cluster.dhall
@@ -179,6 +180,8 @@
 , oci_objectstorage_object_lifecycle_policy =
     ./oci_objectstorage_object_lifecycle_policy.dhall
 , oci_objectstorage_preauthrequest = ./oci_objectstorage_preauthrequest.dhall
+, oci_objectstorage_replication_policy =
+    ./oci_objectstorage_replication_policy.dhall
 , oci_oce_oce_instance = ./oci_oce_oce_instance.dhall
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall

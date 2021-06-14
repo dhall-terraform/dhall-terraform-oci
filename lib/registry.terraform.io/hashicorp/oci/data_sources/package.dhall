@@ -10,6 +10,8 @@
     ./oci_autoscaling_auto_scaling_configuration.dhall
 , oci_autoscaling_auto_scaling_configurations =
     ./oci_autoscaling_auto_scaling_configurations.dhall
+, oci_bds_bds_instance = ./oci_bds_bds_instance.dhall
+, oci_bds_bds_instances = ./oci_bds_bds_instances.dhall
 , oci_budget_alert_rule = ./oci_budget_alert_rule.dhall
 , oci_budget_alert_rules = ./oci_budget_alert_rules.dhall
 , oci_budget_budget = ./oci_budget_budget.dhall
@@ -390,6 +392,12 @@
 , oci_objectstorage_objects = ./oci_objectstorage_objects.dhall
 , oci_objectstorage_preauthrequest = ./oci_objectstorage_preauthrequest.dhall
 , oci_objectstorage_preauthrequests = ./oci_objectstorage_preauthrequests.dhall
+, oci_objectstorage_replication_policies =
+    ./oci_objectstorage_replication_policies.dhall
+, oci_objectstorage_replication_policy =
+    ./oci_objectstorage_replication_policy.dhall
+, oci_objectstorage_replication_sources =
+    ./oci_objectstorage_replication_sources.dhall
 , oci_oce_oce_instance = ./oci_oce_oce_instance.dhall
 , oci_oce_oce_instances = ./oci_oce_oce_instances.dhall
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
@@ -418,6 +426,9 @@
 , oci_streaming_stream_pool = ./oci_streaming_stream_pool.dhall
 , oci_streaming_stream_pools = ./oci_streaming_stream_pools.dhall
 , oci_streaming_streams = ./oci_streaming_streams.dhall
+, oci_vault_secret = ./oci_vault_secret.dhall
+, oci_vault_secrets = ./oci_vault_secrets.dhall
+, oci_vault_secret_version = ./oci_vault_secret_version.dhall
 , oci_waas_address_list = ./oci_waas_address_list.dhall
 , oci_waas_address_lists = ./oci_waas_address_lists.dhall
 , oci_waas_certificate = ./oci_waas_certificate.dhall

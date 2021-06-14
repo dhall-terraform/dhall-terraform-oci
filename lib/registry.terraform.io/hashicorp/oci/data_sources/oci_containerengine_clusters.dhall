@@ -29,6 +29,8 @@
                           { is_kubernetes_dashboard_enabled : Bool
                           , is_tiller_enabled : Bool
                           }
+                    , admission_controller_options :
+                        List { is_pod_security_policy_enabled : Bool }
                     , kubernetes_network_config :
                         List { pods_cidr : Text, services_cidr : Text }
                     , service_lb_subnet_ids : List Text
@@ -76,6 +78,8 @@
                         { is_kubernetes_dashboard_enabled : Bool
                         , is_tiller_enabled : Bool
                         }
+                  , admission_controller_options :
+                      List { is_pod_security_policy_enabled : Bool }
                   , kubernetes_network_config :
                       List { pods_cidr : Text, services_cidr : Text }
                   , service_lb_subnet_ids : List Text

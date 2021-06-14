@@ -9,12 +9,25 @@
     , etag : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , is_read_only : Optional Bool
     , kms_key_id : Optional Text
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
     , namespace : Text
     , object_events_enabled : Optional Bool
     , object_lifecycle_policy_etag : Optional Text
+    , replication_enabled : Optional Bool
+    , retention_rules :
+        Optional
+          ( List
+              { display_name : Text
+              , duration : List { time_amount : Text, time_unit : Text }
+              , retention_rule_id : Text
+              , time_created : Text
+              , time_modified : Text
+              , time_rule_locked : Text
+              }
+          )
     , storage_tier : Optional Text
     , time_created : Optional Text
     }
@@ -29,10 +42,23 @@
   , etag = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , is_read_only = None Bool
   , kms_key_id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
   , object_events_enabled = None Bool
   , object_lifecycle_policy_etag = None Text
+  , replication_enabled = None Bool
+  , retention_rules =
+      None
+        ( List
+            { display_name : Text
+            , duration : List { time_amount : Text, time_unit : Text }
+            , retention_rule_id : Text
+            , time_created : Text
+            , time_modified : Text
+            , time_rule_locked : Text
+            }
+        )
   , storage_tier = None Text
   , time_created = None Text
   }

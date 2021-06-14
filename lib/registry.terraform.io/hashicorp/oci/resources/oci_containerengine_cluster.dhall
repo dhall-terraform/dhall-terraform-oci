@@ -34,6 +34,9 @@
                         , is_tiller_enabled : Optional Bool
                         }
                     )
+              , admission_controller_options :
+                  Optional
+                    (List { is_pod_security_policy_enabled : Optional Bool })
               , kubernetes_network_config :
                   Optional
                     ( List
@@ -82,6 +85,9 @@
                       , is_tiller_enabled : Optional Bool
                       }
                   )
+            , admission_controller_options :
+                Optional
+                  (List { is_pod_security_policy_enabled : Optional Bool })
             , kubernetes_network_config :
                 Optional
                   ( List
