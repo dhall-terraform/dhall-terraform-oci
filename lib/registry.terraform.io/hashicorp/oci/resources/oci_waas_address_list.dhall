@@ -1,12 +1,11 @@
 { Type =
-    { availability_domain : Text
+    { address_count : Optional Natural
+    , addresses : List Text
     , compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , display_name : Optional Text
+    , display_name : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , kms_key_id : Optional Text
-    , metered_bytes : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     , timeouts :
@@ -17,12 +16,10 @@
           }
     }
 , default =
-  { defined_tags = None (List { mapKey : Text, mapValue : Text })
-  , display_name = None Text
+  { address_count = None Natural
+  , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , kms_key_id = None Text
-  , metered_bytes = None Text
   , state = None Text
   , time_created = None Text
   , timeouts =

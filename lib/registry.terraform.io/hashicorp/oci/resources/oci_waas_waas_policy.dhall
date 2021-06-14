@@ -9,6 +9,13 @@
     , id : Optional Text
     , state : Optional Text
     , time_created : Optional Text
+    , origin_groups :
+        Optional
+          ( List
+              { label : Text
+              , origin_group : List { origin : Text, weight : Optional Natural }
+              }
+          )
     , origins :
         Optional
           ( List
@@ -23,8 +30,15 @@
         Optional
           ( List
               { certificate_id : Optional Text
+              , cipher_group : Optional Text
+              , client_address_header : Optional Text
+              , is_behind_cdn : Optional Bool
+              , is_cache_control_respected : Optional Bool
               , is_https_enabled : Optional Bool
               , is_https_forced : Optional Bool
+              , is_origin_compression_enabled : Optional Bool
+              , is_response_buffering_enabled : Optional Bool
+              , tls_protocols : Optional (List Text)
               }
           )
     , timeouts :
@@ -37,6 +51,7 @@
         Optional
           ( List
               { origin : Optional Text
+              , origin_groups : Optional (List Text)
               , access_rules :
                   Optional
                     ( List
@@ -46,7 +61,10 @@
                         , block_error_page_description : Optional Text
                         , block_error_page_message : Optional Text
                         , block_response_code : Optional Natural
+                        , bypass_challenges : Optional (List Text)
                         , name : Text
+                        , redirect_response_code : Optional Text
+                        , redirect_url : Optional Text
                         , criteria : List { condition : Text, value : Text }
                         }
                     )
@@ -57,6 +75,18 @@
                         , block_response_code : Optional Natural
                         , is_enabled : Bool
                         , max_delayed_count_per_address : Optional Natural
+                        }
+                    )
+              , caching_rules :
+                  Optional
+                    ( List
+                        { action : Text
+                        , caching_duration : Optional Text
+                        , client_caching_duration : Optional Text
+                        , is_client_caching_enabled : Optional Bool
+                        , key : Optional Text
+                        , name : Text
+                        , criteria : List { condition : Text, value : Text }
                         }
                     )
               , captchas :
@@ -71,6 +101,8 @@
                         , url : Text
                         }
                     )
+              , custom_protection_rules :
+                  Optional (List { action : Optional Text, id : Optional Text })
               , device_fingerprint_challenge :
                   Optional
                     ( List
@@ -185,6 +217,13 @@
   , id = None Text
   , state = None Text
   , time_created = None Text
+  , origin_groups =
+      None
+        ( List
+            { label : Text
+            , origin_group : List { origin : Text, weight : Optional Natural }
+            }
+        )
   , origins =
       None
         ( List
@@ -199,8 +238,15 @@
       None
         ( List
             { certificate_id : Optional Text
+            , cipher_group : Optional Text
+            , client_address_header : Optional Text
+            , is_behind_cdn : Optional Bool
+            , is_cache_control_respected : Optional Bool
             , is_https_enabled : Optional Bool
             , is_https_forced : Optional Bool
+            , is_origin_compression_enabled : Optional Bool
+            , is_response_buffering_enabled : Optional Bool
+            , tls_protocols : Optional (List Text)
             }
         )
   , timeouts =
@@ -213,6 +259,7 @@
       None
         ( List
             { origin : Optional Text
+            , origin_groups : Optional (List Text)
             , access_rules :
                 Optional
                   ( List
@@ -222,7 +269,10 @@
                       , block_error_page_description : Optional Text
                       , block_error_page_message : Optional Text
                       , block_response_code : Optional Natural
+                      , bypass_challenges : Optional (List Text)
                       , name : Text
+                      , redirect_response_code : Optional Text
+                      , redirect_url : Optional Text
                       , criteria : List { condition : Text, value : Text }
                       }
                   )
@@ -233,6 +283,18 @@
                       , block_response_code : Optional Natural
                       , is_enabled : Bool
                       , max_delayed_count_per_address : Optional Natural
+                      }
+                  )
+            , caching_rules :
+                Optional
+                  ( List
+                      { action : Text
+                      , caching_duration : Optional Text
+                      , client_caching_duration : Optional Text
+                      , is_client_caching_enabled : Optional Bool
+                      , key : Optional Text
+                      , name : Text
+                      , criteria : List { condition : Text, value : Text }
                       }
                   )
             , captchas :
@@ -247,6 +309,8 @@
                       , url : Text
                       }
                   )
+            , custom_protection_rules :
+                Optional (List { action : Optional Text, id : Optional Text })
             , device_fingerprint_challenge :
                 Optional
                   ( List

@@ -7,12 +7,36 @@
     , domain : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , origin_groups :
+        Optional
+          ( List
+              { label : Text
+              , origin_group : List { origin : Text, weight : Natural }
+              }
+          )
+    , origins :
+        Optional
+          ( List
+              { custom_headers : List { name : Text, value : Text }
+              , http_port : Natural
+              , https_port : Natural
+              , label : Text
+              , uri : Text
+              }
+          )
     , policy_config :
         Optional
           ( List
               { certificate_id : Text
+              , cipher_group : Text
+              , client_address_header : Text
+              , is_behind_cdn : Bool
+              , is_cache_control_respected : Bool
               , is_https_enabled : Bool
               , is_https_forced : Bool
+              , is_origin_compression_enabled : Bool
+              , is_response_buffering_enabled : Bool
+              , tls_protocols : List Text
               }
           )
     , state : Optional Text
@@ -29,8 +53,11 @@
                     , block_error_page_description : Text
                     , block_error_page_message : Text
                     , block_response_code : Natural
+                    , bypass_challenges : List Text
                     , criteria : List { condition : Text, value : Text }
                     , name : Text
+                    , redirect_response_code : Text
+                    , redirect_url : Text
                     }
               , address_rate_limiting :
                   List
@@ -38,6 +65,16 @@
                     , block_response_code : Natural
                     , is_enabled : Bool
                     , max_delayed_count_per_address : Natural
+                    }
+              , caching_rules :
+                  List
+                    { action : Text
+                    , caching_duration : Text
+                    , client_caching_duration : Text
+                    , criteria : List { condition : Text, value : Text }
+                    , is_client_caching_enabled : Bool
+                    , key : Text
+                    , name : Text
                     }
               , captchas :
                   List
@@ -49,6 +86,7 @@
                     , title : Text
                     , url : Text
                     }
+              , custom_protection_rules : List { action : Text, id : Text }
               , device_fingerprint_challenge :
                   List
                     { action : Text
@@ -115,6 +153,7 @@
                     , set_http_header : List { name : Text, value : Text }
                     }
               , origin : Text
+              , origin_groups : List Text
               , protection_settings :
                   List
                     { allowed_http_methods : List Text
@@ -134,16 +173,6 @@
               , whitelists : List { addresses : List Text, name : Text }
               }
           )
-    , origins :
-        Optional
-          ( List
-              { http_port : Optional Natural
-              , https_port : Optional Natural
-              , label : Text
-              , uri : Text
-              , custom_headers : Optional (List { name : Text, value : Text })
-              }
-          )
     }
 , default =
   { additional_domains = None (List Text)
@@ -154,12 +183,36 @@
   , domain = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , origin_groups =
+      None
+        ( List
+            { label : Text
+            , origin_group : List { origin : Text, weight : Natural }
+            }
+        )
+  , origins =
+      None
+        ( List
+            { custom_headers : List { name : Text, value : Text }
+            , http_port : Natural
+            , https_port : Natural
+            , label : Text
+            , uri : Text
+            }
+        )
   , policy_config =
       None
         ( List
             { certificate_id : Text
+            , cipher_group : Text
+            , client_address_header : Text
+            , is_behind_cdn : Bool
+            , is_cache_control_respected : Bool
             , is_https_enabled : Bool
             , is_https_forced : Bool
+            , is_origin_compression_enabled : Bool
+            , is_response_buffering_enabled : Bool
+            , tls_protocols : List Text
             }
         )
   , state = None Text
@@ -175,8 +228,11 @@
                   , block_error_page_description : Text
                   , block_error_page_message : Text
                   , block_response_code : Natural
+                  , bypass_challenges : List Text
                   , criteria : List { condition : Text, value : Text }
                   , name : Text
+                  , redirect_response_code : Text
+                  , redirect_url : Text
                   }
             , address_rate_limiting :
                 List
@@ -184,6 +240,16 @@
                   , block_response_code : Natural
                   , is_enabled : Bool
                   , max_delayed_count_per_address : Natural
+                  }
+            , caching_rules :
+                List
+                  { action : Text
+                  , caching_duration : Text
+                  , client_caching_duration : Text
+                  , criteria : List { condition : Text, value : Text }
+                  , is_client_caching_enabled : Bool
+                  , key : Text
+                  , name : Text
                   }
             , captchas :
                 List
@@ -195,6 +261,7 @@
                   , title : Text
                   , url : Text
                   }
+            , custom_protection_rules : List { action : Text, id : Text }
             , device_fingerprint_challenge :
                 List
                   { action : Text
@@ -261,6 +328,7 @@
                   , set_http_header : List { name : Text, value : Text }
                   }
             , origin : Text
+            , origin_groups : List Text
             , protection_settings :
                 List
                   { allowed_http_methods : List Text
@@ -278,16 +346,6 @@
                   , recommendations_period_in_days : Natural
                   }
             , whitelists : List { addresses : List Text, name : Text }
-            }
-        )
-  , origins =
-      None
-        ( List
-            { http_port : Optional Natural
-            , https_port : Optional Natural
-            , label : Text
-            , uri : Text
-            , custom_headers : Optional (List { name : Text, value : Text })
             }
         )
   }

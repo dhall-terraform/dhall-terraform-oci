@@ -1,47 +1,52 @@
 { Type =
-    { availability_domain : Text
-    , compartment_id : Text
-    , display_name : Optional Text
-    , file_systems :
+    { compartment_id : Text
+    , custom_protection_rules :
         Optional
           ( List
-              { availability_domain : Text
-              , compartment_id : Text
+              { compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
+              , description : Text
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
-              , kms_key_id : Text
-              , metered_bytes : Text
+              , mod_security_rule_ids : List Text
               , state : Text
+              , template : Text
               , time_created : Text
               }
           )
+    , display_names : Optional (List Text)
     , id : Optional Text
-    , state : Optional Text
+    , ids : Optional (List Text)
+    , states : Optional (List Text)
+    , time_created_greater_than_or_equal_to : Optional Text
+    , time_created_less_than : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { display_name = None Text
-  , file_systems =
+  { custom_protection_rules =
       None
         ( List
-            { availability_domain : Text
-            , compartment_id : Text
+            { compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
+            , description : Text
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , kms_key_id : Text
-            , metered_bytes : Text
+            , mod_security_rule_ids : List Text
             , state : Text
+            , template : Text
             , time_created : Text
             }
         )
+  , display_names = None (List Text)
   , id = None Text
-  , state = None Text
+  , ids = None (List Text)
+  , states = None (List Text)
+  , time_created_greater_than_or_equal_to = None Text
+  , time_created_less_than = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

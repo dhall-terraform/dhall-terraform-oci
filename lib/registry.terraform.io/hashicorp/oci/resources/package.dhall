@@ -143,7 +143,11 @@
 , oci_objectstorage_preauthrequest = ./oci_objectstorage_preauthrequest.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
+, oci_streaming_stream_archiver = ./oci_streaming_stream_archiver.dhall
 , oci_streaming_stream = ./oci_streaming_stream.dhall
+, oci_waas_address_list = ./oci_waas_address_list.dhall
 , oci_waas_certificate = ./oci_waas_certificate.dhall
+, oci_waas_custom_protection_rule = ./oci_waas_custom_protection_rule.dhall
+, oci_waas_purge_cache = ./oci_waas_purge_cache.dhall
 , oci_waas_waas_policy = ./oci_waas_waas_policy.dhall
 }

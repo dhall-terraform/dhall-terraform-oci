@@ -1,13 +1,13 @@
 { Type =
-    { availability_domain : Text
-    , compartment_id : Text
+    { compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , display_name : Optional Text
+    , description : Optional Text
+    , display_name : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , kms_key_id : Optional Text
-    , metered_bytes : Optional Text
+    , mod_security_rule_ids : Optional (List Text)
     , state : Optional Text
+    , template : Text
     , time_created : Optional Text
     , timeouts :
         Optional
@@ -18,11 +18,10 @@
     }
 , default =
   { defined_tags = None (List { mapKey : Text, mapValue : Text })
-  , display_name = None Text
+  , description = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , kms_key_id = None Text
-  , metered_bytes = None Text
+  , mod_security_rule_ids = None (List Text)
   , state = None Text
   , time_created = None Text
   , timeouts =
