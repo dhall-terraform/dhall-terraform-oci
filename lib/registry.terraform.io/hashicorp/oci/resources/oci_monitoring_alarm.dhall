@@ -14,6 +14,7 @@
     , query : Text
     , repeat_notification_duration : Optional Text
     , resolution : Optional Text
+    , resource_group : Optional Text
     , severity : Text
     , state : Optional Text
     , time_created : Optional Text
@@ -42,6 +43,7 @@
   , pending_duration = None Text
   , repeat_notification_duration = None Text
   , resolution = None Text
+  , resource_group = None Text
   , state = None Text
   , time_created = None Text
   , time_updated = None Text

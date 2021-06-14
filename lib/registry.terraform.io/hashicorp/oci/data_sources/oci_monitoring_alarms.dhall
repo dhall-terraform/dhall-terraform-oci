@@ -17,6 +17,7 @@
               , query : Text
               , repeat_notification_duration : Text
               , resolution : Text
+              , resource_group : Text
               , severity : Text
               , state : Text
               , suppression :
@@ -57,6 +58,7 @@
             , query : Text
             , repeat_notification_duration : Text
             , resolution : Text
+            , resource_group : Text
             , severity : Text
             , state : Text
             , suppression :

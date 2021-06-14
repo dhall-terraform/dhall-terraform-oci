@@ -22,6 +22,7 @@
                     , skip_source_dest_check : Bool
                     , subnet_id : Text
                     }
+              , dedicated_vm_host_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , extended_metadata : List { mapKey : Text, mapValue : Text }
@@ -89,6 +90,7 @@
                   , skip_source_dest_check : Bool
                   , subnet_id : Text
                   }
+            , dedicated_vm_host_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , extended_metadata : List { mapKey : Text, mapValue : Text }

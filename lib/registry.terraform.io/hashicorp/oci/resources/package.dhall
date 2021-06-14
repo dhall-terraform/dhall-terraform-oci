@@ -14,6 +14,7 @@
 , oci_core_cpe = ./oci_core_cpe.dhall
 , oci_core_cross_connect = ./oci_core_cross_connect.dhall
 , oci_core_cross_connect_group = ./oci_core_cross_connect_group.dhall
+, oci_core_dedicated_vm_host = ./oci_core_dedicated_vm_host.dhall
 , oci_core_default_dhcp_options = ./oci_core_default_dhcp_options.dhall
 , oci_core_default_route_table = ./oci_core_default_route_table.dhall
 , oci_core_default_security_list = ./oci_core_default_security_list.dhall

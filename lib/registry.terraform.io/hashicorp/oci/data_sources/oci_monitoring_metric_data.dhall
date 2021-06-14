@@ -17,12 +17,14 @@
               , namespace : Text
               , query : Text
               , resolution : Text
+              , resource_group : Text
               , start_time : Text
               }
           )
     , namespace : Text
     , query : Text
     , resolution : Optional Text
+    , resource_group : Optional Text
     , start_time : Optional Text
     , filter :
         Optional
@@ -45,10 +47,12 @@
             , namespace : Text
             , query : Text
             , resolution : Text
+            , resource_group : Text
             , start_time : Text
             }
         )
   , resolution = None Text
+  , resource_group = None Text
   , start_time = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

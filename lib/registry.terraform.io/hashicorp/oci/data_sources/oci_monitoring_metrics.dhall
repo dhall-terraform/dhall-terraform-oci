@@ -14,10 +14,12 @@
               , group_by : List Text
               , name : Text
               , namespace : Text
+              , resource_group : Text
               }
           )
     , name : Optional Text
     , namespace : Optional Text
+    , resource_group : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -37,10 +39,12 @@
             , group_by : List Text
             , name : Text
             , namespace : Text
+            , resource_group : Text
             }
         )
   , name = None Text
   , namespace = None Text
+  , resource_group = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

@@ -15,6 +15,7 @@
     , query : Optional Text
     , repeat_notification_duration : Optional Text
     , resolution : Optional Text
+    , resource_group : Optional Text
     , severity : Optional Text
     , state : Optional Text
     , suppression :
@@ -44,6 +45,7 @@
   , query = None Text
   , repeat_notification_duration = None Text
   , resolution = None Text
+  , resource_group = None Text
   , severity = None Text
   , state = None Text
   , suppression =

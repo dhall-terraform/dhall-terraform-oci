@@ -2,6 +2,7 @@
     { availability_domain : Text
     , boot_volume_id : Optional Text
     , compartment_id : Text
+    , dedicated_vm_host_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , extended_metadata : Optional (List { mapKey : Text, mapValue : Text })
@@ -69,6 +70,7 @@
     }
 , default =
   { boot_volume_id = None Text
+  , dedicated_vm_host_id = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , extended_metadata = None (List { mapKey : Text, mapValue : Text })

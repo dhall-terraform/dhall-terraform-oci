@@ -46,6 +46,13 @@
     ./oci_core_cross_connect_port_speed_shapes.dhall
 , oci_core_cross_connects = ./oci_core_cross_connects.dhall
 , oci_core_cross_connect_status = ./oci_core_cross_connect_status.dhall
+, oci_core_dedicated_vm_host = ./oci_core_dedicated_vm_host.dhall
+, oci_core_dedicated_vm_host_instance_shapes =
+    ./oci_core_dedicated_vm_host_instance_shapes.dhall
+, oci_core_dedicated_vm_hosts = ./oci_core_dedicated_vm_hosts.dhall
+, oci_core_dedicated_vm_host_shapes = ./oci_core_dedicated_vm_host_shapes.dhall
+, oci_core_dedicated_vm_hosts_instances =
+    ./oci_core_dedicated_vm_hosts_instances.dhall
 , oci_core_dhcp_options = ./oci_core_dhcp_options.dhall
 , oci_core_drg_attachments = ./oci_core_drg_attachments.dhall
 , oci_core_drgs = ./oci_core_drgs.dhall
