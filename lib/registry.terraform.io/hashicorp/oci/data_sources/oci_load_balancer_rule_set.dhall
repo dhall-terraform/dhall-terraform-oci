@@ -4,8 +4,13 @@
         Optional
           ( List
               { action : Text
+              , allowed_methods : List Text
+              , conditions :
+                  List { attribute_name : Text, attribute_value : Text }
+              , description : Text
               , header : Text
               , prefix : Text
+              , status_code : Natural
               , suffix : Text
               , value : Text
               }
@@ -20,8 +25,13 @@
       None
         ( List
             { action : Text
+            , allowed_methods : List Text
+            , conditions :
+                List { attribute_name : Text, attribute_value : Text }
+            , description : Text
             , header : Text
             , prefix : Text
+            , status_code : Natural
             , suffix : Text
             , value : Text
             }

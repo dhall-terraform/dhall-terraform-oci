@@ -2,8 +2,6 @@
     { compartment_id : Text
     , display_name : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , source_volume_backup_id : Optional Text
     , state : Optional Text
     , volume_backups :
@@ -15,9 +13,15 @@
               , expiration_time : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , kms_key_id : Text
               , size_in_gbs : Text
               , size_in_mbs : Text
-              , source_details : List { region : Text, volume_backup_id : Text }
+              , source_details :
+                  List
+                    { kms_key_id : Text
+                    , region : Text
+                    , volume_backup_id : Text
+                    }
               , source_type : Text
               , source_volume_backup_id : Text
               , state : Text
@@ -37,8 +41,6 @@
 , default =
   { display_name = None Text
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , source_volume_backup_id = None Text
   , state = None Text
   , volume_backups =
@@ -50,9 +52,12 @@
             , expiration_time : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , kms_key_id : Text
             , size_in_gbs : Text
             , size_in_mbs : Text
-            , source_details : List { region : Text, volume_backup_id : Text }
+            , source_details :
+                List
+                  { kms_key_id : Text, region : Text, volume_backup_id : Text }
             , source_type : Text
             , source_volume_backup_id : Text
             , state : Text

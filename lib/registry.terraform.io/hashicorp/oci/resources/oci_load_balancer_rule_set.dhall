@@ -6,10 +6,15 @@
     , items :
         List
           { action : Text
-          , header : Text
+          , allowed_methods : Optional (List Text)
+          , description : Optional Text
+          , header : Optional Text
           , prefix : Optional Text
+          , status_code : Optional Natural
           , suffix : Optional Text
           , value : Optional Text
+          , conditions :
+              Optional (List { attribute_name : Text, attribute_value : Text })
           }
     , timeouts :
         Optional

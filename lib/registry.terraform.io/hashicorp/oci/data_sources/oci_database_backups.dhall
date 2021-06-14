@@ -7,7 +7,6 @@
               , database_edition : Text
               , database_id : Text
               , database_size_in_gbs : Natural
-              , db_data_size_in_mbs : Natural
               , display_name : Text
               , id : Text
               , lifecycle_details : Text
@@ -33,7 +32,6 @@
             , database_edition : Text
             , database_id : Text
             , database_size_in_gbs : Natural
-            , db_data_size_in_mbs : Natural
             , display_name : Text
             , id : Text
             , lifecycle_details : Text

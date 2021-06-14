@@ -2,8 +2,6 @@
     { compartment_id : Text
     , display_name : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , security_lists :
         Optional
           ( List
@@ -70,8 +68,6 @@
 , default =
   { display_name = None Text
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , security_lists =
       None
         ( List

@@ -2,7 +2,6 @@
     { compartment_id : Text
     , display_name : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
     , options :
         Optional
           ( List
@@ -23,7 +22,6 @@
               , vcn_id : Text
               }
           )
-    , page : Optional Text
     , state : Optional Text
     , vcn_id : Text
     , filter :
@@ -33,7 +31,6 @@
 , default =
   { display_name = None Text
   , id = None Text
-  , limit = None Natural
   , options =
       None
         ( List
@@ -54,7 +51,6 @@
             , vcn_id : Text
             }
         )
-  , page = None Text
   , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

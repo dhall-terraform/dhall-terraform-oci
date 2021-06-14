@@ -9,7 +9,6 @@
               { ip_address : Text
               , state : Text
               , time_created : Text
-              , time_state_modifed : Text
               , time_state_modified : Text
               }
           )
@@ -27,7 +26,6 @@
             { ip_address : Text
             , state : Text
             , time_created : Text
-            , time_state_modifed : Text
             , time_state_modified : Text
             }
         )

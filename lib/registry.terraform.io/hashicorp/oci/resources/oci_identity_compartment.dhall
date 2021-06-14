@@ -10,7 +10,6 @@
     , name : Text
     , state : Optional Text
     , time_created : Optional Text
-    , time_modified : Optional Text
     , timeouts : Optional { delete : Optional Text }
     }
 , default =
@@ -23,7 +22,6 @@
   , is_accessible = None Bool
   , state = None Text
   , time_created = None Text
-  , time_modified = None Text
   , timeouts = None { delete : Optional Text }
   }
 }

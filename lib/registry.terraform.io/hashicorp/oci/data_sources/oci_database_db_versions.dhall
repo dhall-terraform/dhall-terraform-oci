@@ -11,8 +11,6 @@
               }
           )
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -29,8 +27,6 @@
             }
         )
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

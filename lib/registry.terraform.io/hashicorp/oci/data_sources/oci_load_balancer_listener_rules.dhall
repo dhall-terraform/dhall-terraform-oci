@@ -1,14 +1,13 @@
 { Type =
     { id : Optional Text
-    , load_balancer_id : Text
-    , rule_sets :
+    , listener_name : Text
+    , listener_rules :
         Optional
           ( List
-              { id : Text
-              , items :
+              { name : Text
+              , rule :
                   List
                     { action : Text
-                    , allowed_methods : List Text
                     , conditions :
                         List { attribute_name : Text, attribute_value : Text }
                     , description : Text
@@ -18,25 +17,23 @@
                     , suffix : Text
                     , value : Text
                     }
-              , load_balancer_id : Text
-              , name : Text
               , state : Text
               }
           )
+    , load_balancer_id : Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
   { id = None Text
-  , rule_sets =
+  , listener_rules =
       None
         ( List
-            { id : Text
-            , items :
+            { name : Text
+            , rule :
                 List
                   { action : Text
-                  , allowed_methods : List Text
                   , conditions :
                       List { attribute_name : Text, attribute_value : Text }
                   , description : Text
@@ -46,8 +43,6 @@
                   , suffix : Text
                   , value : Text
                   }
-            , load_balancer_id : Text
-            , name : Text
             , state : Text
             }
         )

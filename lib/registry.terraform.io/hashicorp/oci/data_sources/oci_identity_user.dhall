@@ -21,7 +21,6 @@
     , name : Optional Text
     , state : Optional Text
     , time_created : Optional Text
-    , time_modified : Optional Text
     , user_id : Text
     }
 , default =
@@ -47,6 +46,5 @@
   , name = None Text
   , state = None Text
   , time_created = None Text
-  , time_modified = None Text
   }
 }

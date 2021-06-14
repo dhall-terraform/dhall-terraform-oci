@@ -2,8 +2,6 @@
     { compartment_id : Text
     , display_name : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , state : Optional Text
     , virtual_networks :
         Optional
@@ -30,8 +28,6 @@
 , default =
   { display_name = None Text
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , state = None Text
   , virtual_networks =
       None

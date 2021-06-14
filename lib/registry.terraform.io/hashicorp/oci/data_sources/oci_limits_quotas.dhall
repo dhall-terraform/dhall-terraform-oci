@@ -1,6 +1,8 @@
 { Type =
     { compartment_id : Text
-    , groups :
+    , id : Optional Text
+    , name : Optional Text
+    , quotas :
         Optional
           ( List
               { compartment_id : Text
@@ -8,19 +10,21 @@
               , description : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
-              , inactive_state : Text
               , name : Text
               , state : Text
+              , statements : List Text
               , time_created : Text
               }
           )
-    , id : Optional Text
+    , state : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { groups =
+  { id = None Text
+  , name = None Text
+  , quotas =
       None
         ( List
             { compartment_id : Text
@@ -28,13 +32,13 @@
             , description : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , inactive_state : Text
             , name : Text
             , state : Text
+            , statements : List Text
             , time_created : Text
             }
         )
-  , id = None Text
+  , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

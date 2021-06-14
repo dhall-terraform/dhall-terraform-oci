@@ -27,6 +27,18 @@
           , timeout_in_millis : Optional Natural
           , url_path : Optional Text
           }
+    , lb_cookie_session_persistence_configuration :
+        Optional
+          ( List
+              { cookie_name : Optional Text
+              , disable_fallback : Optional Bool
+              , domain : Optional Text
+              , is_http_only : Optional Bool
+              , is_secure : Optional Bool
+              , max_age_in_seconds : Optional Natural
+              , path : Optional Text
+              }
+          )
     , session_persistence_configuration :
         Optional (List { cookie_name : Text, disable_fallback : Optional Bool })
     , ssl_configuration :
@@ -60,6 +72,18 @@
   , id = None Text
   , policy = None Text
   , state = None Text
+  , lb_cookie_session_persistence_configuration =
+      None
+        ( List
+            { cookie_name : Optional Text
+            , disable_fallback : Optional Bool
+            , domain : Optional Text
+            , is_http_only : Optional Bool
+            , is_secure : Optional Bool
+            , max_age_in_seconds : Optional Natural
+            , path : Optional Text
+            }
+        )
   , session_persistence_configuration =
       None (List { cookie_name : Text, disable_fallback : Optional Bool })
   , ssl_configuration =

@@ -20,8 +20,6 @@
     , cpe_id : Optional Text
     , drg_id : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -47,8 +45,6 @@
   , cpe_id = None Text
   , drg_id = None Text
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

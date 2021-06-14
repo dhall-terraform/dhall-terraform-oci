@@ -26,7 +26,6 @@
               , name : Text
               , state : Text
               , time_created : Text
-              , time_modified : Text
               }
           )
     , filter :
@@ -60,7 +59,6 @@
             , name : Text
             , state : Text
             , time_created : Text
-            , time_modified : Text
             }
         )
   , filter =

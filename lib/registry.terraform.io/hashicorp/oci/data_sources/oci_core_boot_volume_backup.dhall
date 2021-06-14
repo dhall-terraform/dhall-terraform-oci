@@ -8,6 +8,7 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , image_id : Optional Text
+    , kms_key_id : Optional Text
     , size_in_gbs : Optional Text
     , source_type : Optional Text
     , state : Optional Text
@@ -25,6 +26,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , image_id = None Text
+  , kms_key_id = None Text
   , size_in_gbs = None Text
   , source_type = None Text
   , state = None Text

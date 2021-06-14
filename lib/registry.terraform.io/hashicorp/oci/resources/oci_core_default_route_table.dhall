@@ -6,7 +6,6 @@
     , manage_default_resource_id : Text
     , state : Optional Text
     , time_created : Optional Text
-    , time_modified : Optional Text
     , route_rules :
         Optional
           ( List
@@ -30,7 +29,6 @@
   , id = None Text
   , state = None Text
   , time_created = None Text
-  , time_modified = None Text
   , route_rules =
       None
         ( List

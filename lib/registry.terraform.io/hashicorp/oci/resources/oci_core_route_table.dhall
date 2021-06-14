@@ -6,7 +6,6 @@
     , id : Optional Text
     , state : Optional Text
     , time_created : Optional Text
-    , time_modified : Optional Text
     , vcn_id : Text
     , route_rules :
         Optional
@@ -31,7 +30,6 @@
   , id = None Text
   , state = None Text
   , time_created = None Text
-  , time_modified = None Text
   , route_rules =
       None
         ( List

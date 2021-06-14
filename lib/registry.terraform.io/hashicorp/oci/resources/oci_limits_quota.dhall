@@ -1,15 +1,13 @@
 { Type =
-    { block_traffic : Optional Bool
-    , compartment_id : Text
+    { compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , display_name : Optional Text
+    , description : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , route_table_id : Optional Text
+    , name : Text
     , state : Optional Text
+    , statements : List Text
     , time_created : Optional Text
-    , vcn_id : Text
-    , services : List { service_id : Text, service_name : Optional Text }
     , timeouts :
         Optional
           { create : Optional Text
@@ -18,12 +16,9 @@
           }
     }
 , default =
-  { block_traffic = None Bool
-  , defined_tags = None (List { mapKey : Text, mapValue : Text })
-  , display_name = None Text
+  { defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , route_table_id = None Text
   , state = None Text
   , time_created = None Text
   , timeouts =

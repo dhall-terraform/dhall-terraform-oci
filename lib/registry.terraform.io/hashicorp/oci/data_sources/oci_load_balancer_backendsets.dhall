@@ -24,6 +24,16 @@
                     , url_path : Text
                     }
               , id : Text
+              , lb_cookie_session_persistence_configuration :
+                  List
+                    { cookie_name : Text
+                    , disable_fallback : Bool
+                    , domain : Text
+                    , is_http_only : Bool
+                    , is_secure : Bool
+                    , max_age_in_seconds : Natural
+                    , path : Text
+                    }
               , load_balancer_id : Text
               , name : Text
               , policy : Text
@@ -70,6 +80,16 @@
                   , url_path : Text
                   }
             , id : Text
+            , lb_cookie_session_persistence_configuration :
+                List
+                  { cookie_name : Text
+                  , disable_fallback : Bool
+                  , domain : Text
+                  , is_http_only : Bool
+                  , is_secure : Bool
+                  , max_age_in_seconds : Natural
+                  , path : Text
+                  }
             , load_balancer_id : Text
             , name : Text
             , policy : Text

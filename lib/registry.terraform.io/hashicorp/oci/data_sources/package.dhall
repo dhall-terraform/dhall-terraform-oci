@@ -195,6 +195,10 @@
 , oci_file_storage_mount_targets = ./oci_file_storage_mount_targets.dhall
 , oci_file_storage_snapshot = ./oci_file_storage_snapshot.dhall
 , oci_file_storage_snapshots = ./oci_file_storage_snapshots.dhall
+, oci_functions_application = ./oci_functions_application.dhall
+, oci_functions_applications = ./oci_functions_applications.dhall
+, oci_functions_function = ./oci_functions_function.dhall
+, oci_functions_functions = ./oci_functions_functions.dhall
 , oci_health_checks_http_monitor = ./oci_health_checks_http_monitor.dhall
 , oci_health_checks_http_monitors = ./oci_health_checks_http_monitors.dhall
 , oci_health_checks_http_probe_results =
@@ -245,6 +249,8 @@
 , oci_kms_key_versions = ./oci_kms_key_versions.dhall
 , oci_kms_vault = ./oci_kms_vault.dhall
 , oci_kms_vaults = ./oci_kms_vaults.dhall
+, oci_limits_quota = ./oci_limits_quota.dhall
+, oci_limits_quotas = ./oci_limits_quotas.dhall
 , oci_load_balancer_backend_health = ./oci_load_balancer_backend_health.dhall
 , oci_load_balancer_backends = ./oci_load_balancer_backends.dhall
 , oci_load_balancer_backend_set_health =
@@ -254,6 +260,7 @@
 , oci_load_balancer_certificates = ./oci_load_balancer_certificates.dhall
 , oci_load_balancer_health = ./oci_load_balancer_health.dhall
 , oci_load_balancer_hostnames = ./oci_load_balancer_hostnames.dhall
+, oci_load_balancer_listener_rules = ./oci_load_balancer_listener_rules.dhall
 , oci_load_balancer_load_balancers = ./oci_load_balancer_load_balancers.dhall
 , oci_load_balancer_path_route_sets = ./oci_load_balancer_path_route_sets.dhall
 , oci_load_balancer_policies = ./oci_load_balancer_policies.dhall

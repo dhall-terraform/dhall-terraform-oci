@@ -4,7 +4,6 @@
     , database_edition : Optional Text
     , database_id : Text
     , database_size_in_gbs : Optional Natural
-    , db_data_size_in_mbs : Optional Natural
     , display_name : Text
     , id : Optional Text
     , lifecycle_details : Optional Text
@@ -24,7 +23,6 @@
   , compartment_id = None Text
   , database_edition = None Text
   , database_size_in_gbs = None Natural
-  , db_data_size_in_mbs = None Natural
   , id = None Text
   , lifecycle_details = None Text
   , state = None Text

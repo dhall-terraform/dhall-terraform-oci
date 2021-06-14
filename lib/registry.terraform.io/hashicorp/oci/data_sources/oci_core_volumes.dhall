@@ -3,8 +3,6 @@
     , compartment_id : Text
     , display_name : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , state : Optional Text
     , volume_group_id : Optional Text
     , volumes :
@@ -36,8 +34,6 @@
   { availability_domain = None Text
   , display_name = None Text
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , state = None Text
   , volume_group_id = None Text
   , volumes =

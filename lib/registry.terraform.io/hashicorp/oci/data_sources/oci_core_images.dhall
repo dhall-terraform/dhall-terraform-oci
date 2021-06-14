@@ -40,10 +40,8 @@
               , time_created : Text
               }
           )
-    , limit : Optional Natural
     , operating_system : Optional Text
     , operating_system_version : Optional Text
-    , page : Optional Text
     , shape : Optional Text
     , sort_by : Optional Text
     , sort_order : Optional Text
@@ -93,10 +91,8 @@
             , time_created : Text
             }
         )
-  , limit = None Natural
   , operating_system = None Text
   , operating_system_version = None Text
-  , page = None Text
   , shape = None Text
   , sort_by = None Text
   , sort_order = None Text

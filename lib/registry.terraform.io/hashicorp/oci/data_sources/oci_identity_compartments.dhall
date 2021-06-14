@@ -16,7 +16,6 @@
               , name : Text
               , state : Text
               , time_created : Text
-              , time_modified : Text
               }
           )
     , id : Optional Text
@@ -41,7 +40,6 @@
             , name : Text
             , state : Text
             , time_created : Text
-            , time_modified : Text
             }
         )
   , id = None Text

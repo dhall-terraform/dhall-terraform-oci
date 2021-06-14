@@ -1,5 +1,6 @@
 { Type =
     { compartment_id : Text
+    , created_time : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , delivery_policy : Optional Text
     , endpoint : Text
@@ -17,7 +18,8 @@
           }
     }
 , default =
-  { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { created_time = None Text
+  , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , delivery_policy = None Text
   , etag = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })

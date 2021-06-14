@@ -10,6 +10,7 @@
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , route_table_id : Text
               , services : List { service_id : Text, service_name : Text }
               , state : Text
               , time_created : Text
@@ -33,6 +34,7 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , route_table_id : Text
             , services : List { service_id : Text, service_name : Text }
             , state : Text
             , time_created : Text

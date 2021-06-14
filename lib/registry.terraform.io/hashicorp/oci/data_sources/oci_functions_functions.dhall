@@ -1,28 +1,26 @@
 { Type =
-    { boot_volume_backups :
+    { application_id : Text
+    , display_name : Optional Text
+    , functions :
         Optional
           ( List
-              { boot_volume_id : Text
+              { application_id : Text
               , compartment_id : Text
+              , config : List { mapKey : Text, mapValue : Text }
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
-              , expiration_time : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
-              , image_id : Text
-              , kms_key_id : Text
-              , size_in_gbs : Text
-              , source_type : Text
+              , image : Text
+              , image_digest : Text
+              , invoke_endpoint : Text
+              , memory_in_mbs : Text
               , state : Text
               , time_created : Text
-              , time_request_received : Text
-              , type : Text
-              , unique_size_in_gbs : Text
+              , time_updated : Text
+              , timeout_in_seconds : Natural
               }
           )
-    , boot_volume_id : Optional Text
-    , compartment_id : Text
-    , display_name : Optional Text
     , id : Optional Text
     , state : Optional Text
     , filter :
@@ -30,29 +28,27 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { boot_volume_backups =
+  { display_name = None Text
+  , functions =
       None
         ( List
-            { boot_volume_id : Text
+            { application_id : Text
             , compartment_id : Text
+            , config : List { mapKey : Text, mapValue : Text }
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
-            , expiration_time : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , image_id : Text
-            , kms_key_id : Text
-            , size_in_gbs : Text
-            , source_type : Text
+            , image : Text
+            , image_digest : Text
+            , invoke_endpoint : Text
+            , memory_in_mbs : Text
             , state : Text
             , time_created : Text
-            , time_request_received : Text
-            , type : Text
-            , unique_size_in_gbs : Text
+            , time_updated : Text
+            , timeout_in_seconds : Natural
             }
         )
-  , boot_volume_id = None Text
-  , display_name = None Text
   , id = None Text
   , state = None Text
   , filter =

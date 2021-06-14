@@ -3,8 +3,6 @@
     , compartment_id : Text
     , id : Optional Text
     , instance_id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , vnic_attachments :
         Optional
           ( List
@@ -42,8 +40,6 @@
   { availability_domain = None Text
   , id = None Text
   , instance_id = None Text
-  , limit = None Natural
-  , page = None Text
   , vnic_attachments =
       None
         ( List

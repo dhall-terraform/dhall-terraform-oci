@@ -12,13 +12,10 @@
               , id : Text
               , state : Text
               , time_created : Text
-              , time_modified : Text
               , vcn_id : Text
               }
           )
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , state : Optional Text
     , vcn_id : Text
     , filter :
@@ -38,13 +35,10 @@
             , id : Text
             , state : Text
             , time_created : Text
-            , time_modified : Text
             , vcn_id : Text
             }
         )
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

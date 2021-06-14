@@ -12,7 +12,6 @@
     , state : Optional Text
     , statements : List Text
     , time_created : Optional Text
-    , time_modified : Optional Text
     , version_date : Optional Text
     , timeouts :
         Optional
@@ -31,7 +30,6 @@
   , policyHash = None Text
   , state = None Text
   , time_created = None Text
-  , time_modified = None Text
   , version_date = None Text
   , timeouts =
       None

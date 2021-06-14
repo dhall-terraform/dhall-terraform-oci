@@ -3,8 +3,6 @@
     , compartment_id : Text
     , id : Optional Text
     , instance_id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , volume_attachments :
         Optional
           ( List
@@ -37,8 +35,6 @@
   { availability_domain = None Text
   , id = None Text
   , instance_id = None Text
-  , limit = None Natural
-  , page = None Text
   , volume_attachments =
       None
         ( List

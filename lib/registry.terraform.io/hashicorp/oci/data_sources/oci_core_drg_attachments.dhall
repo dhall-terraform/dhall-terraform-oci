@@ -15,8 +15,6 @@
           )
     , drg_id : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , vcn_id : Optional Text
     , filter :
         Optional
@@ -38,8 +36,6 @@
         )
   , drg_id = None Text
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , vcn_id = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

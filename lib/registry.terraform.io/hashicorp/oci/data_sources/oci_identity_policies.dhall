@@ -17,7 +17,6 @@
               , state : Text
               , statements : List Text
               , time_created : Text
-              , time_modified : Text
               , version_date : Text
               }
           )
@@ -43,7 +42,6 @@
             , state : Text
             , statements : List Text
             , time_created : Text
-            , time_modified : Text
             , version_date : Text
             }
         )

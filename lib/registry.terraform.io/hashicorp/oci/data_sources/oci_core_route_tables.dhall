@@ -2,8 +2,6 @@
     { compartment_id : Text
     , display_name : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , route_tables :
         Optional
           ( List
@@ -21,7 +19,6 @@
                     }
               , state : Text
               , time_created : Text
-              , time_modified : Text
               , vcn_id : Text
               }
           )
@@ -34,8 +31,6 @@
 , default =
   { display_name = None Text
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , route_tables =
       None
         ( List
@@ -53,7 +48,6 @@
                   }
             , state : Text
             , time_created : Text
-            , time_modified : Text
             , vcn_id : Text
             }
         )

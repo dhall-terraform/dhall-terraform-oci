@@ -99,8 +99,6 @@
           )
     , display_name : Optional Text
     , id : Optional Text
-    , limit : Optional Natural
-    , page : Optional Text
     , state : Optional Text
     , filter :
         Optional
@@ -205,8 +203,6 @@
         )
   , display_name = None Text
   , id = None Text
-  , limit = None Natural
-  , page = None Text
   , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
