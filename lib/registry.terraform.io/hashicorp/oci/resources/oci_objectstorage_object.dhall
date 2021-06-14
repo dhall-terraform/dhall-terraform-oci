@@ -1,6 +1,8 @@
 { Type =
     { bucket : Text
+    , cache_control : Optional Text
     , content : Optional Text
+    , content_disposition : Optional Text
     , content_encoding : Optional Text
     , content_language : Optional Text
     , content_length : Optional Text
@@ -33,7 +35,9 @@
           }
     }
 , default =
-  { content = None Text
+  { cache_control = None Text
+  , content = None Text
+  , content_disposition = None Text
   , content_encoding = None Text
   , content_language = None Text
   , content_length = None Text

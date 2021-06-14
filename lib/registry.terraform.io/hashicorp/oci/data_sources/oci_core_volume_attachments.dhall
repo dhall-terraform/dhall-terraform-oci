@@ -19,6 +19,7 @@
               , iqn : Text
               , is_pv_encryption_in_transit_enabled : Bool
               , is_read_only : Bool
+              , is_shareable : Bool
               , port : Natural
               , state : Text
               , time_created : Text
@@ -51,6 +52,7 @@
             , iqn : Text
             , is_pv_encryption_in_transit_enabled : Bool
             , is_read_only : Bool
+            , is_shareable : Bool
             , port : Natural
             , state : Text
             , time_created : Text

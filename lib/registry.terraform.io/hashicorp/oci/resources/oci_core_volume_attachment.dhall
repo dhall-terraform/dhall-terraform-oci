@@ -12,6 +12,7 @@
     , iqn : Optional Text
     , is_pv_encryption_in_transit_enabled : Optional Bool
     , is_read_only : Optional Bool
+    , is_shareable : Optional Bool
     , port : Optional Natural
     , state : Optional Text
     , time_created : Optional Text
@@ -36,6 +37,7 @@
   , iqn = None Text
   , is_pv_encryption_in_transit_enabled = None Bool
   , is_read_only = None Bool
+  , is_shareable = None Bool
   , port = None Natural
   , state = None Text
   , time_created = None Text

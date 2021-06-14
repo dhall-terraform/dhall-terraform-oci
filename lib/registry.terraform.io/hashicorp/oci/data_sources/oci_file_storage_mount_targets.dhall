@@ -17,6 +17,7 @@
               , id : Text
               , ip_address : Text
               , lifecycle_details : Text
+              , nsg_ids : List Text
               , private_ip_ids : List Text
               , state : Text
               , subnet_id : Text
@@ -45,6 +46,7 @@
             , id : Text
             , ip_address : Text
             , lifecycle_details : Text
+            , nsg_ids : List Text
             , private_ip_ids : List Text
             , state : Text
             , subnet_id : Text

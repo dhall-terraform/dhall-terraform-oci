@@ -1,7 +1,9 @@
 { Type =
     { base64_encode_content : Optional Bool
     , bucket : Text
+    , cache_control : Optional Text
     , content : Optional Text
+    , content_disposition : Optional Text
     , content_encoding : Optional Text
     , content_language : Optional Text
     , content_length : Optional Text
@@ -15,7 +17,9 @@
     }
 , default =
   { base64_encode_content = None Bool
+  , cache_control = None Text
   , content = None Text
+  , content_disposition = None Text
   , content_encoding = None Text
   , content_language = None Text
   , content_length = None Text

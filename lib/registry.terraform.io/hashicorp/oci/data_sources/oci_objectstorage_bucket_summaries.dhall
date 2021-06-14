@@ -5,11 +5,13 @@
               { access_type : Text
               , approximate_count : Text
               , approximate_size : Text
+              , bucket_id : Text
               , compartment_id : Text
               , created_by : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , etag : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
+              , id : Text
               , kms_key_id : Text
               , metadata : List { mapKey : Text, mapValue : Text }
               , name : Text
@@ -34,11 +36,13 @@
             { access_type : Text
             , approximate_count : Text
             , approximate_size : Text
+            , bucket_id : Text
             , compartment_id : Text
             , created_by : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , etag : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
+            , id : Text
             , kms_key_id : Text
             , metadata : List { mapKey : Text, mapValue : Text }
             , name : Text

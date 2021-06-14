@@ -9,6 +9,7 @@
     , id : Optional Text
     , ip_address : Optional Text
     , lifecycle_details : Optional Text
+    , nsg_ids : Optional (List Text)
     , private_ip_ids : Optional (List Text)
     , state : Optional Text
     , subnet_id : Text
@@ -29,6 +30,7 @@
   , id = None Text
   , ip_address = None Text
   , lifecycle_details = None Text
+  , nsg_ids = None (List Text)
   , private_ip_ids = None (List Text)
   , state = None Text
   , time_created = None Text

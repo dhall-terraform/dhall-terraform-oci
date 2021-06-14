@@ -6,7 +6,14 @@
     , namespace : Text
     , objects :
         Optional
-          (List { md5 : Text, name : Text, size : Text, time_created : Text })
+          ( List
+              { etag : Text
+              , md5 : Text
+              , name : Text
+              , size : Text
+              , time_created : Text
+              }
+          )
     , prefix : Optional Text
     , start : Optional Text
     , filter :
@@ -18,7 +25,15 @@
   , end = None Text
   , id = None Text
   , objects =
-      None (List { md5 : Text, name : Text, size : Text, time_created : Text })
+      None
+        ( List
+            { etag : Text
+            , md5 : Text
+            , name : Text
+            , size : Text
+            , time_created : Text
+            }
+        )
   , prefix = None Text
   , start = None Text
   , filter =
