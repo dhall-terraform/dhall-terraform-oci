@@ -6,7 +6,7 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , message : Optional Text
-    , recipients : Text
+    , recipients : Optional Text
     , state : Optional Text
     , threshold : Natural
     , threshold_type : Text
@@ -28,6 +28,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , message = None Text
+  , recipients = None Text
   , state = None Text
   , time_created = None Text
   , time_updated = None Text
