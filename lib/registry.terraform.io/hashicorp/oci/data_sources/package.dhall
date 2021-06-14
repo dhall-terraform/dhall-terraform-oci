@@ -35,6 +35,10 @@
 , oci_core_boot_volume_backups = ./oci_core_boot_volume_backups.dhall
 , oci_core_boot_volume = ./oci_core_boot_volume.dhall
 , oci_core_boot_volumes = ./oci_core_boot_volumes.dhall
+, oci_core_cluster_network = ./oci_core_cluster_network.dhall
+, oci_core_cluster_network_instances =
+    ./oci_core_cluster_network_instances.dhall
+, oci_core_cluster_networks = ./oci_core_cluster_networks.dhall
 , oci_core_console_histories = ./oci_core_console_histories.dhall
 , oci_core_console_history_data = ./oci_core_console_history_data.dhall
 , oci_core_cpes = ./oci_core_cpes.dhall
