@@ -332,6 +332,7 @@
 , oci_kms_key_versions = ./oci_kms_key_versions.dhall
 , oci_kms_vault = ./oci_kms_vault.dhall
 , oci_kms_vaults = ./oci_kms_vaults.dhall
+, oci_kms_vault_usage = ./oci_kms_vault_usage.dhall
 , oci_limits_limit_definitions = ./oci_limits_limit_definitions.dhall
 , oci_limits_limit_values = ./oci_limits_limit_values.dhall
 , oci_limits_quota = ./oci_limits_quota.dhall

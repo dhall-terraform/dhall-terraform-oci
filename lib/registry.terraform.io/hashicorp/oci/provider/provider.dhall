@@ -1,5 +1,6 @@
 { Type =
     { auth : Optional Text
+    , config_file_profile : Optional Text
     , disable_auto_retries : Optional Bool
     , fingerprint : Optional Text
     , private_key : Optional Text
@@ -12,6 +13,7 @@
     }
 , default =
   { auth = None Text
+  , config_file_profile = None Text
   , disable_auto_retries = None Bool
   , fingerprint = None Text
   , private_key = None Text
