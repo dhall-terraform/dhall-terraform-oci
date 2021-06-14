@@ -1,56 +1,54 @@
 { Type =
     { compartment_id : Text
     , display_name : Optional Text
-    , home_region : Optional Text
     , id : Optional Text
-    , ping_monitors :
+    , oda_instances :
         Optional
           ( List
               { compartment_id : Text
+              , connector_url : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
+              , description : Text
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
-              , home_region : Text
               , id : Text
-              , interval_in_seconds : Natural
-              , is_enabled : Bool
-              , port : Natural
-              , protocol : Text
-              , results_url : Text
-              , targets : List Text
+              , lifecycle_sub_state : Text
+              , shape_name : Text
+              , state : Text
+              , state_message : Text
               , time_created : Text
-              , timeout_in_seconds : Natural
-              , vantage_point_names : List Text
+              , time_updated : Text
+              , web_app_url : Text
               }
           )
+    , state : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
   { display_name = None Text
-  , home_region = None Text
   , id = None Text
-  , ping_monitors =
+  , oda_instances =
       None
         ( List
             { compartment_id : Text
+            , connector_url : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
+            , description : Text
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
-            , home_region : Text
             , id : Text
-            , interval_in_seconds : Natural
-            , is_enabled : Bool
-            , port : Natural
-            , protocol : Text
-            , results_url : Text
-            , targets : List Text
+            , lifecycle_sub_state : Text
+            , shape_name : Text
+            , state : Text
+            , state_message : Text
             , time_created : Text
-            , timeout_in_seconds : Natural
-            , vantage_point_names : List Text
+            , time_updated : Text
+            , web_app_url : Text
             }
         )
+  , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

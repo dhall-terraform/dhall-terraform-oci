@@ -56,6 +56,7 @@
 , oci_core_volume_backup = ./oci_core_volume_backup.dhall
 , oci_core_volume_backup_policy_assignment =
     ./oci_core_volume_backup_policy_assignment.dhall
+, oci_core_volume_backup_policy = ./oci_core_volume_backup_policy.dhall
 , oci_core_volume = ./oci_core_volume.dhall
 , oci_core_volume_group_backup = ./oci_core_volume_group_backup.dhall
 , oci_core_volume_group = ./oci_core_volume_group.dhall
@@ -148,6 +149,7 @@
 , oci_objectstorage_object_lifecycle_policy =
     ./oci_objectstorage_object_lifecycle_policy.dhall
 , oci_objectstorage_preauthrequest = ./oci_objectstorage_preauthrequest.dhall
+, oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall
 , oci_streaming_stream_archiver = ./oci_streaming_stream_archiver.dhall

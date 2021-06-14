@@ -1,19 +1,18 @@
 { Type =
     { compartment_id : Text
+    , connector_url : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , display_name : Text
+    , description : Optional Text
+    , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , home_region : Optional Text
     , id : Optional Text
-    , interval_in_seconds : Natural
-    , is_enabled : Optional Bool
-    , port : Optional Natural
-    , protocol : Text
-    , results_url : Optional Text
-    , targets : List Text
+    , lifecycle_sub_state : Optional Text
+    , shape_name : Text
+    , state : Optional Text
+    , state_message : Optional Text
     , time_created : Optional Text
-    , timeout_in_seconds : Optional Natural
-    , vantage_point_names : Optional (List Text)
+    , time_updated : Optional Text
+    , web_app_url : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -22,16 +21,18 @@
           }
     }
 , default =
-  { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { connector_url = None Text
+  , defined_tags = None (List { mapKey : Text, mapValue : Text })
+  , description = None Text
+  , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
-  , home_region = None Text
   , id = None Text
-  , is_enabled = None Bool
-  , port = None Natural
-  , results_url = None Text
+  , lifecycle_sub_state = None Text
+  , state = None Text
+  , state_message = None Text
   , time_created = None Text
-  , timeout_in_seconds = None Natural
-  , vantage_point_names = None (List Text)
+  , time_updated = None Text
+  , web_app_url = None Text
   , timeouts =
       None
         { create : Optional Text

@@ -14,17 +14,6 @@
     , ipxe_script : Optional Text
     , is_pv_encryption_in_transit_enabled : Optional Bool
     , launch_mode : Optional Text
-    , launch_options :
-        Optional
-          ( List
-              { boot_volume_type : Text
-              , firmware : Text
-              , is_consistent_volume_naming_enabled : Bool
-              , is_pv_encryption_in_transit_enabled : Bool
-              , network_type : Text
-              , remote_data_volume_type : Text
-              }
-          )
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , preserve_boot_volume : Optional Bool
     , private_ip : Optional Text
@@ -51,6 +40,17 @@
               , private_ip : Optional Text
               , skip_source_dest_check : Optional Bool
               , subnet_id : Text
+              }
+          )
+    , launch_options :
+        Optional
+          ( List
+              { boot_volume_type : Optional Text
+              , firmware : Optional Text
+              , is_consistent_volume_naming_enabled : Optional Bool
+              , is_pv_encryption_in_transit_enabled : Optional Bool
+              , network_type : Optional Text
+              , remote_data_volume_type : Optional Text
               }
           )
     , source_details :
@@ -83,17 +83,6 @@
   , ipxe_script = None Text
   , is_pv_encryption_in_transit_enabled = None Bool
   , launch_mode = None Text
-  , launch_options =
-      None
-        ( List
-            { boot_volume_type : Text
-            , firmware : Text
-            , is_consistent_volume_naming_enabled : Bool
-            , is_pv_encryption_in_transit_enabled : Bool
-            , network_type : Text
-            , remote_data_volume_type : Text
-            }
-        )
   , metadata = None (List { mapKey : Text, mapValue : Text })
   , preserve_boot_volume = None Bool
   , private_ip = None Text
@@ -117,6 +106,17 @@
             , private_ip : Optional Text
             , skip_source_dest_check : Optional Bool
             , subnet_id : Text
+            }
+        )
+  , launch_options =
+      None
+        ( List
+            { boot_volume_type : Optional Text
+            , firmware : Optional Text
+            , is_consistent_volume_naming_enabled : Optional Bool
+            , is_pv_encryption_in_transit_enabled : Optional Bool
+            , network_type : Optional Text
+            , remote_data_volume_type : Optional Text
             }
         )
   , source_details =
