@@ -4,23 +4,27 @@
     , data_asset_collection :
         Optional
           ( List
-              { catalog_id : Text
-              , created_by_id : Text
-              , description : Text
-              , display_name : Text
-              , external_key : Text
-              , id : Text
-              , key : Text
-              , properties : List { mapKey : Text, mapValue : Text }
-              , state : Text
-              , time_created : Text
-              , time_updated : Text
-              , type_key : Text
-              , updated_by_id : Text
-              , uri : Text
+              { count : Natural
+              , items :
+                  List
+                    { catalog_id : Text
+                    , created_by_id : Text
+                    , description : Text
+                    , display_name : Text
+                    , external_key : Text
+                    , key : Text
+                    , properties : List { mapKey : Text, mapValue : Text }
+                    , state : Text
+                    , time_created : Text
+                    , time_updated : Text
+                    , type_key : Text
+                    , updated_by_id : Text
+                    , uri : Text
+                    }
               }
           )
     , display_name : Optional Text
+    , display_name_contains : Optional Text
     , external_key : Optional Text
     , fields : Optional (List Text)
     , id : Optional Text
@@ -35,23 +39,27 @@
   , data_asset_collection =
       None
         ( List
-            { catalog_id : Text
-            , created_by_id : Text
-            , description : Text
-            , display_name : Text
-            , external_key : Text
-            , id : Text
-            , key : Text
-            , properties : List { mapKey : Text, mapValue : Text }
-            , state : Text
-            , time_created : Text
-            , time_updated : Text
-            , type_key : Text
-            , updated_by_id : Text
-            , uri : Text
+            { count : Natural
+            , items :
+                List
+                  { catalog_id : Text
+                  , created_by_id : Text
+                  , description : Text
+                  , display_name : Text
+                  , external_key : Text
+                  , key : Text
+                  , properties : List { mapKey : Text, mapValue : Text }
+                  , state : Text
+                  , time_created : Text
+                  , time_updated : Text
+                  , type_key : Text
+                  , updated_by_id : Text
+                  , uri : Text
+                  }
             }
         )
   , display_name = None Text
+  , display_name_contains = None Text
   , external_key = None Text
   , fields = None (List Text)
   , id = None Text

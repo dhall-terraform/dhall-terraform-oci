@@ -14,6 +14,7 @@
                     , inclusion_patterns : List Text
                     , inclusion_prefixes : List Text
                     }
+              , target : Text
               , time_amount : Text
               , time_unit : Text
               }
@@ -34,6 +35,7 @@
                   , inclusion_patterns : List Text
                   , inclusion_prefixes : List Text
                   }
+            , target : Text
             , time_amount : Text
             , time_unit : Text
             }

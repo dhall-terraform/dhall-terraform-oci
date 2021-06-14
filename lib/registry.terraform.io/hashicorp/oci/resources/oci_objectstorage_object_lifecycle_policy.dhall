@@ -9,6 +9,7 @@
               { action : Text
               , is_enabled : Bool
               , name : Text
+              , target : Optional Text
               , time_amount : Text
               , time_unit : Text
               , object_name_filter :
@@ -37,6 +38,7 @@
             { action : Text
             , is_enabled : Bool
             , name : Text
+            , target : Optional Text
             , time_amount : Text
             , time_unit : Text
             , object_name_filter :

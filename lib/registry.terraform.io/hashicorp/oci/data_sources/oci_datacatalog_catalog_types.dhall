@@ -12,13 +12,17 @@
     , type_collection :
         Optional
           ( List
-              { catalog_id : Text
-              , description : Text
-              , key : Text
-              , name : Text
-              , state : Text
-              , type_category : Text
-              , uri : Text
+              { count : Natural
+              , items :
+                  List
+                    { catalog_id : Text
+                    , description : Text
+                    , key : Text
+                    , name : Text
+                    , state : Text
+                    , type_category : Text
+                    , uri : Text
+                    }
               }
           )
     , filter :
@@ -38,13 +42,17 @@
   , type_collection =
       None
         ( List
-            { catalog_id : Text
-            , description : Text
-            , key : Text
-            , name : Text
-            , state : Text
-            , type_category : Text
-            , uri : Text
+            { count : Natural
+            , items :
+                List
+                  { catalog_id : Text
+                  , description : Text
+                  , key : Text
+                  , name : Text
+                  , state : Text
+                  , type_category : Text
+                  , uri : Text
+                  }
             }
         )
   , filter =
