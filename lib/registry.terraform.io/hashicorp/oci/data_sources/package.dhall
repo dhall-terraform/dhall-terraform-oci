@@ -217,6 +217,20 @@
 , oci_database_vm_cluster_recommended_network =
     ./oci_database_vm_cluster_recommended_network.dhall
 , oci_database_vm_clusters = ./oci_database_vm_clusters.dhall
+, oci_datacatalog_catalog = ./oci_datacatalog_catalog.dhall
+, oci_datacatalog_catalogs = ./oci_datacatalog_catalogs.dhall
+, oci_datacatalog_catalog_type = ./oci_datacatalog_catalog_type.dhall
+, oci_datacatalog_catalog_types = ./oci_datacatalog_catalog_types.dhall
+, oci_datacatalog_connection = ./oci_datacatalog_connection.dhall
+, oci_datacatalog_connections = ./oci_datacatalog_connections.dhall
+, oci_datacatalog_data_asset = ./oci_datacatalog_data_asset.dhall
+, oci_datacatalog_data_assets = ./oci_datacatalog_data_assets.dhall
+, oci_dataflow_application = ./oci_dataflow_application.dhall
+, oci_dataflow_applications = ./oci_dataflow_applications.dhall
+, oci_dataflow_invoke_run = ./oci_dataflow_invoke_run.dhall
+, oci_dataflow_invoke_runs = ./oci_dataflow_invoke_runs.dhall
+, oci_dataflow_run_log = ./oci_dataflow_run_log.dhall
+, oci_dataflow_run_logs = ./oci_dataflow_run_logs.dhall
 , oci_dns_records = ./oci_dns_records.dhall
 , oci_dns_steering_policies = ./oci_dns_steering_policies.dhall
 , oci_dns_steering_policy_attachment =

@@ -92,6 +92,11 @@
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
 , oci_database_vm_cluster = ./oci_database_vm_cluster.dhall
 , oci_database_vm_cluster_network = ./oci_database_vm_cluster_network.dhall
+, oci_datacatalog_catalog = ./oci_datacatalog_catalog.dhall
+, oci_datacatalog_connection = ./oci_datacatalog_connection.dhall
+, oci_datacatalog_data_asset = ./oci_datacatalog_data_asset.dhall
+, oci_dataflow_application = ./oci_dataflow_application.dhall
+, oci_dataflow_invoke_run = ./oci_dataflow_invoke_run.dhall
 , oci_dns_record = ./oci_dns_record.dhall
 , oci_dns_steering_policy_attachment =
     ./oci_dns_steering_policy_attachment.dhall

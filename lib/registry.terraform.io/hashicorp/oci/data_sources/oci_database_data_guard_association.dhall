@@ -20,6 +20,7 @@
     , peer_role : Optional Text
     , protection_mode : Optional Text
     , role : Optional Text
+    , shape : Optional Text
     , state : Optional Text
     , subnet_id : Optional Text
     , time_created : Optional Text
@@ -45,6 +46,7 @@
   , peer_role = None Text
   , protection_mode = None Text
   , role = None Text
+  , shape = None Text
   , state = None Text
   , subnet_id = None Text
   , time_created = None Text

@@ -22,6 +22,7 @@
               , peer_role : Text
               , protection_mode : Text
               , role : Text
+              , shape : Text
               , state : Text
               , subnet_id : Text
               , time_created : Text
@@ -58,6 +59,7 @@
             , peer_role : Text
             , protection_mode : Text
             , role : Text
+            , shape : Text
             , state : Text
             , subnet_id : Text
             , time_created : Text
