@@ -8,7 +8,10 @@
               , file_system_id : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , is_clone_source : Bool
+              , lifecycle_details : Text
               , name : Text
+              , provenance_id : Text
               , state : Text
               , time_created : Text
               }
@@ -27,7 +30,10 @@
             , file_system_id : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , is_clone_source : Bool
+            , lifecycle_details : Text
             , name : Text
+            , provenance_id : Text
             , state : Text
             , time_created : Text
             }

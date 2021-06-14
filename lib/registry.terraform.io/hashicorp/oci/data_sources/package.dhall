@@ -507,6 +507,18 @@
     ./oci_load_balancer_ssl_cipher_suite.dhall
 , oci_load_balancer_ssl_cipher_suites =
     ./oci_load_balancer_ssl_cipher_suites.dhall
+, oci_log_analytics_log_analytics_entities =
+    ./oci_log_analytics_log_analytics_entities.dhall
+, oci_log_analytics_log_analytics_entities_summary =
+    ./oci_log_analytics_log_analytics_entities_summary.dhall
+, oci_log_analytics_log_analytics_entity =
+    ./oci_log_analytics_log_analytics_entity.dhall
+, oci_log_analytics_log_analytics_log_group =
+    ./oci_log_analytics_log_analytics_log_group.dhall
+, oci_log_analytics_log_analytics_log_groups =
+    ./oci_log_analytics_log_analytics_log_groups.dhall
+, oci_log_analytics_log_analytics_log_groups_summary =
+    ./oci_log_analytics_log_analytics_log_groups_summary.dhall
 , oci_log_analytics_namespace = ./oci_log_analytics_namespace.dhall
 , oci_log_analytics_namespaces = ./oci_log_analytics_namespaces.dhall
 , oci_logging_log = ./oci_logging_log.dhall
