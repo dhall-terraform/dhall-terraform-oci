@@ -49,6 +49,7 @@
           ( List
               { database_software_image_id : Optional Text
               , db_version : Optional Text
+              , options : Optional Text
               , source : Optional Text
               }
           )
@@ -108,6 +109,7 @@
         ( List
             { database_software_image_id : Optional Text
             , db_version : Optional Text
+            , options : Optional Text
             , source : Optional Text
             }
         )

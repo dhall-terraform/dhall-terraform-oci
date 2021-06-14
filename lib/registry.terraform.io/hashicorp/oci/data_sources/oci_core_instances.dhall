@@ -8,8 +8,11 @@
           ( List
               { agent_config :
                   List
-                    { is_management_disabled : Bool
+                    { are_all_plugins_disabled : Bool
+                    , is_management_disabled : Bool
                     , is_monitoring_disabled : Bool
+                    , plugins_config :
+                        List { desired_state : Text, name : Text }
                     }
               , availability_config : List { recovery_action : Text }
               , availability_domain : Text
@@ -98,8 +101,10 @@
         ( List
             { agent_config :
                 List
-                  { is_management_disabled : Bool
+                  { are_all_plugins_disabled : Bool
+                  , is_management_disabled : Bool
                   , is_monitoring_disabled : Bool
+                  , plugins_config : List { desired_state : Text, name : Text }
                   }
             , availability_config : List { recovery_action : Text }
             , availability_domain : Text

@@ -6,6 +6,7 @@
               { action : Text
               , id : Text
               , lifecycle_details : Text
+              , options : Text
               , source : Text
               , source_db_home_id : Text
               , state : Text
@@ -30,6 +31,7 @@
             { action : Text
             , id : Text
             , lifecycle_details : Text
+            , options : Text
             , source : Text
             , source_db_home_id : Text
             , state : Text

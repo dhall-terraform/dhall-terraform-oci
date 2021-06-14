@@ -5,6 +5,7 @@
               { actual_spend : Natural
               , alert_rule_count : Natural
               , amount : Natural
+              , budget_processing_period_start_offset : Natural
               , compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , description : Text
@@ -39,6 +40,7 @@
             { actual_spend : Natural
             , alert_rule_count : Natural
             , amount : Natural
+            , budget_processing_period_start_offset : Natural
             , compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , description : Text

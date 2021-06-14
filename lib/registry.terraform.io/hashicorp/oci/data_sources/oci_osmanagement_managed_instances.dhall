@@ -5,10 +5,12 @@
     , managed_instances :
         Optional
           ( List
-              { child_software_sources : List { id : Text, name : Text }
+              { bug_updates_available : Natural
+              , child_software_sources : List { id : Text, name : Text }
               , compartment_id : Text
               , description : Text
               , display_name : Text
+              , enhancement_updates_available : Natural
               , id : Text
               , is_reboot_required : Bool
               , last_boot : Text
@@ -19,9 +21,13 @@
               , os_kernel_version : Text
               , os_name : Text
               , os_version : Text
+              , other_updates_available : Natural
               , parent_software_source : List { id : Text, name : Text }
+              , scheduled_job_count : Natural
+              , security_updates_available : Natural
               , status : Text
               , updates_available : Natural
+              , work_request_count : Natural
               }
           )
     , os_family : Optional Text
@@ -35,10 +41,12 @@
   , managed_instances =
       None
         ( List
-            { child_software_sources : List { id : Text, name : Text }
+            { bug_updates_available : Natural
+            , child_software_sources : List { id : Text, name : Text }
             , compartment_id : Text
             , description : Text
             , display_name : Text
+            , enhancement_updates_available : Natural
             , id : Text
             , is_reboot_required : Bool
             , last_boot : Text
@@ -48,9 +56,13 @@
             , os_kernel_version : Text
             , os_name : Text
             , os_version : Text
+            , other_updates_available : Natural
             , parent_software_source : List { id : Text, name : Text }
+            , scheduled_job_count : Natural
+            , security_updates_available : Natural
             , status : Text
             , updates_available : Natural
+            , work_request_count : Natural
             }
         )
   , os_family = None Text

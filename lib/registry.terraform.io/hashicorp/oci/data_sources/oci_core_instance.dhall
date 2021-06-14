@@ -2,7 +2,11 @@
     { agent_config :
         Optional
           ( List
-              { is_management_disabled : Bool, is_monitoring_disabled : Bool }
+              { are_all_plugins_disabled : Bool
+              , is_management_disabled : Bool
+              , is_monitoring_disabled : Bool
+              , plugins_config : List { desired_state : Text, name : Text }
+              }
           )
     , availability_config : Optional (List { recovery_action : Text })
     , availability_domain : Optional Text
@@ -88,7 +92,13 @@
 , default =
   { agent_config =
       None
-        (List { is_management_disabled : Bool, is_monitoring_disabled : Bool })
+        ( List
+            { are_all_plugins_disabled : Bool
+            , is_management_disabled : Bool
+            , is_monitoring_disabled : Bool
+            , plugins_config : List { desired_state : Text, name : Text }
+            }
+        )
   , availability_config = None (List { recovery_action : Text })
   , availability_domain = None Text
   , boot_volume_id = None Text

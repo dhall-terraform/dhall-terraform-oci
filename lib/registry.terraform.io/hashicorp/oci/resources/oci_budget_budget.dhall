@@ -2,6 +2,7 @@
     { actual_spend : Optional Natural
     , alert_rule_count : Optional Natural
     , amount : Natural
+    , budget_processing_period_start_offset : Optional Natural
     , compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , description : Optional Text
@@ -28,6 +29,7 @@
 , default =
   { actual_spend = None Natural
   , alert_rule_count = None Natural
+  , budget_processing_period_start_offset = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , description = None Text
   , display_name = None Text

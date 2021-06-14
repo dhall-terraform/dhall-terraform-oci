@@ -28,8 +28,11 @@
     , agent_config :
         Optional
           ( List
-              { is_management_disabled : Optional Bool
+              { are_all_plugins_disabled : Optional Bool
+              , is_management_disabled : Optional Bool
               , is_monitoring_disabled : Optional Bool
+              , plugins_config :
+                  Optional (List { desired_state : Text, name : Text })
               }
           )
     , availability_config : Optional (List { recovery_action : Optional Text })
@@ -121,8 +124,11 @@
   , agent_config =
       None
         ( List
-            { is_management_disabled : Optional Bool
+            { are_all_plugins_disabled : Optional Bool
+            , is_management_disabled : Optional Bool
             , is_monitoring_disabled : Optional Bool
+            , plugins_config :
+                Optional (List { desired_state : Text, name : Text })
             }
         )
   , availability_config = None (List { recovery_action : Optional Text })

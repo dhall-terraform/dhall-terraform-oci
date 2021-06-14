@@ -3,6 +3,7 @@
     , database_id : Text
     , id : Optional Text
     , lifecycle_details : Optional Text
+    , options : Optional Text
     , source : Optional Text
     , source_db_home_id : Optional Text
     , state : Optional Text
@@ -17,6 +18,7 @@
   { action = None Text
   , id = None Text
   , lifecycle_details = None Text
+  , options = None Text
   , source = None Text
   , source_db_home_id = None Text
   , state = None Text

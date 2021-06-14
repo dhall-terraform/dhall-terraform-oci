@@ -139,6 +139,8 @@
     ./oci_database_external_pluggable_database_management.dhall
 , oci_database_key_store = ./oci_database_key_store.dhall
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
+, oci_database_management_managed_database_group =
+    ./oci_database_management_managed_database_group.dhall
 , oci_database_migration = ./oci_database_migration.dhall
 , oci_database_vm_cluster = ./oci_database_vm_cluster.dhall
 , oci_database_vm_cluster_network = ./oci_database_vm_cluster_network.dhall

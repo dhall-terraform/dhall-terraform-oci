@@ -48,6 +48,12 @@
 , oci_cloud_guard_responder_recipes = ./oci_cloud_guard_responder_recipes.dhall
 , oci_cloud_guard_target = ./oci_cloud_guard_target.dhall
 , oci_cloud_guard_targets = ./oci_cloud_guard_targets.dhall
+, oci_computeinstanceagent_instance_agent_plugin =
+    ./oci_computeinstanceagent_instance_agent_plugin.dhall
+, oci_computeinstanceagent_instance_agent_plugins =
+    ./oci_computeinstanceagent_instance_agent_plugins.dhall
+, oci_computeinstanceagent_instance_available_plugins =
+    ./oci_computeinstanceagent_instance_available_plugins.dhall
 , oci_containerengine_cluster_kube_config =
     ./oci_containerengine_cluster_kube_config.dhall
 , oci_containerengine_cluster_option =
@@ -315,6 +321,14 @@
 , oci_database_key_stores = ./oci_database_key_stores.dhall
 , oci_database_maintenance_run = ./oci_database_maintenance_run.dhall
 , oci_database_maintenance_runs = ./oci_database_maintenance_runs.dhall
+, oci_database_management_managed_database =
+    ./oci_database_management_managed_database.dhall
+, oci_database_management_managed_database_group =
+    ./oci_database_management_managed_database_group.dhall
+, oci_database_management_managed_database_groups =
+    ./oci_database_management_managed_database_groups.dhall
+, oci_database_management_managed_databases =
+    ./oci_database_management_managed_databases.dhall
 , oci_database_vm_cluster = ./oci_database_vm_cluster.dhall
 , oci_database_vm_cluster_network = ./oci_database_vm_cluster_network.dhall
 , oci_database_vm_cluster_network_download_config_file =
