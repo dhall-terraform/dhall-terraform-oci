@@ -7,11 +7,13 @@
           ( List
               { is_latest_for_major_version : Bool
               , is_preview_db_version : Bool
+              , is_upgrade_supported : Bool
               , supports_pdb : Bool
               , version : Text
               }
           )
     , id : Optional Text
+    , is_upgrade_supported : Optional Bool
     , storage_management : Optional Text
     , filter :
         Optional
@@ -25,11 +27,13 @@
         ( List
             { is_latest_for_major_version : Bool
             , is_preview_db_version : Bool
+            , is_upgrade_supported : Bool
             , supports_pdb : Bool
             , version : Text
             }
         )
   , id = None Text
+  , is_upgrade_supported = None Bool
   , storage_management = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

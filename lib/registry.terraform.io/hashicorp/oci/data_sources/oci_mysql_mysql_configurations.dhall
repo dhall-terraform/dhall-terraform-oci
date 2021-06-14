@@ -59,6 +59,7 @@
                     , mysqlx_read_timeout : Natural
                     , mysqlx_wait_timeout : Natural
                     , mysqlx_write_timeout : Natural
+                    , mysqlx_zstd_default_compression_level : Natural
                     , mysqlx_zstd_max_client_compression_level : Natural
                     , parser_max_mem_size : Natural
                     , query_alloc_block_size : Natural
@@ -139,6 +140,7 @@
                   , mysqlx_read_timeout : Natural
                   , mysqlx_wait_timeout : Natural
                   , mysqlx_write_timeout : Natural
+                  , mysqlx_zstd_default_compression_level : Natural
                   , mysqlx_zstd_max_client_compression_level : Natural
                   , parser_max_mem_size : Natural
                   , query_alloc_block_size : Natural

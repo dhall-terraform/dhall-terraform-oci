@@ -11,6 +11,7 @@
     , image_shape_family : Optional Text
     , image_type : Optional Text
     , included_patches_summary : Optional Text
+    , is_upgrade_supported : Optional Bool
     , lifecycle_details : Optional Text
     , ls_inventory : Optional Text
     , patch_set : Optional Text
@@ -29,6 +30,7 @@
   , image_shape_family = None Text
   , image_type = None Text
   , included_patches_summary = None Text
+  , is_upgrade_supported = None Bool
   , lifecycle_details = None Text
   , ls_inventory = None Text
   , patch_set = None Text

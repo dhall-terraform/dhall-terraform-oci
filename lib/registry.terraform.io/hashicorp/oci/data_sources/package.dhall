@@ -255,6 +255,10 @@
     ./oci_database_database_software_image.dhall
 , oci_database_database_software_images =
     ./oci_database_database_software_images.dhall
+, oci_database_database_upgrade_history_entries =
+    ./oci_database_database_upgrade_history_entries.dhall
+, oci_database_database_upgrade_history_entry =
+    ./oci_database_database_upgrade_history_entry.dhall
 , oci_database_data_guard_association =
     ./oci_database_data_guard_association.dhall
 , oci_database_data_guard_associations =
@@ -330,6 +334,8 @@
     ./oci_data_safe_data_safe_private_endpoint.dhall
 , oci_data_safe_data_safe_private_endpoints =
     ./oci_data_safe_data_safe_private_endpoints.dhall
+, oci_data_safe_on_prem_connector = ./oci_data_safe_on_prem_connector.dhall
+, oci_data_safe_on_prem_connectors = ./oci_data_safe_on_prem_connectors.dhall
 , oci_datascience_model = ./oci_datascience_model.dhall
 , oci_datascience_model_provenance = ./oci_datascience_model_provenance.dhall
 , oci_datascience_models = ./oci_datascience_models.dhall
@@ -466,6 +472,8 @@
 , oci_logging_log_saved_search = ./oci_logging_log_saved_search.dhall
 , oci_logging_log_saved_searches = ./oci_logging_log_saved_searches.dhall
 , oci_logging_logs = ./oci_logging_logs.dhall
+, oci_management_agent_management_agent_available_histories =
+    ./oci_management_agent_management_agent_available_histories.dhall
 , oci_management_agent_management_agent =
     ./oci_management_agent_management_agent.dhall
 , oci_management_agent_management_agent_images =
@@ -501,6 +509,8 @@
 , oci_monitoring_metric_data = ./oci_monitoring_metric_data.dhall
 , oci_monitoring_metrics = ./oci_monitoring_metrics.dhall
 , oci_mysql_analytics_cluster = ./oci_mysql_analytics_cluster.dhall
+, oci_mysql_channel = ./oci_mysql_channel.dhall
+, oci_mysql_channels = ./oci_mysql_channels.dhall
 , oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
 , oci_mysql_mysql_backups = ./oci_mysql_mysql_backups.dhall
 , oci_mysql_mysql_configuration = ./oci_mysql_mysql_configuration.dhall

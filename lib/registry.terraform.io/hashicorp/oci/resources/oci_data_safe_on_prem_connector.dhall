@@ -1,19 +1,13 @@
 { Type =
-    { compartment_id : Text
-    , database_software_image_included_patches : Optional (List Text)
-    , database_software_image_one_off_patches : Optional (List Text)
-    , database_version : Text
+    { available_version : Optional Text
+    , compartment_id : Text
+    , created_version : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , display_name : Text
+    , description : Optional Text
+    , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , image_shape_family : Optional Text
-    , image_type : Optional Text
-    , included_patches_summary : Optional Text
-    , is_upgrade_supported : Optional Bool
     , lifecycle_details : Optional Text
-    , ls_inventory : Optional Text
-    , patch_set : Text
     , state : Optional Text
     , time_created : Optional Text
     , timeouts :
@@ -24,17 +18,14 @@
           }
     }
 , default =
-  { database_software_image_included_patches = None (List Text)
-  , database_software_image_one_off_patches = None (List Text)
+  { available_version = None Text
+  , created_version = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
+  , description = None Text
+  , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , image_shape_family = None Text
-  , image_type = None Text
-  , included_patches_summary = None Text
-  , is_upgrade_supported = None Bool
   , lifecycle_details = None Text
-  , ls_inventory = None Text
   , state = None Text
   , time_created = None Text
   , timeouts =

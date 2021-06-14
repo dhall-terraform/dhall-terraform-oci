@@ -14,6 +14,7 @@
               , image_shape_family : Text
               , image_type : Text
               , included_patches_summary : Text
+              , is_upgrade_supported : Bool
               , lifecycle_details : Text
               , ls_inventory : Text
               , patch_set : Text
@@ -25,6 +26,7 @@
     , id : Optional Text
     , image_shape_family : Optional Text
     , image_type : Optional Text
+    , is_upgrade_supported : Optional Bool
     , state : Optional Text
     , filter :
         Optional
@@ -45,6 +47,7 @@
             , image_shape_family : Text
             , image_type : Text
             , included_patches_summary : Text
+            , is_upgrade_supported : Bool
             , lifecycle_details : Text
             , ls_inventory : Text
             , patch_set : Text
@@ -56,6 +59,7 @@
   , id = None Text
   , image_shape_family = None Text
   , image_type = None Text
+  , is_upgrade_supported = None Bool
   , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })

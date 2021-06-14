@@ -1,5 +1,6 @@
 { Type =
-    { compartment_id : Optional Text
+    { availability_status : Optional Text
+    , compartment_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , deploy_plugins_id : Optional (List Text)
     , display_name : Optional Text
@@ -36,7 +37,8 @@
           }
     }
 , default =
-  { compartment_id = None Text
+  { availability_status = None Text
+  , compartment_id = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , deploy_plugins_id = None (List Text)
   , display_name = None Text

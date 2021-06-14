@@ -45,6 +45,7 @@
     , is_multi_ad : Optional Bool
     , lifecycle_details : Optional Text
     , platform_role : Text
+    , platform_shape_type : Optional Text
     , service_endpoint : Optional Text
     , service_version : Optional Text
     , state : Optional Text
@@ -111,6 +112,7 @@
   , is_byol = None Bool
   , is_multi_ad = None Bool
   , lifecycle_details = None Text
+  , platform_shape_type = None Text
   , service_endpoint = None Text
   , service_version = None Text
   , state = None Text

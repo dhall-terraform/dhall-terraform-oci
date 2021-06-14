@@ -46,6 +46,7 @@
     , is_multi_ad : Optional Bool
     , lifecycle_details : Optional Text
     , platform_role : Optional Text
+    , platform_shape_type : Optional Text
     , replicas :
         Optional
           ( List
@@ -110,6 +111,7 @@
   , is_multi_ad = None Bool
   , lifecycle_details = None Text
   , platform_role = None Text
+  , platform_shape_type = None Text
   , replicas =
       None
         ( List

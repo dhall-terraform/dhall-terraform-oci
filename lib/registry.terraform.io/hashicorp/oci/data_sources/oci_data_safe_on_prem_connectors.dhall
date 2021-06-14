@@ -1,56 +1,50 @@
 { Type =
     { compartment_id : Text
-    , data_safe_private_endpoints :
+    , display_name : Optional Text
+    , id : Optional Text
+    , on_prem_connector_id : Optional Text
+    , on_prem_connector_lifecycle_state : Optional Text
+    , on_prem_connectors :
         Optional
           ( List
-              { compartment_id : Text
+              { available_version : Text
+              , compartment_id : Text
+              , created_version : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , description : Text
               , display_name : Text
-              , endpoint_fqdn : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
-              , nsg_ids : List Text
-              , private_endpoint_id : Text
-              , private_endpoint_ip : Text
+              , lifecycle_details : Text
               , state : Text
-              , subnet_id : Text
               , time_created : Text
-              , vcn_id : Text
               }
           )
-    , display_name : Optional Text
-    , id : Optional Text
-    , state : Optional Text
-    , vcn_id : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { data_safe_private_endpoints =
+  { display_name = None Text
+  , id = None Text
+  , on_prem_connector_id = None Text
+  , on_prem_connector_lifecycle_state = None Text
+  , on_prem_connectors =
       None
         ( List
-            { compartment_id : Text
+            { available_version : Text
+            , compartment_id : Text
+            , created_version : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , description : Text
             , display_name : Text
-            , endpoint_fqdn : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
-            , nsg_ids : List Text
-            , private_endpoint_id : Text
-            , private_endpoint_ip : Text
+            , lifecycle_details : Text
             , state : Text
-            , subnet_id : Text
             , time_created : Text
-            , vcn_id : Text
             }
         )
-  , display_name = None Text
-  , id = None Text
-  , state = None Text
-  , vcn_id = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

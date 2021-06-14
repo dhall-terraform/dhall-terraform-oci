@@ -105,6 +105,7 @@
 , oci_database_database = ./oci_database_database.dhall
 , oci_database_database_software_image =
     ./oci_database_database_software_image.dhall
+, oci_database_database_upgrade = ./oci_database_database_upgrade.dhall
 , oci_database_data_guard_association =
     ./oci_database_data_guard_association.dhall
 , oci_database_db_home = ./oci_database_db_home.dhall
@@ -132,6 +133,7 @@
     ./oci_data_safe_data_safe_configuration.dhall
 , oci_data_safe_data_safe_private_endpoint =
     ./oci_data_safe_data_safe_private_endpoint.dhall
+, oci_data_safe_on_prem_connector = ./oci_data_safe_on_prem_connector.dhall
 , oci_datascience_model = ./oci_datascience_model.dhall
 , oci_datascience_model_provenance = ./oci_datascience_model_provenance.dhall
 , oci_datascience_notebook_session = ./oci_datascience_notebook_session.dhall
@@ -219,6 +221,7 @@
 , oci_metering_computation_usage = ./oci_metering_computation_usage.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
 , oci_mysql_analytics_cluster = ./oci_mysql_analytics_cluster.dhall
+, oci_mysql_channel = ./oci_mysql_channel.dhall
 , oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
 , oci_mysql_mysql_db_system = ./oci_mysql_mysql_db_system.dhall
 , oci_nosql_index = ./oci_nosql_index.dhall

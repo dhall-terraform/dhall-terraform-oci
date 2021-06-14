@@ -5,7 +5,8 @@
     , management_agents :
         Optional
           ( List
-              { compartment_id : Text
+              { availability_status : Text
+              , compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , deploy_plugins_id : List Text
               , display_name : Text
@@ -48,7 +49,8 @@
   , management_agents =
       None
         ( List
-            { compartment_id : Text
+            { availability_status : Text
+            , compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , deploy_plugins_id : List Text
             , display_name : Text

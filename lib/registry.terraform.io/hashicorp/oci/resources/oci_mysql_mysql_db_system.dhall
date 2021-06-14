@@ -12,8 +12,40 @@
               }
           )
     , availability_domain : Text
+    , channels :
+        Optional
+          ( List
+              { compartment_id : Text
+              , defined_tags : List { mapKey : Text, mapValue : Text }
+              , display_name : Text
+              , freeform_tags : List { mapKey : Text, mapValue : Text }
+              , id : Text
+              , is_enabled : Bool
+              , lifecycle_details : Text
+              , source :
+                  List
+                    { hostname : Text
+                    , port : Natural
+                    , source_type : Text
+                    , ssl_ca_certificate :
+                        List { certificate_type : Text, contents : Text }
+                    , ssl_mode : Text
+                    , username : Text
+                    }
+              , state : Text
+              , target :
+                  List
+                    { applier_username : Text
+                    , channel_name : Text
+                    , db_system_id : Text
+                    , target_type : Text
+                    }
+              , time_created : Text
+              , time_updated : Text
+              }
+          )
     , compartment_id : Text
-    , configuration_id : Text
+    , configuration_id : Optional Text
     , data_storage_size_in_gb : Optional Natural
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , description : Optional Text
@@ -78,6 +110,39 @@
             , time_updated : Text
             }
         )
+  , channels =
+      None
+        ( List
+            { compartment_id : Text
+            , defined_tags : List { mapKey : Text, mapValue : Text }
+            , display_name : Text
+            , freeform_tags : List { mapKey : Text, mapValue : Text }
+            , id : Text
+            , is_enabled : Bool
+            , lifecycle_details : Text
+            , source :
+                List
+                  { hostname : Text
+                  , port : Natural
+                  , source_type : Text
+                  , ssl_ca_certificate :
+                      List { certificate_type : Text, contents : Text }
+                  , ssl_mode : Text
+                  , username : Text
+                  }
+            , state : Text
+            , target :
+                List
+                  { applier_username : Text
+                  , channel_name : Text
+                  , db_system_id : Text
+                  , target_type : Text
+                  }
+            , time_created : Text
+            , time_updated : Text
+            }
+        )
+  , configuration_id = None Text
   , data_storage_size_in_gb = None Natural
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , description = None Text

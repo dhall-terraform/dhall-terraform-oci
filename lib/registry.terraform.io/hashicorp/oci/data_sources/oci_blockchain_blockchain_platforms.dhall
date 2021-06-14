@@ -46,6 +46,7 @@
                     , is_multi_ad : Bool
                     , lifecycle_details : Text
                     , platform_role : Text
+                    , platform_shape_type : Text
                     , replicas :
                         List
                           { ca_count : Natural
@@ -119,6 +120,7 @@
                   , is_multi_ad : Bool
                   , lifecycle_details : Text
                   , platform_role : Text
+                  , platform_shape_type : Text
                   , replicas :
                       List
                         { ca_count : Natural
