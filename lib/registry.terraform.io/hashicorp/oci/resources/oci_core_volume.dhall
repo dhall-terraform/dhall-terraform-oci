@@ -2,6 +2,7 @@
     { auto_tuned_vpus_per_gb : Optional Text
     , availability_domain : Text
     , backup_policy_id : Optional Text
+    , block_volume_replicas_deletion : Optional Bool
     , compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
@@ -18,6 +19,14 @@
     , volume_backup_id : Optional Text
     , volume_group_id : Optional Text
     , vpus_per_gb : Optional Text
+    , block_volume_replicas :
+        Optional
+          ( List
+              { availability_domain : Text
+              , block_volume_replica_id : Optional Text
+              , display_name : Optional Text
+              }
+          )
     , source_details : Optional (List { id : Text, type : Text })
     , timeouts :
         Optional
@@ -29,6 +38,7 @@
 , default =
   { auto_tuned_vpus_per_gb = None Text
   , backup_policy_id = None Text
+  , block_volume_replicas_deletion = None Bool
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
@@ -44,6 +54,14 @@
   , volume_backup_id = None Text
   , volume_group_id = None Text
   , vpus_per_gb = None Text
+  , block_volume_replicas =
+      None
+        ( List
+            { availability_domain : Text
+            , block_volume_replica_id : Optional Text
+            , display_name : Optional Text
+            }
+        )
   , source_details = None (List { id : Text, type : Text })
   , timeouts =
       None

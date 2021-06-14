@@ -9,6 +9,7 @@
               { access_type : Text
               , access_uri : Text
               , bucket : Text
+              , bucket_listing_action : Text
               , id : Text
               , name : Text
               , namespace : Text
@@ -31,6 +32,7 @@
             { access_type : Text
             , access_uri : Text
             , bucket : Text
+            , bucket_listing_action : Text
             , id : Text
             , name : Text
             , namespace : Text

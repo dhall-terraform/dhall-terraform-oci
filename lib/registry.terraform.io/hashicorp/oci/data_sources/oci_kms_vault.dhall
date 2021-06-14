@@ -5,7 +5,9 @@
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , is_primary : Optional Bool
     , management_endpoint : Optional Text
+    , replica_details : Optional (List { replication_id : Text })
     , restore_from_file :
         Optional
           ( List
@@ -39,7 +41,9 @@
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , is_primary = None Bool
   , management_endpoint = None Text
+  , replica_details = None (List { replication_id : Text })
   , restore_from_file =
       None
         ( List

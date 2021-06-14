@@ -2,6 +2,7 @@
     { access_type : Optional Text
     , access_uri : Optional Text
     , bucket : Text
+    , bucket_listing_action : Optional Text
     , id : Optional Text
     , name : Optional Text
     , namespace : Text
@@ -13,6 +14,7 @@
 , default =
   { access_type = None Text
   , access_uri = None Text
+  , bucket_listing_action = None Text
   , id = None Text
   , name = None Text
   , object = None Text

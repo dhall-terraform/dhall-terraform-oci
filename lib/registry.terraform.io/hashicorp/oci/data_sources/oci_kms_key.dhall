@@ -6,11 +6,13 @@
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , is_primary : Optional Bool
     , key_id : Text
     , key_shape :
         Optional (List { algorithm : Text, curve_id : Text, length : Natural })
     , management_endpoint : Text
     , protection_mode : Optional Text
+    , replica_details : Optional (List { replication_id : Text })
     , restore_from_file :
         Optional
           ( List
@@ -44,9 +46,11 @@
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , is_primary = None Bool
   , key_shape =
       None (List { algorithm : Text, curve_id : Text, length : Natural })
   , protection_mode = None Text
+  , replica_details = None (List { replication_id : Text })
   , restore_from_file =
       None
         ( List

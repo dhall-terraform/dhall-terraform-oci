@@ -8,6 +8,7 @@
     , id : Optional Text
     , ip_address : Optional Text
     , is_primary : Optional Bool
+    , is_reserved : Optional Bool
     , subnet_id : Optional Text
     , time_created : Optional Text
     , vlan_id : Optional Text
@@ -29,6 +30,7 @@
   , id = None Text
   , ip_address = None Text
   , is_primary = None Bool
+  , is_reserved = None Bool
   , subnet_id = None Text
   , time_created = None Text
   , vlan_id = None Text

@@ -22,6 +22,8 @@
                     , id : Text
                     , is_enabled : Bool
                     , policy_type : Text
+                    , resource_action :
+                        List { action : Text, action_type : Text }
                     , rules :
                         List
                           { action : List { type : Text, value : Natural }
@@ -70,6 +72,7 @@
                   , id : Text
                   , is_enabled : Bool
                   , policy_type : Text
+                  , resource_action : List { action : Text, action_type : Text }
                   , rules :
                       List
                         { action : List { type : Text, value : Natural }

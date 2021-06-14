@@ -38,6 +38,13 @@
               , subnet_id : Text
               }
           )
+    , image_policy_config :
+        Optional
+          ( List
+              { is_policy_enabled : Optional Bool
+              , key_details : Optional (List { kms_key_id : Optional Text })
+              }
+          )
     , options :
         Optional
           ( List
@@ -102,6 +109,13 @@
             { is_public_ip_enabled : Optional Bool
             , nsg_ids : Optional (List Text)
             , subnet_id : Text
+            }
+        )
+  , image_policy_config =
+      None
+        ( List
+            { is_policy_enabled : Optional Bool
+            , key_details : Optional (List { kms_key_id : Optional Text })
             }
         )
   , options =

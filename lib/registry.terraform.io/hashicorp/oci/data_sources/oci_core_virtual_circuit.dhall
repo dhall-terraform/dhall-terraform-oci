@@ -29,6 +29,7 @@
     , public_prefixes : Optional (List { cidr_block : Text })
     , reference_comment : Optional Text
     , region : Optional Text
+    , routing_policy : Optional (List Text)
     , service_type : Optional Text
     , state : Optional Text
     , time_created : Optional Text
@@ -66,6 +67,7 @@
   , public_prefixes = None (List { cidr_block : Text })
   , reference_comment = None Text
   , region = None Text
+  , routing_policy = None (List Text)
   , service_type = None Text
   , state = None Text
   , time_created = None Text

@@ -16,6 +16,7 @@
     , provider_state : Optional Text
     , reference_comment : Optional Text
     , region : Optional Text
+    , routing_policy : Optional (List Text)
     , service_type : Optional Text
     , state : Optional Text
     , time_created : Optional Text
@@ -57,6 +58,7 @@
   , provider_state = None Text
   , reference_comment = None Text
   , region = None Text
+  , routing_policy = None (List Text)
   , service_type = None Text
   , state = None Text
   , time_created = None Text

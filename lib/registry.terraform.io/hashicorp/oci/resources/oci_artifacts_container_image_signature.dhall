@@ -1,15 +1,15 @@
 { Type =
-    { access_type : Text
-    , access_uri : Optional Text
-    , bucket : Text
-    , bucket_listing_action : Optional Text
+    { compartment_id : Text
+    , created_by : Optional Text
+    , display_name : Optional Text
     , id : Optional Text
-    , name : Text
-    , namespace : Text
-    , object : Optional Text
-    , par_id : Optional Text
+    , image_id : Text
+    , kms_key_id : Text
+    , kms_key_version_id : Text
+    , message : Text
+    , signature : Text
+    , signing_algorithm : Text
     , time_created : Optional Text
-    , time_expires : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -18,11 +18,9 @@
           }
     }
 , default =
-  { access_uri = None Text
-  , bucket_listing_action = None Text
+  { created_by = None Text
+  , display_name = None Text
   , id = None Text
-  , object = None Text
-  , par_id = None Text
   , time_created = None Text
   , timeouts =
       None

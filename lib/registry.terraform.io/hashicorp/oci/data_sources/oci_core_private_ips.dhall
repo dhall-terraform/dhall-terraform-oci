@@ -13,6 +13,7 @@
               , id : Text
               , ip_address : Text
               , is_primary : Bool
+              , is_reserved : Bool
               , subnet_id : Text
               , time_created : Text
               , vlan_id : Text
@@ -41,6 +42,7 @@
             , id : Text
             , ip_address : Text
             , is_primary : Bool
+            , is_reserved : Bool
             , subnet_id : Text
             , time_created : Text
             , vlan_id : Text

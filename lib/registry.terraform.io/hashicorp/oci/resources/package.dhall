@@ -9,6 +9,8 @@
 , oci_apigateway_gateway = ./oci_apigateway_gateway.dhall
 , oci_artifacts_container_configuration =
     ./oci_artifacts_container_configuration.dhall
+, oci_artifacts_container_image_signature =
+    ./oci_artifacts_container_image_signature.dhall
 , oci_artifacts_container_repository =
     ./oci_artifacts_container_repository.dhall
 , oci_audit_configuration = ./oci_audit_configuration.dhall
@@ -230,6 +232,7 @@
 , oci_kms_key_version = ./oci_kms_key_version.dhall
 , oci_kms_sign = ./oci_kms_sign.dhall
 , oci_kms_vault = ./oci_kms_vault.dhall
+, oci_kms_vault_replication = ./oci_kms_vault_replication.dhall
 , oci_kms_verify = ./oci_kms_verify.dhall
 , oci_limits_quota = ./oci_limits_quota.dhall
 , oci_load_balancer_backend = ./oci_load_balancer_backend.dhall

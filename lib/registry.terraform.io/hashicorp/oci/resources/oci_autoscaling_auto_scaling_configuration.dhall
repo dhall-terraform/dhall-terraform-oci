@@ -18,14 +18,18 @@
           , policy_type : Text
           , time_created : Optional Text
           , capacity :
-              List
-                { initial : Optional Natural
-                , max : Optional Natural
-                , min : Optional Natural
-                }
+              Optional
+                ( List
+                    { initial : Optional Natural
+                    , max : Optional Natural
+                    , min : Optional Natural
+                    }
+                )
           , execution_schedule :
               Optional
                 (List { expression : Text, timezone : Text, type : Text })
+          , resource_action :
+              Optional (List { action : Text, action_type : Text })
           , rules :
               Optional
                 ( List

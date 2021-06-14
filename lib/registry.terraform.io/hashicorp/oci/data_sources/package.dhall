@@ -18,6 +18,10 @@
     ./oci_artifacts_container_configuration.dhall
 , oci_artifacts_container_image = ./oci_artifacts_container_image.dhall
 , oci_artifacts_container_images = ./oci_artifacts_container_images.dhall
+, oci_artifacts_container_image_signature =
+    ./oci_artifacts_container_image_signature.dhall
+, oci_artifacts_container_image_signatures =
+    ./oci_artifacts_container_image_signatures.dhall
 , oci_artifacts_container_repositories =
     ./oci_artifacts_container_repositories.dhall
 , oci_artifacts_container_repository =
@@ -84,10 +88,14 @@
 , oci_core_app_catalog_listings = ./oci_core_app_catalog_listings.dhall
 , oci_core_app_catalog_subscriptions =
     ./oci_core_app_catalog_subscriptions.dhall
+, oci_core_block_volume_replica = ./oci_core_block_volume_replica.dhall
+, oci_core_block_volume_replicas = ./oci_core_block_volume_replicas.dhall
 , oci_core_boot_volume_attachments = ./oci_core_boot_volume_attachments.dhall
 , oci_core_boot_volume_backup = ./oci_core_boot_volume_backup.dhall
 , oci_core_boot_volume_backups = ./oci_core_boot_volume_backups.dhall
 , oci_core_boot_volume = ./oci_core_boot_volume.dhall
+, oci_core_boot_volume_replica = ./oci_core_boot_volume_replica.dhall
+, oci_core_boot_volume_replicas = ./oci_core_boot_volume_replicas.dhall
 , oci_core_boot_volumes = ./oci_core_boot_volumes.dhall
 , oci_core_byoip_allocated_ranges = ./oci_core_byoip_allocated_ranges.dhall
 , oci_core_byoip_range = ./oci_core_byoip_range.dhall
@@ -499,7 +507,9 @@
 , oci_kms_keys = ./oci_kms_keys.dhall
 , oci_kms_key_version = ./oci_kms_key_version.dhall
 , oci_kms_key_versions = ./oci_kms_key_versions.dhall
+, oci_kms_replication_status = ./oci_kms_replication_status.dhall
 , oci_kms_vault = ./oci_kms_vault.dhall
+, oci_kms_vault_replicas = ./oci_kms_vault_replicas.dhall
 , oci_kms_vaults = ./oci_kms_vaults.dhall
 , oci_kms_vault_usage = ./oci_kms_vault_usage.dhall
 , oci_limits_limit_definitions = ./oci_limits_limit_definitions.dhall

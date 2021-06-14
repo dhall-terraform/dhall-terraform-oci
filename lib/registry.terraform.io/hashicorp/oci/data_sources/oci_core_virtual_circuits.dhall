@@ -34,6 +34,7 @@
               , public_prefixes : List { cidr_block : Text }
               , reference_comment : Text
               , region : Text
+              , routing_policy : List Text
               , service_type : Text
               , state : Text
               , time_created : Text
@@ -80,6 +81,7 @@
             , public_prefixes : List { cidr_block : Text }
             , reference_comment : Text
             , region : Text
+            , routing_policy : List Text
             , service_type : Text
             , state : Text
             , time_created : Text

@@ -13,10 +13,12 @@
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , is_primary : Bool
               , key_shape :
                   List { algorithm : Text, curve_id : Text, length : Natural }
               , management_endpoint : Text
               , protection_mode : Text
+              , replica_details : List { replication_id : Text }
               , restore_from_file :
                   List
                     { content_length : Text
@@ -60,10 +62,12 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , is_primary : Bool
             , key_shape :
                 List { algorithm : Text, curve_id : Text, length : Natural }
             , management_endpoint : Text
             , protection_mode : Text
+            , replica_details : List { replication_id : Text }
             , restore_from_file :
                 List
                   { content_length : Text

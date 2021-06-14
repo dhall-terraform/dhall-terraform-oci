@@ -3,6 +3,15 @@
     , availability_domain : Optional Text
     , backup_policy_id : Optional Text
     , boot_volume_id : Text
+    , boot_volume_replicas :
+        Optional
+          ( List
+              { availability_domain : Text
+              , boot_volume_replica_id : Text
+              , display_name : Text
+              }
+          )
+    , boot_volume_replicas_deletion : Optional Bool
     , compartment_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
@@ -25,6 +34,15 @@
   { auto_tuned_vpus_per_gb = None Text
   , availability_domain = None Text
   , backup_policy_id = None Text
+  , boot_volume_replicas =
+      None
+        ( List
+            { availability_domain : Text
+            , boot_volume_replica_id : Text
+            , display_name : Text
+            }
+        )
+  , boot_volume_replicas_deletion = None Bool
   , compartment_id = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text

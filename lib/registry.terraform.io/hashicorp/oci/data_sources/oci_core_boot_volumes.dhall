@@ -6,6 +6,13 @@
               { auto_tuned_vpus_per_gb : Text
               , availability_domain : Text
               , backup_policy_id : Text
+              , boot_volume_replicas :
+                  List
+                    { availability_domain : Text
+                    , boot_volume_replica_id : Text
+                    , display_name : Text
+                    }
+              , boot_volume_replicas_deletion : Bool
               , compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
@@ -39,6 +46,13 @@
             { auto_tuned_vpus_per_gb : Text
             , availability_domain : Text
             , backup_policy_id : Text
+            , boot_volume_replicas :
+                List
+                  { availability_domain : Text
+                  , boot_volume_replica_id : Text
+                  , display_name : Text
+                  }
+            , boot_volume_replicas_deletion : Bool
             , compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text

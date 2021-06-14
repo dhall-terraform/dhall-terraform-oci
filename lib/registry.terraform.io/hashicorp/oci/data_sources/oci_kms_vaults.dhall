@@ -10,7 +10,9 @@
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , is_primary : Bool
               , management_endpoint : Text
+              , replica_details : List { replication_id : Text }
               , restore_from_file :
                   List
                     { content_length : Text
@@ -48,7 +50,9 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , is_primary : Bool
             , management_endpoint : Text
+            , replica_details : List { replication_id : Text }
             , restore_from_file :
                 List
                   { content_length : Text

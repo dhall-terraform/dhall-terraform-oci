@@ -6,10 +6,12 @@
           ( List
               { compartment_id : Text
               , id : Text
+              , is_primary : Bool
               , key_id : Text
               , key_version_id : Text
               , management_endpoint : Text
               , public_key : Text
+              , replica_details : List { replication_id : Text }
               , restored_from_key_id : Text
               , restored_from_key_version_id : Text
               , state : Text
@@ -30,10 +32,12 @@
         ( List
             { compartment_id : Text
             , id : Text
+            , is_primary : Bool
             , key_id : Text
             , key_version_id : Text
             , management_endpoint : Text
             , public_key : Text
+            , replica_details : List { replication_id : Text }
             , restored_from_key_id : Text
             , restored_from_key_version_id : Text
             , state : Text

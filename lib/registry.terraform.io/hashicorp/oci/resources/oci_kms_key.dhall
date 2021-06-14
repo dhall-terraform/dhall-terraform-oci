@@ -6,8 +6,10 @@
     , display_name : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , is_primary : Optional Bool
     , management_endpoint : Text
     , protection_mode : Optional Text
+    , replica_details : Optional (List { replication_id : Text })
     , restore_trigger : Optional Bool
     , restored_from_key_id : Optional Text
     , state : Optional Text
@@ -47,7 +49,9 @@
   , desired_state = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , is_primary = None Bool
   , protection_mode = None Text
+  , replica_details = None (List { replication_id : Text })
   , restore_trigger = None Bool
   , restored_from_key_id = None Text
   , state = None Text

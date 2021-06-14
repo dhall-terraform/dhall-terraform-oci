@@ -17,6 +17,11 @@
                     , public_endpoint : Text
                     }
               , id : Text
+              , image_policy_config :
+                  List
+                    { is_policy_enabled : Bool
+                    , key_details : List { kms_key_id : Text }
+                    }
               , kms_key_id : Text
               , kubernetes_version : Text
               , lifecycle_details : Text
@@ -77,6 +82,11 @@
                   , public_endpoint : Text
                   }
             , id : Text
+            , image_policy_config :
+                List
+                  { is_policy_enabled : Bool
+                  , key_details : List { kms_key_id : Text }
+                  }
             , kms_key_id : Text
             , kubernetes_version : Text
             , lifecycle_details : Text
