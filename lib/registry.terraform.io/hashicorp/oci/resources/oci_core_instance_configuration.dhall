@@ -86,6 +86,8 @@
                                   , is_monitoring_disabled : Optional Bool
                                   }
                               )
+                        , availability_config :
+                            Optional (List { recovery_action : Optional Text })
                         , create_vnic_details :
                             Optional
                               ( List
@@ -253,6 +255,8 @@
                                 , is_monitoring_disabled : Optional Bool
                                 }
                             )
+                      , availability_config :
+                          Optional (List { recovery_action : Optional Text })
                       , create_vnic_details :
                           Optional
                             ( List

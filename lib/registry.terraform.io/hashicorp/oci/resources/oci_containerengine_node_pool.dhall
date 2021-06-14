@@ -41,7 +41,13 @@
               }
           )
     , node_source_details :
-        Optional (List { image_id : Text, source_type : Text })
+        Optional
+          ( List
+              { boot_volume_size_in_gbs : Optional Text
+              , image_id : Text
+              , source_type : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -85,7 +91,14 @@
                 List { availability_domain : Text, subnet_id : Text }
             }
         )
-  , node_source_details = None (List { image_id : Text, source_type : Text })
+  , node_source_details =
+      None
+        ( List
+            { boot_volume_size_in_gbs : Optional Text
+            , image_id : Text
+            , source_type : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

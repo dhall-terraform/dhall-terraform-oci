@@ -186,16 +186,6 @@
 , oci_database_autonomous_databases = ./oci_database_autonomous_databases.dhall
 , oci_database_autonomous_database_wallet =
     ./oci_database_autonomous_database_wallet.dhall
-, oci_database_autonomous_data_warehouse_backup =
-    ./oci_database_autonomous_data_warehouse_backup.dhall
-, oci_database_autonomous_data_warehouse_backups =
-    ./oci_database_autonomous_data_warehouse_backups.dhall
-, oci_database_autonomous_data_warehouse =
-    ./oci_database_autonomous_data_warehouse.dhall
-, oci_database_autonomous_data_warehouses =
-    ./oci_database_autonomous_data_warehouses.dhall
-, oci_database_autonomous_data_warehouse_wallet =
-    ./oci_database_autonomous_data_warehouse_wallet.dhall
 , oci_database_autonomous_db_preview_versions =
     ./oci_database_autonomous_db_preview_versions.dhall
 , oci_database_autonomous_db_versions =

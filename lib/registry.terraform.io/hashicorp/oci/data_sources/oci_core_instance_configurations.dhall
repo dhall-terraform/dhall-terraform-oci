@@ -50,6 +50,8 @@
                                 { is_management_disabled : Bool
                                 , is_monitoring_disabled : Bool
                                 }
+                          , availability_config :
+                              List { recovery_action : Text }
                           , availability_domain : Text
                           , compartment_id : Text
                           , create_vnic_details :
@@ -178,6 +180,7 @@
                               { is_management_disabled : Bool
                               , is_monitoring_disabled : Bool
                               }
+                        , availability_config : List { recovery_action : Text }
                         , availability_domain : Text
                         , compartment_id : Text
                         , create_vnic_details :

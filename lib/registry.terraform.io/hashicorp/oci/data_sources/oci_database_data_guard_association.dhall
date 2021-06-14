@@ -18,6 +18,7 @@
     , peer_db_home_id : Optional Text
     , peer_db_system_id : Optional Text
     , peer_role : Optional Text
+    , peer_vm_cluster_id : Optional Text
     , protection_mode : Optional Text
     , role : Optional Text
     , shape : Optional Text
@@ -44,6 +45,7 @@
   , peer_db_home_id = None Text
   , peer_db_system_id = None Text
   , peer_role = None Text
+  , peer_vm_cluster_id = None Text
   , protection_mode = None Text
   , role = None Text
   , shape = None Text

@@ -20,6 +20,7 @@
               , peer_db_home_id : Text
               , peer_db_system_id : Text
               , peer_role : Text
+              , peer_vm_cluster_id : Text
               , protection_mode : Text
               , role : Text
               , shape : Text
@@ -57,6 +58,7 @@
             , peer_db_home_id : Text
             , peer_db_system_id : Text
             , peer_role : Text
+            , peer_vm_cluster_id : Text
             , protection_mode : Text
             , role : Text
             , shape : Text

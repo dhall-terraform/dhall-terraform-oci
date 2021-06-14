@@ -27,7 +27,11 @@
                   List
                     { image_id : Text, source_name : Text, source_type : Text }
               , node_source_details :
-                  List { image_id : Text, source_type : Text }
+                  List
+                    { boot_volume_size_in_gbs : Text
+                    , image_id : Text
+                    , source_type : Text
+                    }
               , nodes :
                   List
                     { availability_domain : Text
@@ -78,7 +82,12 @@
             , node_shape : Text
             , node_source :
                 List { image_id : Text, source_name : Text, source_type : Text }
-            , node_source_details : List { image_id : Text, source_type : Text }
+            , node_source_details :
+                List
+                  { boot_volume_size_in_gbs : Text
+                  , image_id : Text
+                  , source_type : Text
+                  }
             , nodes :
                 List
                   { availability_domain : Text

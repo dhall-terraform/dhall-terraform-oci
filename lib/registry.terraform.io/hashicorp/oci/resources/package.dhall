@@ -81,10 +81,6 @@
     ./oci_database_autonomous_database_instance_wallet_management.dhall
 , oci_database_autonomous_database_regional_wallet_management =
     ./oci_database_autonomous_database_regional_wallet_management.dhall
-, oci_database_autonomous_data_warehouse_backup =
-    ./oci_database_autonomous_data_warehouse_backup.dhall
-, oci_database_autonomous_data_warehouse =
-    ./oci_database_autonomous_data_warehouse.dhall
 , oci_database_autonomous_exadata_infrastructure =
     ./oci_database_autonomous_exadata_infrastructure.dhall
 , oci_database_autonomous_vm_cluster =

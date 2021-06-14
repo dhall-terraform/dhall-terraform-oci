@@ -4,6 +4,7 @@
           ( List
               { is_management_disabled : Bool, is_monitoring_disabled : Bool }
           )
+    , availability_config : Optional (List { recovery_action : Text })
     , availability_domain : Optional Text
     , boot_volume_id : Optional Text
     , compartment_id : Optional Text
@@ -86,6 +87,7 @@
   { agent_config =
       None
         (List { is_management_disabled : Bool, is_monitoring_disabled : Bool })
+  , availability_config = None (List { recovery_action : Text })
   , availability_domain = None Text
   , boot_volume_id = None Text
   , compartment_id = None Text

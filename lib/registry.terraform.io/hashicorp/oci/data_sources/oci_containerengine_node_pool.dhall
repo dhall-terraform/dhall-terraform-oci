@@ -22,7 +22,13 @@
         Optional
           (List { image_id : Text, source_name : Text, source_type : Text })
     , node_source_details :
-        Optional (List { image_id : Text, source_type : Text })
+        Optional
+          ( List
+              { boot_volume_size_in_gbs : Text
+              , image_id : Text
+              , source_type : Text
+              }
+          )
     , nodes :
         Optional
           ( List
@@ -64,7 +70,14 @@
   , node_shape = None Text
   , node_source =
       None (List { image_id : Text, source_name : Text, source_type : Text })
-  , node_source_details = None (List { image_id : Text, source_type : Text })
+  , node_source_details =
+      None
+        ( List
+            { boot_volume_size_in_gbs : Text
+            , image_id : Text
+            , source_type : Text
+            }
+        )
   , nodes =
       None
         ( List
