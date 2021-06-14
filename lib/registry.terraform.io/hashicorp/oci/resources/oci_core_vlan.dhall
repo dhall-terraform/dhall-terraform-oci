@@ -1,17 +1,17 @@
 { Type =
-    { availability_domain : Optional Text
-    , compartment_id : Optional Text
+    { availability_domain : Text
+    , cidr_block : Text
+    , compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , hostname_label : Optional Text
     , id : Optional Text
-    , ip_address : Optional Text
-    , is_primary : Optional Bool
-    , subnet_id : Optional Text
+    , nsg_ids : Optional (List Text)
+    , route_table_id : Optional Text
+    , state : Optional Text
     , time_created : Optional Text
-    , vlan_id : Optional Text
-    , vnic_id : Optional Text
+    , vcn_id : Text
+    , vlan_tag : Optional Natural
     , timeouts :
         Optional
           { create : Optional Text
@@ -20,19 +20,15 @@
           }
     }
 , default =
-  { availability_domain = None Text
-  , compartment_id = None Text
-  , defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
-  , hostname_label = None Text
   , id = None Text
-  , ip_address = None Text
-  , is_primary = None Bool
-  , subnet_id = None Text
+  , nsg_ids = None (List Text)
+  , route_table_id = None Text
+  , state = None Text
   , time_created = None Text
-  , vlan_id = None Text
-  , vnic_id = None Text
+  , vlan_tag = None Natural
   , timeouts =
       None
         { create : Optional Text

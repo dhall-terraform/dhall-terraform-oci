@@ -35,6 +35,7 @@
                     , id : Text
                     , lifecycle_details : Text
                     , ncharacter_set : Text
+                    , one_off_patches : List Text
                     , pdb_name : Text
                     , state : Text
                     , time_created : Text
@@ -101,6 +102,7 @@
                   , id : Text
                   , lifecycle_details : Text
                   , ncharacter_set : Text
+                  , one_off_patches : List Text
                   , pdb_name : Text
                   , state : Text
                   , time_created : Text

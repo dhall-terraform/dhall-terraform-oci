@@ -19,6 +19,7 @@
                     , private_ip : Text
                     , skip_source_dest_check : Bool
                     , subnet_id : Text
+                    , vlan_id : Text
                     }
               , display_name : Text
               , id : Text
@@ -27,6 +28,7 @@
               , state : Text
               , subnet_id : Text
               , time_created : Text
+              , vlan_id : Text
               , vlan_tag : Natural
               , vnic_id : Text
               }
@@ -56,6 +58,7 @@
                   , private_ip : Text
                   , skip_source_dest_check : Bool
                   , subnet_id : Text
+                  , vlan_id : Text
                   }
             , display_name : Text
             , id : Text
@@ -64,6 +67,7 @@
             , state : Text
             , subnet_id : Text
             , time_created : Text
+            , vlan_id : Text
             , vlan_tag : Natural
             , vnic_id : Text
             }

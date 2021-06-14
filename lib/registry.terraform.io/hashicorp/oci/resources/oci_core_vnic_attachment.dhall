@@ -8,6 +8,7 @@
     , state : Optional Text
     , subnet_id : Optional Text
     , time_created : Optional Text
+    , vlan_id : Optional Text
     , vlan_tag : Optional Natural
     , vnic_id : Optional Text
     , create_vnic_details :
@@ -20,7 +21,8 @@
           , nsg_ids : Optional (List Text)
           , private_ip : Optional Text
           , skip_source_dest_check : Optional Bool
-          , subnet_id : Text
+          , subnet_id : Optional Text
+          , vlan_id : Optional Text
           }
     , timeouts :
         Optional
@@ -38,6 +40,7 @@
   , state = None Text
   , subnet_id = None Text
   , time_created = None Text
+  , vlan_id = None Text
   , vlan_tag = None Natural
   , vnic_id = None Text
   , timeouts =

@@ -19,6 +19,7 @@
               , private_ip : Text
               , skip_source_dest_check : Bool
               , subnet_id : Text
+              , vlan_id : Text
               }
           )
     , dedicated_vm_host_id : Optional Text
@@ -100,6 +101,7 @@
             , private_ip : Text
             , skip_source_dest_check : Bool
             , subnet_id : Text
+            , vlan_id : Text
             }
         )
   , dedicated_vm_host_id = None Text

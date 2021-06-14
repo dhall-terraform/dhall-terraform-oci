@@ -56,6 +56,7 @@
 , oci_core_vcn = ./oci_core_vcn.dhall
 , oci_core_virtual_circuit = ./oci_core_virtual_circuit.dhall
 , oci_core_virtual_network = ./oci_core_virtual_network.dhall
+, oci_core_vlan = ./oci_core_vlan.dhall
 , oci_core_vnic_attachment = ./oci_core_vnic_attachment.dhall
 , oci_core_volume_attachment = ./oci_core_volume_attachment.dhall
 , oci_core_volume_backup = ./oci_core_volume_backup.dhall
@@ -180,6 +181,7 @@
     ./oci_marketplace_accepted_agreement.dhall
 , oci_marketplace_listing_package_agreement =
     ./oci_marketplace_listing_package_agreement.dhall
+, oci_metering_computation_usage = ./oci_metering_computation_usage.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
 , oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
 , oci_mysql_mysql_db_system = ./oci_mysql_mysql_db_system.dhall
@@ -195,6 +197,8 @@
 , oci_objectstorage_replication_policy =
     ./oci_objectstorage_replication_policy.dhall
 , oci_oce_oce_instance = ./oci_oce_oce_instance.dhall
+, oci_ocvp_esxi_host = ./oci_ocvp_esxi_host.dhall
+, oci_ocvp_sddc = ./oci_ocvp_sddc.dhall
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall

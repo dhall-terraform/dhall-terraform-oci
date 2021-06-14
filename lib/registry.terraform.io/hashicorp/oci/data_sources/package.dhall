@@ -137,6 +137,8 @@
     ./oci_core_virtual_circuit_public_prefixes.dhall
 , oci_core_virtual_circuits = ./oci_core_virtual_circuits.dhall
 , oci_core_virtual_networks = ./oci_core_virtual_networks.dhall
+, oci_core_vlan = ./oci_core_vlan.dhall
+, oci_core_vlans = ./oci_core_vlans.dhall
 , oci_core_vnic_attachments = ./oci_core_vnic_attachments.dhall
 , oci_core_vnic = ./oci_core_vnic.dhall
 , oci_core_volume_attachments = ./oci_core_volume_attachments.dhall
@@ -396,6 +398,8 @@
 , oci_marketplace_listing_packages = ./oci_marketplace_listing_packages.dhall
 , oci_marketplace_listings = ./oci_marketplace_listings.dhall
 , oci_marketplace_publishers = ./oci_marketplace_publishers.dhall
+, oci_metering_computation_configuration =
+    ./oci_metering_computation_configuration.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
 , oci_monitoring_alarm_history_collection =
     ./oci_monitoring_alarm_history_collection.dhall
@@ -437,6 +441,12 @@
     ./oci_objectstorage_replication_sources.dhall
 , oci_oce_oce_instance = ./oci_oce_oce_instance.dhall
 , oci_oce_oce_instances = ./oci_oce_oce_instances.dhall
+, oci_ocvp_esxi_host = ./oci_ocvp_esxi_host.dhall
+, oci_ocvp_esxi_hosts = ./oci_ocvp_esxi_hosts.dhall
+, oci_ocvp_sddc = ./oci_ocvp_sddc.dhall
+, oci_ocvp_sddcs = ./oci_ocvp_sddcs.dhall
+, oci_ocvp_supported_vmware_software_versions =
+    ./oci_ocvp_supported_vmware_software_versions.dhall
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
 , oci_oda_oda_instances = ./oci_oda_oda_instances.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall

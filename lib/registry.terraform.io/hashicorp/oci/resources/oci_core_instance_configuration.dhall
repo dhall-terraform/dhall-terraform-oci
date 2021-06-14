@@ -19,8 +19,12 @@
                         , attach_details :
                             Optional
                               ( List
-                                  { display_name : Optional Text
+                                  { device : Optional Text
+                                  , display_name : Optional Text
+                                  , is_pv_encryption_in_transit_enabled :
+                                      Optional Bool
                                   , is_read_only : Optional Bool
+                                  , is_shareable : Optional Bool
                                   , type : Text
                                   , use_chap : Optional Bool
                                   }
@@ -188,8 +192,12 @@
                       , attach_details :
                           Optional
                             ( List
-                                { display_name : Optional Text
+                                { device : Optional Text
+                                , display_name : Optional Text
+                                , is_pv_encryption_in_transit_enabled :
+                                    Optional Bool
                                 , is_read_only : Optional Bool
+                                , is_shareable : Optional Bool
                                 , type : Text
                                 , use_chap : Optional Bool
                                 }

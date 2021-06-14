@@ -37,6 +37,7 @@
           , id : Optional Text
           , lifecycle_details : Optional Text
           , ncharacter_set : Optional Text
+          , one_off_patches : Optional (List Text)
           , pdb_name : Optional Text
           , state : Optional Text
           , time_created : Optional Text

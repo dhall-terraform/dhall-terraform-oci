@@ -16,8 +16,11 @@
                         List
                           { attach_details :
                               List
-                                { display_name : Text
+                                { device : Text
+                                , display_name : Text
+                                , is_pv_encryption_in_transit_enabled : Bool
                                 , is_read_only : Bool
+                                , is_shareable : Bool
                                 , type : Text
                                 , use_chap : Bool
                                 }
@@ -142,8 +145,11 @@
                       List
                         { attach_details :
                             List
-                              { display_name : Text
+                              { device : Text
+                              , display_name : Text
+                              , is_pv_encryption_in_transit_enabled : Bool
                               , is_read_only : Bool
+                              , is_shareable : Bool
                               , type : Text
                               , use_chap : Bool
                               }

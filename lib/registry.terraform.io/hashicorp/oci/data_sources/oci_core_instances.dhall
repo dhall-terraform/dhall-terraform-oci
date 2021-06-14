@@ -25,6 +25,7 @@
                     , private_ip : Text
                     , skip_source_dest_check : Bool
                     , subnet_id : Text
+                    , vlan_id : Text
                     }
               , dedicated_vm_host_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
@@ -111,6 +112,7 @@
                   , private_ip : Text
                   , skip_source_dest_check : Bool
                   , subnet_id : Text
+                  , vlan_id : Text
                   }
             , dedicated_vm_host_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }

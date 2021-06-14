@@ -7,8 +7,10 @@
         List
           { action : Text
           , allowed_methods : Optional (List Text)
+          , are_invalid_characters_allowed : Optional Bool
           , description : Optional Text
           , header : Optional Text
+          , http_large_header_size_in_kb : Optional Natural
           , prefix : Optional Text
           , response_code : Optional Natural
           , status_code : Optional Natural

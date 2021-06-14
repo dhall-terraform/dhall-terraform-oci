@@ -9,6 +9,7 @@
                   List
                     { action : Text
                     , allowed_methods : List Text
+                    , are_invalid_characters_allowed : Bool
                     , conditions :
                         List
                           { attribute_name : Text
@@ -17,6 +18,7 @@
                           }
                     , description : Text
                     , header : Text
+                    , http_large_header_size_in_kb : Natural
                     , prefix : Text
                     , redirect_uri :
                         List
@@ -50,6 +52,7 @@
                 List
                   { action : Text
                   , allowed_methods : List Text
+                  , are_invalid_characters_allowed : Bool
                   , conditions :
                       List
                         { attribute_name : Text
@@ -58,6 +61,7 @@
                         }
                   , description : Text
                   , header : Text
+                  , http_large_header_size_in_kb : Natural
                   , prefix : Text
                   , redirect_uri :
                       List

@@ -45,7 +45,8 @@
               , nsg_ids : Optional (List Text)
               , private_ip : Optional Text
               , skip_source_dest_check : Optional Bool
-              , subnet_id : Text
+              , subnet_id : Optional Text
+              , vlan_id : Optional Text
               }
           )
     , launch_options :
@@ -132,7 +133,8 @@
             , nsg_ids : Optional (List Text)
             , private_ip : Optional Text
             , skip_source_dest_check : Optional Bool
-            , subnet_id : Text
+            , subnet_id : Optional Text
+            , vlan_id : Optional Text
             }
         )
   , launch_options =

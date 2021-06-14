@@ -11,6 +11,7 @@
     , private_ip_id : Text
     , subnet_id : Optional Text
     , time_created : Optional Text
+    , vlan_id : Optional Text
     , vnic_id : Optional Text
     }
 , default =
@@ -25,6 +26,7 @@
   , is_primary = None Bool
   , subnet_id = None Text
   , time_created = None Text
+  , vlan_id = None Text
   , vnic_id = None Text
   }
 }
