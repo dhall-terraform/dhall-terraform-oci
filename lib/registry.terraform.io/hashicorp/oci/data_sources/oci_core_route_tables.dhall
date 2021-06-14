@@ -13,6 +13,7 @@
               , route_rules :
                   List
                     { cidr_block : Text
+                    , description : Text
                     , destination : Text
                     , destination_type : Text
                     , network_entity_id : Text
@@ -42,6 +43,7 @@
             , route_rules :
                 List
                   { cidr_block : Text
+                  , description : Text
                   , destination : Text
                   , destination_type : Text
                   , network_entity_id : Text

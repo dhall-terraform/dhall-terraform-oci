@@ -12,7 +12,26 @@
                     , cdb_default : Text
                     , cdb_ip_default : Text
                     }
-              , database_id : Text
+              , database :
+                  List
+                    { admin_password : Text
+                    , character_set : Text
+                    , db_backup_config :
+                        List
+                          { auto_backup_enabled : Bool
+                          , auto_backup_window : Text
+                          , backup_destination_details :
+                              List { id : Text, type : Text }
+                          , recovery_window_in_days : Natural
+                          }
+                    , db_name : Text
+                    , db_unique_name : Text
+                    , db_workload : Text
+                    , defined_tags : List { mapKey : Text, mapValue : Text }
+                    , freeform_tags : List { mapKey : Text, mapValue : Text }
+                    , ncharacter_set : Text
+                    , pdb_name : Text
+                    }
               , db_backup_config :
                   List
                     { auto_backup_enabled : Bool
@@ -23,7 +42,9 @@
                     }
               , db_home_id : Text
               , db_name : Text
+              , db_system_id : Text
               , db_unique_name : Text
+              , db_version : Text
               , db_workload : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -31,14 +52,17 @@
               , lifecycle_details : Text
               , ncharacter_set : Text
               , pdb_name : Text
+              , source : Text
               , state : Text
               , time_created : Text
+              , vm_cluster_id : Text
               }
           )
-    , db_home_id : Text
+    , db_home_id : Optional Text
     , db_name : Optional Text
     , id : Optional Text
     , state : Optional Text
+    , system_id : Optional Text
     , filter :
         Optional
           (List { name : Text, regex : Optional Bool, values : List Text })
@@ -56,7 +80,26 @@
                   , cdb_default : Text
                   , cdb_ip_default : Text
                   }
-            , database_id : Text
+            , database :
+                List
+                  { admin_password : Text
+                  , character_set : Text
+                  , db_backup_config :
+                      List
+                        { auto_backup_enabled : Bool
+                        , auto_backup_window : Text
+                        , backup_destination_details :
+                            List { id : Text, type : Text }
+                        , recovery_window_in_days : Natural
+                        }
+                  , db_name : Text
+                  , db_unique_name : Text
+                  , db_workload : Text
+                  , defined_tags : List { mapKey : Text, mapValue : Text }
+                  , freeform_tags : List { mapKey : Text, mapValue : Text }
+                  , ncharacter_set : Text
+                  , pdb_name : Text
+                  }
             , db_backup_config :
                 List
                   { auto_backup_enabled : Bool
@@ -66,7 +109,9 @@
                   }
             , db_home_id : Text
             , db_name : Text
+            , db_system_id : Text
             , db_unique_name : Text
+            , db_version : Text
             , db_workload : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -74,13 +119,17 @@
             , lifecycle_details : Text
             , ncharacter_set : Text
             , pdb_name : Text
+            , source : Text
             , state : Text
             , time_created : Text
+            , vm_cluster_id : Text
             }
         )
+  , db_home_id = None Text
   , db_name = None Text
   , id = None Text
   , state = None Text
+  , system_id = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
   }

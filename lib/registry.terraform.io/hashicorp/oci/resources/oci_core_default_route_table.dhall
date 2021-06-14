@@ -10,6 +10,7 @@
         Optional
           ( List
               { cidr_block : Optional Text
+              , description : Optional Text
               , destination : Optional Text
               , destination_type : Optional Text
               , network_entity_id : Text
@@ -33,6 +34,7 @@
       None
         ( List
             { cidr_block : Optional Text
+            , description : Optional Text
             , destination : Optional Text
             , destination_type : Optional Text
             , network_entity_id : Text

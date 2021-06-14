@@ -10,7 +10,8 @@
               , display_name : Text
               , egress_security_rules :
                   List
-                    { destination : Text
+                    { description : Text
+                    , destination : Text
                     , destination_type : Text
                     , icmp_options : List { code : Natural, type : Natural }
                     , protocol : Text
@@ -34,7 +35,8 @@
               , id : Text
               , ingress_security_rules :
                   List
-                    { icmp_options : List { code : Natural, type : Natural }
+                    { description : Text
+                    , icmp_options : List { code : Natural, type : Natural }
                     , protocol : Text
                     , source : Text
                     , source_type : Text
@@ -76,7 +78,8 @@
             , display_name : Text
             , egress_security_rules :
                 List
-                  { destination : Text
+                  { description : Text
+                  , destination : Text
                   , destination_type : Text
                   , icmp_options : List { code : Natural, type : Natural }
                   , protocol : Text
@@ -100,7 +103,8 @@
             , id : Text
             , ingress_security_rules :
                 List
-                  { icmp_options : List { code : Natural, type : Natural }
+                  { description : Text
+                  , icmp_options : List { code : Natural, type : Natural }
                   , protocol : Text
                   , source : Text
                   , source_type : Text

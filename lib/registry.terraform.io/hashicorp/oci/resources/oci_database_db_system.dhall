@@ -52,10 +52,12 @@
     , vip_ids : Optional (List Text)
     , db_home :
         List
-          { db_version : Optional Text
+          { db_home_location : Optional Text
+          , db_version : Optional Text
           , display_name : Optional Text
           , id : Optional Text
           , last_patch_history_entry_id : Optional Text
+          , lifecycle_details : Optional Text
           , state : Optional Text
           , time_created : Optional Text
           , database :

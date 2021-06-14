@@ -1,5 +1,6 @@
 { Type =
-    { compartment_id : Text
+    { backup_id : Optional Text
+    , compartment_id : Text
     , db_homes :
         Optional
           ( List
@@ -38,11 +39,13 @@
                     , time_created : Text
                     }
               , db_home_id : Text
+              , db_home_location : Text
               , db_system_id : Text
               , db_version : Text
               , display_name : Text
               , id : Text
               , last_patch_history_entry_id : Text
+              , lifecycle_details : Text
               , source : Text
               , state : Text
               , time_created : Text
@@ -59,7 +62,8 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { db_homes =
+  { backup_id = None Text
+  , db_homes =
       None
         ( List
             { compartment_id : Text
@@ -97,11 +101,13 @@
                   , time_created : Text
                   }
             , db_home_id : Text
+            , db_home_location : Text
             , db_system_id : Text
             , db_version : Text
             , display_name : Text
             , id : Text
             , last_patch_history_entry_id : Text
+            , lifecycle_details : Text
             , source : Text
             , state : Text
             , time_created : Text

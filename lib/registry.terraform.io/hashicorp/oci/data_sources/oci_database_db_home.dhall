@@ -36,11 +36,13 @@
               }
           )
     , db_home_id : Text
+    , db_home_location : Optional Text
     , db_system_id : Optional Text
     , db_version : Optional Text
     , display_name : Optional Text
     , id : Optional Text
     , last_patch_history_entry_id : Optional Text
+    , lifecycle_details : Optional Text
     , source : Optional Text
     , state : Optional Text
     , time_created : Optional Text
@@ -82,11 +84,13 @@
             , time_created : Text
             }
         )
+  , db_home_location = None Text
   , db_system_id = None Text
   , db_version = None Text
   , display_name = None Text
   , id = None Text
   , last_patch_history_entry_id = None Text
+  , lifecycle_details = None Text
   , source = None Text
   , state = None Text
   , time_created = None Text

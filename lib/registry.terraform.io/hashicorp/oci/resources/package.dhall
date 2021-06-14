@@ -81,6 +81,7 @@
     ./oci_database_autonomous_exadata_infrastructure.dhall
 , oci_database_backup_destination = ./oci_database_backup_destination.dhall
 , oci_database_backup = ./oci_database_backup.dhall
+, oci_database_database = ./oci_database_database.dhall
 , oci_database_data_guard_association =
     ./oci_database_data_guard_association.dhall
 , oci_database_db_home = ./oci_database_db_home.dhall

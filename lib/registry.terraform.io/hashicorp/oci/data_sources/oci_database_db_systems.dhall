@@ -51,10 +51,12 @@
                           , state : Text
                           , time_created : Text
                           }
+                    , db_home_location : Text
                     , db_version : Text
                     , display_name : Text
                     , id : Text
                     , last_patch_history_entry_id : Text
+                    , lifecycle_details : Text
                     , state : Text
                     , time_created : Text
                     }
@@ -159,10 +161,12 @@
                         , state : Text
                         , time_created : Text
                         }
+                  , db_home_location : Text
                   , db_version : Text
                   , display_name : Text
                   , id : Text
                   , last_patch_history_entry_id : Text
+                  , lifecycle_details : Text
                   , state : Text
                   , time_created : Text
                   }

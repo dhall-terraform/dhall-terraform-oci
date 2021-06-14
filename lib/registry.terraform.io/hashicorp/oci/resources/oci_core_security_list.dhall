@@ -10,7 +10,8 @@
     , egress_security_rules :
         Optional
           ( List
-              { destination : Text
+              { description : Optional Text
+              , destination : Text
               , destination_type : Optional Text
               , protocol : Text
               , stateless : Optional Bool
@@ -39,7 +40,8 @@
     , ingress_security_rules :
         Optional
           ( List
-              { protocol : Text
+              { description : Optional Text
+              , protocol : Text
               , source : Text
               , source_type : Optional Text
               , stateless : Optional Bool
@@ -82,7 +84,8 @@
   , egress_security_rules =
       None
         ( List
-            { destination : Text
+            { description : Optional Text
+            , destination : Text
             , destination_type : Optional Text
             , protocol : Text
             , stateless : Optional Bool
@@ -111,7 +114,8 @@
   , ingress_security_rules =
       None
         ( List
-            { protocol : Text
+            { description : Optional Text
+            , protocol : Text
             , source : Text
             , source_type : Optional Text
             , stateless : Optional Bool
