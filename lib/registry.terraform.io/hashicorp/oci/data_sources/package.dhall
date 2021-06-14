@@ -1,5 +1,11 @@
 { oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
 , oci_analytics_analytics_instances = ./oci_analytics_analytics_instances.dhall
+, oci_apigateway_api_content = ./oci_apigateway_api_content.dhall
+, oci_apigateway_api_deployment_specification =
+    ./oci_apigateway_api_deployment_specification.dhall
+, oci_apigateway_api = ./oci_apigateway_api.dhall
+, oci_apigateway_apis = ./oci_apigateway_apis.dhall
+, oci_apigateway_api_validation = ./oci_apigateway_api_validation.dhall
 , oci_apigateway_certificate = ./oci_apigateway_certificate.dhall
 , oci_apigateway_certificates = ./oci_apigateway_certificates.dhall
 , oci_apigateway_deployment = ./oci_apigateway_deployment.dhall
@@ -187,6 +193,10 @@
 , oci_core_volume_group_backups = ./oci_core_volume_group_backups.dhall
 , oci_core_volume_groups = ./oci_core_volume_groups.dhall
 , oci_core_volumes = ./oci_core_volumes.dhall
+, oci_database_autonomous_container_database_dataguard_association =
+    ./oci_database_autonomous_container_database_dataguard_association.dhall
+, oci_database_autonomous_container_database_dataguard_associations =
+    ./oci_database_autonomous_container_database_dataguard_associations.dhall
 , oci_database_autonomous_container_database =
     ./oci_database_autonomous_container_database.dhall
 , oci_database_autonomous_container_databases =
@@ -197,6 +207,10 @@
     ./oci_database_autonomous_database_backup.dhall
 , oci_database_autonomous_database_backups =
     ./oci_database_autonomous_database_backups.dhall
+, oci_database_autonomous_database_dataguard_association =
+    ./oci_database_autonomous_database_dataguard_association.dhall
+, oci_database_autonomous_database_dataguard_associations =
+    ./oci_database_autonomous_database_dataguard_associations.dhall
 , oci_database_autonomous_database = ./oci_database_autonomous_database.dhall
 , oci_database_autonomous_database_instance_wallet_management =
     ./oci_database_autonomous_database_instance_wallet_management.dhall
@@ -437,6 +451,8 @@
 , oci_logging_log = ./oci_logging_log.dhall
 , oci_logging_log_group = ./oci_logging_log_group.dhall
 , oci_logging_log_groups = ./oci_logging_log_groups.dhall
+, oci_logging_log_saved_search = ./oci_logging_log_saved_search.dhall
+, oci_logging_log_saved_searches = ./oci_logging_log_saved_searches.dhall
 , oci_logging_logs = ./oci_logging_logs.dhall
 , oci_management_agent_management_agent =
     ./oci_management_agent_management_agent.dhall

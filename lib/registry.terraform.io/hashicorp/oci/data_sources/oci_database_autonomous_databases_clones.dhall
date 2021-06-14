@@ -48,6 +48,7 @@
               , private_endpoint_label : Text
               , refreshable_mode : Text
               , refreshable_status : Text
+              , role : Text
               , service_console_url : Text
               , source_id : Text
               , standby_db :
@@ -131,6 +132,7 @@
             , private_endpoint_label : Text
             , refreshable_mode : Text
             , refreshable_status : Text
+            , role : Text
             , service_console_url : Text
             , source_id : Text
             , standby_db :

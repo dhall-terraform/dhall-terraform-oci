@@ -27,8 +27,13 @@
     , next_maintenance_run_id : Optional Text
     , patch_id : Optional Text
     , patch_model : Text
+    , peer_autonomous_container_database_display_name : Optional Text
+    , peer_autonomous_exadata_infrastructure_id : Optional Text
+    , protection_mode : Optional Text
+    , role : Optional Text
     , rotate_key_trigger : Optional Bool
     , service_level_agreement_type : Optional Text
+    , standby_maintenance_buffer_in_days : Optional Natural
     , state : Optional Text
     , time_created : Optional Text
     , vault_id : Optional Text
@@ -93,8 +98,13 @@
         )
   , next_maintenance_run_id = None Text
   , patch_id = None Text
+  , peer_autonomous_container_database_display_name = None Text
+  , peer_autonomous_exadata_infrastructure_id = None Text
+  , protection_mode = None Text
+  , role = None Text
   , rotate_key_trigger = None Bool
   , service_level_agreement_type = None Text
+  , standby_maintenance_buffer_in_days = None Natural
   , state = None Text
   , time_created = None Text
   , vault_id = None Text

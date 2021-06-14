@@ -54,6 +54,7 @@
               , private_endpoint_label : Text
               , refreshable_mode : Text
               , refreshable_status : Text
+              , role : Text
               , rotate_key_trigger : Bool
               , service_console_url : Text
               , source : Text
@@ -153,6 +154,7 @@
             , private_endpoint_label : Text
             , refreshable_mode : Text
             , refreshable_status : Text
+            , role : Text
             , rotate_key_trigger : Bool
             , service_console_url : Text
             , source : Text

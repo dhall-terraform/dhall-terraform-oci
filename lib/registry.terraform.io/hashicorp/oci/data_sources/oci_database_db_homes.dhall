@@ -60,6 +60,7 @@
               }
           )
     , db_system_id : Optional Text
+    , db_version : Optional Text
     , display_name : Optional Text
     , id : Optional Text
     , state : Optional Text
@@ -129,6 +130,7 @@
             }
         )
   , db_system_id = None Text
+  , db_version = None Text
   , display_name = None Text
   , id = None Text
   , state = None Text

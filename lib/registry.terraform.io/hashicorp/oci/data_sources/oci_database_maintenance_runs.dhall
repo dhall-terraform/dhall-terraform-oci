@@ -16,6 +16,7 @@
               , maintenance_subtype : Text
               , maintenance_type : Text
               , patch_id : Text
+              , peer_maintenance_run_id : Text
               , state : Text
               , target_resource_id : Text
               , target_resource_type : Text
@@ -49,6 +50,7 @@
             , maintenance_subtype : Text
             , maintenance_type : Text
             , patch_id : Text
+            , peer_maintenance_run_id : Text
             , state : Text
             , target_resource_id : Text
             , target_resource_type : Text

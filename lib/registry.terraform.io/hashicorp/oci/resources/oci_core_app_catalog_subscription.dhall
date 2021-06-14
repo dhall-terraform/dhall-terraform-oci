@@ -1,7 +1,7 @@
 { Type =
     { compartment_id : Text
     , display_name : Optional Text
-    , eula_link : Text
+    , eula_link : Optional Text
     , id : Optional Text
     , listing_id : Text
     , listing_resource_id : Optional Text
@@ -21,6 +21,7 @@
     }
 , default =
   { display_name = None Text
+  , eula_link = None Text
   , id = None Text
   , listing_resource_id = None Text
   , publisher_name = None Text

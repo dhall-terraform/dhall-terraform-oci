@@ -1,4 +1,5 @@
 { oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
+, oci_apigateway_api = ./oci_apigateway_api.dhall
 , oci_apigateway_certificate = ./oci_apigateway_certificate.dhall
 , oci_apigateway_deployment = ./oci_apigateway_deployment.dhall
 , oci_apigateway_gateway = ./oci_apigateway_gateway.dhall
@@ -81,6 +82,8 @@
 , oci_core_volume = ./oci_core_volume.dhall
 , oci_core_volume_group_backup = ./oci_core_volume_group_backup.dhall
 , oci_core_volume_group = ./oci_core_volume_group.dhall
+, oci_database_autonomous_container_database_dataguard_association_operation =
+    ./oci_database_autonomous_container_database_dataguard_association_operation.dhall
 , oci_database_autonomous_container_database =
     ./oci_database_autonomous_container_database.dhall
 , oci_database_autonomous_database_backup =
@@ -199,6 +202,7 @@
     ./oci_load_balancer_ssl_cipher_suite.dhall
 , oci_logging_log = ./oci_logging_log.dhall
 , oci_logging_log_group = ./oci_logging_log_group.dhall
+, oci_logging_log_saved_search = ./oci_logging_log_saved_search.dhall
 , oci_management_agent_management_agent =
     ./oci_management_agent_management_agent.dhall
 , oci_management_agent_management_agent_install_key =

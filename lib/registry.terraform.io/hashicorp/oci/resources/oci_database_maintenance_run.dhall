@@ -10,6 +10,7 @@
     , maintenance_subtype : Optional Text
     , maintenance_type : Optional Text
     , patch_id : Optional Text
+    , peer_maintenance_run_id : Optional Text
     , state : Optional Text
     , target_resource_id : Optional Text
     , target_resource_type : Optional Text
@@ -34,6 +35,7 @@
   , maintenance_subtype = None Text
   , maintenance_type = None Text
   , patch_id = None Text
+  , peer_maintenance_run_id = None Text
   , state = None Text
   , target_resource_id = None Text
   , target_resource_type = None Text

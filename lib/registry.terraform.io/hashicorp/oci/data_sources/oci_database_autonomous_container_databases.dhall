@@ -49,8 +49,13 @@
               , next_maintenance_run_id : Text
               , patch_id : Text
               , patch_model : Text
+              , peer_autonomous_container_database_display_name : Text
+              , peer_autonomous_exadata_infrastructure_id : Text
+              , protection_mode : Text
+              , role : Text
               , rotate_key_trigger : Bool
               , service_level_agreement_type : Text
+              , standby_maintenance_buffer_in_days : Natural
               , state : Text
               , time_created : Text
               , vault_id : Text
@@ -63,6 +68,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , infrastructure_type : Optional Text
+    , service_level_agreement_type : Optional Text
     , state : Optional Text
     , filter :
         Optional
@@ -119,8 +125,13 @@
             , next_maintenance_run_id : Text
             , patch_id : Text
             , patch_model : Text
+            , peer_autonomous_container_database_display_name : Text
+            , peer_autonomous_exadata_infrastructure_id : Text
+            , protection_mode : Text
+            , role : Text
             , rotate_key_trigger : Bool
             , service_level_agreement_type : Text
+            , standby_maintenance_buffer_in_days : Natural
             , state : Text
             , time_created : Text
             , vault_id : Text
@@ -132,6 +143,7 @@
   , display_name = None Text
   , id = None Text
   , infrastructure_type = None Text
+  , service_level_agreement_type = None Text
   , state = None Text
   , filter =
       None (List { name : Text, regex : Optional Bool, values : List Text })
