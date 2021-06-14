@@ -1,15 +1,12 @@
 { Type =
-    { block_traffic : Optional Bool
+    { cidr_blocks : Optional (List Text)
     , compartment_id : Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
-    , nat_ip : Optional Text
-    , public_ip_id : Optional Text
     , state : Optional Text
     , time_created : Optional Text
-    , vcn_id : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -18,13 +15,11 @@
           }
     }
 , default =
-  { block_traffic = None Bool
+  { cidr_blocks = None (List Text)
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
-  , nat_ip = None Text
-  , public_ip_id = None Text
   , state = None Text
   , time_created = None Text
   , timeouts =

@@ -10,6 +10,12 @@
     , content_length_limit : Optional Natural
     , content_md5 : Optional Text
     , content_type : Optional Text
+    , http_response_cache_control : Optional Text
+    , http_response_content_disposition : Optional Text
+    , http_response_content_encoding : Optional Text
+    , http_response_content_language : Optional Text
+    , http_response_content_type : Optional Text
+    , http_response_expires : Optional Text
     , id : Optional Text
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , namespace : Text
@@ -27,6 +33,12 @@
   , content_length_limit = None Natural
   , content_md5 = None Text
   , content_type = None Text
+  , http_response_cache_control = None Text
+  , http_response_content_disposition = None Text
+  , http_response_content_encoding = None Text
+  , http_response_content_language = None Text
+  , http_response_content_type = None Text
+  , http_response_expires = None Text
   , id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
   , version_id = None Text

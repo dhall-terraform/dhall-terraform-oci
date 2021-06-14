@@ -10,6 +10,7 @@
     , ip_address : Optional Text
     , lifetime : Optional Text
     , private_ip_id : Optional Text
+    , public_ip_pool_id : Optional Text
     , scope : Optional Text
     , state : Optional Text
     , time_created : Optional Text
@@ -32,6 +33,7 @@
   , ip_address = None Text
   , lifetime = None Text
   , private_ip_id = None Text
+  , public_ip_pool_id = None Text
   , scope = None Text
   , state = None Text
   , time_created = None Text

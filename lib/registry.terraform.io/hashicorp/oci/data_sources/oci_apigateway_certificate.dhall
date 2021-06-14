@@ -1,42 +1,34 @@
 { Type =
-    { certificate_id : Optional Text
-    , compartment_id : Text
+    { certificate : Optional Text
+    , certificate_id : Text
+    , compartment_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
-    , endpoint_type : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
-    , hostname : Optional Text
     , id : Optional Text
-    , ip_addresses : Optional (List { ip_address : Text })
+    , intermediate_certificates : Optional Text
     , lifecycle_details : Optional Text
+    , private_key : Optional Text
     , state : Optional Text
-    , subnet_id : Text
+    , subject_names : Optional (List Text)
     , time_created : Optional Text
+    , time_not_valid_after : Optional Text
     , time_updated : Optional Text
-    , timeouts :
-        Optional
-          { create : Optional Text
-          , delete : Optional Text
-          , update : Optional Text
-          }
     }
 , default =
-  { certificate_id = None Text
+  { certificate = None Text
+  , compartment_id = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
-  , hostname = None Text
   , id = None Text
-  , ip_addresses = None (List { ip_address : Text })
+  , intermediate_certificates = None Text
   , lifecycle_details = None Text
+  , private_key = None Text
   , state = None Text
+  , subject_names = None (List Text)
   , time_created = None Text
+  , time_not_valid_after = None Text
   , time_updated = None Text
-  , timeouts =
-      None
-        { create : Optional Text
-        , delete : Optional Text
-        , update : Optional Text
-        }
   }
 }

@@ -3,6 +3,7 @@
     , compartment_id : Text
     , id : Optional Text
     , lifetime : Optional Text
+    , public_ip_pool_id : Optional Text
     , public_ips :
         Optional
           ( List
@@ -17,6 +18,7 @@
               , ip_address : Text
               , lifetime : Text
               , private_ip_id : Text
+              , public_ip_pool_id : Text
               , scope : Text
               , state : Text
               , time_created : Text
@@ -31,6 +33,7 @@
   { availability_domain = None Text
   , id = None Text
   , lifetime = None Text
+  , public_ip_pool_id = None Text
   , public_ips =
       None
         ( List
@@ -45,6 +48,7 @@
             , ip_address : Text
             , lifetime : Text
             , private_ip_id : Text
+            , public_ip_pool_id : Text
             , scope : Text
             , state : Text
             , time_created : Text

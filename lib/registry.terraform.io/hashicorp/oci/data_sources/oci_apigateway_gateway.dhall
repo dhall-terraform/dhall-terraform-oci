@@ -1,5 +1,6 @@
 { Type =
-    { compartment_id : Optional Text
+    { certificate_id : Optional Text
+    , compartment_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , endpoint_type : Optional Text
@@ -7,6 +8,7 @@
     , gateway_id : Text
     , hostname : Optional Text
     , id : Optional Text
+    , ip_addresses : Optional (List { ip_address : Text })
     , lifecycle_details : Optional Text
     , state : Optional Text
     , subnet_id : Optional Text
@@ -14,13 +16,15 @@
     , time_updated : Optional Text
     }
 , default =
-  { compartment_id = None Text
+  { certificate_id = None Text
+  , compartment_id = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , endpoint_type = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , hostname = None Text
   , id = None Text
+  , ip_addresses = None (List { ip_address : Text })
   , lifecycle_details = None Text
   , state = None Text
   , subnet_id = None Text

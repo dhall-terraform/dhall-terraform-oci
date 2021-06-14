@@ -12,6 +12,7 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , nat_ip : Text
+              , public_ip_id : Text
               , state : Text
               , time_created : Text
               , vcn_id : Text
@@ -36,6 +37,7 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , nat_ip : Text
+            , public_ip_id : Text
             , state : Text
             , time_created : Text
             , vcn_id : Text

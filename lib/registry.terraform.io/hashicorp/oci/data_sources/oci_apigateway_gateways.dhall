@@ -1,16 +1,19 @@
 { Type =
-    { compartment_id : Text
+    { certificate_id : Optional Text
+    , compartment_id : Text
     , display_name : Optional Text
     , gateway_collection :
         Optional
           ( List
-              { compartment_id : Text
+              { certificate_id : Text
+              , compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , endpoint_type : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , hostname : Text
               , id : Text
+              , ip_addresses : List { ip_address : Text }
               , lifecycle_details : Text
               , state : Text
               , subnet_id : Text
@@ -25,17 +28,20 @@
           (List { name : Text, regex : Optional Bool, values : List Text })
     }
 , default =
-  { display_name = None Text
+  { certificate_id = None Text
+  , display_name = None Text
   , gateway_collection =
       None
         ( List
-            { compartment_id : Text
+            { certificate_id : Text
+            , compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , endpoint_type : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , hostname : Text
             , id : Text
+            , ip_addresses : List { ip_address : Text }
             , lifecycle_details : Text
             , state : Text
             , subnet_id : Text

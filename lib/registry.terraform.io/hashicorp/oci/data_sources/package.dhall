@@ -1,5 +1,7 @@
 { oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
 , oci_analytics_analytics_instances = ./oci_analytics_analytics_instances.dhall
+, oci_apigateway_certificate = ./oci_apigateway_certificate.dhall
+, oci_apigateway_certificates = ./oci_apigateway_certificates.dhall
 , oci_apigateway_deployment = ./oci_apigateway_deployment.dhall
 , oci_apigateway_deployments = ./oci_apigateway_deployments.dhall
 , oci_apigateway_gateway = ./oci_apigateway_gateway.dhall
@@ -61,6 +63,9 @@
 , oci_core_boot_volume_backups = ./oci_core_boot_volume_backups.dhall
 , oci_core_boot_volume = ./oci_core_boot_volume.dhall
 , oci_core_boot_volumes = ./oci_core_boot_volumes.dhall
+, oci_core_byoip_allocated_ranges = ./oci_core_byoip_allocated_ranges.dhall
+, oci_core_byoip_range = ./oci_core_byoip_range.dhall
+, oci_core_byoip_ranges = ./oci_core_byoip_ranges.dhall
 , oci_core_cluster_network = ./oci_core_cluster_network.dhall
 , oci_core_cluster_network_instances =
     ./oci_core_cluster_network_instances.dhall
@@ -147,6 +152,8 @@
 , oci_core_private_ip = ./oci_core_private_ip.dhall
 , oci_core_private_ips = ./oci_core_private_ips.dhall
 , oci_core_public_ip = ./oci_core_public_ip.dhall
+, oci_core_public_ip_pool = ./oci_core_public_ip_pool.dhall
+, oci_core_public_ip_pools = ./oci_core_public_ip_pools.dhall
 , oci_core_public_ips = ./oci_core_public_ips.dhall
 , oci_core_remote_peering_connections =
     ./oci_core_remote_peering_connections.dhall

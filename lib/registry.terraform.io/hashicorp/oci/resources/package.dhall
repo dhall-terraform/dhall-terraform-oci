@@ -1,4 +1,5 @@
 { oci_analytics_analytics_instance = ./oci_analytics_analytics_instance.dhall
+, oci_apigateway_certificate = ./oci_apigateway_certificate.dhall
 , oci_apigateway_deployment = ./oci_apigateway_deployment.dhall
 , oci_apigateway_gateway = ./oci_apigateway_gateway.dhall
 , oci_audit_configuration = ./oci_audit_configuration.dhall
@@ -57,6 +58,8 @@
     ./oci_core_network_security_group_security_rule.dhall
 , oci_core_private_ip = ./oci_core_private_ip.dhall
 , oci_core_public_ip = ./oci_core_public_ip.dhall
+, oci_core_public_ip_pool_capacity = ./oci_core_public_ip_pool_capacity.dhall
+, oci_core_public_ip_pool = ./oci_core_public_ip_pool.dhall
 , oci_core_remote_peering_connection =
     ./oci_core_remote_peering_connection.dhall
 , oci_core_route_table_attachment = ./oci_core_route_table_attachment.dhall

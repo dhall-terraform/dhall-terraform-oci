@@ -7,6 +7,7 @@
     , id : Optional Text
     , nat_gateway_id : Text
     , nat_ip : Optional Text
+    , public_ip_id : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     , vcn_id : Optional Text
@@ -19,6 +20,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , nat_ip = None Text
+  , public_ip_id = None Text
   , state = None Text
   , time_created = None Text
   , vcn_id = None Text
