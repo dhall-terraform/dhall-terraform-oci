@@ -15,6 +15,7 @@
           , delete : Optional Text
           , update : Optional Text
           }
+    , validator : Optional (List { validator_type : Text, values : List Text })
     }
 , default =
   { defined_tags = None (List { mapKey : Text, mapValue : Text })
@@ -30,5 +31,6 @@
         , delete : Optional Text
         , update : Optional Text
         }
+  , validator = None (List { validator_type : Text, values : List Text })
   }
 }

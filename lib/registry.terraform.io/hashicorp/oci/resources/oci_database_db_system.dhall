@@ -101,6 +101,7 @@
                       )
                 }
           }
+    , db_system_options : Optional (List { storage_management : Optional Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -150,6 +151,7 @@
   , time_zone = None Text
   , version = None Text
   , vip_ids = None (List Text)
+  , db_system_options = None (List { storage_management : Optional Text })
   , timeouts =
       None
         { create : Optional Text

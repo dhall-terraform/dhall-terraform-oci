@@ -58,6 +58,7 @@
                     , state : Text
                     , time_created : Text
                     }
+              , db_system_options : List { storage_management : Text }
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , disk_redundancy : Text
               , display_name : Text
@@ -165,6 +166,7 @@
                   , state : Text
                   , time_created : Text
                   }
+            , db_system_options : List { storage_management : Text }
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , disk_redundancy : Text
             , display_name : Text

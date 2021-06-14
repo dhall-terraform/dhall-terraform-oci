@@ -15,6 +15,7 @@
               , state : Text
               , tag_namespace_id : Text
               , time_created : Text
+              , validator : List { validator_type : Text, values : List Text }
               }
           )
     , filter :
@@ -37,6 +38,7 @@
             , state : Text
             , tag_namespace_id : Text
             , time_created : Text
+            , validator : List { validator_type : Text, values : List Text }
             }
         )
   , filter =

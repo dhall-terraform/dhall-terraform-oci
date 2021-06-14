@@ -7,6 +7,7 @@
           ( List
               { compartment_id : Text
               , id : Text
+              , is_required : Bool
               , state : Text
               , tag_definition_id : Text
               , tag_definition_name : Text
@@ -29,6 +30,7 @@
         ( List
             { compartment_id : Text
             , id : Text
+            , is_required : Bool
             , state : Text
             , tag_definition_id : Text
             , tag_definition_name : Text
