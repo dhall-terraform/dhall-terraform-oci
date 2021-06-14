@@ -85,6 +85,8 @@
 , oci_database_data_guard_association =
     ./oci_database_data_guard_association.dhall
 , oci_database_db_home = ./oci_database_db_home.dhall
+, oci_database_db_node_console_connection =
+    ./oci_database_db_node_console_connection.dhall
 , oci_database_db_system = ./oci_database_db_system.dhall
 , oci_database_exadata_infrastructure =
     ./oci_database_exadata_infrastructure.dhall

@@ -6,6 +6,7 @@
         Optional
           ( List
               { is_latest_for_major_version : Bool
+              , is_preview_db_version : Bool
               , supports_pdb : Bool
               , version : Text
               }
@@ -23,6 +24,7 @@
       None
         ( List
             { is_latest_for_major_version : Bool
+            , is_preview_db_version : Bool
             , supports_pdb : Bool
             , version : Text
             }

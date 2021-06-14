@@ -195,6 +195,10 @@
 , oci_database_db_home_patch_history_entries =
     ./oci_database_db_home_patch_history_entries.dhall
 , oci_database_db_homes = ./oci_database_db_homes.dhall
+, oci_database_db_node_console_connection =
+    ./oci_database_db_node_console_connection.dhall
+, oci_database_db_node_console_connections =
+    ./oci_database_db_node_console_connections.dhall
 , oci_database_db_node = ./oci_database_db_node.dhall
 , oci_database_db_nodes = ./oci_database_db_nodes.dhall
 , oci_database_db_system_patches = ./oci_database_db_system_patches.dhall

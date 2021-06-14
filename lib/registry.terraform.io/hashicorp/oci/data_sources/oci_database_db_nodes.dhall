@@ -3,15 +3,19 @@
     , db_nodes :
         Optional
           ( List
-              { backup_vnic_id : Text
+              { additional_details : Text
+              , backup_vnic_id : Text
               , db_node_id : Text
               , db_system_id : Text
               , fault_domain : Text
               , hostname : Text
               , id : Text
+              , maintenance_type : Text
               , software_storage_size_in_gb : Natural
               , state : Text
               , time_created : Text
+              , time_maintenance_window_end : Text
+              , time_maintenance_window_start : Text
               , vnic_id : Text
               }
           )
@@ -27,15 +31,19 @@
   { db_nodes =
       None
         ( List
-            { backup_vnic_id : Text
+            { additional_details : Text
+            , backup_vnic_id : Text
             , db_node_id : Text
             , db_system_id : Text
             , fault_domain : Text
             , hostname : Text
             , id : Text
+            , maintenance_type : Text
             , software_storage_size_in_gb : Natural
             , state : Text
             , time_created : Text
+            , time_maintenance_window_end : Text
+            , time_maintenance_window_start : Text
             , vnic_id : Text
             }
         )
