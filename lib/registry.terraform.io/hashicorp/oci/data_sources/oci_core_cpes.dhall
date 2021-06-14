@@ -4,6 +4,7 @@
         Optional
           ( List
               { compartment_id : Text
+              , cpe_device_shape_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -22,6 +23,7 @@
       None
         ( List
             { compartment_id : Text
+            , cpe_device_shape_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }

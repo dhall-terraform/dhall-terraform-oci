@@ -28,10 +28,12 @@
           ( List
               { availability_domain : Text
               , error : List { code : Text, message : Text, status : Text }
+              , fault_domain : Text
               , id : Text
               , lifecycle_details : Text
               , name : Text
               , node_pool_id : Text
+              , private_ip : Text
               , public_ip : Text
               , state : Text
               , subnet_id : Text
@@ -68,10 +70,12 @@
         ( List
             { availability_domain : Text
             , error : List { code : Text, message : Text, status : Text }
+            , fault_domain : Text
             , id : Text
             , lifecycle_details : Text
             , name : Text
             , node_pool_id : Text
+            , private_ip : Text
             , public_ip : Text
             , state : Text
             , subnet_id : Text

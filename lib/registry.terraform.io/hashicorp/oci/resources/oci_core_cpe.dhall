@@ -1,5 +1,6 @@
 { Type =
     { compartment_id : Text
+    , cpe_device_shape_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -14,7 +15,8 @@
           }
     }
 , default =
-  { defined_tags = None (List { mapKey : Text, mapValue : Text })
+  { cpe_device_shape_id = None Text
+  , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
