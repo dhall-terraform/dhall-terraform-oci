@@ -75,10 +75,21 @@
           )
     , fault_domain : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
+    , heat_wave_cluster :
+        Optional
+          ( List
+              { cluster_size : Natural
+              , shape_name : Text
+              , state : Text
+              , time_created : Text
+              , time_updated : Text
+              }
+          )
     , hostname_label : Optional Text
     , id : Optional Text
     , ip_address : Optional Text
     , is_analytics_cluster_attached : Optional Bool
+    , is_heat_wave_cluster_attached : Optional Bool
     , lifecycle_details : Optional Text
     , maintenance : Optional (List { window_start_time : Text })
     , mysql_version : Optional Text
@@ -168,10 +179,21 @@
         )
   , fault_domain = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
+  , heat_wave_cluster =
+      None
+        ( List
+            { cluster_size : Natural
+            , shape_name : Text
+            , state : Text
+            , time_created : Text
+            , time_updated : Text
+            }
+        )
   , hostname_label = None Text
   , id = None Text
   , ip_address = None Text
   , is_analytics_cluster_attached = None Bool
+  , is_heat_wave_cluster_attached = None Bool
   , lifecycle_details = None Text
   , maintenance = None (List { window_start_time : Text })
   , mysql_version = None Text

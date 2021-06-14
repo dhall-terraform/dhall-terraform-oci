@@ -11,6 +11,7 @@
     , availability_config : Optional (List { recovery_action : Text })
     , availability_domain : Optional Text
     , boot_volume_id : Optional Text
+    , capacity_reservation_id : Optional Text
     , compartment_id : Optional Text
     , create_vnic_details :
         Optional
@@ -104,6 +105,7 @@
   , availability_config = None (List { recovery_action : Text })
   , availability_domain = None Text
   , boot_volume_id = None Text
+  , capacity_reservation_id = None Text
   , compartment_id = None Text
   , create_vnic_details =
       None

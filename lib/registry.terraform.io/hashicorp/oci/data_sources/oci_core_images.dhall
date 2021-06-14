@@ -39,6 +39,7 @@
                     , network_type : Text
                     , remote_data_volume_type : Text
                     }
+              , listing_type : Text
               , operating_system : Text
               , operating_system_version : Text
               , size_in_mbs : Text
@@ -96,6 +97,7 @@
                   , network_type : Text
                   , remote_data_volume_type : Text
                   }
+            , listing_type : Text
             , operating_system : Text
             , operating_system_version : Text
             , size_in_mbs : Text

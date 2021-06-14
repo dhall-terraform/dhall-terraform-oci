@@ -29,6 +29,7 @@
     , license_model_description : Optional Text
     , links : Optional (List { href : Text, rel : Text })
     , listing_id : Text
+    , listing_type : Optional Text
     , long_description : Optional Text
     , name : Optional Text
     , package_type : Optional Text
@@ -77,6 +78,7 @@
         Optional
           (List { email : Text, name : Text, phone : Text, subject : Text })
     , support_links : Optional (List { name : Text, url : Text })
+    , supported_operating_systems : Optional (List { name : Text })
     , system_requirements : Optional Text
     , tagline : Optional Text
     , time_released : Optional Text
@@ -114,6 +116,7 @@
   , languages = None (List { code : Text, name : Text })
   , license_model_description = None Text
   , links = None (List { href : Text, rel : Text })
+  , listing_type = None Text
   , long_description = None Text
   , name = None Text
   , package_type = None Text
@@ -161,6 +164,7 @@
   , support_contacts =
       None (List { email : Text, name : Text, phone : Text, subject : Text })
   , support_links = None (List { name : Text, url : Text })
+  , supported_operating_systems = None (List { name : Text })
   , system_requirements = None Text
   , tagline = None Text
   , time_released = None Text

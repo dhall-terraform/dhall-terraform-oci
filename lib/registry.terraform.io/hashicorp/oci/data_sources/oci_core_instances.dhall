@@ -1,5 +1,6 @@
 { Type =
     { availability_domain : Optional Text
+    , capacity_reservation_id : Optional Text
     , compartment_id : Text
     , display_name : Optional Text
     , id : Optional Text
@@ -17,6 +18,7 @@
               , availability_config : List { recovery_action : Text }
               , availability_domain : Text
               , boot_volume_id : Text
+              , capacity_reservation_id : Text
               , compartment_id : Text
               , create_vnic_details :
                   List
@@ -96,6 +98,7 @@
     }
 , default =
   { availability_domain = None Text
+  , capacity_reservation_id = None Text
   , display_name = None Text
   , id = None Text
   , instances =
@@ -111,6 +114,7 @@
             , availability_config : List { recovery_action : Text }
             , availability_domain : Text
             , boot_volume_id : Text
+            , capacity_reservation_id : Text
             , compartment_id : Text
             , create_vnic_details :
                 List

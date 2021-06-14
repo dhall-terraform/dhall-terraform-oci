@@ -51,6 +51,7 @@
                           }
                     , availability_config : List { recovery_action : Text }
                     , availability_domain : Text
+                    , capacity_reservation_id : Text
                     , compartment_id : Text
                     , create_vnic_details :
                         List
@@ -178,6 +179,7 @@
                         }
                   , availability_config : List { recovery_action : Text }
                   , availability_domain : Text
+                  , capacity_reservation_id : Text
                   , compartment_id : Text
                   , create_vnic_details :
                       List

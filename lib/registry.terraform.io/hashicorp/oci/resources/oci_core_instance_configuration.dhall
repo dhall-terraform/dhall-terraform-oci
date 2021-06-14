@@ -62,6 +62,7 @@
                   Optional
                     ( List
                         { availability_domain : Optional Text
+                        , capacity_reservation_id : Optional Text
                         , compartment_id : Optional Text
                         , dedicated_vm_host_id : Optional Text
                         , defined_tags :
@@ -258,6 +259,7 @@
                 Optional
                   ( List
                       { availability_domain : Optional Text
+                      , capacity_reservation_id : Optional Text
                       , compartment_id : Optional Text
                       , dedicated_vm_host_id : Optional Text
                       , defined_tags :

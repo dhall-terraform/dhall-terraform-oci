@@ -6,6 +6,7 @@
         Optional
           ( List
               { listing_id : Text
+              , operating_system : List { name : Text }
               , package_type : Text
               , package_version : Text
               , regions :
@@ -31,6 +32,7 @@
       None
         ( List
             { listing_id : Text
+            , operating_system : List { name : Text }
             , package_type : Text
             , package_version : Text
             , regions :

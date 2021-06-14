@@ -37,6 +37,8 @@
 , oci_core_boot_volume_backup = ./oci_core_boot_volume_backup.dhall
 , oci_core_boot_volume = ./oci_core_boot_volume.dhall
 , oci_core_cluster_network = ./oci_core_cluster_network.dhall
+, oci_core_compute_capacity_reservation =
+    ./oci_core_compute_capacity_reservation.dhall
 , oci_core_compute_image_capability_schema =
     ./oci_core_compute_image_capability_schema.dhall
 , oci_core_console_history = ./oci_core_console_history.dhall
@@ -264,12 +266,22 @@
     ./oci_marketplace_accepted_agreement.dhall
 , oci_marketplace_listing_package_agreement =
     ./oci_marketplace_listing_package_agreement.dhall
+, oci_marketplace_publication = ./oci_marketplace_publication.dhall
+, oci_metering_computation_query = ./oci_metering_computation_query.dhall
 , oci_metering_computation_usage = ./oci_metering_computation_usage.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
 , oci_mysql_analytics_cluster = ./oci_mysql_analytics_cluster.dhall
 , oci_mysql_channel = ./oci_mysql_channel.dhall
+, oci_mysql_heat_wave_cluster = ./oci_mysql_heat_wave_cluster.dhall
 , oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
 , oci_mysql_mysql_db_system = ./oci_mysql_mysql_db_system.dhall
+, oci_network_load_balancer_backend = ./oci_network_load_balancer_backend.dhall
+, oci_network_load_balancer_backend_set =
+    ./oci_network_load_balancer_backend_set.dhall
+, oci_network_load_balancer_listener =
+    ./oci_network_load_balancer_listener.dhall
+, oci_network_load_balancer_network_load_balancer =
+    ./oci_network_load_balancer_network_load_balancer.dhall
 , oci_nosql_index = ./oci_nosql_index.dhall
 , oci_nosql_table = ./oci_nosql_table.dhall
 , oci_objectstorage_bucket = ./oci_objectstorage_bucket.dhall

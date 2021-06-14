@@ -4,6 +4,7 @@
     , granularity : Text
     , group_by : Optional (List Text)
     , id : Optional Text
+    , is_aggregate_by_time : Optional Bool
     , items :
         Optional
           ( List
@@ -41,6 +42,14 @@
     , tenant_id : Text
     , time_usage_ended : Text
     , time_usage_started : Text
+    , group_by_tag :
+        Optional
+          ( List
+              { key : Optional Text
+              , namespace : Optional Text
+              , value : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -53,6 +62,7 @@
   , filter = None Text
   , group_by = None (List Text)
   , id = None Text
+  , is_aggregate_by_time = None Bool
   , items =
       None
         ( List
@@ -87,6 +97,14 @@
             }
         )
   , query_type = None Text
+  , group_by_tag =
+      None
+        ( List
+            { key : Optional Text
+            , namespace : Optional Text
+            , value : Optional Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

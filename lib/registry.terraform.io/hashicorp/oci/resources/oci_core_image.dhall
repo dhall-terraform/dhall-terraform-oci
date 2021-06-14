@@ -24,6 +24,7 @@
               , remote_data_volume_type : Text
               }
           )
+    , listing_type : Optional Text
     , operating_system : Optional Text
     , operating_system_version : Optional Text
     , size_in_mbs : Optional Text
@@ -74,6 +75,7 @@
             , remote_data_volume_type : Text
             }
         )
+  , listing_type = None Text
   , operating_system = None Text
   , operating_system_version = None Text
   , size_in_mbs = None Text

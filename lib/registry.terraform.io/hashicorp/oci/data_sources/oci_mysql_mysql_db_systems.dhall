@@ -72,10 +72,19 @@
                     }
               , fault_domain : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
+              , heat_wave_cluster :
+                  List
+                    { cluster_size : Natural
+                    , shape_name : Text
+                    , state : Text
+                    , time_created : Text
+                    , time_updated : Text
+                    }
               , hostname_label : Text
               , id : Text
               , ip_address : Text
               , is_analytics_cluster_attached : Bool
+              , is_heat_wave_cluster_attached : Bool
               , lifecycle_details : Text
               , maintenance : List { window_start_time : Text }
               , mysql_version : Text
@@ -93,6 +102,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , is_analytics_cluster_attached : Optional Bool
+    , is_heat_wave_cluster_attached : Optional Bool
     , is_up_to_date : Optional Bool
     , state : Optional Text
     , filter :
@@ -172,10 +182,19 @@
                   }
             , fault_domain : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
+            , heat_wave_cluster :
+                List
+                  { cluster_size : Natural
+                  , shape_name : Text
+                  , state : Text
+                  , time_created : Text
+                  , time_updated : Text
+                  }
             , hostname_label : Text
             , id : Text
             , ip_address : Text
             , is_analytics_cluster_attached : Bool
+            , is_heat_wave_cluster_attached : Bool
             , lifecycle_details : Text
             , maintenance : List { window_start_time : Text }
             , mysql_version : Text
@@ -193,6 +212,7 @@
   , display_name = None Text
   , id = None Text
   , is_analytics_cluster_attached = None Bool
+  , is_heat_wave_cluster_attached = None Bool
   , is_up_to_date = None Bool
   , state = None Text
   , filter =

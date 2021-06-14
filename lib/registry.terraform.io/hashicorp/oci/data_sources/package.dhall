@@ -94,6 +94,14 @@
 , oci_core_cluster_network_instances =
     ./oci_core_cluster_network_instances.dhall
 , oci_core_cluster_networks = ./oci_core_cluster_networks.dhall
+, oci_core_compute_capacity_reservation =
+    ./oci_core_compute_capacity_reservation.dhall
+, oci_core_compute_capacity_reservation_instances =
+    ./oci_core_compute_capacity_reservation_instances.dhall
+, oci_core_compute_capacity_reservation_instance_shapes =
+    ./oci_core_compute_capacity_reservation_instance_shapes.dhall
+, oci_core_compute_capacity_reservations =
+    ./oci_core_compute_capacity_reservations.dhall
 , oci_core_compute_global_image_capability_schema =
     ./oci_core_compute_global_image_capability_schema.dhall
 , oci_core_compute_global_image_capability_schemas =
@@ -576,9 +584,17 @@
 , oci_marketplace_listing_packages = ./oci_marketplace_listing_packages.dhall
 , oci_marketplace_listings = ./oci_marketplace_listings.dhall
 , oci_marketplace_listing_taxes = ./oci_marketplace_listing_taxes.dhall
+, oci_marketplace_publication = ./oci_marketplace_publication.dhall
+, oci_marketplace_publication_package =
+    ./oci_marketplace_publication_package.dhall
+, oci_marketplace_publication_packages =
+    ./oci_marketplace_publication_packages.dhall
+, oci_marketplace_publications = ./oci_marketplace_publications.dhall
 , oci_marketplace_publishers = ./oci_marketplace_publishers.dhall
 , oci_metering_computation_configuration =
     ./oci_metering_computation_configuration.dhall
+, oci_metering_computation_queries = ./oci_metering_computation_queries.dhall
+, oci_metering_computation_query = ./oci_metering_computation_query.dhall
 , oci_monitoring_alarm = ./oci_monitoring_alarm.dhall
 , oci_monitoring_alarm_history_collection =
     ./oci_monitoring_alarm_history_collection.dhall
@@ -589,6 +605,7 @@
 , oci_mysql_analytics_cluster = ./oci_mysql_analytics_cluster.dhall
 , oci_mysql_channel = ./oci_mysql_channel.dhall
 , oci_mysql_channels = ./oci_mysql_channels.dhall
+, oci_mysql_heat_wave_cluster = ./oci_mysql_heat_wave_cluster.dhall
 , oci_mysql_mysql_backup = ./oci_mysql_mysql_backup.dhall
 , oci_mysql_mysql_backups = ./oci_mysql_mysql_backups.dhall
 , oci_mysql_mysql_configuration = ./oci_mysql_mysql_configuration.dhall
@@ -597,6 +614,30 @@
 , oci_mysql_mysql_db_systems = ./oci_mysql_mysql_db_systems.dhall
 , oci_mysql_mysql_versions = ./oci_mysql_mysql_versions.dhall
 , oci_mysql_shapes = ./oci_mysql_shapes.dhall
+, oci_network_load_balancer_backend_health =
+    ./oci_network_load_balancer_backend_health.dhall
+, oci_network_load_balancer_backends =
+    ./oci_network_load_balancer_backends.dhall
+, oci_network_load_balancer_backend_set =
+    ./oci_network_load_balancer_backend_set.dhall
+, oci_network_load_balancer_backend_set_health =
+    ./oci_network_load_balancer_backend_set_health.dhall
+, oci_network_load_balancer_backend_sets =
+    ./oci_network_load_balancer_backend_sets.dhall
+, oci_network_load_balancer_listener =
+    ./oci_network_load_balancer_listener.dhall
+, oci_network_load_balancer_listeners =
+    ./oci_network_load_balancer_listeners.dhall
+, oci_network_load_balancer_network_load_balancer =
+    ./oci_network_load_balancer_network_load_balancer.dhall
+, oci_network_load_balancer_network_load_balancer_health =
+    ./oci_network_load_balancer_network_load_balancer_health.dhall
+, oci_network_load_balancer_network_load_balancers =
+    ./oci_network_load_balancer_network_load_balancers.dhall
+, oci_network_load_balancer_network_load_balancers_policies =
+    ./oci_network_load_balancer_network_load_balancers_policies.dhall
+, oci_network_load_balancer_network_load_balancers_protocols =
+    ./oci_network_load_balancer_network_load_balancers_protocols.dhall
 , oci_nosql_index = ./oci_nosql_index.dhall
 , oci_nosql_indexes = ./oci_nosql_indexes.dhall
 , oci_nosql_table = ./oci_nosql_table.dhall
