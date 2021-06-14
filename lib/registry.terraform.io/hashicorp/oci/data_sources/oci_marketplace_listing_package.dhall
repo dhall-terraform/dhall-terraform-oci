@@ -4,6 +4,7 @@
     , compartment_id : Optional Text
     , description : Optional Text
     , id : Optional Text
+    , image_id : Optional Text
     , listing_id : Text
     , package_type : Optional Text
     , package_version : Text
@@ -46,6 +47,7 @@
   , compartment_id = None Text
   , description = None Text
   , id = None Text
+  , image_id = None Text
   , package_type = None Text
   , pricing =
       None

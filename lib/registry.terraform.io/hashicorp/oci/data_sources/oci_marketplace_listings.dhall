@@ -21,6 +21,12 @@
               , package_type : Text
               , pricing_types : List Text
               , publisher : List { description : Text, id : Text, name : Text }
+              , regions :
+                  List
+                    { code : Text
+                    , countries : List { code : Text, name : Text }
+                    , name : Text
+                    }
               , short_description : Text
               , tagline : Text
               }
@@ -56,6 +62,12 @@
             , package_type : Text
             , pricing_types : List Text
             , publisher : List { description : Text, id : Text, name : Text }
+            , regions :
+                List
+                  { code : Text
+                  , countries : List { code : Text, name : Text }
+                  , name : Text
+                  }
             , short_description : Text
             , tagline : Text
             }

@@ -8,6 +8,12 @@
               { listing_id : Text
               , package_type : Text
               , package_version : Text
+              , regions :
+                  List
+                    { code : Text
+                    , countries : List { code : Text, name : Text }
+                    , name : Text
+                    }
               , resource_id : Text
               , time_created : Text
               }
@@ -27,6 +33,12 @@
             { listing_id : Text
             , package_type : Text
             , package_version : Text
+            , regions :
+                List
+                  { code : Text
+                  , countries : List { code : Text, name : Text }
+                  , name : Text
+                  }
             , resource_id : Text
             , time_created : Text
             }
