@@ -6,6 +6,7 @@
     , id : Optional Text
     , is_retired : Optional Bool
     , name : Text
+    , state : Optional Text
     , time_created : Optional Text
     , timeouts :
         Optional
@@ -19,6 +20,7 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , is_retired = None Bool
+  , state = None Text
   , time_created = None Text
   , timeouts =
       None

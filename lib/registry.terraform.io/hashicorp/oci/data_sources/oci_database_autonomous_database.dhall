@@ -21,6 +21,7 @@
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , is_auto_scaling_enabled : Optional Bool
     , license_model : Optional Text
     , lifecycle_details : Optional Text
     , service_console_url : Optional Text
@@ -53,6 +54,7 @@
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , is_auto_scaling_enabled = None Bool
   , license_model = None Text
   , lifecycle_details = None Text
   , service_console_url = None Text

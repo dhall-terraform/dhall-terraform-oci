@@ -22,6 +22,7 @@
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , is_auto_scaling_enabled : Bool
               , license_model : Text
               , lifecycle_details : Text
               , service_console_url : Text
@@ -66,6 +67,7 @@
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , is_auto_scaling_enabled : Bool
             , license_model : Text
             , lifecycle_details : Text
             , service_console_url : Text

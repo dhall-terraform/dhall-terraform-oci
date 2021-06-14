@@ -53,6 +53,7 @@
                     , display_name : Optional Text
                     , extended_metadata :
                         Optional (List { mapKey : Text, mapValue : Text })
+                    , fault_domain : Optional Text
                     , freeform_tags :
                         Optional (List { mapKey : Text, mapValue : Text })
                     , ipxe_script : Optional Text

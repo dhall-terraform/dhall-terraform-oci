@@ -12,6 +12,7 @@
               , is_cost_tracking : Bool
               , is_retired : Bool
               , name : Text
+              , state : Text
               , tag_namespace_id : Text
               , tag_namespace_name : Text
               , time_created : Text
@@ -34,6 +35,7 @@
             , is_cost_tracking : Bool
             , is_retired : Bool
             , name : Text
+            , state : Text
             , tag_namespace_id : Text
             , tag_namespace_name : Text
             , time_created : Text

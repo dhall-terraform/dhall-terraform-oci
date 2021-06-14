@@ -6,6 +6,7 @@
     , is_cost_tracking : Optional Bool
     , is_retired : Optional Bool
     , name : Text
+    , state : Optional Text
     , tag_namespace_id : Text
     , time_created : Optional Text
     , timeouts :
@@ -21,6 +22,7 @@
   , id = None Text
   , is_cost_tracking = None Bool
   , is_retired = None Bool
+  , state = None Text
   , time_created = None Text
   , timeouts =
       None

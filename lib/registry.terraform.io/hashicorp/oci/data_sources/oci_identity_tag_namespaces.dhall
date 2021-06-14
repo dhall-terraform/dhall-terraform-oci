@@ -2,6 +2,7 @@
     { compartment_id : Text
     , id : Optional Text
     , include_subcompartments : Optional Bool
+    , state : Optional Text
     , tag_namespaces :
         Optional
           ( List
@@ -12,6 +13,7 @@
               , id : Text
               , is_retired : Bool
               , name : Text
+              , state : Text
               , time_created : Text
               }
           )
@@ -22,6 +24,7 @@
 , default =
   { id = None Text
   , include_subcompartments = None Bool
+  , state = None Text
   , tag_namespaces =
       None
         ( List
@@ -32,6 +35,7 @@
             , id : Text
             , is_retired : Bool
             , name : Text
+            , state : Text
             , time_created : Text
             }
         )

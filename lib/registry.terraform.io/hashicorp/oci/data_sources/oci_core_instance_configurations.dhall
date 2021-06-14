@@ -56,6 +56,7 @@
                           , display_name : Text
                           , extended_metadata :
                               List { mapKey : Text, mapValue : Text }
+                          , fault_domain : Text
                           , freeform_tags :
                               List { mapKey : Text, mapValue : Text }
                           , ipxe_script : Text
@@ -145,6 +146,7 @@
                         , display_name : Text
                         , extended_metadata :
                             List { mapKey : Text, mapValue : Text }
+                        , fault_domain : Text
                         , freeform_tags :
                             List { mapKey : Text, mapValue : Text }
                         , ipxe_script : Text
