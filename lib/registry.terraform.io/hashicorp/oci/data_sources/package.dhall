@@ -144,6 +144,10 @@
 , oci_database_autonomous_database_backups =
     ./oci_database_autonomous_database_backups.dhall
 , oci_database_autonomous_database = ./oci_database_autonomous_database.dhall
+, oci_database_autonomous_database_instance_wallet_management =
+    ./oci_database_autonomous_database_instance_wallet_management.dhall
+, oci_database_autonomous_database_regional_wallet_management =
+    ./oci_database_autonomous_database_regional_wallet_management.dhall
 , oci_database_autonomous_databases = ./oci_database_autonomous_databases.dhall
 , oci_database_autonomous_database_wallet =
     ./oci_database_autonomous_database_wallet.dhall
@@ -341,6 +345,8 @@
 , oci_waas_custom_protection_rule = ./oci_waas_custom_protection_rule.dhall
 , oci_waas_custom_protection_rules = ./oci_waas_custom_protection_rules.dhall
 , oci_waas_edge_subnets = ./oci_waas_edge_subnets.dhall
+, oci_waas_http_redirect = ./oci_waas_http_redirect.dhall
+, oci_waas_http_redirects = ./oci_waas_http_redirects.dhall
 , oci_waas_waas_policies = ./oci_waas_waas_policies.dhall
 , oci_waas_waas_policy = ./oci_waas_waas_policy.dhall
 }

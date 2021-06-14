@@ -47,6 +47,7 @@
 , oci_core_route_table = ./oci_core_route_table.dhall
 , oci_core_security_list = ./oci_core_security_list.dhall
 , oci_core_service_gateway = ./oci_core_service_gateway.dhall
+, oci_core_shape_management = ./oci_core_shape_management.dhall
 , oci_core_subnet = ./oci_core_subnet.dhall
 , oci_core_vcn = ./oci_core_vcn.dhall
 , oci_core_virtual_circuit = ./oci_core_virtual_circuit.dhall
@@ -65,6 +66,10 @@
 , oci_database_autonomous_database_backup =
     ./oci_database_autonomous_database_backup.dhall
 , oci_database_autonomous_database = ./oci_database_autonomous_database.dhall
+, oci_database_autonomous_database_instance_wallet_management =
+    ./oci_database_autonomous_database_instance_wallet_management.dhall
+, oci_database_autonomous_database_regional_wallet_management =
+    ./oci_database_autonomous_database_regional_wallet_management.dhall
 , oci_database_autonomous_data_warehouse_backup =
     ./oci_database_autonomous_data_warehouse_backup.dhall
 , oci_database_autonomous_data_warehouse =
@@ -158,6 +163,7 @@
 , oci_waas_address_list = ./oci_waas_address_list.dhall
 , oci_waas_certificate = ./oci_waas_certificate.dhall
 , oci_waas_custom_protection_rule = ./oci_waas_custom_protection_rule.dhall
+, oci_waas_http_redirect = ./oci_waas_http_redirect.dhall
 , oci_waas_purge_cache = ./oci_waas_purge_cache.dhall
 , oci_waas_waas_policy = ./oci_waas_waas_policy.dhall
 }
