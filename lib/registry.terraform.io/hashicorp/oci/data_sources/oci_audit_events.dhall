@@ -3,6 +3,7 @@
         Optional
           ( List
               { compartment_id : Text
+              , compartment_name : Text
               , credential_id : Text
               , event_id : Text
               , event_name : Text
@@ -22,6 +23,7 @@
               , response_status : Text
               , response_time : Text
               , tenant_id : Text
+              , user_name : Text
               }
           )
     , compartment_id : Text
@@ -38,6 +40,7 @@
       None
         ( List
             { compartment_id : Text
+            , compartment_name : Text
             , credential_id : Text
             , event_id : Text
             , event_name : Text
@@ -57,6 +60,7 @@
             , response_status : Text
             , response_time : Text
             , tenant_id : Text
+            , user_name : Text
             }
         )
   , id = None Text
