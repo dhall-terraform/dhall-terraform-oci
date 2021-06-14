@@ -9,6 +9,7 @@
               , key_id : Text
               , key_version_id : Text
               , management_endpoint : Text
+              , restored_from_key_id : Text
               , state : Text
               , time_created : Text
               , time_of_deletion : Text
@@ -30,6 +31,7 @@
             , key_id : Text
             , key_version_id : Text
             , management_endpoint : Text
+            , restored_from_key_id : Text
             , state : Text
             , time_created : Text
             , time_of_deletion : Text

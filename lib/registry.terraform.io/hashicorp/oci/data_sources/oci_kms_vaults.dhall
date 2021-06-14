@@ -11,6 +11,16 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , management_endpoint : Text
+              , restore_from_object_store :
+                  List
+                    { bucket : Text
+                    , destination : Text
+                    , namespace : Text
+                    , object : Text
+                    , uri : Text
+                    }
+              , restore_trigger : Bool
+              , restored_from_vault_id : Text
               , state : Text
               , time_created : Text
               , time_of_deletion : Text
@@ -33,6 +43,16 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , management_endpoint : Text
+            , restore_from_object_store :
+                List
+                  { bucket : Text
+                  , destination : Text
+                  , namespace : Text
+                  , object : Text
+                  , uri : Text
+                  }
+            , restore_trigger : Bool
+            , restored_from_vault_id : Text
             , state : Text
             , time_created : Text
             , time_of_deletion : Text

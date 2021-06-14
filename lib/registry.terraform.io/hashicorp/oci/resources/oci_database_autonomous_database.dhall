@@ -3,6 +3,7 @@
     , autonomous_container_database_id : Optional Text
     , autonomous_database_backup_id : Optional Text
     , autonomous_database_id : Optional Text
+    , available_upgrade_versions : Optional (List Text)
     , clone_type : Optional Text
     , compartment_id : Text
     , connection_strings :
@@ -68,6 +69,7 @@
   { autonomous_container_database_id = None Text
   , autonomous_database_backup_id = None Text
   , autonomous_database_id = None Text
+  , available_upgrade_versions = None (List Text)
   , clone_type = None Text
   , connection_strings =
       None

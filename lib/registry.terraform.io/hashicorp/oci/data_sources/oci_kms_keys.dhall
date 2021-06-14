@@ -13,6 +13,16 @@
               , id : Text
               , key_shape : List { algorithm : Text, length : Natural }
               , management_endpoint : Text
+              , restore_from_object_store :
+                  List
+                    { bucket : Text
+                    , destination : Text
+                    , namespace : Text
+                    , object : Text
+                    , uri : Text
+                    }
+              , restore_trigger : Bool
+              , restored_from_key_id : Text
               , state : Text
               , time_created : Text
               , time_of_deletion : Text
@@ -38,6 +48,16 @@
             , id : Text
             , key_shape : List { algorithm : Text, length : Natural }
             , management_endpoint : Text
+            , restore_from_object_store :
+                List
+                  { bucket : Text
+                  , destination : Text
+                  , namespace : Text
+                  , object : Text
+                  , uri : Text
+                  }
+            , restore_trigger : Bool
+            , restored_from_key_id : Text
             , state : Text
             , time_created : Text
             , time_of_deletion : Text

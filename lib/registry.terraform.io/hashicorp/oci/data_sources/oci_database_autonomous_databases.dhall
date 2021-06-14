@@ -7,6 +7,7 @@
               , autonomous_container_database_id : Text
               , autonomous_database_backup_id : Text
               , autonomous_database_id : Text
+              , available_upgrade_versions : List Text
               , clone_type : Text
               , compartment_id : Text
               , connection_strings :
@@ -80,6 +81,7 @@
             , autonomous_container_database_id : Text
             , autonomous_database_backup_id : Text
             , autonomous_database_id : Text
+            , available_upgrade_versions : List Text
             , clone_type : Text
             , compartment_id : Text
             , connection_strings :

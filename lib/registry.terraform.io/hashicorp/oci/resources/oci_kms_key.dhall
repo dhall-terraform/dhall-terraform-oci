@@ -7,11 +7,23 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , management_endpoint : Text
+    , restore_trigger : Optional Bool
+    , restored_from_key_id : Optional Text
     , state : Optional Text
     , time_created : Optional Text
     , time_of_deletion : Optional Text
     , vault_id : Optional Text
     , key_shape : List { algorithm : Text, length : Natural }
+    , restore_from_object_store :
+        Optional
+          ( List
+              { bucket : Optional Text
+              , destination : Text
+              , namespace : Optional Text
+              , object : Optional Text
+              , uri : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -25,10 +37,22 @@
   , desired_state = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , restore_trigger = None Bool
+  , restored_from_key_id = None Text
   , state = None Text
   , time_created = None Text
   , time_of_deletion = None Text
   , vault_id = None Text
+  , restore_from_object_store =
+      None
+        ( List
+            { bucket : Optional Text
+            , destination : Text
+            , namespace : Optional Text
+            , object : Optional Text
+            , uri : Optional Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text
