@@ -15,7 +15,7 @@
               , vnic_id : Text
               }
           )
-    , db_system_id : Text
+    , db_system_id : Optional Text
     , id : Optional Text
     , state : Optional Text
     , vm_cluster_id : Optional Text
@@ -39,6 +39,7 @@
             , vnic_id : Text
             }
         )
+  , db_system_id = None Text
   , id = None Text
   , state = None Text
   , vm_cluster_id = None Text

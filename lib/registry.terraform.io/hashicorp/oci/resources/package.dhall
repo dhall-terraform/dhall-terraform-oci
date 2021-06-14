@@ -149,6 +149,7 @@
 , oci_objectstorage_object_lifecycle_policy =
     ./oci_objectstorage_object_lifecycle_policy.dhall
 , oci_objectstorage_preauthrequest = ./oci_objectstorage_preauthrequest.dhall
+, oci_oce_oce_instance = ./oci_oce_oce_instance.dhall
 , oci_oda_oda_instance = ./oci_oda_oda_instance.dhall
 , oci_ons_notification_topic = ./oci_ons_notification_topic.dhall
 , oci_ons_subscription = ./oci_ons_subscription.dhall

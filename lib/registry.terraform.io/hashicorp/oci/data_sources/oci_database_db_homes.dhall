@@ -49,7 +49,7 @@
               , vm_cluster_id : Text
               }
           )
-    , db_system_id : Text
+    , db_system_id : Optional Text
     , display_name : Optional Text
     , id : Optional Text
     , state : Optional Text
@@ -108,6 +108,7 @@
             , vm_cluster_id : Text
             }
         )
+  , db_system_id = None Text
   , display_name = None Text
   , id = None Text
   , state = None Text
