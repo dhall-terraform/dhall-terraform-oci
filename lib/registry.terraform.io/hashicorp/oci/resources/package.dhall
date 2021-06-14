@@ -19,6 +19,8 @@
 , oci_core_boot_volume_backup = ./oci_core_boot_volume_backup.dhall
 , oci_core_boot_volume = ./oci_core_boot_volume.dhall
 , oci_core_cluster_network = ./oci_core_cluster_network.dhall
+, oci_core_compute_image_capability_schema =
+    ./oci_core_compute_image_capability_schema.dhall
 , oci_core_console_history = ./oci_core_console_history.dhall
 , oci_core_cpe = ./oci_core_cpe.dhall
 , oci_core_cross_connect = ./oci_core_cross_connect.dhall

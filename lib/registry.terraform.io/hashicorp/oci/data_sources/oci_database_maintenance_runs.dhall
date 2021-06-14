@@ -10,6 +10,7 @@
               , display_name : Text
               , id : Text
               , is_enabled : Bool
+              , is_patch_now_enabled : Bool
               , lifecycle_details : Text
               , maintenance_run_id : Text
               , maintenance_subtype : Text
@@ -41,6 +42,7 @@
             , display_name : Text
             , id : Text
             , is_enabled : Bool
+            , is_patch_now_enabled : Bool
             , lifecycle_details : Text
             , maintenance_run_id : Text
             , maintenance_subtype : Text

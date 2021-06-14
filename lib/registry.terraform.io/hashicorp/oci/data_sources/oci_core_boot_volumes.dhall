@@ -3,7 +3,8 @@
     , boot_volumes :
         Optional
           ( List
-              { availability_domain : Text
+              { auto_tuned_vpus_per_gb : Text
+              , availability_domain : Text
               , backup_policy_id : Text
               , compartment_id : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
@@ -11,6 +12,7 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , image_id : Text
+              , is_auto_tune_enabled : Bool
               , is_hydrated : Bool
               , kms_key_id : Text
               , size_in_gbs : Text
@@ -34,7 +36,8 @@
   { boot_volumes =
       None
         ( List
-            { availability_domain : Text
+            { auto_tuned_vpus_per_gb : Text
+            , availability_domain : Text
             , backup_policy_id : Text
             , compartment_id : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
@@ -42,6 +45,7 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , image_id : Text
+            , is_auto_tune_enabled : Bool
             , is_hydrated : Bool
             , kms_key_id : Text
             , size_in_gbs : Text

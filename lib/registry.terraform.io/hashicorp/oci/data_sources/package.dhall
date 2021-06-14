@@ -55,6 +55,18 @@
 , oci_core_cluster_network_instances =
     ./oci_core_cluster_network_instances.dhall
 , oci_core_cluster_networks = ./oci_core_cluster_networks.dhall
+, oci_core_compute_global_image_capability_schema =
+    ./oci_core_compute_global_image_capability_schema.dhall
+, oci_core_compute_global_image_capability_schemas =
+    ./oci_core_compute_global_image_capability_schemas.dhall
+, oci_core_compute_global_image_capability_schemas_version =
+    ./oci_core_compute_global_image_capability_schemas_version.dhall
+, oci_core_compute_global_image_capability_schemas_versions =
+    ./oci_core_compute_global_image_capability_schemas_versions.dhall
+, oci_core_compute_image_capability_schema =
+    ./oci_core_compute_image_capability_schema.dhall
+, oci_core_compute_image_capability_schemas =
+    ./oci_core_compute_image_capability_schemas.dhall
 , oci_core_console_histories = ./oci_core_console_histories.dhall
 , oci_core_console_history_data = ./oci_core_console_history_data.dhall
 , oci_core_cpe_device_shape = ./oci_core_cpe_device_shape.dhall

@@ -4,6 +4,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , is_enabled : Optional Bool
+    , is_patch_now_enabled : Optional Bool
     , lifecycle_details : Optional Text
     , maintenance_run_id : Text
     , maintenance_subtype : Optional Text
@@ -27,6 +28,7 @@
   , display_name = None Text
   , id = None Text
   , is_enabled = None Bool
+  , is_patch_now_enabled = None Bool
   , lifecycle_details = None Text
   , maintenance_subtype = None Text
   , maintenance_type = None Text

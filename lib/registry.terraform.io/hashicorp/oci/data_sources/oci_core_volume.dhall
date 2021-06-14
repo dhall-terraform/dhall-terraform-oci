@@ -1,11 +1,13 @@
 { Type =
-    { availability_domain : Optional Text
+    { auto_tuned_vpus_per_gb : Optional Text
+    , availability_domain : Optional Text
     , backup_policy_id : Optional Text
     , compartment_id : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , is_auto_tune_enabled : Optional Bool
     , is_hydrated : Optional Bool
     , kms_key_id : Optional Text
     , size_in_gbs : Optional Text
@@ -20,13 +22,15 @@
     , vpus_per_gb : Optional Text
     }
 , default =
-  { availability_domain = None Text
+  { auto_tuned_vpus_per_gb = None Text
+  , availability_domain = None Text
   , backup_policy_id = None Text
   , compartment_id = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , is_auto_tune_enabled = None Bool
   , is_hydrated = None Bool
   , kms_key_id = None Text
   , size_in_gbs = None Text
