@@ -14,6 +14,12 @@
 , oci_apigateway_deployments = ./oci_apigateway_deployments.dhall
 , oci_apigateway_gateway = ./oci_apigateway_gateway.dhall
 , oci_apigateway_gateways = ./oci_apigateway_gateways.dhall
+, oci_artifacts_container_configuration =
+    ./oci_artifacts_container_configuration.dhall
+, oci_artifacts_container_repositories =
+    ./oci_artifacts_container_repositories.dhall
+, oci_artifacts_container_repository =
+    ./oci_artifacts_container_repository.dhall
 , oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_audit_events = ./oci_audit_events.dhall
 , oci_autoscaling_auto_scaling_configuration =
@@ -605,6 +611,10 @@
 , oci_optimizer_profiles = ./oci_optimizer_profiles.dhall
 , oci_optimizer_recommendation = ./oci_optimizer_recommendation.dhall
 , oci_optimizer_recommendations = ./oci_optimizer_recommendations.dhall
+, oci_optimizer_recommendation_strategies =
+    ./oci_optimizer_recommendation_strategies.dhall
+, oci_optimizer_recommendation_strategy =
+    ./oci_optimizer_recommendation_strategy.dhall
 , oci_optimizer_resource_action = ./oci_optimizer_resource_action.dhall
 , oci_optimizer_resource_actions = ./oci_optimizer_resource_actions.dhall
 , oci_osmanagement_managed_instance = ./oci_osmanagement_managed_instance.dhall

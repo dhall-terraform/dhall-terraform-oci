@@ -95,6 +95,8 @@
                                 , remote_data_volume_type : Text
                                 }
                           , metadata : List { mapKey : Text, mapValue : Text }
+                          , platform_config :
+                              List { numa_nodes_per_socket : Text, type : Text }
                           , preferred_maintenance_action : Text
                           , shape : Text
                           , shape_config :
@@ -229,6 +231,8 @@
                               , remote_data_volume_type : Text
                               }
                         , metadata : List { mapKey : Text, mapValue : Text }
+                        , platform_config :
+                            List { numa_nodes_per_socket : Text, type : Text }
                         , preferred_maintenance_action : Text
                         , shape : Text
                         , shape_config :

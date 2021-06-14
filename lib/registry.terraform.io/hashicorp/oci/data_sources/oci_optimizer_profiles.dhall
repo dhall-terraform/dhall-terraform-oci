@@ -19,6 +19,17 @@
                           }
                     , name : Text
                     , state : Text
+                    , target_compartments : List { items : List Text }
+                    , target_tags :
+                        List
+                          { items :
+                              List
+                                { tag_definition_name : Text
+                                , tag_namespace_name : Text
+                                , tag_value_type : Text
+                                , tag_values : List Text
+                                }
+                          }
                     , time_created : Text
                     , time_updated : Text
                     }
@@ -49,6 +60,17 @@
                         }
                   , name : Text
                   , state : Text
+                  , target_compartments : List { items : List Text }
+                  , target_tags :
+                      List
+                        { items :
+                            List
+                              { tag_definition_name : Text
+                              , tag_namespace_name : Text
+                              , tag_value_type : Text
+                              , tag_values : List Text
+                              }
+                        }
                   , time_created : Text
                   , time_updated : Text
                   }

@@ -7,6 +7,10 @@
 , oci_apigateway_certificate = ./oci_apigateway_certificate.dhall
 , oci_apigateway_deployment = ./oci_apigateway_deployment.dhall
 , oci_apigateway_gateway = ./oci_apigateway_gateway.dhall
+, oci_artifacts_container_configuration =
+    ./oci_artifacts_container_configuration.dhall
+, oci_artifacts_container_repository =
+    ./oci_artifacts_container_repository.dhall
 , oci_audit_configuration = ./oci_audit_configuration.dhall
 , oci_autoscaling_auto_scaling_configuration =
     ./oci_autoscaling_auto_scaling_configuration.dhall

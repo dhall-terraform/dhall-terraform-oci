@@ -54,6 +54,8 @@
               }
           )
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
+    , platform_config :
+        Optional (List { numa_nodes_per_socket : Text, type : Text })
     , preserve_boot_volume : Optional Bool
     , private_ip : Optional Text
     , public_ip : Optional Text
@@ -143,6 +145,7 @@
             }
         )
   , metadata = None (List { mapKey : Text, mapValue : Text })
+  , platform_config = None (List { numa_nodes_per_socket : Text, type : Text })
   , preserve_boot_volume = None Bool
   , private_ip = None Text
   , public_ip = None Text

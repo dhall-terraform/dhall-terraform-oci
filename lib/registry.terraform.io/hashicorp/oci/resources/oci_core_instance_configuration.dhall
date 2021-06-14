@@ -138,6 +138,13 @@
                                   , remote_data_volume_type : Optional Text
                                   }
                               )
+                        , platform_config :
+                            Optional
+                              ( List
+                                  { numa_nodes_per_socket : Optional Text
+                                  , type : Text
+                                  }
+                              )
                         , shape_config :
                             Optional
                               ( List
@@ -319,6 +326,13 @@
                                     Optional Bool
                                 , network_type : Optional Text
                                 , remote_data_volume_type : Optional Text
+                                }
+                            )
+                      , platform_config :
+                          Optional
+                            ( List
+                                { numa_nodes_per_socket : Optional Text
+                                , type : Text
                                 }
                             )
                       , shape_config :

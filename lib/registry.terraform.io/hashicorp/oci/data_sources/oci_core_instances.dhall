@@ -55,6 +55,8 @@
                     , remote_data_volume_type : Text
                     }
               , metadata : List { mapKey : Text, mapValue : Text }
+              , platform_config :
+                  List { numa_nodes_per_socket : Text, type : Text }
               , preserve_boot_volume : Bool
               , private_ip : Text
               , public_ip : Text
@@ -147,6 +149,8 @@
                   , remote_data_volume_type : Text
                   }
             , metadata : List { mapKey : Text, mapValue : Text }
+            , platform_config :
+                List { numa_nodes_per_socket : Text, type : Text }
             , preserve_boot_volume : Bool
             , private_ip : Text
             , public_ip : Text
