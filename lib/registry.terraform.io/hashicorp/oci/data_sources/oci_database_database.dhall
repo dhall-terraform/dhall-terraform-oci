@@ -52,6 +52,7 @@
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
+    , last_backup_timestamp : Optional Text
     , lifecycle_details : Optional Text
     , ncharacter_set : Optional Text
     , pdb_name : Optional Text
@@ -112,6 +113,7 @@
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , last_backup_timestamp = None Text
   , lifecycle_details = None Text
   , ncharacter_set = None Text
   , pdb_name = None Text

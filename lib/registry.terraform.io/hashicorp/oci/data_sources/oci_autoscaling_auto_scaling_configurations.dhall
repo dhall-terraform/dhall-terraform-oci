@@ -10,12 +10,17 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , is_enabled : Bool
+              , max_resource_count : Natural
+              , min_resource_count : Natural
               , policies :
                   List
                     { capacity :
                         List { initial : Natural, max : Natural, min : Natural }
                     , display_name : Text
+                    , execution_schedule :
+                        List { expression : Text, timezone : Text, type : Text }
                     , id : Text
+                    , is_enabled : Bool
                     , policy_type : Text
                     , rules :
                         List
@@ -53,12 +58,17 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , is_enabled : Bool
+            , max_resource_count : Natural
+            , min_resource_count : Natural
             , policies :
                 List
                   { capacity :
                       List { initial : Natural, max : Natural, min : Natural }
                   , display_name : Text
+                  , execution_schedule :
+                      List { expression : Text, timezone : Text, type : Text }
                   , id : Text
+                  , is_enabled : Bool
                   , policy_type : Text
                   , rules :
                       List

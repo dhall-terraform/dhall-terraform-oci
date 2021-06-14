@@ -11,6 +11,12 @@
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
               , management_endpoint : Text
+              , restore_from_file :
+                  List
+                    { content_length : Text
+                    , content_md5 : Text
+                    , restore_vault_from_file_details : Text
+                    }
               , restore_from_object_store :
                   List
                     { bucket : Text
@@ -43,6 +49,12 @@
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
             , management_endpoint : Text
+            , restore_from_file :
+                List
+                  { content_length : Text
+                  , content_md5 : Text
+                  , restore_vault_from_file_details : Text
+                  }
             , restore_from_object_store :
                 List
                   { bucket : Text

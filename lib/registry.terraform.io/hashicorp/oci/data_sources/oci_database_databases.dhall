@@ -51,6 +51,7 @@
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , freeform_tags : List { mapKey : Text, mapValue : Text }
               , id : Text
+              , last_backup_timestamp : Text
               , lifecycle_details : Text
               , ncharacter_set : Text
               , pdb_name : Text
@@ -120,6 +121,7 @@
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , freeform_tags : List { mapKey : Text, mapValue : Text }
             , id : Text
+            , last_backup_timestamp : Text
             , lifecycle_details : Text
             , ncharacter_set : Text
             , pdb_name : Text

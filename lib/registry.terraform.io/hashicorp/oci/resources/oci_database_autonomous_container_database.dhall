@@ -2,6 +2,7 @@
     { autonomous_exadata_infrastructure_id : Text
     , availability_domain : Optional Text
     , compartment_id : Optional Text
+    , db_version : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -47,6 +48,7 @@
 , default =
   { availability_domain = None Text
   , compartment_id = None Text
+  , db_version = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text

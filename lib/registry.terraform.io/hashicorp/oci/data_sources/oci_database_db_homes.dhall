@@ -18,6 +18,7 @@
                           , cdb_default : Text
                           , cdb_ip_default : Text
                           }
+                    , database_id : Text
                     , db_backup_config :
                         List
                           { auto_backup_enabled : Bool
@@ -37,6 +38,7 @@
                     , pdb_name : Text
                     , state : Text
                     , time_created : Text
+                    , time_stamp_for_point_in_time_recovery : Text
                     }
               , db_home_id : Text
               , db_home_location : Text
@@ -80,6 +82,7 @@
                         , cdb_default : Text
                         , cdb_ip_default : Text
                         }
+                  , database_id : Text
                   , db_backup_config :
                       List
                         { auto_backup_enabled : Bool
@@ -99,6 +102,7 @@
                   , pdb_name : Text
                   , state : Text
                   , time_created : Text
+                  , time_stamp_for_point_in_time_recovery : Text
                   }
             , db_home_id : Text
             , db_home_location : Text

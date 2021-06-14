@@ -4,6 +4,7 @@
     , availability_domain : Optional Text
     , backup_config : Optional (List { recovery_window_in_days : Natural })
     , compartment_id : Optional Text
+    , db_version : Optional Text
     , defined_tags : Optional (List { mapKey : Text, mapValue : Text })
     , display_name : Optional Text
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -43,6 +44,7 @@
   , availability_domain = None Text
   , backup_config = None (List { recovery_window_in_days : Natural })
   , compartment_id = None Text
+  , db_version = None Text
   , defined_tags = None (List { mapKey : Text, mapValue : Text })
   , display_name = None Text
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })

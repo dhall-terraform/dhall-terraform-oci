@@ -6,6 +6,7 @@
               , availability_domain : Text
               , backup_config : List { recovery_window_in_days : Natural }
               , compartment_id : Text
+              , db_version : Text
               , defined_tags : List { mapKey : Text, mapValue : Text }
               , display_name : Text
               , freeform_tags : List { mapKey : Text, mapValue : Text }
@@ -55,6 +56,7 @@
             , availability_domain : Text
             , backup_config : List { recovery_window_in_days : Natural }
             , compartment_id : Text
+            , db_version : Text
             , defined_tags : List { mapKey : Text, mapValue : Text }
             , display_name : Text
             , freeform_tags : List { mapKey : Text, mapValue : Text }

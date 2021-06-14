@@ -8,13 +8,18 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , is_enabled : Optional Bool
+    , max_resource_count : Optional Natural
+    , min_resource_count : Optional Natural
     , policies :
         Optional
           ( List
               { capacity :
                   List { initial : Natural, max : Natural, min : Natural }
               , display_name : Text
+              , execution_schedule :
+                  List { expression : Text, timezone : Text, type : Text }
               , id : Text
+              , is_enabled : Bool
               , policy_type : Text
               , rules :
                   List
@@ -42,13 +47,18 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , is_enabled = None Bool
+  , max_resource_count = None Natural
+  , min_resource_count = None Natural
   , policies =
       None
         ( List
             { capacity :
                 List { initial : Natural, max : Natural, min : Natural }
             , display_name : Text
+            , execution_schedule :
+                List { expression : Text, timezone : Text, type : Text }
             , id : Text
+            , is_enabled : Bool
             , policy_type : Text
             , rules :
                 List

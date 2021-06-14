@@ -12,6 +12,14 @@
     , time_created : Optional Text
     , time_of_deletion : Optional Text
     , vault_type : Text
+    , restore_from_file :
+        Optional
+          ( List
+              { content_length : Text
+              , content_md5 : Optional Text
+              , restore_vault_from_file_details : Text
+              }
+          )
     , restore_from_object_store :
         Optional
           ( List
@@ -40,6 +48,14 @@
   , state = None Text
   , time_created = None Text
   , time_of_deletion = None Text
+  , restore_from_file =
+      None
+        ( List
+            { content_length : Text
+            , content_md5 : Optional Text
+            , restore_vault_from_file_details : Text
+            }
+        )
   , restore_from_object_store =
       None
         ( List

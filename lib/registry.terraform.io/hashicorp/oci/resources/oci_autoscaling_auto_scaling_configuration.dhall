@@ -6,26 +6,51 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , is_enabled : Optional Bool
+    , max_resource_count : Optional Natural
+    , min_resource_count : Optional Natural
     , time_created : Optional Text
     , auto_scaling_resources : List { id : Text, type : Text }
     , policies :
         List
           { display_name : Optional Text
           , id : Optional Text
+          , is_enabled : Optional Bool
           , policy_type : Text
           , time_created : Optional Text
-          , capacity : List { initial : Natural, max : Natural, min : Natural }
-          , rules :
+          , capacity :
               List
-                { display_name : Text
-                , id : Optional Text
-                , action : List { type : Text, value : Natural }
-                , metric :
-                    List
-                      { metric_type : Text
-                      , threshold : List { operator : Text, value : Natural }
-                      }
+                { initial : Optional Natural
+                , max : Optional Natural
+                , min : Optional Natural
                 }
+          , execution_schedule :
+              Optional
+                (List { expression : Text, timezone : Text, type : Text })
+          , rules :
+              Optional
+                ( List
+                    { display_name : Text
+                    , id : Optional Text
+                    , action :
+                        Optional
+                          ( List
+                              { type : Optional Text, value : Optional Natural }
+                          )
+                    , metric :
+                        Optional
+                          ( List
+                              { metric_type : Optional Text
+                              , threshold :
+                                  Optional
+                                    ( List
+                                        { operator : Optional Text
+                                        , value : Optional Natural
+                                        }
+                                    )
+                              }
+                          )
+                    }
+                )
           }
     , timeouts :
         Optional
@@ -41,6 +66,8 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , is_enabled = None Bool
+  , max_resource_count = None Natural
+  , min_resource_count = None Natural
   , time_created = None Text
   , timeouts =
       None

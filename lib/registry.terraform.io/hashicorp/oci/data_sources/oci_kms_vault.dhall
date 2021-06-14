@@ -6,6 +6,14 @@
     , freeform_tags : Optional (List { mapKey : Text, mapValue : Text })
     , id : Optional Text
     , management_endpoint : Optional Text
+    , restore_from_file :
+        Optional
+          ( List
+              { content_length : Text
+              , content_md5 : Text
+              , restore_vault_from_file_details : Text
+              }
+          )
     , restore_from_object_store :
         Optional
           ( List
@@ -32,6 +40,14 @@
   , freeform_tags = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
   , management_endpoint = None Text
+  , restore_from_file =
+      None
+        ( List
+            { content_length : Text
+            , content_md5 : Text
+            , restore_vault_from_file_details : Text
+            }
+        )
   , restore_from_object_store =
       None
         ( List
